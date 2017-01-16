@@ -1,5 +1,7 @@
 # Full-Stack-JS
 
+The web is becoming ever more JavaScripty. Initially the red-headed stepchild of the internet world, JavaScript has now risen to being, by many metrics, the fastest growing language on the web. Now with the invention of NodeJS, you can write your client and your server in JS creating interesting synergies and benefits across a stack and within a development team. Also with the emergence of tools like React Native, Ionic, Johnny-Five, and many others, JavaScript is becoming a versitile tool across many platforms even outside of the desktop and mobile web browsers. 
+
 ## Competencies & Objectives
 
 1. Master ExpressJS
