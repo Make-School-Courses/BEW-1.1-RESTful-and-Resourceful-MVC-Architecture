@@ -19,6 +19,8 @@
 
 1. Add a [bootstrap navbar](http://getbootstrap.com/components/#navbar) to your `main` layout.
 1. Use bootstrap's 12-column grid (optionally watch [this video explanation](https://www.youtube.com/watch?v=g3j7eRunzv4))). Add a `.container` class below the navbar.
+1. Embed a responsive image into your grid.
+1. Embed a responsive youtube video into your grid.
 
 #### posts-index
 
@@ -48,3 +50,9 @@
 1. In this file use the jQuery function that detects a [submit event](https://api.jquery.com/submit/). (hint: remember to prevent the default behavior of the form upon submit).
 1. Use the jQuery `serialize()` function to serialize the form data into a JavaScript object called `post`.
 1. Write the post to the page to the top of the `.list-group` using the jQuery `text()`.
+
+### jQuery
+1. Use a jQuery function to make something show or hide on the page when you click a button called `Show!` and `Hide!`
+1. Now make the element fade in and out instead.
+1. Use a jQuery function to add or remove the `text-success` class to an element when you click a button called `Success!`.
+1. Add the [jQuery validate](https://jqueryvalidation.org/) plugin and validate that the body of the post exists before you can submit the form.
