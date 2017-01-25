@@ -7,9 +7,11 @@
 1. Finish the [Static Files](http://expressjs.com/en/starter/static-files.html) tutorial in the express app so you have a `public` folder.
 1. Install bower `$ npm install -g bower`
 1. `$ touch` a bower configuration file called `.bowerrc`
-  ```
+
+  ```js
     { 'directory': 'public/vendor' }
   ```
+
 1. Use bower to install jquery and bootstrap.
 1. Add jquery and bootstrap to your `<head>` in your `main.handlebars` layout template.
 
@@ -46,8 +48,3 @@
 1. In this file use the jQuery function that detects a [submit event](https://api.jquery.com/submit/). (hint: remember to prevent the default behavior of the form upon submit).
 1. Use the jQuery `serialize()` function to serialize the form data into a JavaScript object called `post`.
 1. Write the post to the page to the top of the `.list-group` using the jQuery `text()`.
-
-
-<!--
-#### Create a post
-1. Use the jQuery `ajax()` function to make a asynchronous post requests to your server to send the `post` object to the `/posts` webhook. -->
