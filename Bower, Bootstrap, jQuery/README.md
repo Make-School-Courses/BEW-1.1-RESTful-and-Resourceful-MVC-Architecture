@@ -21,16 +21,19 @@
 #### posts-index
 
 1. Create a `/posts` route that displays an array of posts
-  ```
+
+  ```json
     [
       { body: "the stuff" },
       { body: "the stuff" },
       { body: "the stuff" }
     ]
   ```
+
 1. Put those posts into a `.list-group` bootstrap element inside the middle six columns of the 12 column grid.
 1. Add a post form like the following:
-  ```
+
+  ```html
     <form action='#' id='post-form'>
       <textarea name="body" class="form-control"/>
       <div class='text-right'>
@@ -38,6 +41,7 @@
       </div>
     </form>
   ```
+
 1. Create a file: `public/scripts.js`
 1. In this file use the jQuery function that detects a [submit event](https://api.jquery.com/submit/). (hint: remember to prevent the default behavior of the form upon submit).
 1. Use the jQuery `serialize()` function to serialize the form data into a JavaScript object called `post`.
