@@ -17,6 +17,7 @@ Bower is a package manager (like homebrew for Mac, and npm for node) that helps 
   ```js
     { "directory": "public/vendor" }
   ```
+  
 1. Run `$ bower init` to initialize bower and have it create a `bower.json` file.
 1. Use bower to install jquery and bootstrap. (Hint: always add `--save` to make sure that the package is added to your `bower.json` file and will be available in production)
 1. Add jquery and bootstrap to your `<head>` in your `main.handlebars` layout template. e.g.
