@@ -10,7 +10,8 @@ Bower is a package manager (like homebrew for Mac, and npm for node) that helps 
 
 #### Installing and Initializing Bower
 
-1. Install bower `$ npm install -g bower`
+1. Install bower `$ npm install bower -g`
+1. Install bower locally in your project `$ npm install bower --save`
 1. `$ touch` a bower configuration file called `.bowerrc`. We're going to tell bower to put all files into a vendor folder inside our public folder.
 
   ```js
