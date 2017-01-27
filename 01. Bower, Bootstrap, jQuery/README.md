@@ -63,7 +63,7 @@ You can pass data into your templates by passing the data as the second argument
 
   ```html
     <form action='#' id='post-form'>
-      <textarea name="body" class="form-control"/>
+      <textarea name="body" class="form-control"></textarea>
       <div class='text-right'>
         <button type='submit'>Save</button>
       </div>

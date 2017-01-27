@@ -7,6 +7,13 @@
 1. If you haven't, install [homebrew](http://brew.sh/)
 1. Use homebrew to install node `$ brew install node`
 1. Complete the Installing, Hello World, Basic Routing, and Static Files "Getting Started" tutorials in the [ExpressJS website](http://expressjs.com/).
+1. Update the `app.listen()` function at the bottom of your `app.js` or `server.js`
+  ```js
+    var port = process.env.PORT || 3000;
+    app.listen(port, function () {
+      console.log('Server listening on port: ' + port)
+    });
+  ```
 1. Initialize a git repository and push to remote.
 1. Initialize a heroku instance with `heroku create <<APP NAME>>` and push to heroku.
 1. Run `$ heroku open` or navigate your browser to your heroku app to see that it is working.
