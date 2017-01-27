@@ -16,7 +16,7 @@
 
 Review [ExpressJS 4.x docs](https://expressjs.com/en/api.html) if you get stuck.
 
-1. You are using `res.send` to send "Hello world". Instead send back "<h1>I'm Alive!</h1>". What happens in your browser?
+1. You are using `res.send` to send "Hello world". Instead send back `<h1>I'm Alive!</h1>`. What happens in your browser?
 1. Make a new webhook that takes a GET request at the path `/api/blahs` that uses `res.json` to send back this array:
 
   ```json
@@ -27,7 +27,7 @@ Review [ExpressJS 4.x docs](https://expressjs.com/en/api.html) if you get stuck.
     ]
   ```
 
-1. Make a new webhook that takes a GET request at the path `/greetings/:name`. Use `req.params.name` to return "<h1>Greetings, <<:name>></h1>" to the browser.
+1. Make a new webhook that takes a GET request at the path `/greetings/:name`. Use `req.params.name` to return `<h1>Greetings, <<:name>></h1>` to the browser.
 
 
 #### Templating Engine: Handlebars
@@ -37,6 +37,7 @@ Express does not ship with a templating engine for rendering HMTL templates. Ins
 1. Handlebars can be used for either client- or server-side rendering, but we are using it on the server-side only, so we'll use the `express-handlebars` node package. Use the installation and usage sections of the [repo's README](https://github.com/ericf/express-handlebars) to install this package into your project.
 1. Make sure you have a `views` folder with a `home.handlebars` template and a `layouts` folder in it. And in the `layouts` folder, include a `main.handlebars` template. There is boilerplate code for the main layout template in the `express-handlebars` README.
 1. Make your `/` route (root route) render your `home` template.
+1. OPTIONAL - Make a folder `views/partials` and in there add a `post.handlebars` partial. Can you use this partial to display your posts?
 
 
 #### Up next... Bower!
