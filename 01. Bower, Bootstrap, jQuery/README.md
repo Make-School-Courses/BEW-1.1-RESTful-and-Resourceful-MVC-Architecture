@@ -9,7 +9,7 @@
 1. `$ touch` a bower configuration file called `.bowerrc`
 
   ```js
-    { 'directory': 'public/vendor' }
+    { "directory": "public/vendor" }
   ```
 
 1. Use bower to install jquery and bootstrap.
