@@ -47,12 +47,14 @@ MongoDB is an extremely popular NoSQL or "Document-based" database. Mongoose is 
 #### Save posts using Post model
 
 1. In your `scripts.js` file, use the jQuery `ajax()` function to make a asynchronous post requests to your server to send the `post` object to the `/posts` POST webhook.
+1. In order to access the form data with `req.body`, you will need to add the express middleware [body-parser](https://www.npmjs.com/package/body-parser) ([req.body in express docs](https://expressjs.com/en/api.html#req.body))
 1. In your `/posts` route use your Post model to create new post. e.g.
   ```js
-    var tank = new Tank({ size: 'small' });
+    var tank = new Tank(req.body);
     tank.save(function (err) {
       if (err) return handleError(err);
       // saved!
+      res.send(tank);
     })
   ```
 
