@@ -1,6 +1,6 @@
 ## MongoDB, Mongoose
 
-MongoDB is an extremely popular NoSQL or "Document-based" database. Mongoose is a ODM (object document mapping) express middleware that makes it easier to interact with a MongoDB database. It lets you create and validate attributes and create model and instance methods and many other common OXM features. 
+MongoDB is an extremely popular NoSQL or "Document-based" database. Mongoose is a ODM (object document mapping) express middleware that makes it easier to interact with a MongoDB database. It lets you create and validate attributes and create model and instance methods and many other common OXM features.
 
 ### Challenges
 
