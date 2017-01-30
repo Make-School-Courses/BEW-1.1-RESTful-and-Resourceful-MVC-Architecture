@@ -6,6 +6,7 @@ MongoDB is an extremely popular NoSQL or "Document-based" database. Mongoose is 
 
 #### Installing
 
+1. Follow [these instructions](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/) to install mongodb onto your Mac.
 1. Follow [these instructions](http://mongoosejs.com/docs/) to add Mongoose to your project.
 
 #### Model
