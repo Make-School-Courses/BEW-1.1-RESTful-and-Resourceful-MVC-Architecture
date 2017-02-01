@@ -6,7 +6,7 @@ MongoDB is an extremely popular NoSQL or "Document-based" database. Mongoose is 
 
 #### Installing
 
-1. Follow [these instructions](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/) to install mongodb onto your Mac.
+1. Follow [these instructions](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/) to install mongodb onto your Mac. (Make sure you start mongo by running the mongo demon `$ mongod`)
 1. Follow [these instructions](http://mongoosejs.com/docs/) to add Mongoose to your project.
 
 #### Model
@@ -65,3 +65,4 @@ MongoDB is an extremely popular NoSQL or "Document-based" database. Mongoose is 
 1. Create a `post-show` route at `/posts/:id` route and render a template called `post-show`.
 1. Create a route to edit a post. What should your path and template be named? Add a form and detect the submit event on that form.
 1. Create an update post route, so your edit can submit, save to the db, and upon a successful response, redirect to the post-show route.
+1. Move your routes for posts into a `controllers/posts.js` file. Look at how [courseboard](https://github.com/ajbraus/courseboard/blob/master/resources/courses.js) requires routes using `require` in the `server.js` file.
