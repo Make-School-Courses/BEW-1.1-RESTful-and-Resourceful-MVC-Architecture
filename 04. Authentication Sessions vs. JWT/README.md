@@ -6,10 +6,12 @@
 
 ## Background
 
-In Rails we used the Cookie-Session method of authentication; however, there is a better way to do communicate authentication that work better with **Single Page Applications** and **Mobile Apps**. We're going to use an encrypted chunk of JSON called a **JSON Web Token** or JWT (pronounced ''*jot*'') to communicate authentication between client and server.
+In Rails we used the Cookie-Session method of authentication; however, there is a better way to do communicate authentication. This new way will work better with advanced **Single Page Application** technology like **React** and **Angular 1/2** as well as with authentication in **Mobile Apps**. We're going to use an encrypted chunk of JSON called a **JSON Web Token** or JWT (pronounced ''*jot*'') to communicate authentication between client and server.
 
 ![cookie-token-auth](cookie-token-auth.png)
 > Reference [auth0.com](https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/)
+
+![jwt-diagram.png](jwt-diagram.png)
 
 ## Why Use JWT?
 
@@ -84,7 +86,6 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzY290Y2guaW8iLCJleHAiOjEzMDA4MTk
 - [JWT Express Node Mongoose](http://blog.matoski.com/articles/jwt-express-node-mongoose/)
 
 ## Challenges
-
 1.
 
 <!--
