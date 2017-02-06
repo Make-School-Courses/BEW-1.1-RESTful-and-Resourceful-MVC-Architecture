@@ -56,9 +56,9 @@ var header = {
 
 ```js
 var payload = {
-  "iss": "scotch.io",
   "exp": 1300819380,
   "name": "Chris Sevilleja",
+  "_id": "3sfas687a789dadf998"
   "admin": true
 }
 ```
@@ -86,121 +86,100 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzY290Y2guaW8iLCJleHAiOjEzMDA4MTk
 - [JWT Express Node Mongoose](http://blog.matoski.com/articles/jwt-express-node-mongoose/)
 
 ## Challenges
-1.
 
-<!--
-## JWT Flow
-> Reference: [blog.matoski.com](http://blog.matoski.com/articles/jwt-express-node-mongoose/)
-
-**Login**
-
-1. Client logs in with email and password.
-1. Server checks email and password and if valid sends back a JWT.
-1. Client receives the JWT and stores it in localStorage.
-1. Client makes requests with the token (this happens automatically using an **AngularJS Interceptor**)
-1. JWT is decoded on the server, and the server uses the token data to decide if user has access to the resource.
-
-**Signup**
-
-1. Client sends in email and password.
-1. Server creates a new user if everything is valid and sends back a JWT.
-1. Client receives the JWT and stores it in localStorage.
-1. Client makes requests with the token (this happens automatically using an **AngularJS Interceptor**)
-1. JWT is decoded on the server, and the server uses the token data to decide if user has access to the resource.
-
-# Satellizer
-
-[Satellizer](https://github.com/sahat/satellizer) hides a lot of the complexity of using JWT tokens. This is both a good and a bad thing. Let's not lose sight of how Satellizer is helping us.
-
-1. Generating the JWT token (resources/auth.js)
-1. Making some routes require authentication:
+1. **Make a Controller** Create a new controller file called `auth.js` and require it in your main server file.
+1. **GET route** - In that new file, create a GET route to `/sign-up`. In your `/scripts.js` file use a `$.post()` or `$.ajax()` jQuery function to submit the serialized form data to `/sign-up`.
+1. **POST route** - Now, create a POST route to `/sign-up` and console log if you are receiving the form data in `req.body`.
+1. **Create User Model** - Once you are receiving the form data, create a `User` model in `models/user.js` and require it at the top of your `auth.js` file. Here is boilerplate code for the model (REMINDER: do not just copy and paste this code into your project. Read each line and figure out what each line does before using it.). (HINT: You will need to install the [bcryptjs](https://www.npmjs.com/package/bcryptjs) package to your project for bcrypt to work.)
 
   ```js
-  app.get('/api/me', auth.ensureAuthenticated, function(req, res) {
-    User.findById(req.userId, function(err, user) {
-      res.send(user);
+    var mongoose = require('mongoose'),
+        bcrypt = require("bcryptjs"),
+        Schema = mongoose.Schema;
+
+    var UserSchema = new Schema({
+        createdAt       : { type: Date }
+      , updatedAt       : { type: Date }
+
+      , email           : { type: String, unique: true, required: true }
+      , password        : { type: String, required: true }
+      , first           : { type: String, required: true }
+      , last            : { type: String, required: true }
+
     });
-  });
-  ```
-1. Sending the JWT with every request using an angular interceptor.
 
+    UserSchema.pre('save', function(next){
+      // SET createdAt AND updatedAt
+      var now = new Date();
+      this.updatedAt = now;
+      if ( !this.createdAt ) {
+        this.createdAt = now;
+      };
 
-# Challenges
-
-**Getting Started**
-
-1. Fork, clone, npm install, nodemon [mean-auth-html](https://github.com/ajbraus/mean-auth-html).
-1. Sign up, logout, and then login to make sure authentication is working.
-1. Look to see that the user was created.
-
-**Adding an Attribute**
-
-1. Add a `username` field to the sign up form in the `navbar.html` template. Add the username attribute to the `user.js` model. Sign up with a username.
-
-**Add a User Settings Page**
-
-1. Create a form to edit the user's details at the url `\settings`. This template will need a url, an angular controller, and a template.
-1. Set this link the navbar dropdown below `Profile`.
-1. You don't have a User service, so instead just make an `$http.get` request to `/api/me` to get the user's data.
-1. To submit the form, make an `$http.put` request to `/api/me`.
-1. Go to the `resources/users.js` file and write psuedocode explaining the logic of these routes.
-1. If the user update is successful redirect to `/profile`.
-
-**Add a Post Resource**
-
-1. In the `/profile`, display `user.posts` with an ng-repeat.
-1. Create a form in the `/profile` template that has an input and a textarea field that use the `ng-model` directives to attach them to `post.title` and `post.body` in `$scope`.
-1. Use the `ng-sumit` directive to run the function `createPost()` on submit. This function should run a `$http.post` function to post the `$scope.post` object to `/api/posts`.
-1. Create a new file in `resources` called `posts.js` and model it after `users.js` but require the `post.js` model not the `user.js` model. For now only create one route - `app.post('/api/posts', function(req,res){ ... })`.
-1. Require the `posts.js` file in your `server.js` file just as the `users.js` file is required so that the route is available.
-1. Create another model called `post.js`
-  ```js
-  var mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
-
-  var PostSchema = Schema({
-    title  : String,
-    body   : String
-  });
-
-  var Post = mongoose.model('Post', PostSchema);
-
-  module.exports = Post;
-  ```
-1. Add a `posts` attribute to the User model in `user.js` that references the Post model.
-  ```js
-  var userSchema = Schema({
-    ...
-    posts : [{ type: Schema.Types.ObjectId, ref: 'Post' }]
-  });
-  ```
-1. When you submit your new post form, can you console log the new post object in the server?
-1. Now that your client is posting data to your server route, let's save it to the current user's posts. To find the current user, we have to add the `auth.ensureAuthenticated` function to our route.
-  ```js
-  app.post('/api/posts', auth.ensureAuthenticated, function (req,res) {
-    ...
-  })
-  ```
-1. Now find the current user using the mongoose User model and the `req.userId` that `auth.ensureAuthenticated` makes available through the JWT token.
-  ```js
-  User.findById(req.userId, function(err, user) {
-    ...
-  })
-  ```
-1. Now let's create a `new Post` with `req.body`, save the post, and in the callback push that `post` into `user.posts`, and then save the `user` object and send back the post `res.send(post)`.
-  ```js
-  app.post('/api/posts', auth.ensureAuthenticated, function (req,res) {
-    User.findById(req.userId).exec(function(err, user) {
-      var post = new Post(req.body);
-      post.save(function(err, post) {
-        user.posts.unshift(post._id);
-        user.save();
-        res.send(post);				
+      // ENCRYPT PASSWORD
+      var user = this;
+      if (!user.isModified('password')) {
+        return next();
+      };
+      bcrypt.genSalt(10, function(err, salt) {
+        bcrypt.hash(user.password, salt, function(err, hash) {
+          user.password = hash;
+          next();
+        });
       });
-    })
-  })  
+    });
+
+
+    UserSchema.methods.comparePassword = function(password, done) {
+      bcrypt.compare(password, this.password, function(err, isMatch) {
+        done(err, isMatch);
+      });
+    };
+
+    module.exports = mongoose.model('User', UserSchema);
   ```
-1. In the client can you console log the response with the user object?
-1. Now unshift the post response into the `$scope.user.posts`.
-1. Do you see the posts displaying? Are the Posts saving to a collection in your database?
-1. Add `.populate('posts')` to your `/api/me` route in `users.js`. Now refresh the `/profile` page - do you see the user's posts? -->
+1. **Create the user** - Now use the `User` model to create a new user in your `/sign-up` POST route. e.g.
+
+  ```js
+    var small = new Tank(req.body);
+    small.save(function (err) {
+      if (err) return handleError(err);
+      // saved!
+    });
+  ```
+
+1. **Create and Sign the JWT** - Now add the package [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) to your project and require it at the top of `auth.js`. Now, if the user saves successfully, use `jsonwebtoken` to create and sign a JWT and send it back to the client. Console log your token on the client.
+
+  ```js
+    var jwt = require('jsonwebtoken');
+
+    ...
+    var token = jwt.sign({ _id: user._id }, 'shhhhhhared-secret');
+    ...
+  ```
+1. **Save the token as a cookie** - Use bower to install [js-cookie](https://github.com/js-cookie/js-cookie) to your client and reference it in your `<head>` with a `<script>` tag. Now you can use the `Cookie` object anywhere in your front end scripts. Use it to save a cookie called `token` of the data returned.
+
+  ```js
+    Cookies.set('token', data.token);
+    // IF YOU'D LIKE TO REDIRECT NOW, ADD THIS:
+    window.location.href = "/";
+  ```
+1. **Tell server look at cookies for JWT** - Add the [express-jwt] library to your server and include it in your main server file. Use this code to use this middleware and tell it to look at the cookie for a token. Once you save the cookie saved, can you see your cookie in "Application" tab of the Chrome web tools?
+
+  ```js
+    app.use(jwt({
+      secret: 'shhhhhhared-secret',
+      getToken: function fromHeaderOrCookie (req) { //fromHeaderOrQuerystring
+        if (req.headers.authorization && req.headers.authorization.split(' ')[0] === 'Bearer') {
+          return req.headers.authorization.split(' ')[1];
+        } else if (req.cookies && req.cookies.token) {
+          return req.cookies.token;
+        }
+        return null;  
+      }
+    }).unless({path: ['/', '/login', '/sign-up']}));
+  ```
+1. **Test a Secure a Route** - Make a new route called `/bananas`, and have it send back the text "I love bananas". Now navigate to it without being logged in.
+
+1. Ok now do all the above again but for `/login`.
+1. Can you create a link/button that when you click it the client logs out?
