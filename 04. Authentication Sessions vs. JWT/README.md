@@ -1,4 +1,4 @@
-# MEAN Authentication with JWT (JSON Web Tokens)
+# Authentication with JWT (JSON Web Tokens) in Node
 
 ### Objectives
 * Compare and contrast a cookie-session and JSON webtoken (JWT) authentication
@@ -164,9 +164,13 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzY290Y2guaW8iLCJleHAiOjEzMDA4MTk
     // IF YOU'D LIKE TO REDIRECT NOW, ADD THIS:
     window.location.href = "/";
   ```
-1. **Tell server look at cookies for JWT** - Add the [express-jwt] library to your server and include it in your main server file. Use this code to use this middleware and tell it to look at the cookie for a token. Once you save the cookie saved, can you see your cookie in "Application" tab of the Chrome web tools?
+1. **Tell server look at cookies for JWT** - Add the [express-jwt](https://github.com/auth0/express-jwt) and the [cookie-parser](https://www.npmjs.com/package/cookie-parser) libraries to your server and include them in your main server file. Use this code to use this middleware and tell it to look at the cookie for a token. Once you save the cookie saved, can you see your cookie in "Application" tab of the Chrome web tools?
 
   ```js
+    var cookieParser = require('cookie-parser');
+    ...
+
+    app.use(cookieParser());
     app.use(jwt({
       secret: 'shhhhhhared-secret',
       getToken: function fromHeaderOrCookie (req) { //fromHeaderOrQuerystring
