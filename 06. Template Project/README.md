@@ -12,7 +12,9 @@ We are just over half way through our course! So far you've gotten initial pract
 1. Save data in cookies on the client and read those cookies on the server.
 1. Secure webhooks with authentication and authorize various users for access to them.
 
-## Authentication Challenges (3 Days)
+Next steps are to complete **Advanced Authentication Challenges**. After completing those, next steps are to create a **Portfolio Product** using ExpressJS.
+
+## Advanced Authentication Challenges (3 Days)
 
 1. Add a "Logout" action (1 hour)
 1. Create a "/profile" route that shows the current user's information
