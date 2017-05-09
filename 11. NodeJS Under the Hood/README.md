@@ -24,7 +24,7 @@ Optional:
 * [The Basics of Node.js Streams](https://www.sitepoint.com/basics-node-js-streams/)
 * [Why Does Node.js use Streams? (Quora Question)](https://www.quora.com/Why-do-servers-like-Node-js-Express-use-streams-to-represent-the-request-and-response-objects)
 
-## Baseline challenges
+## Baseline Challenges
 
 1. Watch or read all the required videos and resources and take notes. (2x speed will make things go faster!)
 1. Complete [nodeschool.io](https://nodeschool.io/)'s preliminary node lesson. (1 hour)
@@ -35,3 +35,7 @@ Optional:
     ```
 
 1. Pick five question from [this article](https://medium.freecodecamp.com/before-you-bury-yourself-in-packages-learn-the-node-js-runtime-itself-f9031fbd8b69) and discuss each one with a partner. Look up answers if you don't know between each other.
+
+## Stretch Challenges
+
+1. Use node's native `http` module to query the Giphy API.
