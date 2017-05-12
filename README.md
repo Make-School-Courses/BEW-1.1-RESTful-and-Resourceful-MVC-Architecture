@@ -1,0 +1,89 @@
+# Full-Stack-JS-1
+
+## Course Overview
+
+The web is a very fun place to build things! There is no quicker and more readily available way to share information and enter into commerce than the internet, and there's no faster way than to build a website and web server.
+
+In this course the goal will be to explore the major patterns that make up the web and websites. Instead of being bogged down with questions like "what framework/language is the best?" we will just focus on JavaScript and NodeJS and use this enormously popular framework to learn these web patterns that are repeated in every language and framework. For example, any web framework or language will be able to do authentication. We will use the `bcrypt-js` npm module to encrypt passwords for authentication. In Ruby on Rails you would use the `bcrypt` ruby gem, and in Python or Django you would use the `bcrypt` package, and in Elixir you would use the `comeonin` library (which uses bcrypt under the hood!). Once you have mastered the patterns and major paradigms of the web, you can easily grab another framework in another language and be a success.
+
+The web is becoming ever more JavaScripty. Initially the red-headed stepchild of the internet world, JavaScript has now risen to being, by many metrics, the fastest growing language on the web. Now with the invention of NodeJS, you can write your client and your server in JS creating interesting synergies and benefits across a stack and within a development team. Also with the emergence of tools like React Native, Ionic, Johnny-Five, and many others, JavaScript is becoming a versatile tool across many platforms even outside of the desktop and mobile web browsers.
+
+## Competencies & Objectives
+
+1. Master the MVC architecture for web server development.
+1. Compare and contrast outside-in and inside-out development processes
+1. Master ExpressJS and extend it by installing, initializing, and using its various middleware packages.
+1. Master and memorize RESTful routes and routing and in general describe the importance of Resourceful web architecture.
+1. Master server-side templating using HandlebarsJS.
+1. Master responding to JSON requests.
+1. Compare and contrast web endpoints responding with HTML templates or JSON data.
+1. Utilize a NoSQL database (in this case MongoDB).
+1. Describe the usefulness of an Object Document Mapper (ODM) (or Object Relationship Mapper ORM).
+1. Master Resource-oriented development of a 0, 1, and a 2 resource application.
+
+## Lessons
+
+1. How this curriculum works. Paradigm-based. Best Practices - Review Competencies - Web Server & Web Framework
+1. Anatomy of a URL - HTML/CSS - [Dash Tutorial](https://dash.generalassemb.ly/)
+1. Work & Question Day - Start Giphy Search App Tutorial
+1. Review of Giphy App Solution - Debugging Node.JS - Commenting pseudocode for each step
+1. Convention over Configuration (CoC) - RESTful & Resourceful (naming conventions for paths, variables, methods) - Start Project Portfolio Tutorial
+1. Document-based Databases & RESTful Routing - Index
+1. MongoDB Command Line & RESTful Routing - New, Create
+1. RESTful Routing - Show
+1. RESTful Routing - Edit, Update, Delete
+1. Testing RESTful Routes
+1. API RESTful Routes (with JSON)
+1. Testing RESTful API Routes
+1. Project Work & Code Reviews
+1. Project Work & Code Reviews
+1. Project Work & Code Reviews
+1. Presentations
+
+## Projects
+
+1. The [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) tutorial.
+1. The Project Portfolio Tutorial.
+1. An original web project.
+
+## Vocabulary & Conventions
+
+1. The Request-Response Cycle
+1. MVC - Model View Controller
+1. RESTful Routes
+1. Web Server
+1. Web Framework
+1. HTTP
+1. HTTP Action Verbs - PUT, POST, GET, DELETE, PATCH
+1. CRUD
+1. API
+1. JSON
+1. REPL
+1. Document-based database, NoSQL database
+1. Server-side templating
+1. Subtemplate
+1. URL Endpoint, Route, Webhook
+1. Components of a URL - subdomain, domain, top level domain, path, and query string
+1. Automated Testing
+1. Test Driven Development
+1. Promises
+1. Callbacks
+1. Paradigms, Patterns
+1. Pseudocode
+
+## Best Practices
+
+1. Convention over Configuration (CoC)
+1. Separation of Concerns (SoC)
+1. Outside-in development (User-Centered Development)
+
+## Evaluation
+
+In order to pass this course, you must
+
+1. Have fewer than 2 unexcused absences.
+1. Complete 80% of basic challenges from each lesson.
+1. Be able to recall the meaning of all vocabulary and conventions.
+1. Complete the assigned tutorials.
+1. Complete an original project and ship it.
+1. Receive at least 1 code review from the instructor.
