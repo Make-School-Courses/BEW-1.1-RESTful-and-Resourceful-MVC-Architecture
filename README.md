@@ -1,5 +1,9 @@
 # Full-Stack-JS-1
 
+## Prerequisites
+
+1. [Code Academy JavaScript lesson](https://www.codecademy.com/learn/javascript)
+
 ## Course Overview
 
 The web is a very fun place to build things! There is no quicker and more readily available way to share information and enter into commerce than the internet, and there's no faster way than to build a website and web server.
@@ -23,13 +27,12 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 
 ## Lessons
 
-1. How this curriculum works. Paradigm-based. Best Practices - Review Competencies - Web Server & Web Framework
-1. Anatomy of a URL - HTML/CSS - [Dash Tutorial](https://dash.generalassemb.ly/)
-1. Work & Question Day - Start Giphy Search App Tutorial
-1. Review of Giphy App Solution - Debugging Node.JS - Commenting pseudocode for each step
+1. How this curriculum works. Paradigm-based. Best Practices - Review Competencies - Web Server & Web Framework - [Dash Tutorial](https://dash.generalassemb.ly/)
+1. REST, URLs, HTTP(S) - Giphy Search App Tutorial
+1. Errors and Debugging - Review of Giphy App Solution - Commenting pseudocode for each step
 1. Convention over Configuration (CoC) - RESTful & Resourceful (naming conventions for paths, variables, methods) - Start Project Portfolio Tutorial
-1. Document-based Databases & RESTful Routing - Index
-1. MongoDB Command Line & RESTful Routing - New, Create
+1. Document-based Databases, MongoDB Command Line, & RESTful Routing - Index
+1. RESTful Routing - New, Create
 1. RESTful Routing - Show
 1. RESTful Routing - Edit, Update, Delete
 1. Testing RESTful Routes
@@ -76,6 +79,10 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 1. Convention over Configuration (CoC)
 1. Separation of Concerns (SoC)
 1. Outside-in development (User-Centered Development)
+
+## Resources
+
+1. [Engineering is Awesome with David Xiang (Youtube)](https://www.youtube.com/user/daveXbang/videos)
 
 ## Evaluation
 
