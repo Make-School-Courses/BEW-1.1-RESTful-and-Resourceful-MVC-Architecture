@@ -31,8 +31,24 @@ To view more about a request use the Sources tab of your Chrome web tools. Load 
 
 ## HTTP
 
-HTTP is a protocol that you MUST use to send and receive requests.
+HTTP is a protocol that you MUST use to send and receive requests. HTTP has **HTTP Verbs** and **HTTP Statuses** and you must MEMORIZE both.
 
+HTTP Verbs are the following:
+
+1. GET
+1. POST
+1. PUT
+1. PATCH
+1. DELETE
+
+The most common HTTP statuses are the following. Here is a [complete list](https://httpstatuses.com):
+
+* 200 - Success
+* 400 - Bad request
+* 401 - Unauthorized
+* 404 - Not found
+* 418 - [I'm a tea pot](https://httpstatuses.com/418)
+* 500 - Internal Server Error
 
 ## REST
 

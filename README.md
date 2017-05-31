@@ -1,7 +1,10 @@
 # Full-Stack-JS-1
 
-## Prerequisites
+## Prerequisites (4 hours)
 
+1. [HTML Semantics (videos)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
+1. [CSS Cross-Country (Tutorial)](https://www.codeschool.com/courses/css-cross-country)
+1. [Learn CSS in 12 Min (video)](https://www.youtube.com/watch?v=0afZj1G0BIE)
 1. [Code Academy JavaScript lesson](https://www.codecademy.com/learn/javascript)
 
 ## Course Overview
@@ -35,13 +38,14 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 1. RESTful Routing - New, Create
 1. RESTful Routing - Show
 1. RESTful Routing - Edit, Update, Delete
-1. Testing RESTful Routes
-1. API RESTful Routes (with JSON)
-1. Testing RESTful API Routes
-1. Project Work & Code Reviews
-1. Project Work & Code Reviews
-1. Project Work & Code Reviews
-1. Presentations
+1. Testing RESTful Routes - Final date to Pick Projects
+1. RESTful APIs & Service Oriented Architecture
+1. Bootstrap - the Grid, Typography, Forms, and Buttons
+1. CSS Selectors & Modifying Bootstrap
+1. Projects work day
+1. Projects work day
+1. Projects work day
+1. Project Presentations
 
 ## Projects
 
@@ -61,7 +65,9 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 1. CRUD
 1. API
 1. JSON
+1. CDN
 1. REPL
+1. Semantic HTML
 1. Document-based database, NoSQL database
 1. Server-side templating
 1. Subtemplate
@@ -69,6 +75,7 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 1. Components of a URL - subdomain, domain, top level domain, path, and query string
 1. Automated Testing
 1. Test Driven Development
+1. Assertions
 1. Promises
 1. Callbacks
 1. Paradigms, Patterns
