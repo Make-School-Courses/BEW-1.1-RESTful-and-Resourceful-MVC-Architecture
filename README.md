@@ -1,6 +1,6 @@
 # Full-Stack-JS-1
 
-## Prerequisites (4 hours)
+## Prerequisites (8 hours)
 
 1. [HTML Semantics (videos)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
 1. [CSS Cross-Country (Tutorial)](https://www.codeschool.com/courses/css-cross-country)
