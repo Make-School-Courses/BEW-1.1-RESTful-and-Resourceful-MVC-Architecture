@@ -42,9 +42,9 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 1. RESTful APIs & Service Oriented Architecture
 1. Bootstrap - the Grid, Typography, Forms, and Buttons
 1. Deploy to Heroku - start project work
-1. Projects work day
-1. Projects work day
-1. Projects work day
+1. Project Work & Code Reviews
+1. Project Work & Code Reviews
+1. Project Work & Code Reviews
 1. Project Presentations
 
 ## Projects

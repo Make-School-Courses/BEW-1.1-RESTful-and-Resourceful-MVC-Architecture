@@ -59,10 +59,10 @@ Documents are grouped into **Collections**. And these collections should have th
 1. Open the mongo shell in your terminal.
 1. Query what databases you have.
 1. Create a database called `my-blog`.
-1. Insert an article in a new articles collection with the attributes title and body.
+1. Insert an article in a new articles collection with the attributes `title` and `body`.
 1. Query for all articles.
-1. Add 3 more articles.
+1. Insert 3 more articles.
 1. Query for just one article.
 1. Delete that article.
-1. Download robomongo and look at the database you created with the mongo shell.
+1. Download [Robomongo](https://robomongo.org/) and look at the database you created with the mongo shell.
 1. Continue with the Project Portfolio App

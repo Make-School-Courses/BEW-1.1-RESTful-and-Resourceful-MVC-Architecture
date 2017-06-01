@@ -9,7 +9,7 @@
 
 1. Write your home address out and diagram what each part is called.
 
-## URLs
+## URLs & Requests
 
 The web works with a series of unique addresses like the postal service. These addresses are called URLs or **Uniform Resource Locator**.
 
@@ -17,7 +17,7 @@ They are the most obvious part of any request to a server.
 
 ![Detailed Req-Res](assets/req-res-detailed.gif)
 
-URLs have a distinct anatomy and as a web developer you MUST memorize each part of a url - just as if you were a postal worker, you'd need to know what a zip code was!
+URLs have a distinct anatomy and as a web developer you ought to memorize each part of a url - just as if you were a postal worker, you'd need to know what a zip code was!
 
 ![URL](assets/query.jpg)
 
@@ -29,9 +29,11 @@ To view more about a request use the Sources tab of your Chrome web tools. Load 
 
 ![Sources tab](assets/sources-tab.png)
 
-## HTTP
+## REST & HTTP
 
-HTTP is a protocol that you MUST use to send and receive requests. HTTP has **HTTP Verbs** and **HTTP Statuses** and you must MEMORIZE both.
+REST is the most widely used standard convention for web server behavior. You'll research more about REST in the challenges below.
+
+HTTP is a protocol that we use to send and receive requests between servers and clients. HTTP has **HTTP Verbs** and **HTTP Statuses** and you should memorize both.
 
 HTTP Verbs are the following:
 
@@ -50,14 +52,6 @@ The most common HTTP statuses are the following. Here is a [complete list](https
 * 418 - [I'm a tea pot](https://httpstatuses.com/418)
 * 500 - Internal Server Error
 
-## REST
-
-REST is a convention for web server behavior that you SHOULD use to follow web best practices.
-
-* REpresentational
-* State
-* Transfer
-
 ## Resources
 
 1. [What is HTTP?](https://www.youtube.com/watch?v=SzSXHv8RKdM)
@@ -74,4 +68,5 @@ REST is a convention for web server behavior that you SHOULD use to follow web b
   1. What is the difference between HTTP and HTTPS?
   1. What does REST stand for?
   1. What are the reasons to use a "RESTful" server?
+  1. What are the constraints of a RESTful server?
 1. Complete the [Giphy API Search Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment)

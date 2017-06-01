@@ -10,17 +10,23 @@
 
 Depending on who you ask there are various forms of testing. For our purposes we will rely on the MVC architecture to define the various forms of tests:
 
-1. Unit Testing (testing Models),
-1. Routes Testing (testing Controllers)
-1. View Testing (testing Views)
+1. **Unit Testing** (testing **Models**),
+1. **Routes Testing** (testing **Controllers**)
+1. **View Testing** (testing **Views**)
 
-**Unit tests** are very resilient breaking as you make changes to your code, they provide very narrow test coverage to your application as a whole so you have to write a lot of them. **View tests** are more broad (they test more parts of your code simultaneously), but they are more brittle - meaning they can break because you made a trivial change, e.g. changed the HTML/CSS of your website. For our purposes, we will be focusing primarily on **Routes Testing** or testing our controllers, because these are in a bit of a Goldilocks position where they are broad, but not too brittle.
+**Unit tests** are very resilient and will rarely break as you make changes to your code, they provide very narrow test coverage to your application as a whole so you have to write a lot of them.
+
+**View tests** are more broad (they test more parts of your code simultaneously), but they are more brittle - meaning they can break because you made a trivial change, e.g. changed the HTML/CSS of your website.
+
+**Routes Testing** or testing our controllers are in a bit of a Goldilocks position where they are broad and test a lot of behavior across the model and the controller, but they are not too brittle that they will break when we change something minor like the styling.
+
+We will focus primarily on routes testing.
 
 ### Assertions & Assertion Libraries (Chai.js)
 
 An **Assertion** is a true/false statement that defines a test. Mocha.js ships with [Node.js's native assertion library (`assert`)](https://nodejs.org/api/assert.html), which is very simple, and sometimes clunky way to write assertions. Mocha.js itself actually recommends that you use an **Assertion Library** like [Chai.js](http://chaijs.com/) that gives assertions more elegance and range.
 
-Compare and contrast the following assertion expressions:
+Compare and contrast the following assertion expressions.
 
 ```js
 // assert()
@@ -52,16 +58,14 @@ assert.lengthOf(tea.flavors, 3);
 Here are some examples of assertions you'll use to test RESTful routes for a hypothetical`Book` resource:
 
 ```js
+// SHOW
 res.should.have.status(200);
-articleCount.should.equal(articleCount + 1)
-res.body.should.be.a('array');
-
-// CREATE VALIDATION ERROR
-res.should.have.status(400); //Bad Request
 res.body.should.be.a('object');
-res.body.should.have.property('errors');
-res.body.errors.should.have.property('pages');
-res.body.errors.pages.should.have.property('kind').eql('required');
+res.body.should.have.property('title');
+res.body.should.have.property('author');
+res.body.should.have.property('pages');
+res.body.should.have.property('year');
+res.body.should.have.property('_id').eql(book.id);
 
 // CREATE SUCCESS
 res.should.have.status(200);
@@ -72,14 +76,12 @@ res.body.book.should.have.property('author');
 res.body.book.should.have.property('pages');
 res.body.book.should.have.property('year');
 
-// SHOW
-res.should.have.status(200);
+// CREATE VALIDATION ERROR
+res.should.have.status(400); //Bad Request
 res.body.should.be.a('object');
-res.body.should.have.property('title');
-res.body.should.have.property('author');
-res.body.should.have.property('pages');
-res.body.should.have.property('year');
-res.body.should.have.property('_id').eql(book.id);
+res.body.should.have.property('errors');
+res.body.errors.should.have.property('pages');
+res.body.errors.pages.should.have.property('kind').eql('required');
 
 // UPDATE
 res.should.have.status(200);
@@ -95,8 +97,8 @@ res.body.result.should.have.property('ok').eql(1);
 res.body.result.should.have.property('n').eql(1);
 
 // SOME OTHERS
-res.req.path.should.equal('/profile')
-res.should.have.header('Content-Type', 'text/html; charset=utf-8')
+res.req.path.should.equal('/profile') // path after redirect should be equal to a value
+res.should.have.header('Content-Type', 'text/html; charset=utf-8') // response should be of a certain type: e.g. HTML or JSON
 ```
 
 ### Structure of a Test
@@ -136,18 +138,19 @@ describe('Site', function() {
 ## Baseline Challenges
 
 1. Add Mocha to the portfolio project
-```bash
-$ npm install —-save-dev mocha
-```
+  ```bash
+  $ npm install —-save-dev mocha
+  ```
 
-```js
-// package.json
-...
-“scripts”: {
-  "test": "mocha"
-}
-...
-```
+  ```js
+  // package.json
+  ...
+  “scripts”: {
+    "test": "mocha"
+  }
+  ...
+  ```
+  
 1. Add test for GET `/`
 1. Add test for POST `/projects`
 1. Add test for GET `/projects/:id`

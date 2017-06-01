@@ -99,4 +99,5 @@ for (i = 0; i < peoplesNames.length; i++) {
 console.log(shortNames);
 console.log(longNames);
 ```
-![js-error-1](js-error-1.png)
+
+![js-error-1](assets/js-error-1.png)
