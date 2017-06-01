@@ -55,6 +55,10 @@ if (req.header('Content-Type') == 'application/json') {
 
 ## Baseline Challenges
 
+**Service Oriented Architecture**
+1. With a partner pick a company on [stackshare.io](https://stackshare.io/stacks) and examine the services and languages they use. Google the services you are not familiar with.
+
+**RESTful API**
 1. Why are the NEW and EDIT RESTful routes not necessary with a RESTful API?
 1. Make your portfolio project respond as an API to JSON requests.
 1. Make what changes (if any) you must to your tests to cover these new routes that respond to JSON requests.
