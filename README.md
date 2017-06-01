@@ -41,7 +41,7 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 1. Testing RESTful Routes - Final date to Pick Projects
 1. RESTful APIs & Service Oriented Architecture
 1. Bootstrap - the Grid, Typography, Forms, and Buttons
-1. CSS Selectors & Modifying Bootstrap
+1. Deploy to Heroku - start project work
 1. Projects work day
 1. Projects work day
 1. Projects work day
@@ -76,8 +76,6 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 1. Automated Testing
 1. Test Driven Development
 1. Assertions
-1. Promises
-1. Callbacks
 1. Paradigms, Patterns
 1. Pseudocode
 
