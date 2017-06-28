@@ -17,6 +17,9 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 
 ## Competencies & Objectives
 
+1. Master the foundational tags of semantic HTML.
+1. Master the use of CSS selectors and fundational properties.
+1. Master the fundamentals of JavaScript.
 1. Master the MVC architecture for web server development.
 1. Compare and contrast outside-in and inside-out development processes
 1. Master ExpressJS and extend it by installing, initializing, and using its various middleware packages.
