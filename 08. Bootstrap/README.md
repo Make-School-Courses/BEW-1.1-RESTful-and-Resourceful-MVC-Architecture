@@ -1,10 +1,30 @@
 # Bootstrap Basics
 
+1. 5 min Intro & Objectives
+1. 30 min Initial activity
+1. 20 min TT and Demo on CoC and Bootstrap
+1. 10 min Break
+1. 30 min Challenges
+1. 5 min Wrap up
+
 ## Objectives
 
 1. Add bootstrap to any project.
 1. Utilize bootstraps most basic css classes to define a conventional web design
 1. Deploying a bootstrap responsive grid, navbar, and footer
+
+## Initial Activity
+
+Pick three of the websites you use the most. Now draw wireframes on a sheet of paper for one page of each one. Here are two examples of some simple drawn wireframe. Do you notice any common themes between the three pages? What are common visual elements or modules that all the pages have?
+
+**Not detailed enough**
+![Another Wireframe](assets/page.jpg)
+
+**Good detail**
+![Responsive Wireframe](assets/responsive-wireframe.png)
+
+**Good detail**
+![Detailed Wireframe](assets/wireframe-sketch-01.jpg)
 
 ## Overview
 
@@ -68,3 +88,8 @@ You can also use other various **helper classes** to control what your site look
 1. Add the bootstrap [form/input helper classes](http://getbootstrap.com/css/#forms) to make your forms pretty.
 1. Add bootstrap [button classes](http://getbootstrap.com/css/#buttons) to your buttons.
 1. Use some of bootstrap's [typographic classes](http://getbootstrap.com/css/#type) and [helper classes](http://getbootstrap.com/css/#helper-classes) to complete your project.
+
+## Stretch Challenges
+
+1. Pick out another bootstrap component and add it to your Rotten Potatoes project.
+1. Pick out a bootstrap JavaScript component and add it to your Rotten Potatoes.

@@ -4,7 +4,8 @@
 1. 20 min TT on Test Types and Assertions
 1. 30 min Baseline and Stretch challenges
 1. 10 min Break
-1. 30 min Continue with Rotten Tomatoes
+1. 20 min Continue with Rotten Tomatoes
+1. 10 min Kick off custom project
 1. 5 min Wrap up
 
 ## Objectives
