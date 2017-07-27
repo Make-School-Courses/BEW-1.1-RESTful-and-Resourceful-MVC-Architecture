@@ -1,5 +1,13 @@
 # URLs, HTTP, and REST
 
+1. 5 min Intro & Objectives
+1. 10 min Diagram your home postal address
+1. 20 min TT URLs, REST, HTTP
+1. 30 min Group up and answer Challenge 1
+1. 10 min Break
+1. 45 min Kick off Giphy Tutorial
+1. 5 min Wrap up
+
 ## Objectives
 
 1. Identify and describe each part of a URL and HTTP Request.
@@ -63,10 +71,10 @@ The most common HTTP statuses are the following. Here is a [complete list](https
 ## Baseline Challenges
 
 1. Using the above resources answer these technical interview questions:
-  1. List out the HTTP action verbs. Which ones make changes to the state, and which ones do not?
-  1. What are HTTP response status codes? Which ones mean success and which failure?
-  1. What is the difference between HTTP and HTTPS?
-  1. What does REST stand for?
-  1. What are the reasons to use a "RESTful" server?
-  1. What are the constraints of a RESTful server?
+  - List out the HTTP action verbs. Which ones make changes to the state, and which ones do not?
+  - What are HTTP response status codes? Which ones mean success and which failure?
+  - What is the difference between HTTP and HTTPS?
+  - What does REST stand for?
+  - What are the reasons to use a "RESTful" server?
+  - What are the constraints of a RESTful server?
 1. Complete the [Giphy API Search Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment)

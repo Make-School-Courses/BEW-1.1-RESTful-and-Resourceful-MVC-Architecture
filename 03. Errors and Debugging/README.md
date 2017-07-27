@@ -1,5 +1,11 @@
 # Errors and Debugging
 
+1. 5 min Intro & Objectives
+1. 20 min TT Demo of Solution to Giphy Tutorial
+1. 20 min TT and Demo on Errors
+1. 30 min Challenges
+1. 5 min Wrap up
+
 ## Objectives
 
 1. Read and interpret errors

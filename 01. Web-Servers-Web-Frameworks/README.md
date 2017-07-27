@@ -1,5 +1,15 @@
 # Request-Response Cycle, Web Servers & Web Frameworks
 
+1. 5 min Intro & Objectives
+1. 10 min Think, Pair Share
+1. 20 min TT Separation of Concerns, Request-Reponse Cycle, MVC
+1. 30 min CoC & MVC Challenges
+1. 10 min Break
+1. 10 min TT and demo of client technologies: HTML, CSS, JS
+1. 5 min demo of Emmet package
+1. 30 min HTML/CSS/JS Challenges
+1. Wrap up
+
 ## Objectives
 
 1. Identify and describe the Request-Response Cycle
@@ -13,7 +23,9 @@
 
 ## Overview
 
-#### Why?
+### Why?
+
+![Outside In](assets/outside-in.png)
 
 Why do we have architectures like MVC? The answer is because they are conventions that make coding easier.
 
@@ -52,7 +64,15 @@ Here is a diagram of an integrated look at the Request-Response Cycle and MVC:
 
 ## Baseline Challenges
 
-1. Work with a partner to come up with an analogy for the request response cycle or MVC and share it on slack.
+**CoC & MVC**
+1. Work with a partner to come up with an analogy for the request response cycle and MVC and share it on slack.
 1. Draw your own original picture of the Request Response Cycle and MVC.
+
+**HTML/CSS/JS**
 1. Install [Emmet](https://emmet.io/) or another HTML snippet package to your text editor.
-1. We're going to learn the web from the "outside-in" so from the views to the database. So start learning HTML/CSS doing the [Dash Tutorial](https://dash.generalassemb.ly/). (If you already know HTML/CSS just send a link to the instructor with an advanced HTML/CSS code sample that you wrote.)
+1. Prerequisites - if you have not completed all the prerequisites, take the time to do that now and before next class. (Intro to HTML/CSS/JS)
+  1. [HTML Semantics (videos)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
+  1. [Dash Tutorial](https://dash.generalassemb.ly/)
+  1. [CSS Cross-Country (Tutorial)](https://www.codeschool.com/courses/css-cross-country)
+  1. [Learn CSS in 12 Min (video)](https://www.youtube.com/watch?v=0afZj1G0BIE)
+  1. [Code Academy JavaScript lesson (tutorial)](https://www.codecademy.com/learn/javascript)

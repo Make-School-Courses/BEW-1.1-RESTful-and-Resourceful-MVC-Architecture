@@ -1,5 +1,12 @@
 # RESTful & Resourceful Routing
 
+1. 5 min RESTful & Resourceful Quiz
+1. 10 min TT on MongoDB, JSON, and BSON
+1. 30 min Mongo Shell challenges
+1. 10 min Break
+1. 30 min Continue with Rotten Tomatoes
+1. 5 min Wrap up
+
 ## Objectives
 
 1. Identify the key characteristics of a NoSQL or Document-based database.
@@ -49,6 +56,85 @@ Then it will save something like this:
 Documents are grouped into **Collections**. And these collections should have the same name as your resources. So a `User` resource should have a `users` collection. And an `Article` resource should have an `articles` collection.
 
 ![document-based db](assets/doc-based-db.jpg)
+
+### Pros
+
+1. Write's fast
+1. Easy to get started
+1. No migrations
+1. "Schemaless" - can write anything you like
+
+### Cons
+
+1. Slow to traverse
+1. Slow to read
+1. No migrations - no timeline of updates to database structure
+1. "Schemaless" - can be too unstructured
+
+
+## ODM
+
+Mongoose is a ODM (object document mapping) express middleware that makes it easier to interact with a MongoDB database. It lets you create and validate attributes and create model and instance methods and many other common OXM features.
+
+### Model
+
+To interact with the database, we use an abstraction called a **Model**. You can tell if something is a model because it is single and capitalized. For example:
+
+* Article
+* Pet
+* Building
+* City
+* Trip
+
+A model is like a prototype for an object because you can assign it attributes and define static and instance methods for it. You can also set validations on a model's attributes.
+
+1. Create a file: `models/post.js` and use this boilerplate code to make your model.
+
+  ```js
+    var mongoose = require('mongoose')
+    var Schema = mongoose.Schema;
+
+    var CommentSchema = new Schema({
+        createdAt     : { type: Date }
+      , updatedAt     : { type: Date }
+
+      , body   : { type: String, required: true }
+    })
+
+    // SET createdAt and updatedAt
+    CommentSchema.pre('save', function(next) {
+      now = new Date();
+      this.updatedAt = now;
+      if ( !this.createdAt ) {
+        this.createdAt = now;
+      }
+      next();
+    });
+
+    var Comment = mongoose.model('Comment', CommentSchema);
+
+    module.exports = Comment;
+  ```
+
+1. Require your `Post` model into your server file. (e.g. `Monkey = require('../models/monkey.js')`)
+
+#### Display posts using Post model
+
+1. In your `/posts` GET webhook find your posts from your database using the `Post` model.([documentation here](http://mongoosejs.com/docs/queries.html)). Return those to your `posts-index` view.
+
+### Save posts using Post model
+
+1. In your `scripts.js` file, use the jQuery `ajax()` function to make a asynchronous post requests to your server to send the `post` object to the `/posts` POST webhook.
+1. In order to access the form data with `req.body`, you will need to add the express middleware [body-parser](https://www.npmjs.com/package/body-parser) ([req.body in express docs](https://expressjs.com/en/api.html#req.body))
+1. In your `/posts` route use your Post model to create new post. e.g.
+  ```js
+    var tank = new Tank(req.body);
+    tank.save(function (err) {
+      if (err) return handleError(err);
+      // saved!
+      res.send(tank);
+    })
+  ```
 
 ## Resources
 

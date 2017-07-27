@@ -3,9 +3,10 @@
 ## Prerequisites (8 hours)
 
 1. [HTML Semantics (videos)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
+1. [Dash Tutorial](https://dash.generalassemb.ly/)
 1. [CSS Cross-Country (Tutorial)](https://www.codeschool.com/courses/css-cross-country)
 1. [Learn CSS in 12 Min (video)](https://www.youtube.com/watch?v=0afZj1G0BIE)
-1. [Code Academy JavaScript lesson](https://www.codecademy.com/learn/javascript)
+1. [Code Academy JavaScript lesson (tutorial)](https://www.codecademy.com/learn/javascript)
 
 ## Course Overview
 
@@ -30,18 +31,20 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 
 ## Lessons
 
-1. How this curriculum works. Paradigm-based. Best Practices - Review Competencies - Web Server & Web Framework - [Dash Tutorial](https://dash.generalassemb.ly/)
+1. How this curriculum works. Paradigm-based. Best Practices - Review Competencies - Web Server & Web Framework
 1. REST, URLs, HTTP(S) - Giphy Search App Tutorial
 1. Errors and Debugging - Review of Giphy App Solution - Commenting pseudocode for each step
-1. Convention over Configuration (CoC) - RESTful & Resourceful (naming conventions for paths, variables, methods) - Start Project Portfolio Tutorial
+1. RESTful & Resourceful Routing (naming conventions for paths, variables, methods) - Start Project Portfolio Tutorial
 1. Document-based Databases, MongoDB Command Line, & RESTful Routing - Index
-1. RESTful Routing - New, Create
-1. RESTful Routing - Show
-1. RESTful Routing - Edit, Update, Delete
+1. RESTful Routing - New, Create - demo and work time
+1. RESTful Routing - Show - demo and work time
+1. RESTful Routing - Edit, Update, Delete - demo and work time
+1. People's Choice Day - Promises? Moment.js? dotenv?
 1. Testing RESTful Routes - Final date to Pick Projects
 1. RESTful APIs & Service Oriented Architecture
 1. Bootstrap - the Grid, Typography, Forms, and Buttons
-1. Deploy to Heroku - start project work
+1. People's Choice Day
+1. Deploy to Heroku - start custom project work
 1. Project Work & Code Reviews
 1. Project Work & Code Reviews
 1. Project Work & Code Reviews
@@ -49,9 +52,9 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 
 ## Projects
 
-1. The [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) tutorial.
-1. The Project Portfolio Tutorial.
-1. An original web project.
+1. [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) tutorial. - Done Solo
+1. [Rotten Potatoes]() - Done pair programming
+1. An original web project - done solo or pair programming
 
 ## Vocabulary & Conventions
 

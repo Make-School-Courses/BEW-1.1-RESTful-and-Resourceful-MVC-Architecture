@@ -3,8 +3,8 @@
 ## Objectives
 
 1. Add bootstrap to any project.
-1. Utilize bootstraps most basic css classes to define a conventional web design (grid, navbar, etc).
-1.
+1. Utilize bootstraps most basic css classes to define a conventional web design
+1. Deploying a bootstrap responsive grid, navbar, and footer
 
 ## Overview
 

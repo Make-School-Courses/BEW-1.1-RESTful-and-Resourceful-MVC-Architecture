@@ -1,5 +1,12 @@
 # Testing RESTful Routes
 
+1. 5 min Intro and Objectives
+1. 20 min TT on Test Types and Assertions
+1. 30 min Baseline and Stretch challenges
+1. 10 min Break
+1. 30 min Continue with Rotten Tomatoes
+1. 5 min Wrap up
+
 ## Objectives
 
 1. Identify the various types of testing and pick the right test for a module.
@@ -150,7 +157,7 @@ describe('Site', function() {
   }
   ...
   ```
-  
+
 1. Add test for GET `/`
 1. Add test for POST `/projects`
 1. Add test for GET `/projects/:id`
