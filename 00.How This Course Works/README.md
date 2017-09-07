@@ -24,6 +24,6 @@
 
 This course is the first of the three courses that make up the baseline web development module at the Product College at Make School. This course has three major features, it is:
 
-1. **Paradigm-Based**
+1. **Paradigm-Based** - Rather than focus on particular language or framework, we try to keep all instruction at the paradigm level. We use JavaScript and Express because these tools are flexible and minimalistic meaning they expose the paradigms you are utilizing.
 1. **Project-Based** - While you attend class to gain more competencies and knowledge, there will be projects that you do at your own pace starting with two tutorials and then a final custom project. The final project should be a contribution to your portfolio.
 1. **Competency-Based** - each class will have a set of competency-based objectives that I'll review at the beginning of class.
