@@ -32,8 +32,8 @@ This course is the first of the three courses that make up the baseline web deve
 
 Complete the prework. Especially:
 
-[GA's Free Dash Tutorial (HTML/CSS)](https://dash.generalassemb.ly/)
-[Learn CSS in 12 Min](https://www.youtube.com/watch?v=0afZj1G0BIE) (Video - 12 min)
-[Code Academy JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
-[CSS Cross-Country (Only Lesson 1)](https://www.codeschool.com/courses/css-cross-country) (Tutorial - 45min)
-[Semantic HTML (Videos 2 hrs)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
+1. [GA's Free Dash Tutorial (HTML/CSS)](https://dash.generalassemb.ly/)
+1. [Learn CSS in 12 Min](https://www.youtube.com/watch?v=0afZj1G0BIE) (Video - 12 min)
+1. [Code Academy JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
+1. [CSS Cross-Country (Only Lesson 1)](https://www.codeschool.com/courses/css-cross-country) (Tutorial - 45min)
+1. [Semantic HTML (Videos 2 hrs)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
