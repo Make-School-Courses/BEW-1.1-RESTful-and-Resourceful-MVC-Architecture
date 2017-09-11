@@ -19,13 +19,20 @@
 
 ## Initial Exercise
 
-**Think, Pair, Share** - Think up 5 conventions that exist in ordinary day-to-day life. Share your list with a partner. Why do we follow these conventions? What are alternatives? What if we didn't follow them what would happen?
+Here's a diagram of full stack development. It's called "Full Stack" because as a web developer you can touch many programs that all depend on the other from the Operating System (OS), a web server, to the browser and the client.
+
+![Outside In](assets/outside-in.png)
+
+**Think, Pair, Share** - Think up 3 ways that you can use each of these layers as a web developer. Can you think of layers that you will use as a full stack developer not present in this image?
+
 
 ## Overview
 
-### Why?
+For this course, we are going to zoom in on one layer: the server. The server is called a "server" because it serves data to anyone that asks properly. To make servers work, we could write raw, vanilla code, or we can use pre-made **Frameworks**. These frameworks follow standardized conventions. As web developers we have to learn those conventions to save time, and to make our code predictable for other developers. One of the primary conventions is the Model View Controller (MVC) convention.
 
-![Outside In](assets/outside-in.png)
+### Why MVC?
+
+**Think, Pair, Share** - Think up 5 conventions that exist in ordinary day-to-day life. Share your list with a partner. Why do we follow these conventions? What are alternatives? What if we didn't follow them what would happen?
 
 Why do we have architectures like MVC? The answer is because they are conventions that make coding easier.
 
@@ -49,9 +56,9 @@ Servers, who request and respond to data, have various ways that they are organi
 
 ![MVC](assets/mvc.jpg)
 
-* **Controllers** - Where code that defines routes, requests, and responses logic goes.
-* **Views** - Where code goes that users see and interact with (HTML).
 * **Model** - Where code goes that interfaces with a database.
+* **Views** - Where code goes that users see and interact with (HTML).
+* **Controllers** - Where code that defines routes, requests, and responses logic goes.
 
 Here is a diagram of an integrated look at the Request-Response Cycle and MVC:
 
@@ -66,7 +73,7 @@ Here is a diagram of an integrated look at the Request-Response Cycle and MVC:
 
 **CoC & MVC**
 1. Work with a partner to come up with an analogy for the request response cycle and MVC and share it on slack.
-1. Draw your own original picture of the Request Response Cycle and MVC.
+1. Draw your own original picture of the Request Response Cycle and MVC - your picture can be inspired by your analogy if you like!
 
 **HTML/CSS/JS**
 1. Install [Emmet](https://emmet.io/) or another HTML snippet package to your text editor.
