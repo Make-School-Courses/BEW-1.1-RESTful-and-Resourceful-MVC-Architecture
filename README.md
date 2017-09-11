@@ -2,11 +2,7 @@
 
 ## Prerequisites (8 hours)
 
-1. [HTML Semantics (videos)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
-1. [Dash Tutorial](https://dash.generalassemb.ly/)
-1. [CSS Cross-Country (Tutorial)](https://www.codeschool.com/courses/css-cross-country)
-1. [Learn CSS in 12 Min (video)](https://www.youtube.com/watch?v=0afZj1G0BIE)
-1. [Code Academy JavaScript lesson (tutorial)](https://www.codecademy.com/learn/javascript)
+1. [Product College Prework CS & Web Sections](https://github.com/MakeSchool/Product-College-Prework/blob/master/README.md)
 
 ## Course Overview
 
