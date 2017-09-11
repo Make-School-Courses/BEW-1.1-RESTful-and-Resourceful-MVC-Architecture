@@ -56,8 +56,9 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 ## Projects
 
 1. [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) tutorial. - Done Solo
-1. [Rotten Potatoes]() - Done pair programming
-1. An original web project - done solo or pair programming
+1. [Rotten Potatoes](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project) - Done in Pairs
+1. [JavaScript Concentration Game](https://www.makeschool.com/online-courses/tutorials/javascript-concentration-game/javascript-game-tutorial-intro) - Optional - Done in Pairs or Solo
+1. An Original Project - Follow the [Spec Requirements](https://github.com/Product-College-Courses/WEB-1-RESTful-and-Resourceful-MVC-Architecture/blob/master/Project-Spec.md) - Done in Pairs or Solo
 
 ## Vocabulary & Conventions
 
