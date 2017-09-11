@@ -78,8 +78,12 @@ Here is a diagram of an integrated look at the Request-Response Cycle and MVC:
 **HTML/CSS/JS**
 1. Install [Emmet](https://emmet.io/) or another HTML snippet package to your text editor.
 1. Prerequisites - if you have not completed all the prerequisites, take the time to do that now and before next class. (Intro to HTML/CSS/JS)
-  1. [HTML Semantics (videos)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
-  1. [Dash Tutorial](https://dash.generalassemb.ly/)
-  1. [CSS Cross-Country (Tutorial)](https://www.codeschool.com/courses/css-cross-country)
-  1. [Learn CSS in 12 Min (video)](https://www.youtube.com/watch?v=0afZj1G0BIE)
-  1. [Code Academy JavaScript lesson (tutorial)](https://www.codecademy.com/learn/javascript)
+    1. [HTML Semantics (videos)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
+    1. [Dash Tutorial](https://dash.generalassemb.ly/)
+    1. [CSS Cross-Country (Tutorial)](https://www.codeschool.com/courses/css-cross-country)
+    1. [Learn CSS in 12 Min (video)](https://www.youtube.com/watch?v=0afZj1G0BIE)
+    1. [Code Academy JavaScript lesson (tutorial)](https://www.codecademy.com/learn/javascript)
+    
+**Project**
+
+1. Begin the [Giphy API Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment). You should plan to finish this tutorial by the following Monday.
