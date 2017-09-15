@@ -22,7 +22,7 @@ JavaScript errors you will see in two places. In your terminal (server errors) a
 
 The **Stack Trace** is the last commands the computer ran in reverse chronological error. Most of these commands happen on code you did not write and therefore cannot debug. However, usually the one line of code in the stack trace that you DID write is the one you need to fix.
 
-When you want to Google an error, gogole the error type and the error message statement. e.g. `ReferenceError: num is not defined`.
+When you want to Google an error, google the error type and the error message statement. e.g. `ReferenceError: num is not defined`.
 
 ### Types of JavaScript errors:
 
