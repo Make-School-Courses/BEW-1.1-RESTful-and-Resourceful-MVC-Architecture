@@ -71,7 +71,7 @@ The most common HTTP statuses are the following. Here is a [complete list](https
 ## Baseline Challenges
 
 1. Using the above resources answer these technical interview questions:
-  - List out the HTTP action verbs. Which ones make changes to the state, and which ones do not?
+    - List out the HTTP action verbs. Which ones make changes to the state, and which ones do not?
   - What are HTTP response status codes? Which ones mean success and which failure?
   - What is the difference between HTTP and HTTPS?
   - What does REST stand for?
