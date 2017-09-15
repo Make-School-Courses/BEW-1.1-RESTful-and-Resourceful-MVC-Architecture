@@ -48,62 +48,62 @@ When you want to Google an error, google the error type and the error message st
 
 1. Run these snippets of JS in your Node REPL (type `node` in your bash terminal) and in your Chrome Console tab. Examine errors and see what you would have to do to fix them (so they did not throw an error).
 
-  ```js
-  // 1
-  num.toPrecision(500)
+	```js
+	// 1
+	num.toPrecision(500)
 
-  //2
-  var x;
-  x = y + 1;
+	//2
+	var x;
+	x = y + 1;
 
-  //3
-  eval("alert('Hello)");
+	//3
+	eval("alert('Hello)");
 
-  //4
-  num.toUpperCase();
+	//4
+	num.toUpperCase();
 
-  //4
-  dude.height;
+	//4
+	dude.height;
 
-  //5
-  dude.eatsASandwhich();
-  ```
+	//5
+	dude.eatsASandwhich();
+	```
 
 1. Experiment in wrapping these in a `try`, `catch` block to make an alert appear if an error occurs. ([try catch block docs](https://www.w3schools.com/js/tryit.asp?filename=tryjs_try_catch)) See following example:
 
-```js
-try {
-  num.toPrecision(200);
-} catch(e) {
-	console.log(‘Oh no!’);
-} finally {
-  //  Block of code to be executed regardless of the try / catch result
-}
-```
+	```js
+	try {
+	  num.toPrecision(200);
+	} catch(e) {
+		console.log(‘Oh no!’);
+	} finally {
+	  //  Block of code to be executed regardless of the try / catch result
+	}
+	```
 
 1. In your catch statements try throwing a custom error using the JavaScript `throw` command.
 
-```js
-throw "Too big";    // throw a text
-throw 500;          // throw a number
-```
+	```js
+	throw "Too big";    // throw a text
+	throw 500;          // throw a number
+	```
 
 1. Read the following code snippet. What should it do? Can you run it in your console in your browser? What error do you get? Can you fix it?
 
-```js
-var peoplesNames = ["Dan", "Kathy", "Monika", "Carl"]
+	```js
+	var peoplesNames = ["Dan", "Kathy", "Monika", "Carl"]
 
-var shortNames = [];
-var longNames = [];
-for (i = 0; i < peoplesNames.length; i++) {
-    if (peoplesNames[i].length < 4) {
-        shortNames.push(peoplesNames[i])
-    } else
-        longNames.push(peoplesNames[i])
-    }
-}
-console.log(shortNames);
-console.log(longNames);
-```
+	var shortNames = [];
+	var longNames = [];
+	for (i = 0; i < peoplesNames.length; i++) {
+	    if (peoplesNames[i].length < 4) {
+		shortNames.push(peoplesNames[i])
+	    } else
+		longNames.push(peoplesNames[i])
+	    }
+	}
+	console.log(shortNames);
+	console.log(longNames);
+	```
 
 ![js-error-1](assets/js-error-1.png)
