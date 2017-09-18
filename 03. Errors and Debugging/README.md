@@ -56,17 +56,20 @@ When you want to Google an error, google the error type and the error message st
 	var x;
 	x = y + 1;
 
-	//3
-	eval("alert('Hello)");
-
 	//4
 	num.toUpperCase();
 
-	//4
+	//3
+	var dude;
 	dude.height;
 
 	//5
+	var dude;
 	dude.eatsASandwhich();
+	
+	// Run this lastt one in your browser's console
+	//6 
+	eval("alert('Hello)");
 	```
 
 1. Experiment in wrapping these in a `try`, `catch` block to make an alert appear if an error occurs. ([try catch block docs](https://www.w3schools.com/js/tryit.asp?filename=tryjs_try_catch)) See following example:
