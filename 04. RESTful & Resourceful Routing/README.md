@@ -1,9 +1,11 @@
 # RESTful & Resourceful Routing
 
 1. 5 min Intro & Objectives
-1. 20 min TT on RESTful and Resourceful Routing
-1. 30 min Challenges
-1. 30 min Kick off Rotten Tomatoes App
+1. 10 min TT on RESTful and Resourceful Routing
+1. 20 min Challenges
+1. 10 min Break
+1. 15 min How to Pair Program
+1. 15 min Kick off Rotten Tomatoes App
 1. 5 min Wrap up
 
 ## Objectives
@@ -80,4 +82,4 @@ app.listen(3000);
     - POST `/classes/:classId/students`
     - GET `/classes/:classId/students`
     - GET `/era/:eraId/dinosaurs`
-1. Begin the Portfolio Template Project
+1. Find a partner and begin the [Rotten Potatoes Project](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project).
