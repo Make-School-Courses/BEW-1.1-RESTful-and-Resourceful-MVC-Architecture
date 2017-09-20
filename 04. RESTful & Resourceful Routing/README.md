@@ -81,5 +81,13 @@ app.listen(3000);
     - GET `/users/:userId/articles/:articleId`
     - POST `/classes/:classId/students`
     - GET `/classes/:classId/students`
-    - GET `/era/:eraId/dinosaurs`
+    - GET `/epoch/:eraId/dinosaurs`
+1. Work with a partner to define what the route would be for the following resources:
+    - show me all the classes
+    - show me all a users comments
+    - show a single article by an author
+    - show all the fish alive in the pliocene epoch
+    - create a new fish
+    - see the edit form to edit a fish for lake Winibego
+    - update a fish record for lake Winibego.
 1. Find a partner and begin the [Rotten Potatoes Project](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project).
