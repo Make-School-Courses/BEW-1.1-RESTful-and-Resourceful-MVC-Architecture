@@ -89,4 +89,5 @@ app.listen(3000);
     - create a new fish
     - see the edit form to edit a fish for lake Winibego
     - update a fish record for lake Winibego.
+1. Come up with 3 or more routes that do not follow the Resourceful pattern, but sites still commonly use. (hint: "/about-us")
 1. Find a partner and begin the [Rotten Potatoes Project](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project).
