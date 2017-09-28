@@ -37,7 +37,7 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 1. Document-based Databases, MongoDB Command Line, & RESTful Routing - Index
 1. RESTful Routing - New, Create - demo and work time
 1. Product Planning - User Narratives, Wireframes, Entity Relationship Diagram (ERD)
-1. RESTful Routing - Edit, Update, Delete - demo and work time, Express Middleware
+1. RESTful Routing - Edit, Update, Delete - demo and work time, [Express Middleware](https://expressjs.com/en/guide/writing-middleware.html)
 1. People's Choice Day - Promises? Moment.js? dotenv?
 1. Testing RESTful Routes - Final date to Pick Projects
 1. RESTful APIs & Service Oriented Architecture
