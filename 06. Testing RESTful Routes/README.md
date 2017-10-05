@@ -145,7 +145,7 @@ describe('Site', function() {
 
 ## Baseline Challenges
 
-1. Add Mocha to the portfolio project
+1. Add Mocha to your rotten potatoes project
   ```bash
   $ npm install —-save-dev mocha
   ```
