@@ -19,6 +19,10 @@
 1. **Pair Work** - You may work alone or in pairs - if you are going to work in pairs you must pair program for 90% of the time - this will mean significant coordination outside of class to schedule time to work side-by-side. You will be expected to turn in the project together. Pair programed projects are not expected to be more feature-full (because pp can be slower than solo programming sometimes), but they are expected to demonstrate significantly better code craftsmanship.
 1. **2nd Resource** - You may add another resource if you like and look ahead to how to do reference and embedded documents.
 
+## Project Writeup
+
+Write a 500-1000 word post on medium.com.
+
 ## How to Turn In
 
 1. Send two links (github and heroku) to your instructor before the final day of class. 
