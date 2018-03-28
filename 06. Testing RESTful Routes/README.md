@@ -168,3 +168,8 @@ describe('Site', function() {
 
 1. Add tests for all other RESTful routes
 1. Add tests for validation and user errors
+
+### Reading 
+
+- RESTful Web APIs - Chapter 9, The Design Procedure
+- RESTful Web APIs - Chapter 10, The Hypermedia Zoo
