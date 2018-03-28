@@ -100,7 +100,7 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 
 ### Tutorials
 
-[Rotten Potatoes Tutorial]()
+[Giphy Search with Node Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment)
 
 ## Evaluation
 
