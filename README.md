@@ -92,6 +92,10 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 
 1. [Engineering is Awesome with David Xiang (Youtube)](https://www.youtube.com/user/daveXbang/videos)
 
+### Reading 
+
+[RESTful Web APIs](http://www.restfulwebapis.org) by O'Reilly Press. 
+
 ## Evaluation
 
 In order to pass this course, you must
