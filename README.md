@@ -94,13 +94,13 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 
 ### Reading 
 
-[RESTful Web APIs](http://www.restfulwebapis.org) by O'Reilly Press. 
-[You Don't Know JS - Up and Going](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going)
-[You Don't Know JS - Scope and Closures](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures)
+- [RESTful Web APIs](http://www.restfulwebapis.org) by O'Reilly Press. 
+- [You Don't Know JS - Up and Going](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going)
+- [You Don't Know JS - Scope and Closures](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures)
 
 ### Tutorials
 
-[Giphy Search with Node Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment)
+- [Giphy Search with Node Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment)
 
 ## Evaluation
 
