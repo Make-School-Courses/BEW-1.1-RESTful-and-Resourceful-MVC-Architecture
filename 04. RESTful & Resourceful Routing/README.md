@@ -91,3 +91,8 @@ app.listen(3000);
     - update a fish record for lake Winibego.
 1. Come up with 3 or more routes that do not follow the Resourceful pattern, but sites still commonly use. (hint: "/about-us")
 1. Find a partner and begin the [Rotten Potatoes Project](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project).
+
+### Reading 
+
+- RESTful Web APIs - Chapter 5, Domain-Specific Designs
+- RESTful Web APIs - Chapter 6, The Collection Pattern
