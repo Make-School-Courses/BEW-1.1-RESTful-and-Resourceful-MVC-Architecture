@@ -98,6 +98,9 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 [You Don't Know JS - Up and Going](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going)
 [You Don't Know JS - Scope and Closures](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures)
 
+### Tutorials
+
+[Rotten Potatoes Tutorial]()
 
 ## Evaluation
 
