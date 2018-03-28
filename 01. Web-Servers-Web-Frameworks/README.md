@@ -87,3 +87,8 @@ Here is a diagram of an integrated look at the Request-Response Cycle and MVC:
 **Project**
 
 1. Begin the [Giphy API Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment). You should plan to finish this tutorial by the following Monday.
+
+### Reading 
+
+- RESTful Web APIs - Chapter 1, Surfing the Web
+- RESTful Web APIs - Chapter 2, A Simple API
