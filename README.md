@@ -1,9 +1,5 @@
 # Full-Stack-JS-1
 
-## Prerequisites (8 hours)
-
-1. [Product College Prework CS & Web Sections](https://github.com/MakeSchool/Product-College-Prework/blob/master/README.md)
-
 ## Course Overview
 
 The web is a very fun place to build things! There is no quicker and more readily available way to share information and enter into commerce than the internet, and there's no faster way than to build a website and web server.
@@ -91,14 +87,7 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 ## Resources
 
 1. [Engineering is Awesome with David Xiang (Youtube)](https://www.youtube.com/user/daveXbang/videos)
-
-### Reading 
-
-- [RESTful Web APIs](http://www.restfulwebapis.org) by O'Reilly Press. 
-
-### Tutorials
-
-- [Giphy Search with Node Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment)
+1. [RESTful Web APIs](http://www.restfulwebapis.org) by O'Reilly Press. 
 
 ## Evaluation
 
