@@ -31,10 +31,10 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 1. Introduction to Web Servers & Web Frameworks
 2. REST, URLs, HTTP(S) - Giphy Search App Tutorial
 3. Errors and Debugging - Review of Giphy App Solution - Commenting pseudocode for each step
-4. RESTful & Resourceful Routing (naming conventions for paths, variables, methods) - Start Rotten Potatos Tutorial
-5. Document-based Databases, MongoDB Command Line, & RESTful Routing - Index - Rotten Potatos
-6. RESTful Routing - New, Create - Rotten Potatos
-7. RESTful Routing - Edit, Update, Delete - demo and work time, [Express Middleware](https://expressjs.com/en/guide/writing-9iddleware.html) - Finish Rotten Potatos
+4. RESTful & Resourceful Routing (naming conventions for paths, variables, methods) - Start Rotten Potatoes Tutorial
+5. Document-based Databases, MongoDB Command Line, & RESTful Routing - Index - Rotten Potatoes
+6. RESTful Routing - New, Create - Rotten Potatoes
+7. RESTful Routing - Edit, Update, Delete - demo and work time, [Express Middleware](https://expressjs.com/en/guide/writing-9iddleware.html) - Finish Rotten Potatoes
 8. Deploy to Heroku - Start Contractor Project
 10. Testing RESTful Routes - Contractor Project 
 11. RESTful APIs & Service Oriented Architecture - Contractor Project
