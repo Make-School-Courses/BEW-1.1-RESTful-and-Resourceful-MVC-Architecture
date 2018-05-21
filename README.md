@@ -86,3 +86,4 @@ In order to pass this course, you must
 1. Have fewer than 2 unexcused absences.
 1. Complete all assigned tutorials & projects.
 1. Pass the summative assessment with an 80% or above.
+1. Your must score above a zero in all columns on the [Professional Performance Rubric](https://docs.google.com/document/d/1Sos4GVY_pWDSpw1icGGP_IB3r7rYEeybd7bu2Z5HX68/edit?usp=sharing)
