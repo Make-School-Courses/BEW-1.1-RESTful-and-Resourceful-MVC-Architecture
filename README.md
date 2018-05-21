@@ -1,4 +1,4 @@
-# Backend Web 1.1 - RESTful and Resourceful MVC Architecture
+# BEW 1.1 - RESTful and Resourceful MVC Architecture
 
 ## Course Overview
 
