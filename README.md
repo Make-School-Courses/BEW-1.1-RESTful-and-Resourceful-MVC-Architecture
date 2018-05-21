@@ -13,7 +13,7 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 1. [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) tutorial. - 1-3 days
 1. [Rotten Potatoes](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project). 4-8 days
 1. [JavaScript Concentration Game](https://www.makeschool.com/online-courses/tutorials/javascript-concentration-game/javascript-game-tutorial-intro) - Optional - 1-2 days
-1. A Contractor Project 
+1. A Contractor Project - The instructor will roleplay being a client to your engineering team.
 
 ## Competencies & Objectives
 
@@ -36,11 +36,11 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 5. Document-based Databases, MongoDB Command Line, & RESTful Routing - Index - Rotten Potatos
 6. RESTful Routing - New, Create - Rotten Potatos
 7. RESTful Routing - Edit, Update, Delete - demo and work time, [Express Middleware](https://expressjs.com/en/guide/writing-9iddleware.html) - Finish Rotten Potatos
-8. Deploy to Heroku - Start Charity Project
-10. Testing RESTful Routes - Charity Project 
-11. RESTful APIs & Service Oriented Architecture - Charity Project
-12. Bootstrap - the Grid, Typography, Forms, and Buttons - Charity Project
-13. Charity Project Presentations & Summative Assessment
+8. Deploy to Heroku - Start Contractor Project
+10. Testing RESTful Routes - Contractor Project 
+11. RESTful APIs & Service Oriented Architecture - Contractor Project
+12. Bootstrap - the Grid, Typography, Forms, and Buttons - Contractor Project
+13. Contractor Project Presentations & Summative Assessment
 14. Flex Day
 
 ## Vocabulary & Conventions
