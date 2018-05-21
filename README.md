@@ -13,7 +13,7 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 1. [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) tutorial. - 1-3 days
 1. [Rotten Potatoes](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project). 4-8 days
 1. [JavaScript Concentration Game](https://www.makeschool.com/online-courses/tutorials/javascript-concentration-game/javascript-game-tutorial-intro) - Optional - 1-2 days
-1. An Original Project - Follow the [Spec Requirements](https://github.com/Product-College-Courses/WEB-1-RESTful-and-Resourceful-MVC-Architecture/blob/master/Project-Spec.md) - Done in Pairs or Solo - 2-3 weeks
+1. A Contractor Project 
 
 ## Competencies & Objectives
 
