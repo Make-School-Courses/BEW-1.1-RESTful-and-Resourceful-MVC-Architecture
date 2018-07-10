@@ -1,4 +1,4 @@
-# Title 
+# RESTful and Resourceful MVC Architecture
 
 ## Course Description
 
