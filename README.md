@@ -1,6 +1,6 @@
-# BEW 1.1 - RESTful and Resourceful MVC Architecture
+# Title 
 
-## Course Overview
+## Course Description
 
 The web is a very fun place to build things! There is no quicker and more readily available way to share information and enter into commerce than the internet, and there's no faster way than to build a website and web server.
 
@@ -8,13 +8,11 @@ In this course the goal will be to explore the three major **Patterns** or **Arc
 
 Although you can develop webservers in many languages, we will focus on JavaScript and NodeJS. The web is becoming ever more JavaScripty. JavaScript has now risen to being, by many metrics, the fastest growing and widest used language on the web. Now with the invention of NodeJS, you can write your client and your server in JS creating interesting synergies and benefits across a stack and within a development team. Also with the emergence of tools like React Native, Ionic, Johnny-Five, and many others, JavaScript is becoming a versatile tool across many platforms even outside of the desktop and mobile web browsers.
 
-## Projects
+## Prerequisites
 
-1. [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) tutorial. - 1-3 days
-1. [Rotten Potatoes](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project). 4-8 days
-1. A Contractor Project - The instructor will roleplay being a client to your engineering team.
+1. Make School Prework
 
-## Competencies & Objectives
+## Learning Objectives or Competencies (5-8)
 
 1. Master the MVC architecture for web server development.
 1. Master and memorize RESTful routes and routing and in general describe the importance of Resourceful web architecture.
@@ -40,51 +38,33 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 11. RESTful APIs & Service Oriented Architecture - Contractor Project
 12. Bootstrap - the Grid, Typography, Forms, and Buttons - Contractor Project
 13. Contractor Project Presentations & Summative Assessment
-14. Flex Day
 
-## Vocabulary & Conventions
+### Tutorials & Projects
 
-1. The Request-Response Cycle
-1. MVC - Model View Controller
-1. RESTful Routes
-1. Resourceful Routing
-1. Web Server
-1. Web Framework
-1. HTTP
-1. HTTP Action Verbs - PUT, POST, GET, DELETE, PATCH
-1. CRUD
-1. API
-1. JSON
-1. CDN
-1. REPL
-1. Document-based database, NoSQL database
-1. Server-side templating
-1. Subtemplate
-1. URL Endpoint, Route, Webhook
-1. Components of a URL - subdomain, domain, top level domain, path, and query string
-1. Automated Testing
-1. Test Driven Development
-1. Assertions
-1. Paradigms, Patterns
-1. Pseudocode
-
-## Best Practices
-
-1. Convention over Configuration (CoC)
-1. Separation of Concerns (SoC)
-1. Outside-in development (User-Centered Development)
-
-## Resources
-
-1. [Engineering is Awesome with David Xiang (Youtube)](https://www.youtube.com/user/daveXbang/videos)
-1. [RESTful Web APIs](http://www.restfulwebapis.org) by O'Reilly Press. 
+- [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) tutorial. - 1-3 days
+- [Rotten Potatoes](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project). 4-8 days
+- A Contractor Project - The instructor will roleplay being a client to your engineering team.
 
 ## Evaluation
 
-In order to pass this course, you must
+To pass this course you must meet the following requirements:
 
-1. Have fewer than 2 unexcused absences.
-1. Score at least "Initial Mastery" in all columns on the [Professional Performance Rubric](https://docs.google.com/document/d/1Sos4GVY_pWDSpw1icGGP_IB3r7rYEeybd7bu2Z5HX68/edit?usp=sharing)
-1. Complete all assigned tutorials & projects.
-1. Pass the summative assessment with an 80% or above.
+- No more than two no call no shows
+- No more than four excused absences
+- Make up all classwork from all absences
+- Finish all required tutorials and projects
+- Pass the final exam (summative assessment) >=80%
 
+## Make School Course Policies
+
+[Academic Honesty](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Academic-Honesty-and-Plagiarism.md)
+
+[Accomodation Policy](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Accommodation-Policy.md)
+
+[Diversity Statement](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Diversity-Statement.md)
+
+[Evaluation Methods](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Evaluation-Methods.md)
+
+[Title IX Disclaimer](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Evaluations-Title-X-Disclaimer.md)
+
+[Program Learning Outcomes](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Program-Learning-Outcomes.md)
