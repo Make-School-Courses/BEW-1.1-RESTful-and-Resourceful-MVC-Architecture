@@ -17,7 +17,7 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 1. Master the MVC architecture for web server development.
 1. Master and memorize RESTful routes and routing and in general describe the importance of Resourceful web architecture.
 1. Master Resource-oriented development of a 0, 1, and a 2 resource application.
-1. Utilize a NoSQL database (in this case MongoDB).
+1. Read and write to a Document-Based (NoSQL) database (in this case MongoDB).
 1. Describe the usefulness of an Object Document Mapper (ODM) (or Object Relationship Mapper ORM).
 1. Compare and contrast outside-in and inside-out development processes.
 1. Master ExpressJS and extend it by installing, initializing, and using its various middleware packages.
@@ -61,33 +61,40 @@ To pass this course you must meet the following requirements:
         - Diagram HTTP Requests
         - Q&A for Giphy Search App
     - **After Class**
-        - Giphy Search App
+        - Finish Giphy Search App
 1. Reading Errors and Debugging
     - **In Class Activities** 
         - [Identifying Errors Activity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
         - Reading Errors Demo
         - Review of Giphy App Solution
-        - Q&A for Giphy Search App
     - **After Class**
-        - Finish Giphy Search App 
         - Start Rotten Potatoes Tutorial
 1. Resource-based MVC Server Architecture
     - **In Class Activities**
+        - Diagram Request/Response Cycle with MVC
         - Tour of a large project
         - Resource naming and routing activity
     - **After Class**
         - Study for Resourceful Routing Quiz
         - Rotten Potatoes Tutorial
-1. Document-based Databases, MongoDB Command Line, & RESTful Routing - Index - Rotten Potatoes
+1. Document-based Databases
     - **In Class Activities**
+        - Intro to Document-Based Databases
+        - MongoDB Command Line Demo
+        - RESTful Routing - Index - Rotten Potatoes
     - **After Class**
+         - Rotten Potatoes Tutorial
 1. RESTful Routing - New, Create - Rotten Potatoes
     - **In Class Activities**
+        - Resourceful Routes Quiz II
     - **After Class**
+         - Rotten Potatoes Tutorial
 1. RESTful Routing - Edit, Update, Delete
     - **In Class Activities**
+        - Resourceful Routes Quiz II
         - [Express Custom Middleware Activity](https://expressjs.com/en/guide/writing-middleware.html)
     - **After Class**
+         - Complete Rotten Potatoes Tutorial
 1. Deploy to Heroku
     - **In Class Activities**
         - Intro to DevOps & Deploying to Heroku
@@ -114,9 +121,12 @@ To pass this course you must meet the following requirements:
 1. Flex Day / Review Day / Student's Choice Day
     - **In Class Activities**
     - **After Class**
+        - Contractor Project
+        - Prepare Contractor Project Presentation and Demo
 1. Contractor Project Presentations & Summative Assessment
     - **In Class Activities**
-    - **After Class**
+        - Presentations
+        - Complete Summative Assessment
 
 Potential Flex Topics:
 
