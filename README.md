@@ -24,21 +24,6 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 1. Master server-side templating using HandlebarsJS.
 1. Compare and contrast web endpoints responding with HTML templates or JSON data.
 
-## Lessons
-
-1. Introduction to Web Servers & Web Frameworks
-2. REST, URLs, HTTP(S) - Giphy Search App Tutorial
-3. Errors and Debugging - Review of Giphy App Solution - Commenting pseudocode for each step
-4. RESTful & Resourceful Routing (naming conventions for paths, variables, methods) - Start Rotten Potatoes Tutorial
-5. Document-based Databases, MongoDB Command Line, & RESTful Routing - Index - Rotten Potatoes
-6. RESTful Routing - New, Create - Rotten Potatoes
-7. RESTful Routing - Edit, Update, Delete - demo and work time, [Express Middleware](https://expressjs.com/en/guide/writing-9iddleware.html) - Finish Rotten Potatoes
-8. Deploy to Heroku - Start Contractor Project
-10. Testing RESTful Routes - Contractor Project 
-11. RESTful APIs & Service Oriented Architecture - Contractor Project
-12. Bootstrap - the Grid, Typography, Forms, and Buttons - Contractor Project
-13. Contractor Project Presentations & Summative Assessment
-
 ### Tutorials & Projects
 
 - [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) tutorial. - 1-3 days
@@ -54,6 +39,68 @@ To pass this course you must meet the following requirements:
 - Make up all classwork from all absences
 - Finish all required tutorials and projects
 - Pass the final exam (summative assessment) >=80%
+
+
+## Lessons
+
+Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
+
+5. Document-based Databases, MongoDB Command Line, & RESTful Routing - Index - Rotten Potatoes
+6. RESTful Routing - New, Create - Rotten Potatoes
+7. RESTful Routing - Edit, Update, Delete - demo and work time, [Express Middleware](https://expressjs.com/en/guide/writing-9iddleware.html) - Finish Rotten Potatoes
+8. Deploy to Heroku - Start Contractor Project
+10. Testing RESTful Routes - Contractor Project 
+11. RESTful APIs & Service Oriented Architecture - Contractor Project
+12. Bootstrap - the Grid, Typography, Forms, and Buttons - Contractor Project
+13. Contractor Project Presentations & Summative Assessment
+
+1. Introduction to Web Servers & Web Frameworks
+    - **Before Class**
+    - **In Class Activities** 
+      - Why are we studying JavaScript, Node.js, and Express.js?
+      - Compare & Contrast Web Servers vs. Frameworks
+      - Know the field of Web Frameworks
+    - **After Class**
+1. REST, URLs, HTTP(S) - Giphy Search App Tutorial
+    - **In Class Activities**
+    - **After Class** - Study for RESTful Routes Quiz I
+1. Errors and Debugging
+    - **In Class Activities** - Reading Errors Activity - Review of Giphy App Solution
+    - **After Class**
+1. RESTful & Resourceful Routing (naming conventions for paths, variables, methods) - Start Rotten Potatoes Tutorial
+    - **Class Topic**
+    - **In Class Activities**
+    - **After Class**
+1. Lesson Title & Topic
+    - **Before Class**
+    - **In Class Activities**
+    - **After Class**
+1. Lesson Title & Topic
+    - **In Class Activities**
+    - **After Class**
+1. Lesson Title & Topic
+    - **In Class Activities**
+    - **After Class**
+1. Lesson Title & Topic
+    - **In Class Activities**
+    - **After Class**
+1. Lesson Title & Topic
+    - **In Class Activities**
+    - **After Class**
+1. Lesson Title & Topic
+    - **In Class Activities**
+    - **After Class**
+1. Lesson Title & Topic
+    - **In Class Activities**
+    - **After Class**
+1. Lesson Title & Topic
+    - **In Class Activities**
+    - **After Class**
+1. Lesson Title & Topic
+    - **In Class Activities**
+    - **After Class**
+
+
 
 ## Make School Course Policies
 
