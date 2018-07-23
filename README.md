@@ -43,64 +43,85 @@ To pass this course you must meet the following requirements:
 
 ## Lessons
 
-Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
-
-5. Document-based Databases, MongoDB Command Line, & RESTful Routing - Index - Rotten Potatoes
-6. RESTful Routing - New, Create - Rotten Potatoes
-7. RESTful Routing - Edit, Update, Delete - demo and work time, [Express Middleware](https://expressjs.com/en/guide/writing-9iddleware.html) - Finish Rotten Potatoes
-8. Deploy to Heroku - Start Contractor Project
-10. Testing RESTful Routes - Contractor Project 
-11. RESTful APIs & Service Oriented Architecture - Contractor Project
-12. Bootstrap - the Grid, Typography, Forms, and Buttons - Contractor Project
-13. Contractor Project Presentations & Summative Assessment
+13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
 
 1. Introduction to Web Servers & Web Frameworks
     - **Before Class**
+        -  Complete all Prework
     - **In Class Activities** 
-      - Why are we studying JavaScript, Node.js, and Express.js?
-      - Compare & Contrast Web Servers vs. Frameworks
-      - Know the field of Web Frameworks
+        - Why are we studying JavaScript, Node.js, and Express.js?
+        - Compare & Contrast Web Servers vs. Frameworks
+        - Know the field of Web Frameworks
     - **After Class**
-1. REST, URLs, HTTP(S) - Giphy Search App Tutorial
+        - Begin [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment)
+1. REST, URLs, HTTP(S)
     - **In Class Activities**
-    - **After Class** - Study for RESTful Routes Quiz I
-1. Errors and Debugging
-    - **In Class Activities** - Reading Errors Activity - Review of Giphy App Solution
+        - Diagram the Request/Response Cycle
+        - Diagram URLs
+        - Diagram HTTP Requests
+        - Q&A for Giphy Search App
     - **After Class**
-1. RESTful & Resourceful Routing (naming conventions for paths, variables, methods) - Start Rotten Potatoes Tutorial
-    - **Class Topic**
+        - Giphy Search App
+1. Reading Errors and Debugging
+    - **In Class Activities** 
+        - [Identifying Errors Activity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
+        - Reading Errors Demo
+        - Review of Giphy App Solution
+        - Q&A for Giphy Search App
+    - **After Class**
+        - Finish Giphy Search App 
+        - Start Rotten Potatoes Tutorial
+1. Resource-based MVC Server Architecture
     - **In Class Activities**
+        - Tour of a large project
+        - Resource naming and routing activity
     - **After Class**
-1. Lesson Title & Topic
-    - **Before Class**
-    - **In Class Activities**
-    - **After Class**
-1. Lesson Title & Topic
-    - **In Class Activities**
-    - **After Class**
-1. Lesson Title & Topic
-    - **In Class Activities**
-    - **After Class**
-1. Lesson Title & Topic
-    - **In Class Activities**
-    - **After Class**
-1. Lesson Title & Topic
-    - **In Class Activities**
-    - **After Class**
-1. Lesson Title & Topic
-    - **In Class Activities**
-    - **After Class**
-1. Lesson Title & Topic
+        - Study for Resourceful Routing Quiz
+        - Rotten Potatoes Tutorial
+1. Document-based Databases, MongoDB Command Line, & RESTful Routing - Index - Rotten Potatoes
     - **In Class Activities**
     - **After Class**
-1. Lesson Title & Topic
+1. RESTful Routing - New, Create - Rotten Potatoes
     - **In Class Activities**
     - **After Class**
-1. Lesson Title & Topic
+1. RESTful Routing - Edit, Update, Delete
+    - **In Class Activities**
+        - [Express Custom Middleware Activity](https://expressjs.com/en/guide/writing-middleware.html)
+    - **After Class**
+1. Deploy to Heroku
+    - **In Class Activities**
+        - Intro to DevOps & Deploying to Heroku
+        - Intro to Contractor Project
+    - **After Class**
+1. Bootstrap - the Grid, Typography, Forms, and Buttons 
+    - **In Class Activities**
+        - User-Centered Development Demo - Yagni
+        - Rapid Prototyping Templates with Bootstrap Activity
+        - Adding Bootstrap Themes
+    - **After Class**
+        - Contractor Project
+1. Testing RESTful Routes
+    - **In Class Activities**
+        - Review types of tests - Unit/Model, Route/Controller, Interaction/End-to-End/View
+        - Route/Controller Test Demo
+        - Compare and Contrast Test Driven Development vs. Regular Testing
+    - **After Class**
+        - Contractor Project
+1. Flex Day / Review Day / Student's Choice Day
+    - **In Class Activities**
+    - **After Class**
+        - Contractor Project
+1. Flex Day / Review Day / Student's Choice Day
+    - **In Class Activities**
+    - **After Class**
+1. Contractor Project Presentations & Summative Assessment
     - **In Class Activities**
     - **After Class**
 
+Potential Flex Topics:
 
+1. RESTful APIs & Service Oriented Architecture 
+1. 
 
 ## Make School Course Policies
 
