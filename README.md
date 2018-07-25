@@ -22,14 +22,10 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 =======
 >>>>>>> af440ba520374fbda30b0ac93e08a0db224b58b6
 1. Master the MVC architecture for web server development.
-1. Master and memorize RESTful routes and routing and in general describe the importance of Resourceful web architecture.
-1. Master Resource-oriented development of a 0, 1, and a 2 resource application.
-1. Read and write to a Document-Based (NoSQL) database (in this case MongoDB).
-1. Describe the usefulness of an Object Document Mapper (ODM) (or Object Relationship Mapper ORM).
-1. Compare and contrast outside-in and inside-out development processes.
-1. Master ExpressJS and extend it by installing, initializing, and using its various middleware packages.
-1. Master server-side templating using HandlebarsJS.
-1. Compare and contrast web endpoints responding with HTML templates or JSON data.
+1. Master and memorize Resourceful Routes and in general describe the importance of Resourceful web architecture.
+1. Read and write to a Document-Based (NoSQL) database (in this case MongoDB) using a Object Document Mapper (ODM)
+1. Master ExpressJS and extend it by installing, initializing, and using its various middleware packages including server-side templating using HandlebarsJS.
+1. Master intial controller testing patterns with Mocha.js and Chai.js
 
 ### Tutorials & Projects
 
