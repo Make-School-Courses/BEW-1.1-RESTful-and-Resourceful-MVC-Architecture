@@ -1,3 +1,5 @@
+## [Slides](https://docs.google.com/presentation/d/1NMo8xvyYzRipMSpD6BtlpVsVSx3qtKZ5RqubkQVeVpw/edit#slide=id.g3e8c33decc_0_160)
+
 # Intro to Course
 
 ## Prework
