@@ -1,30 +1,11 @@
 # Request-Response Cycle, Web Servers & Web Frameworks
 
-1. 5 min Intro & Objectives
-1. 10 min Think, Pair Share
-1. 20 min TT Separation of Concerns, Request-Reponse Cycle, MVC
-1. 30 min CoC & MVC Challenges
-1. 10 min Break
-1. 10 min TT and demo of client technologies: HTML, CSS, JS
-1. 5 min demo of Emmet package
-1. 30 min HTML/CSS/JS Challenges
-1. Wrap up
-
 ## Objectives
 
 1. Identify and describe the Request-Response Cycle
 1. Identify and describe the Model View Controller convention
 1. Define **Convention over Configuration**
 1. Define the **Separation of Concerns**
-
-## Initial Exercise
-
-Here's a diagram of full stack development. It's called "Full Stack" because as a web developer you can touch many programs that all depend on the other from the Operating System (OS), a web server, to the browser and the client.
-
-![Outside In](assets/outside-in.png)
-
-**Think, Pair, Share** - Think up 3 ways that you can use each of these layers as a web developer. Can you think of layers that you will use as a full stack developer not present in this image?
-
 
 ## Overview
 
@@ -88,7 +69,3 @@ Here is a diagram of an integrated look at the Request-Response Cycle and MVC:
 
 1. Begin the [Giphy API Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment). You should plan to finish this tutorial by the following Monday.
 
-### Reading 
-
-- RESTful Web APIs - Chapter 1, Surfing the Web
-- RESTful Web APIs - Chapter 2, A Simple API
