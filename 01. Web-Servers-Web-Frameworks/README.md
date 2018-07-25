@@ -1,10 +1,43 @@
+# Intro to Course
+
+## Prework
+
+Complete the prework by the end of week 1 of class. Especially:
+
+1. [GA's Free Dash Tutorial (HTML/CSS)](https://dash.generalassemb.ly/)
+1. [Learn CSS in 12 Min](https://www.youtube.com/watch?v=0afZj1G0BIE) (Video - 12 min)
+1. [Code Academy JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
+1. [CSS Cross-Country (Only Lesson 1)](https://www.codeschool.com/courses/css-cross-country) (Tutorial - 45min)
+1. [Semantic HTML (Videos 2 hrs)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
+
+## Intial Objectives 
+
+1. Connect as a class
+1. Be able to find and identify the topics and objectives of this course
+1. Know why this course and the WEB cycle is designed the way it is
+
+## Initial Exercise
+
+**Intros** - Circle up and share
+  1. Your name
+  1. Where you're from
+  1. Your power animal or superpower
+
+## Overview
+
+This course is the first of the three courses that make up the baseline web development module at the Product College at Make School. This course has three major features, it is:
+
+1. **Paradigm-Based** - Rather than focus on particular language or framework, we try to keep all instruction at the paradigm level. We use JavaScript and Express because these tools are flexible and minimalistic meaning they expose the paradigms you are utilizing.
+1. **Project-Based** - While you attend class to gain more competencies and knowledge, there will be projects that you do at your own pace starting with two tutorials and then a final custom project. The final project should be a contribution to your portfolio.
+1. **Competency-Based** - each class will have a set of competency-based objectives that I'll review at the beginning of class.
+
 # Request-Response Cycle, Web Servers & Web Frameworks
 
 ## Objectives
 
+1. Define **Convention over Configuration**
 1. Identify and describe the Request-Response Cycle
 1. Identify and describe the Model View Controller convention
-1. Define **Convention over Configuration**
 1. Define the **Separation of Concerns**
 
 ## Overview
