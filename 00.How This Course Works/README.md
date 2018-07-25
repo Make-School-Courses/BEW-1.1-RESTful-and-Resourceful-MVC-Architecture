@@ -17,13 +17,17 @@
 
 **Intros** - Circle up and share
   1. Your name
+  1. Where you grew up
+  1. Where you lived before coming to SF
   1. One super power being a web developer will give you
-  1. Your spirit animal
 
 ## Overview
 
 This course is the first of the three courses that make up the baseline web development module at the Product College at Make School. This course has three major features, it is:
 
-1. **Paradigm-Based**
+1. **Paradigm-Based** - Although we are using Express.js and JavaScript, the emphasis will be on the paradigm level. We are building a web server and that is roughly the same whether you build it with Express.js, Ruby on Rails or Django.
 1. **Project-Based** - While you attend class to gain more competencies and knowledge, there will be projects that you do at your own pace starting with two tutorials and then a final custom project. The final project should be a contribution to your portfolio.
 1. **Competency-Based** - each class will have a set of competency-based objectives that I'll review at the beginning of class.
+1. **Solo and Pair Work** - It is important to be able to work together and work alone. You don't want to be either weak as a solo programmer or a lone wolf. So make sure to balance working together with working solo. If you do work together, both people must turn in separate projects. If you would like to actually pair program, ask permission of the instructor.
+1. **Everything on Github** - Every project you do should be committed daily and pushed to github. This is so you get "credit" on you github streaks, and to facilitate review and
+1. **Copying and Pasting** - As you work through your work you can always look at each other's work. However, you cannot simply copy and paste someone else's work in as yours. You can use their's as model and write your own. If you do just copy and paste, this will be immediately obvious to any instructor and you will be asked to redo the work. As in life, if you copy from one person, you are a plagiarist, but if you copy from 100 you are a genius.

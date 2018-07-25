@@ -25,8 +25,6 @@
 
 ### Why?
 
-![Outside In](assets/outside-in.png)
-
 Why do we have architectures like MVC? The answer is because they are conventions that make coding easier.
 
 We could write all the code together in one file without spaces or new lines, the computer does not care, but that would be very hard for humans to work on.
@@ -47,7 +45,7 @@ Clients and servers request data and servers respond to requests to data using o
 
 Servers, who request and respond to data, have various ways that they are organized, but we will be learning the most common pattern called **Model View Controller** or **MVC**.
 
-![MVC](assets/mvc.jpg)
+![MVC](assets/mvc-simple.png)
 
 * **Controllers** - Where code that defines routes, requests, and responses logic goes.
 * **Views** - Where code goes that users see and interact with (HTML).
@@ -61,6 +59,7 @@ Here is a diagram of an integrated look at the Request-Response Cycle and MVC:
 
 1. [Request Response Cycle Code Academy](https://www.codecademy.com/articles/request-response-cycle-static)
 1. [What is Programming in MVC](https://www.youtube.com/watch?v=1IsL6g2ixak)
+1. [This is what Node.js is used for in 2017 - Survey Results](https://blog.risingstack.com/what-is-node-js-used-for-2017-survey/)
 
 ## Baseline Challenges
 

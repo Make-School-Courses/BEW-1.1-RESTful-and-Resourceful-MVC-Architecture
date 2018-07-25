@@ -18,6 +18,7 @@ The web is becoming ever more JavaScripty. Initially the red-headed stepchild of
 
 ## Competencies & Objectives
 
+1. Master CRUDing Resources
 1. Master the foundational tags of semantic HTML.
 1. Master the use of CSS selectors and foundational properties.
 1. Master the fundamentals of JavaScript.
