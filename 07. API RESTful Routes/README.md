@@ -79,6 +79,10 @@ app.get('/api/posts', function(req, res){
 
 1. [REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA)
 
+### Reading 
+
+- RESTful Web APIs - Chapter 11, HTTP for APIs
+
 ## Baseline Challenges
 
 **Challenge 1 - Explore Service Oriented Architecture**

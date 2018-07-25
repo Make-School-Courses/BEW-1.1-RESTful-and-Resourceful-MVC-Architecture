@@ -145,7 +145,7 @@ describe('Site', function() {
 
 ## Baseline Challenges
 
-1. Add Mocha to the portfolio project
+1. Add Mocha to your rotten potatoes project
   ```bash
   $ npm install —-save-dev mocha
   ```
@@ -168,3 +168,8 @@ describe('Site', function() {
 
 1. Add tests for all other RESTful routes
 1. Add tests for validation and user errors
+
+### Reading 
+
+- RESTful Web APIs - Chapter 9, The Design Procedure
+- RESTful Web APIs - Chapter 10, The Hypermedia Zoo
