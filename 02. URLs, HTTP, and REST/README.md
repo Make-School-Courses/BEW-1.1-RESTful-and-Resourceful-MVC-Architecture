@@ -78,8 +78,3 @@ The most common HTTP statuses are the following. Here is a [complete list](https
     1. What are the reasons to use a "RESTful" server?
     1. What are the constraints of a RESTful server?
 1. Complete the [Giphy API Search Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment)
-
-### Reading 
-
-- RESTful Web APIs - Chapter 3, Resources and Representations
-- RESTful Web APIs - Chapter 4, Hypermedia
