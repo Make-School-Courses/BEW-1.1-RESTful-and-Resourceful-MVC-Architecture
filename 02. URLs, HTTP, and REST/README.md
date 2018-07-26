@@ -1,12 +1,6 @@
 # URLs, HTTP, and REST
 
-1. 5 min Intro & Objectives
-1. 10 min Diagram your home postal address
-1. 20 min TT URLs, REST, HTTP
-1. 30 min Group up and answer Challenge 1
-1. 10 min Break
-1. 45 min Kick off Giphy Tutorial
-1. 5 min Wrap up
+## [Slides](https://docs.google.com/presentation/d/1YwafbC4N1Bjz1AQRJvEA6mm1gA_n_BZQTaUHOeCaAPw/edit?usp=sharing)
 
 ## Objectives
 
