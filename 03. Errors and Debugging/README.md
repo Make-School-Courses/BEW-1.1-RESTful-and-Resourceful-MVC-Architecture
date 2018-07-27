@@ -3,6 +3,7 @@
 ## Objectives
 
 1. Read and interpret errors
+1. Use Node's debugging tools
 1. Google errors to understand them
 1. Use errors to find out your next step
 
