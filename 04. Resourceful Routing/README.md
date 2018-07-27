@@ -1,4 +1,4 @@
-# RESTful & Resourceful Routing
+# Resourceful Routing
 
 1. 5 min Intro & Objectives
 1. 10 min TT on RESTful and Resourceful Routing
@@ -92,7 +92,7 @@ app.listen(3000);
 1. Come up with 3 or more routes that do not follow the Resourceful pattern, but sites still commonly use. (hint: "/about-us")
 1. Find a partner and begin the [Rotten Potatoes Project](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project).
 
-### Reading 
+### Reading
 
 - RESTful Web APIs - Chapter 5, Domain-Specific Designs
 - RESTful Web APIs - Chapter 6, The Collection Pattern

@@ -14,13 +14,6 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 
 ## Learning Objectives or Competencies (5-8)
 
-<<<<<<< HEAD
-1. Master CRUDing Resources
-1. Master the foundational tags of semantic HTML.
-1. Master the use of CSS selectors and foundational properties.
-1. Master the fundamentals of JavaScript.
-=======
->>>>>>> af440ba520374fbda30b0ac93e08a0db224b58b6
 1. Master the MVC architecture for web server development.
 1. Master and memorize Resourceful Routes and in general describe the importance of Resourceful web architecture.
 1. Read and write to a Document-Based (NoSQL) database (in this case MongoDB) using a Object Document Mapper (ODM)
@@ -51,7 +44,7 @@ To pass this course you must meet the following requirements:
 1. Introduction to Web Servers & Web Frameworks
     - **Before Class**
         -  Complete all Prework
-    - **In Class Activities** 
+    - **In Class Activities**
         - Why are we studying JavaScript, Node.js, and Express.js?
         - Compare & Contrast Web Servers vs. Frameworks
         - Know the field of Web Frameworks
@@ -66,13 +59,13 @@ To pass this course you must meet the following requirements:
     - **After Class**
         - Finish Giphy Search App
 1. Reading Errors and Debugging
-    - **In Class Activities** 
+    - **In Class Activities**
         - [Identifying Errors Activity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
         - Reading Errors Demo
         - Review of Giphy App Solution
     - **After Class**
         - Start Rotten Potatoes Tutorial
-1. Resource-based MVC Server Architecture
+1. Resourceful Routing
     - **In Class Activities**
         - Diagram Request/Response Cycle with MVC
         - Tour of a large project
@@ -87,37 +80,37 @@ To pass this course you must meet the following requirements:
         - RESTful Routing - Index - Rotten Potatoes
     - **After Class**
          - Rotten Potatoes Tutorial
-1. RESTful Routing - New, Create - Rotten Potatoes
-    - **In Class Activities**
-        - Resourceful Routes Quiz II
-    - **After Class**
-         - Rotten Potatoes Tutorial
-1. RESTful Routing - Edit, Update, Delete
-    - **In Class Activities**
-        - Resourceful Routes Quiz II
-        - [Express Custom Middleware Activity](https://expressjs.com/en/guide/writing-middleware.html)
-    - **After Class**
-         - Complete Rotten Potatoes Tutorial
-1. Deploy to Heroku
-    - **In Class Activities**
-        - Intro to DevOps & Deploying to Heroku
-        - Intro to Contractor Project
-    - **After Class**
-1. Bootstrap - the Grid, Typography, Forms, and Buttons 
-    - **In Class Activities**
-        - User-Centered Development Demo - Yagni
-        - Rapid Prototyping Templates with Bootstrap Activity
-        - Adding Bootstrap Themes
-    - **After Class**
-        - Contractor Project
 1. Testing RESTful Routes
     - **In Class Activities**
         - Review types of tests - Unit/Model, Route/Controller, Interaction/End-to-End/View
         - Route/Controller Test Demo
         - Compare and Contrast Test Driven Development vs. Regular Testing
     - **After Class**
-        - Contractor Project
+        - Rotten Potatoes
+1. Deploy to Heroku
+    - **In Class Activities**
+        - Intro to DevOps & Deploying to Heroku
+        - Resourceful Routes Quiz II
+    - **After Class**
+        - Complete Rotten Potatoes Tutorial
 1. Flex Day / Review Day / Student's Choice Day
+    - **In Class Activities**
+    - **After Class**
+1. RESTful APIs & Service Oriented Architecture
+    - **In Class Activities**
+        - API Exploration Activity
+        - Adding JSON routes to Rotten Potatoes
+    - **After Class**
+        - User Narratives and Wireframes for Contractor Project
+1. Bootstrap - the Grid, Typography, Forms, and Buttons
+    - **In Class Activities**
+        - Intro to Contractor Project
+        - User-Centered Development Demo - Yagni
+        - Rapid Prototyping Templates with Bootstrap Activity
+        - Adding Bootstrap Themes
+    - **After Class**
+        - Contractor Project - rapid prototype wireframes in bootstrap
+1. MongoDB Associations & Queries
     - **In Class Activities**
     - **After Class**
         - Contractor Project
@@ -130,11 +123,6 @@ To pass this course you must meet the following requirements:
     - **In Class Activities**
         - Presentations
         - Complete Summative Assessment
-
-Potential Flex Topics:
-
-1. RESTful APIs & Service Oriented Architecture 
-1. 
 
 ## Make School Course Policies
 

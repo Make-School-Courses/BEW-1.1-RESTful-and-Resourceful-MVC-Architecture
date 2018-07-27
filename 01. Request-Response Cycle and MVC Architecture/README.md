@@ -12,7 +12,7 @@ Complete the prework by the end of week 1 of class. Especially:
 1. [CSS Cross-Country (Only Lesson 1)](https://www.codeschool.com/courses/css-cross-country) (Tutorial - 45min)
 1. [Semantic HTML (Videos 2 hrs)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
 
-## Intial Objectives 
+## Intial Objectives
 
 1. Connect as a class
 1. Be able to find and identify the topics and objectives of this course
@@ -46,14 +46,9 @@ This course is the first of the three courses that make up the baseline web deve
 
 For this course, we are going to zoom in on one layer: the server. The server is called a "server" because it serves data to anyone that asks properly. To make servers work, we could write raw, vanilla code, or we can use pre-made **Frameworks**. These frameworks follow standardized conventions. As web developers we have to learn those conventions to save time, and to make our code predictable for other developers. One of the primary conventions is the Model View Controller (MVC) convention.
 
-<<<<<<< HEAD
-=======
 ### Why MVC?
 
 **Think, Pair, Share** - Think up 5 conventions that exist in ordinary day-to-day life. Share your list with a partner. Why do we follow these conventions? What are alternatives? What if we didn't follow them what would happen?
-
->>>>>>> af440ba520374fbda30b0ac93e08a0db224b58b6
-Why do we have architectures like MVC? The answer is because they are conventions that make coding easier.
 
 We could write all the code together in one file without spaces or new lines, the computer does not care, but that would be very hard for humans to work on.
 
@@ -103,8 +98,7 @@ Here is a diagram of an integrated look at the Request-Response Cycle and MVC:
     1. [CSS Cross-Country (Tutorial)](https://www.codeschool.com/courses/css-cross-country)
     1. [Learn CSS in 12 Min (video)](https://www.youtube.com/watch?v=0afZj1G0BIE)
     1. [Code Academy JavaScript lesson (tutorial)](https://www.codecademy.com/learn/javascript)
-    
+
 **Project**
 
 1. Begin the [Giphy API Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment). You should plan to finish this tutorial by the following Monday.
-

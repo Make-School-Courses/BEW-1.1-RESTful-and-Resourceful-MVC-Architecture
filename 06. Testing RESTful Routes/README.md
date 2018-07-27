@@ -1,4 +1,4 @@
-# Testing RESTful Routes
+# Testing Resourceful Routes
 
 1. 5 min Intro and Objectives
 1. 20 min TT on Test Types and Assertions
@@ -169,7 +169,7 @@ describe('Site', function() {
 1. Add tests for all other RESTful routes
 1. Add tests for validation and user errors
 
-### Reading 
+### Reading
 
 - RESTful Web APIs - Chapter 9, The Design Procedure
 - RESTful Web APIs - Chapter 10, The Hypermedia Zoo
