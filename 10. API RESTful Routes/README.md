@@ -25,6 +25,26 @@ An API is a set of web endpoints that respond to JSON (or XML) rather than with 
 
 We've already used APIs - like those found at [RapidAPI.com](rapidapi.com) - but now we want to make our own.
 
+# Fetch vs. Axios Activity
+
+Why are we using Axios if it is just a wrapper for JavaScript's ES6 function `fetch`? Why not just use fetch by itself.
+
+Let's look at the pro's and con's
+
+Cons
+* Having to add Axios anywhere we will use it on the client
+* Having to learn Axios' API
+* Having to conform to any of Axios' idiosyncrasies
+* Needlessly going to a higher level of abstraction
+
+Pros
+* Axios parses JSON responses automatically meaning fewer steps and less code
+* Axios has a purely resouceful API, so if you know resouceful development you already know its API
+* Mirroring resourceful syntax on the client and the server
+* This class is about learning Resourceful development :D
+
+The Pro's have it! But it isn't always the right choice. Keep an open mind about the tools you or your team use. Try to be **Technically Agnostic** - the best engineers are.
+
 ### Service Oriented Architectures (SOA)
 
 A Service Oriented Architecture is the most common best practice for software architecture today.
