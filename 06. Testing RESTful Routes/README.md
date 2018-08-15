@@ -1,13 +1,5 @@
 # Testing Resourceful Routes
 
-1. 5 min Intro and Objectives
-1. 20 min TT on Test Types and Assertions
-1. 30 min Baseline and Stretch challenges
-1. 10 min Break
-1. 20 min Continue with Rotten Tomatoes
-1. 10 min Kick off custom project
-1. 5 min Wrap up
-
 ## Objectives
 
 1. Identify the various types of testing and pick the right test for a module.
@@ -171,5 +163,5 @@ describe('Site', function() {
 
 ### Reading
 
-- RESTful Web APIs - Chapter 9, The Design Procedure
-- RESTful Web APIs - Chapter 10, The Hypermedia Zoo
+[Hacker Noon: Testing Node.js](https://hackernoon.com/testing-node-js-in-2018-10a04dd77391)
+[An Overview of JavaScript Testing in 2018](https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3)

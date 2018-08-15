@@ -1,14 +1,9 @@
 # Errors and Debugging
 
-1. 5 min Intro & Objectives
-1. 20 min TT Demo of Solution to Giphy Tutorial
-1. 20 min TT and Demo on Errors
-1. 30 min Challenges
-1. 5 min Wrap up
-
 ## Objectives
 
 1. Read and interpret errors
+1. Use Node's debugging tools
 1. Google errors to understand them
 1. Use errors to find out your next step
 
@@ -60,35 +55,16 @@ When you want to Google an error, google the error type and the error message st
 	num.toUpperCase();
 
 	//3
-	var dude;
-	dude.height;
+	var person;
+	person.height;
 
 	//5
-	var dude;
-	dude.eatsASandwhich();
+	var person;
+	person.eatsASandwhich();
 	
 	// Run this lastt one in your browser's console
 	//6 
 	eval("alert('Hello)");
-	```
-
-1. Experiment in wrapping these in a `try`, `catch` block to make an alert appear if an error occurs. ([try catch block docs](https://www.w3schools.com/js/tryit.asp?filename=tryjs_try_catch)) See following example:
-
-	```js
-	try {
-	  num.toPrecision(200);
-	} catch(e) {
-		console.log(‘Oh no!’);
-	} finally {
-	  //  Block of code to be executed regardless of the try / catch result
-	}
-	```
-
-1. In your catch statements try throwing a custom error using the JavaScript `throw` command.
-
-	```js
-	throw "Too big";    // throw a text
-	throw 500;          // throw a number
 	```
 
 1. Read the following code snippet. What should it do? Can you run it in your console in your browser? What error do you get? Can you fix it?
