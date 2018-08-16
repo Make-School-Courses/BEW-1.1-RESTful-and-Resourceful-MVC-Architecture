@@ -11,7 +11,7 @@
 
 1. Add bootstrap to any project.
 1. Utilize bootstraps most basic css classes to define a conventional web design
-1. Deploying a bootstrap responsive grid, navbar, and footer
+1. Deploying a bootstrap responsive grid, navbar, and forms.
 
 ## Initial Activity
 
@@ -74,22 +74,43 @@ Underneath the hood these classe are using the CSS3 `@media` [**media queries**]
 
 You can also use other various **helper classes** to control what your site looks like on various screen sizes. `xs-hidden`, `sm-visible`, etc all will do what they say, e.g. `xs-hidden` will hide the element on a mobile phone.
 
+## Navbar
+
+Almost all websites have a navbar over the top of the page. Since it is so conventional. Bootstrap has a responsive navbar you can, and should, use in your projects.
+
+[Bootstrap Navbar](https://getbootstrap.com/docs/4.1/components/navbar/)
+
+![navbar](assets/navbar.png)
+
+## Forms
+
+Bootstrap also provides very nice form and button styling.
+
+[Bootstrap Forms](https://getbootstrap.com/docs/4.1/components/forms/)
+
+![boostrap form](assets/form.png)
+
+```html
+Copy
+<form>
+ <div class="form-group">
+   <label for="exampleInputEmail1">Email address</label>
+   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+ </div>
+ <div class="form-group">
+   <label for="exampleInputPassword1">Password</label>
+   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+ </div>
+ <div class="form-group form-check">
+   <input type="checkbox" class="form-check-input" id="exampleCheck1">
+   <label class="form-check-label" for="exampleCheck1">Check me out</label>
+ </div>
+ <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+```
+
 ## Resources
 
 1. [Bootstrap](http://getbootstrap.com/)
 1. [Boostrap (videos by Quentin Watt)](https://www.youtube.com/playlist?list=PL41lfR-6DnOovY0t3nBg8Zb6aqm_H70mR)
-
-## Baseline Challenges
-
-1. Add bootstrap to your project using the [CDN link](http://getbootstrap.com/getting-started/#download-cdn).
-1. Add the [default bootstrap navbar](http://getbootstrap.com/components/#navbar-default) to your layout template.
-1. Use the [responsive grid classes](http://getbootstrap.com/css/#grid) to add a responsive layout to your layout template and each template of your project. Remember you might need to use the [responsive utilities](http://getbootstrap.com/css/#responsive-utilities) helper classes.
-1. Make sure your project is fully mobile responsive using the [chrome device emulator](https://www.youtube.com/watch?v=da_ACsJT8l8).
-1. Add the bootstrap [form/input helper classes](http://getbootstrap.com/css/#forms) to make your forms pretty.
-1. Add bootstrap [button classes](http://getbootstrap.com/css/#buttons) to your buttons.
-1. Use some of bootstrap's [typographic classes](http://getbootstrap.com/css/#type) and [helper classes](http://getbootstrap.com/css/#helper-classes) to complete your project.
-
-## Stretch Challenges
-
-1. Pick out another bootstrap component and add it to your Rotten Potatoes project.
-1. Pick out a bootstrap JavaScript component and add it to your Rotten Potatoes.

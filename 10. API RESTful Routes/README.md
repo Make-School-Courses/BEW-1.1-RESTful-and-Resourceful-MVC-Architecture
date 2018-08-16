@@ -1,4 +1,4 @@
-# RESTful API Routes & Their Tests
+# RESTful API Routes
 
 1. 5 min Intro & Objectives
 1. 15 min Challenge 1

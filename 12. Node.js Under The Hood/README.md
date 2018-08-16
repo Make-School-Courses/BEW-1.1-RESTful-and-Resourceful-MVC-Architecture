@@ -4,32 +4,7 @@
 
 ## Node.js
 
-> 
-
-## Invention
-
-Ryan Dahl at JSConf 2009
-
-![OG Node.js Presentation](https://www.youtube.com/watch?v=ztspvPYybIY)
-
-Typescript
-Deno
-
-https://thenewstack.io/node-js-creator-blasts-node-js-offers-a-secure-typescript-based-alternative/
-
-https://github.com/denoland/deno
-
-https://thenewstack.io/node-js-creator-blasts-node-js-offers-a-secure-typescript-based-alternative/
-
-## Written in C
-
-
-## I/O Runtime
-
-"In computing, input/output or I/O (or, informally, io or IO) is the communication between an information processing system, such as a computer, and the outside world, possibly a human or another information processing system. Inputs are the signals or data received by the system and outputs are the signals or data sent from it. The term can also be used as part of an action; to "perform I/O" is to perform an input or output operation." [Wikipedia - Input/output](https://en.wikipedia.org/wiki/Input/output)
-
-## Module Pattern
-
+> Node.js is a event-driven, single-threaded, non-blocking I/O Runtime written in C and invented in 2009 by Ryan Dahl.
 
 ## Event Driven
 
@@ -42,3 +17,27 @@ https://thenewstack.io/node-js-creator-blasts-node-js-offers-a-secure-typescript
 ## Non-Blocking
 
 ![non-blocking](assets/non-blocking-1.png)
+
+## I/O Runtime
+
+"In computing, input/output or I/O (or, informally, io or IO) is the communication between an information processing system, such as a computer, and the outside world, possibly a human or another information processing system. Inputs are the signals or data received by the system and outputs are the signals or data sent from it. The term can also be used as part of an action; to "perform I/O" is to perform an input or output operation." [Wikipedia - Input/output](https://en.wikipedia.org/wiki/Input/output)
+
+## Written in C
+
+
+
+## Invented in 2009 by Ryan Dahl
+
+Ryan Dahl at JSConf 2009
+
+![OG Node.js Presentation](https://www.youtube.com/watch?v=ztspvPYybIY)
+
+
+Typescript
+Deno
+
+https://thenewstack.io/node-js-creator-blasts-node-js-offers-a-secure-typescript-based-alternative/
+
+https://github.com/denoland/deno
+
+https://thenewstack.io/node-js-creator-blasts-node-js-offers-a-secure-typescript-based-alternative/

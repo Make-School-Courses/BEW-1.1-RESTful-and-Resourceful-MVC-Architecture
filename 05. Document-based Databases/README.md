@@ -212,23 +212,19 @@ In a document-based database these **Resource Associations** are modeled in a fe
 }
 ```
 
-## Activity: Writing JSON
-
-Write examples in JSON for the following associations:
-
 
 ## Queries
 
 Now imagine you have these underlying resource associations. Let's look at the queries that Mongoose gives you to pull this data out and serve it.
 
-### Simple Query
+### Find All
 
 ```js
 Post.find()
-  .then((posts) => {
+  .then(posts => {
 
   })
-  .catch((err) => {
+  .catch(err => {
 
   })
 ```
@@ -236,29 +232,37 @@ Post.find()
 ### Find by Attribute
 
 ```js
-Post.find()
-  .then((posts) => {
+Post.findOne({"name": "Bob Winthrope"})
+  .then(post => {
 
   })
-  .catch((err) => {
+  .catch(err => {
 
   })
 ```
 
-### Populate
+## Activities: Returns
+
+Find what each of these return? (Hint: use mongoose docs)
+
 ```js
-Post.find()
-  .then((posts) => {
-
-  })
-  .catch((err) => {
-
-  })
+Person.find().exec(err, person => {});
+Event.findOne({name: "Lightening Party"}).exec(err, event => {});
+Car.findById(req.params.carId).exec(err, car => {});
+Company.findOne({_id: req.params.companyId})
+       .populate('employees')
+       .exec(err, company => {});
 ```
+
+Use your imagination and write sample JSON of what the last one might return.
 
 ## Activity: Queries
 
-With a partner, write the queries in Mongoose for the following requests in English. Remember that some of these will need two queries.
+With a partner, write the queries in Mongoose for the following requests in English.
 
-1. Give me
-1. Give me all dogs that go to heaven.
+1. Find all users
+1. Find one article by its id
+1. Find one user by their social security number
+1. Find all dogs that go to heaven sorted alphabetically by name
+1. Find the 10 most recent articles to be created
+1. Find the 10 oldest users

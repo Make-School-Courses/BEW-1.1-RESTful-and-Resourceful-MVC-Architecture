@@ -135,32 +135,6 @@ describe('Site', function() {
 1. [Intro to JavaScript Unit Testing With Mocha and Chai](https://www.youtube.com/watch?v=MLTRHc5dk6s) - this uses Chai - which we will look at in a future lesson.
 1. [Integration Testing with Express (video)](https://www.youtube.com/watch?v=r8sPUw4uxAI) - this includes Chai and Supertest - which we will learn in a future lesson.
 
-## Baseline Challenges
-
-1. Add Mocha to your rotten potatoes project
-  ```bash
-  $ npm install —-save-dev mocha
-  ```
-
-  ```js
-  // package.json
-  ...
-  “scripts”: {
-    "test": "mocha"
-  }
-  ...
-  ```
-
-1. Add test for GET `/`
-1. Add test for POST `/projects`
-1. Add test for GET `/projects/:id`
-1. Add test for DELETE `/projects/:id`
-
-## Stretch Challenges
-
-1. Add tests for all other RESTful routes
-1. Add tests for validation and user errors
-
 ### Reading
 
 [Hacker Noon: Testing Node.js](https://hackernoon.com/testing-node-js-in-2018-10a04dd77391)
