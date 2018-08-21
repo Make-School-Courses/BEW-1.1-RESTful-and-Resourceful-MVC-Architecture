@@ -61,7 +61,7 @@ Large companies build their own custom services for their various flows. However
 
 ### Microservices Architecture
 
-A Microservcies Architecture is SOA on steroids. It further breaks up services into sometimes even single routes and hyper specialized sorts of databases and technology.
+A Microservices Architecture is SOA on steroids. It further breaks up services into sometimes even single routes and hyper specialized sorts of databases and technology.
 
 ## Implementation of a RESTful API
 

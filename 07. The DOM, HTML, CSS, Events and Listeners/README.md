@@ -8,7 +8,7 @@
 1. Manipulate the DOM with JS
 1. Style the DOM with CSS
 
-## Overview: Leonardo Da Vinci
+## Overview: Leonardo Da Vinci & the Renaissance
 
 Leonardo Da Vinci was a Renaissance polymath and multipotentialite. Who made significant contributions to invention, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography. Designed a prototype of a helicopter, painted the Mona Lisa, and made strides in anatomy.
 
