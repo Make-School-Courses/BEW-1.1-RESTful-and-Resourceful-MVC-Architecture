@@ -22,8 +22,8 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 
 ### Tutorials & Projects
 
-- [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) tutorial. - 1-3 days
-- [Rotten Potatoes](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project). 4-8 days
+- [Giphy Search App](https://www.makeschool.com/academy/track/giphy-search-app-with-node-js) tutorial. - 1-3 days
+- [Rotten Potatoes](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js). 4-8 days
 - [Rotten Potatoes: Part Deux](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js-rge) 3-5 days
 - A Contractor Project - The instructor will roleplay being a client to your engineering team.
 
