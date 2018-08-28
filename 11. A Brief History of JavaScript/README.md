@@ -8,9 +8,20 @@
 1. List some of the most dramatic improvements of JavaScript with ES6 (ES2015)
 1. Explain some of the potential future features of JavaScript versions and other projects like **Typescript**.
 
-## The Browser Wars
+## Netscape Invents a Browser "Glue Language"
 
-## V8
+Originally JavaScript was meant to be a "glue language" to allow developers to write scripts to make the client more dynamic.
+
+Netscape (now Mozilla), the first major web browser, brought in Brendan Eich to create the language. He made the prototype of Javascript in 10 days, in May 1995. Originally called "Mocha", and then "LiveScript", but finally Netscape settled on "JavaScript" by December.
+
+## Standardization
+
+
+## Internet Explorer Holds Out
+
+
+
+## V8 Engine
 
 https://medium.freecodecamp.org/understanding-the-core-of-nodejs-the-powerful-chrome-v8-engine-79e7eb8af964
 
@@ -18,9 +29,29 @@ https://en.wikipedia.org/wiki/Chrome_V8
 
 [![Franzi Hinkelmann - KEYNOTE- The V8 Engine and Node.js - Oct 2017](https://img.youtube.com/vi/PsDqH_RKvyc/0.jpg)](https://www.youtube.com/watch?v=PsDqH_RKvyc)
 
+## Node.js
+
+
+## Multi-Paradigm
+
+JavaScript is **Multi-Paradigm** meaning it is a flexible language that can be used with various programming paradigms, namely:
+
+* Procedural/Imperative
+* Object Oriented
+* Prototypical
+* Functional
+
+Being a paradigm tolerant JS developer
+
+[![Being a paradigm tolerant JS developer](https://img.youtube.com/vi/ZvRksoVsSJE/0.jpg)](https://www.youtube.com/watch?v=ZvRksoVsSJE)
+
 ## Event Loop
 
-![Philip Roberts: What the heck is the event loop anyway? | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=9s)
+It uses an Event Loop. What the heck is that? - Watch this video to find out.
+
+Philip Roberts: What the heck is the event loop anyway? | JSConf EU
+
+[![Philip Roberts: What the heck is the event loop anyway? | JSConf EU](https://img.youtube.com/vi/8aGhZQkoFbQ/0.jpg)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
 ## ECMAScript Timeline - ES3, ES4, ES5, ES6 (ES2015)
 
@@ -35,9 +66,11 @@ https://en.wikipedia.org/wiki/Chrome_V8
 * Destructuring assignment
 * Algebraic data types
 
-## CoffeeScript
+## CoffeeScript - 2009
 
-JavaScript written as beautifully as Ruby.
+CoffeeScript was a **preprocessor** meant to make JavaScript to be as beautiful as Ruby. It would **Transpile** into JavaScript before the browser read it. CoffeeScript was an inspiration for improvements to future versions of JavaScript.
+
+Here are some examples:
 
 ```CoffeeScript
 # Assignment:
@@ -247,34 +280,15 @@ lib.foo();
 lib.bar();
 ```
 
+# Activity: Researching ES2016-18
 
-## ES2016
+Break up into pairs and research what new features will be available in ES2016, 17, and 18. For each new feature write:
 
-#### Exponentiation Operator
+1. An example
+1. A description
+1. A use case
 
-```js
-(\**)
-```
-
-```js
-Array.prototype.includes
-```
-
-## ES2017
-
-#### Concurrency
-
-#### Atomics
-
-#### syntactic integration with promises (async/await)
-
-## ES2018
-
-#### asynchronous iteration and generators
-#### new regular expression features
-#### rest/spread parameters
-
-## Typescript
+# Typescript
 
 **Transpiling**
 

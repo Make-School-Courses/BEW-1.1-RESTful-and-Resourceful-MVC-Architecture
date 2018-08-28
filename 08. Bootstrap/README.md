@@ -41,6 +41,8 @@ Much like Picasso who first mastered the traditional painting techniques before 
 ![crying woman](assets/picasso-weeping-woman.jpg)
 ![guernica](assets/guernica.jpg)
 
+## Demo of Bootstrap - Login Page
+
 ### Defining a Layout with the Responsive Grid
 
 The grid is the most basic and most important concept and use of bootstrap. Using margins, floats, and percentage widths, bootstrap and pretty much all CSS frameworks define a grid, usually with 12 columns.

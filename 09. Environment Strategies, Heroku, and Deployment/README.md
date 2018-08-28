@@ -18,9 +18,11 @@ Any software project has at least three separate **Environments**
 - **Test (TEST)** on local machines or a separate test server
 - **Production (PROD)** on a production server
 
-![evironments](assets/different-environments.jpg)
+![environments](assets/different-environments.jpg)
 
-Heroku will be the server we use for our Production environment. Heroku is a simple turn-key server solution that is free (but requires a credit card). Heroku also provides a rich marketplace of plugins to extend and enhance your server such as monitor bugs, speed, and add databases. We'll be using the "MongoLabs" plugin to add a production mongodb database to our project.
+Your computer is the host for your development environment.
+
+Heroku will be the host we use for our Production environment. Heroku is a simple turn-key server solution that is free (but requires a credit card). Heroku also provides a rich marketplace of plugins to extend and enhance your server such as monitor bugs, speed, and add databases. We'll be using the "MongoLabs" plugin to add a production mongodb database to our project.
 
 These environments can vary slightly.  Some differences between dev and prod will be what is in the database, or maybe the assets will be compiled, or a dozen other slight differences. As developers we try to keep these environments as similar to each other as possible because differences will make code that ran well in development break in production.
 
@@ -33,8 +35,6 @@ Sometimes you can't save everything into your code files because that would be i
 To secure such data, developers use encrypted environment variables that they store locally and in production.
 
 The node package people use to define these variables is called [`dotenv`](https://www.npmjs.com/package/dotenv).
-
-## Resources
 
 ## Baseline Challenges
 

@@ -26,10 +26,15 @@ Italy did not exist when he lived, but he lived in what are now Italian cities, 
 
 ## Overview: An Analogy for the DOM—The Body
 
-The DOM
+The DOM is like a body.
+
+* The HTML is like the **Bones** - it provides a ridged structure.
+* The JavaScript is like the **Muscles, Nerves, and Brain** - it lets the body remember things and move.
+* The CSS is like the **Clothes** - It makes the body look stylish.
 
 ![vitruvian man](assets/vitruvian.jpg)
 
+> The Vitruvian Man - "The proportions of the human body according to Vitruvius"
 
 ## HTML
 
@@ -58,6 +63,101 @@ So this snippet of HTML has the tree-like DOM structure in the image below.
 
 ![muscles](assets/muscles.jpg)
 
+JavaScript we've been using so far on the server side, but it actually was invented for the browser.
+
+JavaScript is like the muscles and ligaments of the body because it makes the DOM **Dynamic** by being able to:
+
+* Move the DOM around
+* Add or remove parts of the DOM
+* Send requests to API's
+* Store things in LocalStorage, Cookies, and SessionStorage
+* Change the way things look by updating the styles of the DOM
+
+### Selectors, Listeners, and Events
+
+JavaScript can manipulate the DOM and interact with users through placing various **Listeners** that listen for **Events** such as click, mouse-over and submit. In order to set a listener, you have to use **Selectors**.
+
+Selectors can be:
+
+```HTML
+<!-- id (common) -->
+<h1 id="title"></h1>
+<script>
+let titleHeader = document.getElementById('title');
+</script>
+
+<!-- class (only for many) -->
+<ul id="comments">
+    <li class="comment"></li>
+    <li class="comment"></li>
+    <li class="comment"></li>
+</ul>
+<script>
+document.getElementsByClassName('comment');
+</script>
+
+<!-- tag (rare) -->
+<p>There is no greatness where there is not simplicity, goodness, and truth.</p>
+<script>
+let paragraphs = document.getElementsByTagName('p');
+</script>
+```
+
+Once you set a listener, when the event occurs, the code will run.
+
+```html
+<a href="#" id="alertMe">Tell of the Ruling Yahoo</a>
+
+<script>
+document.getElementById('alertMe').addEventListener('click', function () {
+    alert('He had heard, indeed, some curious Houyhnhnms observe, that in most herds there was a sort of ruling Yahoo');
+    return false
+});
+</script>
+```
+
 ## CSS
 
+**Cascading Style Sheets** are the clothes of the DOM. They make the HTML look good. Like their name they *cascade* over the DOM updating each part.
+
 ![fashion](assets/fashion.jpg)
+
+### Selectors and Syntax
+
+You can do **inline styling** but it is not a very DRY pattern, so people invented CSS.
+
+```HTML
+<blockquote style="margin:0 10px 0 0">Because of the self-confidence with which he had spoken, no one could tell whether what he said was very clever or very stupid. - <i>War and Peace</i> by Leo Tolstoy<blockquote>
+```
+
+CSS also uses the same **DOM Selectors** as JavaScript. Each block of CSS has the same three parts: **selector**, **attributes**, and **values**.
+
+```css
+/* class selector (common) */
+.comment {
+    color: red;
+}
+
+/* id selector (rare) */
+#title {
+    font-size: 38px;
+}
+
+/* tag selector (rare) */
+p {
+    margin-left: 10px;
+}
+```
+
+### CSS/DOM Activity: Hacking MakeSchool.com
+
+Go to makeschool.com (or any another website) and open your developer tools. From there, begin changing and removing and adding CSS until you've made the Make School in your own image :D.
+
+Can you...
+
+1. Change the colors
+1. Change the images
+1. Change the fonts
+1. Change the text
+
+Take a screenshot when you are done and share on slack in the #random channel for all to see :D
