@@ -48,18 +48,18 @@ When you want to Google an error, google the error type and the error message st
 	num.toPrecision(500)
 
 	//2
-	var x;
+	let x;
 	x = y + 1;
 
 	//4
 	num.toUpperCase();
 
 	//3
-	var person;
+	let person;
 	person.height;
 
 	//5
-	var person;
+	let person;
 	person.eatsASandwhich();
 	
 	// Run this lastt one in your browser's console
@@ -70,10 +70,10 @@ When you want to Google an error, google the error type and the error message st
 1. Read the following code snippet. What should it do? Can you run it in your console in your browser? What error do you get? Can you fix it?
 
 	```js
-	var peoplesNames = ["Dan", "Kathy", "Monika", "Carl"]
+	const peoplesNames = ["Dan", "Kathy", "Monika", "Carl"]
 
-	var shortNames = [];
-	var longNames = [];
+	let shortNames = [];
+	let longNames = [];
 	for (i = 0; i < peoplesNames.length; i++) {
 	    if (peoplesNames[i].length < 4) {
 		shortNames.push(peoplesNames[i])
