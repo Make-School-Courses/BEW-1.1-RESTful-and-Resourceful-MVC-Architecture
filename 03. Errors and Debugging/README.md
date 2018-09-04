@@ -41,7 +41,7 @@ When you want to Google an error, google the error type and the error message st
 1. Use Node's native debugger to do the same thing.
 1. Now use `node-inspector` to do the same thing.
 
-1. Run these snippets of JS in your Node REPL (type `node` in your bash terminal) and in your Chrome Console tab. Examine errors and see what you would have to do to fix them (so they did not throw an error).
+1. Run these snippets of JS in your Node REPL (type `node` in your bash terminal) or in a repl.it console. Each will return an error. See what you would have to do to fix them so they did not throw an error.
 
 	```js
 	// 1
