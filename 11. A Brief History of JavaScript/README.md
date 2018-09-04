@@ -290,7 +290,7 @@ Break up into pairs and research what new features will be available in ES2016, 
 
 # Typescript
 
-**Transpiling**
+Like CoffeeScript, TypeScript **transpiles**
 
 ![typescript](assets/typescript.png)
 
