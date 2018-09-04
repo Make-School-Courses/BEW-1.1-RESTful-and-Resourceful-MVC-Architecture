@@ -10,7 +10,7 @@
 
 ## Overview: Leonardo Da Vinci & the Renaissance
 
-Leonardo Da Vinci was a Renaissance polymath and multipotentialite. Who made significant contributions to invention, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography. Designed a prototype of a helicopter, painted the Mona Lisa, and made strides in anatomy.
+Leonardo Da Vinci was a Renaissance **polymath** and **multipotentialite**—that is, someone who cultivates many skills and becomes an expert in many bodies of knowledge. He made significant contributions to invention, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography. He designed a prototype of the first helicopter, painted the Mona Lisa, and made strides in anatomy.
 
 Italy did not exist when he lived, but he lived in what are now Italian cities, Florence, Milan, Rome, Bologna, Venice, and lived the final years of his life in France.
 
@@ -75,7 +75,7 @@ JavaScript is like the muscles and ligaments of the body because it makes the DO
 
 ### Selectors, Listeners, and Events
 
-JavaScript can manipulate the DOM and interact with users through placing various **Listeners** that listen for **Events** such as click, mouse-over and submit. In order to set a listener, you have to use **Selectors**.
+JavaScript can manipulate the DOM and interact with users through placing various **Listeners** that listen for **Events** such as `click`, `mouseOver` and `submit`. In order to set a listener, you have to use **Selectors**.
 
 Selectors can be:
 
@@ -83,33 +83,36 @@ Selectors can be:
 <!-- id (common) -->
 <h1 id="title"></h1>
 <script>
-let titleHeader = document.getElementById('title');
+let titleHeader = document.querySelector('#title');
+titleHeader.innerHTML = "A New Title";
 </script>
 
 <!-- class (only for many) -->
-<ul id="comments">
-    <li class="comment"></li>
-    <li class="comment"></li>
-    <li class="comment"></li>
+<ul id="marx-brothers">
+    <li class="marx-brother">Groucho</li>
+    <li class="marx-brother">Harpo</li>
+    <li class="marx-brother">Chico</li>
 </ul>
 <script>
-document.getElementsByClassName('comment');
+let marxBrothersArr = document.querySelector('.marx-brother');
+marxBrothersArr.parentNode.appendChild("<li class='marx-brother'>Zeppo</li>");
 </script>
 
 <!-- tag (rare) -->
-<p>There is no greatness where there is not simplicity, goodness, and truth.</p>
+<p></p>
 <script>
-let paragraphs = document.getElementsByTagName('p');
+let paragraphs = document.querySelector('p');
+paragraphs.innerHTML = "There is no greatness where there is not simplicity, goodness, and truth."
 </script>
 ```
 
 Once you set a listener, when the event occurs, the code will run.
 
 ```html
-<a href="#" id="alertMe">Tell of the Ruling Yahoo</a>
+<a href="#" id="alert-me">Tell of the Ruling Yahoo</a>
 
 <script>
-document.getElementById('alertMe').addEventListener('click', function () {
+document.getElementById('alert-me').addEventListener('click', function () {
     alert('He had heard, indeed, some curious Houyhnhnms observe, that in most herds there was a sort of ruling Yahoo');
     return false
 });
@@ -127,12 +130,19 @@ document.getElementById('alertMe').addEventListener('click', function () {
 You can do **inline styling** but it is not a very DRY pattern, so people invented CSS.
 
 ```HTML
+<!-- INLINE STYLING -->
 <blockquote style="margin:0 10px 0 0">Because of the self-confidence with which he had spoken, no one could tell whether what he said was very clever or very stupid. - <i>War and Peace</i> by Leo Tolstoy<blockquote>
 ```
 
 CSS also uses the same **DOM Selectors** as JavaScript. Each block of CSS has the same three parts: **selector**, **attributes**, and **values**.
 
 ```css
+/*
+.selector {
+    attribute: value;
+}
+*/
+
 /* class selector (common) */
 .comment {
     color: red;
@@ -148,6 +158,8 @@ p {
     margin-left: 10px;
 }
 ```
+
+You should be able to use just the **class** selector for 90% of all css. But there are many advanced selectors you can look at here: [Advanced CSS Selectors](https://www.w3schools.com/cssref/css_selectors.asp)
 
 ### CSS/DOM Activity: Hacking MakeSchool.com
 

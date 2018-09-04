@@ -13,7 +13,7 @@
 1. Utilize bootstraps most basic css classes to define a conventional web design
 1. Deploying a bootstrap responsive grid, navbar, and forms.
 
-## Initial Activity
+## Initial Activity: Detecting Conventions with Wireframing (15 min)
 
 Pick three of the websites you use the most. Now draw wireframes on a sheet of paper for one page of each one. Here are two examples of some simple drawn wireframe. Do you notice any common themes between the three pages? What are common visual elements or modules that all the pages have?
 
@@ -76,6 +76,12 @@ Underneath the hood these classe are using the CSS3 `@media` [**media queries**]
 
 You can also use other various **helper classes** to control what your site looks like on various screen sizes. `xs-hidden`, `sm-visible`, etc all will do what they say, e.g. `xs-hidden` will hide the element on a mobile phone.
 
+**Reminder** - the responsive grid will not work without this `<meta>` tag in your `<head>` element.
+
+```HTML
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
 ## Navbar
 
 Almost all websites have a navbar over the top of the page. Since it is so conventional. Bootstrap has a responsive navbar you can, and should, use in your projects.
@@ -111,6 +117,20 @@ Copy
  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 ```
+
+## Activity: Recreating Your Wireframes
+
+Many great painters began their careers making deliberate copies of the masterworks of other artists. So we're going to take a chapter from their book.
+
+1. Pick one of your wireframes you drew in the initial activity.
+1. Make an `index.html` file in a new directory called `bootstrap-mockup`.
+1. Now add bootstrap using the CDN link
+
+    ```html
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    ```
+1. Now using only bootstrap components make a static HTML/CSS prototype of your wireframe. Do not write any custom CSS, edit colors.
+1. For any images, use [placeholder.com](https://placeholder.com/) images.
 
 ## Resources
 
