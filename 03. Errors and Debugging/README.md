@@ -52,16 +52,16 @@ When you want to Google an error, google the error type and the error message st
 	x = y + 1;
 
 	//4
-	num.toUpperCase();
+	int.toUpperCase();
 
 	//3
-	let person;
-	person.height;
+	let horse;
+	horse.height;
 
 	//5
 	let person;
 	person.eatsASandwhich();
-	
+
 	// Run this lastt one in your browser's console
 	//6 
 	eval("alert('Hello)");
