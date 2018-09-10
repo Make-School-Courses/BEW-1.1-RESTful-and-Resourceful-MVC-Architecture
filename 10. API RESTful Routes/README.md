@@ -14,6 +14,7 @@
 1. Define our routes to respond to JSON requests
 
 ## Activity - Explore Service Oriented Architecture
+
 1. With a partner pick 2 companies on [stackshare.io](https://stackshare.io/stacks) and examine the services and languages they use. Google the services you are not familiar with.
 
 ## Overview
@@ -53,7 +54,6 @@ A Microservices Architecture is SOA on steroids. It further breaks up services i
 1. Now imagine you use Twillio.com to send text messages. Add this to your picture.
 1. Now imagine you use AWS S3 to save images that users upload and serve them back when requested. Add this to your picture.
 
-
 ## Implementation of a RESTful API
 
 To make our server a RESTful API, we need our server to respond intelligently to JSON requests. Since we already have RESTful routes that return HTML, we have two options, either we can make separate whole controllers, or we can check if the request coming in has the `Content-Type` header of `application/json`, and then behave accordingly.
@@ -87,6 +87,7 @@ app.get('/api/posts', function(req, res){
 > Notice that the NEW and EDIT routes are not necessary with a RESTful API.
 
 ## Activity: RESTful API
+
 1. Why are the NEW and EDIT RESTful routes not necessary with a RESTful API?
 1. Make Rotten Potatoes respond as an API to JSON requests.
 1. Make what changes must you make to your tests to cover these new routes that respond to JSON requests.
