@@ -52,7 +52,7 @@ Documents are grouped into **Collections**. And these collections should have th
 
 ### Pros
 
-1. Write's fast
+1. Writes fast
 1. Easy to get started
 1. No migrations
 1. "Schemaless" - can write anything you like
