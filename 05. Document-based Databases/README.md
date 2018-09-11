@@ -121,7 +121,7 @@ A model is like a prototype for an object because you can assign it attributes a
 1. Bulk insert 3 more articles.
 1. Query for just one article.
 1. Delete that article.
-1. Download [Robomongo](https://robomongo.org/) and look at the database you created with the mongo shell.
+1. Download [Robo 3T](https://robomongo.org/) and look at the database you created with the mongo shell.
 1. Continue with the [Rotten Potatoes App](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project)
 
 
