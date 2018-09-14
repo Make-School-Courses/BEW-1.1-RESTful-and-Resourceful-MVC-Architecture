@@ -1,11 +1,19 @@
 # Bootstrap Basics
 
-1. 5 min Intro & Objectives
-1. 30 min Initial activity
-1. 20 min TT and Demo on CoC and Bootstrap
-1. 10 min Break
-1. 30 min Challenges
-1. 5 min Wrap up
+## Initial Activity: Detecting Conventions with Wireframing (15 min)
+
+Pick a new website. Now draw wireframes on a sheet of paper for one page of each one. Here are two examples of some simple drawn wireframe. Do you notice any common themes between the three pages? What are common visual elements or modules that all the pages have?
+
+**Not detailed enough**
+![Another Wireframe](assets/page.jpg)
+
+**Good detail**
+![Responsive Wireframe](assets/responsive-wireframe.png)
+
+**Good detail**
+![Detailed Wireframe](assets/wireframe-sketch-01.jpg)
+
+## Demo of Bootstrap - Login Page (20 min)
 
 ## Why Master Bootstrap? (5 min)
 
@@ -34,8 +42,6 @@ Much like Picasso who first mastered the traditional painting techniques before 
 ![demoiselles](assets/demoiselles_NewFINAL.jpg)
 ![crying woman](assets/picasso-weeping-woman.jpg)
 ![guernica](assets/guernica.jpg)
-
-## Demo of Bootstrap - Login Page (20 min)
 
 ### Defining a Layout with the Responsive Grid
 
@@ -116,7 +122,7 @@ Copy
 
 Many great painters began their careers making deliberate copies of the masterworks of other artists. So we're going to take a chapter from their book.
 
-1. Pick one of your wireframes you drew in last week's.
+1. Pick one of your wireframes you drew in the intial activity.
 1. Make an `index.html` file in a new directory called `bootstrap-mockup`.
 1. Now add bootstrap using the CDN link
 
