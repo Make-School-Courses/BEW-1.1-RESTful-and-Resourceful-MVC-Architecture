@@ -8,7 +8,7 @@
 1. Manipulate the DOM with JS
 1. Style the DOM with CSS
 
-## Warm Up Activity: I Do, You Do - Wireframing (10 min)
+## Warm Up Activity: I Do, You Do - Wireframing (15 min)
 
 Go to the whiteboard and draw a wireframe for three screens of one of the following apps or one you decide on:
 
@@ -17,7 +17,7 @@ Go to the whiteboard and draw a wireframe for three screens of one of the follow
 1. Podcasts (App)
 1. Gmail (Website)
 
-## Overview: Leonardo Da Vinci & the Renaissance (10 min)
+## Overview: Leonardo Da Vinci & the Renaissance (25 min)
 
 Leonardo Da Vinci was a Renaissance **polymath** and **multipotentialite**—that is, someone who cultivates many skills and becomes an expert in many bodies of knowledge. He made significant contributions to invention, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography. He designed a prototype of the first helicopter, painted the Mona Lisa, and made strides in anatomy.
 
@@ -170,7 +170,7 @@ p {
 
 You should be able to use just the **class** selector for 90% of all css. But there are many advanced selectors you can look at here: [Advanced CSS Selectors](https://www.w3schools.com/cssref/css_selectors.asp)
 
-## CSS/DOM Activity: Hacking MakeSchool.com
+## CSS/DOM Activity: Hacking MakeSchool.com (20 min)
 
 Go to makeschool.com (or any another website) and open your developer tools. From there, begin changing and removing and adding CSS until you've made the Make School in your own image :D.
 
