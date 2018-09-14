@@ -1,21 +1,18 @@
-# Deploy to Heroku
+# Environment Strategies, Heroku, and Deployment
 
-1. 5 min Intro & Objectives
-1. 45 min Activity 1
-1. 10 min Break
-1. 30 min Activities 2 & 3
-1. 5 min Wrap up
+## Objectives (5 min)
 
-## Objectives
-
+1. Describe a simple environment and deployment strategy using your local computer and heroku.com
 1. Deploy Node/Mongo projects to Heroku
+1. Use `dotenv` to protect your keys
 
 ## The Production Environment
 
-Any software project has at least three separate **Environments**
+Any software project has at a few separate **Environments**. Currently we are just using 2 - DEV & PROD.
 
 - **Development (DEV)** on local machines
 - **Test (TEST)** on local machines or a separate test server
+- **Staging (STAGING)** on a production server (private for stablization and load testing)
 - **Production (PROD)** on a production server
 
 ![environments](assets/different-environments.jpg)
