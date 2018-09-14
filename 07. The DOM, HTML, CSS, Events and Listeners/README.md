@@ -8,7 +8,16 @@
 1. Manipulate the DOM with JS
 1. Style the DOM with CSS
 
-## Overview: Leonardo Da Vinci & the Renaissance
+## Warm Up Activity: I Do, You Do - Wireframing (10 min)
+
+Go to the whiteboard and draw a wireframe for three screens of one of the following apps or one you decide on:
+
+1. Linkedin (Website)
+1. Spotify (App)
+1. Podcasts (App)
+1. Gmail (Website)
+
+## Overview: Leonardo Da Vinci & the Renaissance (10 min)
 
 Leonardo Da Vinci was a Renaissance **polymath** and **multipotentialite**—that is, someone who cultivates many skills and becomes an expert in many bodies of knowledge. He made significant contributions to invention, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography. He designed a prototype of the first helicopter, painted the Mona Lisa, and made strides in anatomy.
 
@@ -24,7 +33,7 @@ Italy did not exist when he lived, but he lived in what are now Italian cities, 
 * Machiavelli - 3 May 1469 – 21 June 1527
 * Shakespeare - 26 April 1564 – 23 April 1616
 
-## Overview: An Analogy for the DOM—The Body
+## Overview: An Analogy for the DOM—The Body (10 min)
 
 The DOM is like a body.
 
@@ -161,7 +170,7 @@ p {
 
 You should be able to use just the **class** selector for 90% of all css. But there are many advanced selectors you can look at here: [Advanced CSS Selectors](https://www.w3schools.com/cssref/css_selectors.asp)
 
-### CSS/DOM Activity: Hacking MakeSchool.com
+## CSS/DOM Activity: Hacking MakeSchool.com
 
 Go to makeschool.com (or any another website) and open your developer tools. From there, begin changing and removing and adding CSS until you've made the Make School in your own image :D.
 
@@ -173,3 +182,7 @@ Can you...
 1. Change the text
 
 Take a screenshot when you are done and share on slack in the #random channel for all to see :D
+
+## Onward!
+
+Continue to work on Rotten Potatoes I & II or Contractor Project
