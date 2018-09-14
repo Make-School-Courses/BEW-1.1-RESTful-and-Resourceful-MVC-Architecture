@@ -16,6 +16,7 @@ Any software project has at a few separate **Environments**. Currently we are ju
 - **Production (PROD)** on a production server
 
 ![environments](assets/different-environments.jpg)
+![environments2](assets/pastedImage_1.png)
 
 Your computer is the host for your development environment.
 
