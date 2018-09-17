@@ -132,7 +132,7 @@ document.getElementById('alert-me').addEventListener('click', function () {
 
 **Cascading Style Sheets** are the clothes of the DOM. They make the HTML look good. Like their name they *cascade* over the DOM updating each part.
 
-![fashion](assets/fashion.jpg)
+![clothing](assets/clothing.jpg)
 
 ### Selectors and Syntax
 
