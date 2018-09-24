@@ -19,6 +19,8 @@ Go to the whiteboard and draw a wireframe for three screens of one of the follow
 
 ## Overview: Leonardo Da Vinci & the Renaissance (25 min)
 
+![Leonardo](assets/leonardo-248x300.jpg)
+
 Leonardo Da Vinci was a Renaissance **polymath** and **multipotentialite**—that is, someone who cultivates many skills and becomes an expert in many bodies of knowledge. He made significant contributions to invention, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography. He designed a prototype of the first helicopter, painted the Mona Lisa, and made strides in anatomy.
 
 Italy did not exist when he lived, but he lived in what are now Italian cities, Florence, Milan, Rome, Bologna, Venice, and lived the final years of his life in France.
