@@ -25,10 +25,23 @@ Leonardo Da Vinci was a Renaissance **polymath** and **multipotentialite**—tha
 
 Italy did not exist when he lived, but he lived in what are now Italian cities, Florence, Milan, Rome, Bologna, Venice, and lived the final years of his life in France.
 
-**The Renaissance** - 14-17th centuries, characterized by the rise of humanism and the adoration of classical Greek and Roman culture. Caused by the reemergence of trade, the Crusades, demographic changes from the Black Plague, and cultural conditions of Florence.
+**The Renaissance** - 14-17th centuries, characterized by 
+
+1. The rise of **Humanism** - The belief that humanity is the greatest good in the world.
+1. Adoration of classical Greek and Roman culture
+1. Reemergence of higher learning
+1. The beginnings of modern science 
+1. The beginnings of modern civil rights
+
+It was caused by:
+
+1. The reemergence of trade
+2. The Crusades
+3. Demographic changes from the Black Plague
+1. The cultural conditions of Florence
 
 **Renaissance People**
-* Donatello - ??? 1386 – 13 December 1466
+* Donatello - 1386 – 13 December 1466
 * Leonardo Da Vinci - 15 April 1452 – 2 May 1519
 * Michelangelo - 6 March 1475 – 18 February 1564
 * Raphael - April 6 1483 – April 6, 1520
