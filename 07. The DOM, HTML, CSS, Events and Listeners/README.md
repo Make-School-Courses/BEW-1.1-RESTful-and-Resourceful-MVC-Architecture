@@ -19,7 +19,7 @@ Go to the whiteboard and draw a wireframe for three screens of one of the follow
 
 Like Leonardo Da Vinci, you are going to draw what your products will look like:
 
-![notebooks](leonardowaterliftingIrg.jpg)
+![notebooks](assets/leonardowaterliftinglrg.jpg)
 
 ## Overview: Leonardo Da Vinci & the Renaissance (25 min)
 
