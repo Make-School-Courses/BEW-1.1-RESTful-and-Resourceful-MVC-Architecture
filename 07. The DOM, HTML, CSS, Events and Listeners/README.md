@@ -17,6 +17,10 @@ Go to the whiteboard and draw a wireframe for three screens of one of the follow
 1. Podcasts (App)
 1. Gmail (Website)
 
+Like Leonardo Da Vinci, you are going to draw what your products will look like:
+
+![notebooks](leonardowaterliftinglrg.jpg)
+
 ## Overview: Leonardo Da Vinci & the Renaissance (25 min)
 
 ![Leonardo](assets/leonardo-248x300.jpg)
