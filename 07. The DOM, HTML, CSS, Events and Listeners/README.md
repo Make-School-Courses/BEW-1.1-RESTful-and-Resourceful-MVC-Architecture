@@ -8,23 +8,51 @@
 1. Manipulate the DOM with JS
 1. Style the DOM with CSS
 
-## Overview: Leonardo Da Vinci & the Renaissance
+## Warm Up Activity: I Do, You Do - Wireframing (15 min)
+
+Go to the whiteboard and draw a wireframe for three screens of one of the following apps or one you decide on:
+
+1. Linkedin (Website)
+1. Spotify (App)
+1. Podcasts (App)
+1. Gmail (Website)
+
+Like Leonardo Da Vinci, you are going to draw what your products will look like:
+
+![notebooks](assets/leonardowaterliftinglrg.jpg)
+
+## Overview: Leonardo Da Vinci & the Renaissance (25 min)
+
+![Leonardo](assets/leonardo-248x300.jpg)
 
 Leonardo Da Vinci was a Renaissance **polymath** and **multipotentialite**—that is, someone who cultivates many skills and becomes an expert in many bodies of knowledge. He made significant contributions to invention, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography. He designed a prototype of the first helicopter, painted the Mona Lisa, and made strides in anatomy.
 
 Italy did not exist when he lived, but he lived in what are now Italian cities, Florence, Milan, Rome, Bologna, Venice, and lived the final years of his life in France.
 
-**The Renaissance** - 14-17th centuries, characterized by the rise of humanism and the adoration of classical Greek and Roman culture. Caused by the reemergence of trade, the Crusades, demographic changes from the Black Plague, and cultural conditions of Florence.
+**The Renaissance** - 14-17th centuries, characterized by 
+
+1. The rise of **Humanism** - The belief that humanity is the greatest good in the world.
+1. Adoration of classical Greek and Roman culture
+1. Reemergence of higher learning
+1. The beginnings of modern science 
+1. The beginnings of modern civil rights
+
+It was caused by:
+
+1. The reemergence of trade
+2. The Crusades
+3. Demographic changes from the Black Plague
+1. The cultural conditions of Florence
 
 **Renaissance People**
-* Donatello - ??? 1386 – 13 December 1466
+* Donatello - 1386 – 13 December 1466
 * Leonardo Da Vinci - 15 April 1452 – 2 May 1519
 * Michelangelo - 6 March 1475 – 18 February 1564
 * Raphael - April 6 1483 – April 6, 1520
 * Machiavelli - 3 May 1469 – 21 June 1527
 * Shakespeare - 26 April 1564 – 23 April 1616
 
-## Overview: An Analogy for the DOM—The Body
+## Overview: An Analogy for the DOM—The Body (10 min)
 
 The DOM is like a body.
 
@@ -123,7 +151,7 @@ document.getElementById('alert-me').addEventListener('click', function () {
 
 **Cascading Style Sheets** are the clothes of the DOM. They make the HTML look good. Like their name they *cascade* over the DOM updating each part.
 
-![fashion](assets/fashion.jpg)
+![robes](assets/robes.jpg)
 
 ### Selectors and Syntax
 
@@ -161,7 +189,7 @@ p {
 
 You should be able to use just the **class** selector for 90% of all css. But there are many advanced selectors you can look at here: [Advanced CSS Selectors](https://www.w3schools.com/cssref/css_selectors.asp)
 
-### CSS/DOM Activity: Hacking MakeSchool.com
+## CSS/DOM Activity: Hacking MakeSchool.com (20 min)
 
 Go to makeschool.com (or any another website) and open your developer tools. From there, begin changing and removing and adding CSS until you've made the Make School in your own image :D.
 
@@ -173,3 +201,7 @@ Can you...
 1. Change the text
 
 Take a screenshot when you are done and share on slack in the #random channel for all to see :D
+
+## Onward!
+
+Continue to work on Rotten Potatoes I & II or Contractor Project

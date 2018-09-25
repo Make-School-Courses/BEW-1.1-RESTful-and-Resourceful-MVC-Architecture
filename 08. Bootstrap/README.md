@@ -1,21 +1,8 @@
 # Bootstrap Basics
 
-1. 5 min Intro & Objectives
-1. 30 min Initial activity
-1. 20 min TT and Demo on CoC and Bootstrap
-1. 10 min Break
-1. 30 min Challenges
-1. 5 min Wrap up
-
-## Objectives
-
-1. Add bootstrap to any project.
-1. Utilize bootstraps most basic css classes to define a conventional web design
-1. Deploying a bootstrap responsive grid, navbar, and forms.
-
 ## Initial Activity: Detecting Conventions with Wireframing (15 min)
 
-Pick three of the websites you use the most. Now draw wireframes on a sheet of paper for one page of each one. Here are two examples of some simple drawn wireframe. Do you notice any common themes between the three pages? What are common visual elements or modules that all the pages have?
+Pick a new website. Now draw wireframes on a sheet of paper for one page of each one. Here are two examples of some simple drawn wireframe. Do you notice any common themes between the three pages? What are common visual elements or modules that all the pages have?
 
 **Not detailed enough**
 ![Another Wireframe](assets/page.jpg)
@@ -26,7 +13,22 @@ Pick three of the websites you use the most. Now draw wireframes on a sheet of p
 **Good detail**
 ![Detailed Wireframe](assets/wireframe-sketch-01.jpg)
 
-## Overview
+## Demo of Bootstrap - Login Page (20 min)
+
+## Why Master Bootstrap? (5 min)
+
+* Convention over Configuration
+* Fast to Build
+* Backend Web Developers expected to prototype
+* "Design Systems" are popular everywhere, bootstrap is just a public & opensource one
+
+## Objectives (5 min)
+
+1. Add bootstrap to any project.
+1. Utilize bootstraps most basic css classes to define a conventional web design
+1. Deploying a bootstrap responsive grid, navbar, and forms.
+
+## Overview (5 min)
 
 Remember that Convention over Configuration is a way to gain in development speed, code reusability, and to cope with unexpected edge cases. Well we can use CoC on the front end as well as the back end. We will first be learning how to use Bootstrap to learn the conventions of web design, and then in future classes we will learn how to write completely custom CSS code. For now though, we just need things to look OK.
 
@@ -40,8 +42,6 @@ Much like Picasso who first mastered the traditional painting techniques before 
 ![demoiselles](assets/demoiselles_NewFINAL.jpg)
 ![crying woman](assets/picasso-weeping-woman.jpg)
 ![guernica](assets/guernica.jpg)
-
-## Demo of Bootstrap - Login Page
 
 ### Defining a Layout with the Responsive Grid
 
@@ -122,7 +122,7 @@ Copy
 
 Many great painters began their careers making deliberate copies of the masterworks of other artists. So we're going to take a chapter from their book.
 
-1. Pick one of your wireframes you drew in the initial activity.
+1. Pick one of your wireframes you drew in the intial activity.
 1. Make an `index.html` file in a new directory called `bootstrap-mockup`.
 1. Now add bootstrap using the CDN link
 
