@@ -175,6 +175,8 @@ Can you...
 
 Take a screenshot when you are done and share on slack in the #random channel for all to see :D
 
+## 10 Min Break
+
 ## Why Master Bootstrap? (5 min)
 
 * Convention over Configuration
@@ -287,6 +289,7 @@ Many great painters began their careers making deliberate copies of the masterwo
     ```html
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     ```
+    
 1. Now using only bootstrap components make a static HTML/CSS prototype of your wireframe. Do not write any custom CSS, edit colors.
 1. For any images, use [placeholder.com](https://placeholder.com/) images.
 
