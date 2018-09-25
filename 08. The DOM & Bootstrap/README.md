@@ -1,6 +1,10 @@
-# Bootstrap Basics
+# The DOM & Intro to Bootstrap
 
-## Initial Activity: Detecting Conventions with Wireframing (15 min)
+## Initial Activity: Detecting Conventions with Wireframing (10 min)
+
+Like Leonardo Da Vinci, you are going to draw what your products will look like:
+
+![notebooks](assets/leonardowaterliftinglrg.jpg)
 
 Pick a new website. Now draw wireframes on a sheet of paper for one page of each one. Here are two examples of some simple drawn wireframe. Do you notice any common themes between the three pages? What are common visual elements or modules that all the pages have?
 
@@ -13,7 +17,163 @@ Pick a new website. Now draw wireframes on a sheet of paper for one page of each
 **Good detail**
 ![Detailed Wireframe](assets/wireframe-sketch-01.jpg)
 
-## Demo of Bootstrap - Login Page (20 min)
+## Objectives (5 min)
+
+1. Define the DOM, list its parts, and describe its hierarchical structure
+1. Manipulate the DOM with JS
+1. Style the DOM with CSS
+1. Add bootstrap to any project
+1. Utilize bootstraps most basic css classes to define a conventional web design
+1. Deploying a bootstrap responsive grid, navbar, and forms.
+
+## Overview: An Analogy for the DOM—The Body (10 min)
+
+The DOM is like a body.
+
+* The HTML is like the **Bones** - it provides a ridged structure.
+* The JavaScript is like the **Muscles, Nerves, and Brain** - it lets the body remember things and move.
+* The CSS is like the **Clothes** - It makes the body look stylish.
+
+![fetus](assets/fetus.jpg)
+
+## HTML
+
+![bones](assets/bones.jpg)
+
+Each webpage is made up of a tree-like structure of HTML called the **DOM (Document Object Map)**.
+
+So this snippet of HTML has the tree-like DOM structure in the image below.
+
+```HTML
+<html>
+  <head>
+    <title>My Title</title>
+  </head>
+
+  <body>
+    <a href="#">My Link</a>
+    <h1>My header</h1>
+  </body>
+</html>
+```
+
+![dom](assets/dom.png)
+
+## JavaScript
+
+![muscles](assets/muscles.jpg)
+
+JavaScript we've been using so far on the server side, but it actually was invented for the browser.
+
+JavaScript is like the muscles and ligaments of the body because it makes the DOM **Dynamic** by being able to:
+
+* Move the DOM around
+* Add or remove parts of the DOM
+* Send requests to API's
+* Store things in LocalStorage, Cookies, and SessionStorage
+* Change the way things look by updating the styles of the DOM
+
+### Selectors, Listeners, and Events
+
+JavaScript can manipulate the DOM and interact with users through placing various **Listeners** that listen for **Events** such as `click`, `mouseOver` and `submit`. In order to set a listener, you have to use **Selectors**.
+
+Selectors can be:
+
+```HTML
+<!-- id (common) -->
+<h1 id="title"></h1>
+<script>
+let titleHeader = document.querySelector('#title');
+titleHeader.innerHTML = "A New Title";
+</script>
+
+<!-- class (only for many) -->
+<ul id="marx-brothers">
+    <li class="marx-brother">Groucho</li>
+    <li class="marx-brother">Harpo</li>
+    <li class="marx-brother">Chico</li>
+</ul>
+<script>
+let marxBrothersArr = document.querySelector('.marx-brother');
+marxBrothersArr.parentNode.appendChild("<li class='marx-brother'>Zeppo</li>");
+</script>
+
+<!-- tag (rare) -->
+<p></p>
+<script>
+let paragraphs = document.querySelector('p');
+paragraphs.innerHTML = "There is no greatness where there is not simplicity, goodness, and truth."
+</script>
+```
+
+Once you set a listener, when the event occurs, the code will run.
+
+```html
+<a href="#" id="alert-me">Tell of the Ruling Yahoo</a>
+
+<script>
+document.getElementById('alert-me').addEventListener('click', function () {
+    alert('He had heard, indeed, some curious Houyhnhnms observe, that in most herds there was a sort of ruling Yahoo');
+    return false
+});
+</script>
+```
+
+## CSS
+
+**Cascading Style Sheets** are the clothes of the DOM. They make the HTML look good. Like their name they *cascade* over the DOM updating each part.
+
+![robes](assets/robes.jpg)
+
+### Selectors and Syntax
+
+You can do **inline styling** but it is not a very DRY pattern, so people invented CSS.
+
+```HTML
+<!-- INLINE STYLING -->
+<blockquote style="margin:0 10px 0 0">Because of the self-confidence with which he had spoken, no one could tell whether what he said was very clever or very stupid. - <i>War and Peace</i> by Leo Tolstoy<blockquote>
+```
+
+CSS also uses the same **DOM Selectors** as JavaScript. Each block of CSS has the same three parts: **selector**, **attributes**, and **values**.
+
+```css
+/*
+.selector {
+    attribute: value;
+}
+*/
+
+/* class selector (common) */
+.comment {
+    color: red;
+}
+
+/* id selector (rare) */
+#title {
+    font-size: 38px;
+}
+
+/* tag selector (rare) */
+p {
+    margin-left: 10px;
+}
+```
+
+You should be able to use just the **class** selector for 90% of all css. But there are many advanced selectors you can look at here: [Advanced CSS Selectors](https://www.w3schools.com/cssref/css_selectors.asp)
+
+
+## CSS/DOM Activity: Hacking MakeSchool.com (10 min)
+
+Go to makeschool.com (or any another website) and open your developer tools. From there, begin changing and removing and adding CSS until you've made the Make School in your own image :D.
+
+Can you...
+
+1. Change the colors
+1. Change the images
+1. Change the fonts
+1. Change the text
+
+Take a screenshot when you are done and share on slack in the #random channel for all to see :D
 
 ## Why Master Bootstrap? (5 min)
 
@@ -22,13 +182,9 @@ Pick a new website. Now draw wireframes on a sheet of paper for one page of each
 * Backend Web Developers expected to prototype
 * "Design Systems" are popular everywhere, bootstrap is just a public & opensource one
 
-## Objectives (5 min)
+## Bootstrap Overview (5 min)
 
-1. Add bootstrap to any project.
-1. Utilize bootstraps most basic css classes to define a conventional web design
-1. Deploying a bootstrap responsive grid, navbar, and forms.
-
-## Overview (5 min)
+Like Picasso you are going to master conventions before you break them.
 
 Remember that Convention over Configuration is a way to gain in development speed, code reusability, and to cope with unexpected edge cases. Well we can use CoC on the front end as well as the back end. We will first be learning how to use Bootstrap to learn the conventions of web design, and then in future classes we will learn how to write completely custom CSS code. For now though, we just need things to look OK.
 
@@ -42,6 +198,8 @@ Much like Picasso who first mastered the traditional painting techniques before 
 ![demoiselles](assets/demoiselles_NewFINAL.jpg)
 ![crying woman](assets/picasso-weeping-woman.jpg)
 ![guernica](assets/guernica.jpg)
+
+## Demo of Bootstrap - Login Page (20 min)
 
 ### Defining a Layout with the Responsive Grid
 
@@ -118,7 +276,7 @@ Copy
 </form>
 ```
 
-## Activity: Recreating Your Wireframes
+## Activity: Recreating Your Wireframes (20 min)
 
 Many great painters began their careers making deliberate copies of the masterworks of other artists. So we're going to take a chapter from their book.
 

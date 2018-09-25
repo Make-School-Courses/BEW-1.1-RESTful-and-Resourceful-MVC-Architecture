@@ -2,12 +2,18 @@
 
 ## Objectives
 
-1. Identify the key characteristics of a NoSQL or Document-based database.
-1. Navigate the most simple commands inside the mongo shell.
+1. Identify the key characteristics of a NoSQL or Document-based database
+1. List the pros and cons of a Document-base database
+1. Navigate the most simple commands inside the mongo shell
+1. Use Mongoose’s simplest Query Helpers to query a Document-based database.
 
 ## Document-based Databases or NoSQL
 
-**JSON** or **JavaScript Object Notation** is a way to organize data to transmit it across the internet. It looks the same as a JavaScript object. It is made up of pairs of **keys** and **values** separated by colons (`:`) and surrounded by curly braces (`{}`). The only difference between a JavaScript object and a JSON object is the **keys** are wrapped in strings. For example:
+Why use a Document-Based Database?
+
+Full Stack JavaScript!
+
+![full stack js](assets/full-stack-js.png)
 
 ```js
 // JS OBJECT
@@ -20,6 +26,13 @@
 // JSON OBJECT
 {
   "title": "Great Project"
+}
+```
+```js
+// MONGODB OBJECT
+{
+  _id: "507f1f77bcf86cd799439011",
+  title: "A New Project"
 }
 ```
 
@@ -53,8 +66,7 @@ Documents are grouped into **Collections**. And these collections should have th
 ### Pros
 
 1. Writes fast
-1. Easy to get started
-1. No migrations
+1. No migrations - more flexible and easy to start
 1. "Schemaless" - can write anything you like
 
 ### Cons
@@ -111,7 +123,7 @@ A model is like a prototype for an object because you can assign it attributes a
 
 1. [Mongo Shell Quick Reference](https://docs.mongodb.com/manual/reference/mongo-shell/)
 
-## Baseline Challenges
+## Mongo Shell Challenges
 
 1. Open the mongo shell in your terminal.
 1. Query what databases you have.
@@ -122,147 +134,157 @@ A model is like a prototype for an object because you can assign it attributes a
 1. Query for just one article.
 1. Delete that article.
 1. Download [Robo 3T](https://robomongo.org/) and look at the database you created with the mongo shell.
-1. Continue with the [Rotten Potatoes App](https://www.makeschool.com/online-courses/tutorials/rotten-potatoes-movie-reviews-with-express-js/bootstrap-an-express-project)
 
 
-# MongoDB Associations & Queries
+## 10 Minute Break
 
-## Objectives
 
-1. Utilize the common verbiage for defining **Resource Associations**
-1. Master Mongoose queries for associated resources, including the function `.populate()`
-1. Master the simplest ERD diagrams
+## ODMs & Queries
 
-## Associations
+Why use an ODM
 
-Here are some statements that are true about the associations of the resources in Facebook. We'll call these "Has Many/Belongs To"
+* Data Types and Validations
+* Advanced Querying - `.query()`, `.populate()`
+* Timestamps (createdAt & updatedAt)
+* Instance and Static functions
+* Virtuals
+* Converts BSON into JS Object
+* Promises
 
-```
-Users have many Posts
-Users have many Comments
-Users have many Likes
-```
-
-Here are some more, more complex associations also called "Has and Belongs to Many".
-
-```
-Users have many Events as reservations
-Users belong to Events as guests
-```
-
-You can also do a "Has One/Belongs To" association (rare)
-
-```
-User has one Profile
-User has one Credit Card
-```
-
-## ERDs
-
-## Activity - Drawing ERDs
-
-Draw ERDs for the core features of 3 the following applications. You can pick your own products if you like to draw. When you finish your first, check with a partner. Form into groups of 4 and show your favorites off.
-
-1. Lyft
-1. Pinterest
-1. Airbnb
-1. Facebook
-1. The AppStore
-
-## Modeling these Associations in MongoDB
-
-In a document-based database these **Resource Associations** are modeled in a few ways.
-
-### Attributes
+## Models
 
 ```js
-// Post belongs to Subreddit
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+
+var blogSchema = new Schema({
+  title:  String,
+  author: String,
+  body:   String,
+  comments: [{ body: String, date: Date }],
+  date: { type: Date, default: Date.now },
+  hidden: Boolean,
+  meta: {
+    votes: Number,
+    favs:  Number
+  }
+});
+```
+
+## Common Queries and Helpers
+
+The most common queries are just finding many or one document.
+
+* `.find()`
+* `.findById(authorId)`
+* `.findOne({ email: email })`
+
+Mongoose provides more helpers that let you order, group, exclude and include documents.
+
+```js
+// With a JSON doc
+Person.
+  find({
+    occupation: /host/,
+    'name.last': 'Ghost',
+    age: { $gt: 17, $lt: 66 },
+    likes: { $in: ['vaporizing', 'talking'] }
+  }).
+  limit(10).
+  sort({ occupation: -1 }).
+  select({ name: 1, occupation: 1 }).
+  exec(callback);
+
+// Using query builder
+Person.
+  find({ occupation: /host/ }).
+  where('name.last').equals('Ghost').
+  where('age').gt(17).lt(66).
+  where('likes').in(['vaporizing', 'talking']).
+  limit(10).
+  sort('-occupation').
+  select('name occupation').
+  exec(callback);
+```
+
+As a one-liner:
+
+```js
+Tank.find({ size: 'small' }).where('createdDate').gt(oneYearAgo).exec(callback);
+```
+
+### Populating Referenced Subdocuments
+
+Using the query helper `.populate()` you can pull in a subdocument referenced by the subdocument's ID. For example, imagine that Stories belong to an Author, and Authors have man Fans.
+
+```js
+Story.
+  findOne({ title: 'Casino Royale' }).
+  populate('author').
+  exec(function (err, story) {
+    if (err) return handleError(err);
+    console.log('The author is %s', story.author.name);
+    // prints "The author is Ian Fleming"
+  });
+```
+
+=>
+
+```json
+/* WITHOUT POPULATE */
 {
-  "title": "",
-  "subreddit": "Jugglers Anonymous"
+    "_id": "23j4l3jl432jkl4jl23",
+    "title": "Casino Royal",
+    "author": "234hjk32423g432jh4"
 }
 
-// User belongs to City
+/* WITH POPULATE */
 {
-  "name": "John Brown",
-  "city": "San Francisco"
+    "_id": "23j4l3jl432jkl4jl23",
+    "title": "Casino Royal",
+    "author":{
+            _id: "234hjk32423g432jh4",
+            name: "Bob Daniels",
+            fans: ["2k32j4j24j2l4lk23j4", "lk23j4kj234l23jj4l"]
+        }
 }
 ```
 
-### Reference Documents
-
 ```js
-// Posts belong to User
-{
-  "name": "John Brown",
-  "posts": ["a41492308329r900sdf", "9309safd0as0f9f098af"]
-}
+// to get the fans...
+Author.
+  findById(authorId).
+  populate('fans').
+  exec(function (err, author) {
+    console.log(author)
+  });
 ```
 
-### Embedded Documents
+## Activity #1: Write these queries in JavaScript using mongoose syntax
+
+Write the queries using mongoose syntax https://mongoosejs.com/docs/api.html
+
+1. Find all users
+1. Find one article by its id
+1. Find one user by their social security number
+1. Find the first three Reviews with 5 stars
+1. Find the 10 oldest articles to be created
+1. Find all users over 80 years old
+1. Find all books with “Harry Potter” in the title. Sort them alphabetically by title.
+1. Find all products whose price is over 100 dollars.
+
+## Activity #2: Find what each of these return? (Hint: use mongoose docs)
 
 ```js
-// Comments belong to Post
-{
-  "title": "Awesome Article",
-  "comments": [
-    { "content": "What a great article" },
-    { "content": "Agreed!" }
-  ]
-}
-```
+Person.find().exec(err, people => {});
 
+Event.findOne({ name: "Lightening Party" }).exec(err, event => {});
 
-## Queries
-
-Now imagine you have these underlying resource associations. Let's look at the queries that Mongoose gives you to pull this data out and serve it.
-
-### Find All
-
-```js
-Post.find()
-  .then(posts => {
-
-  })
-  .catch(err => {
-
-  })
-```
-
-### Find by Attribute
-
-```js
-Post.findOne({"name": "Bob Winthrope"})
-  .then(post => {
-
-  })
-  .catch(err => {
-
-  })
-```
-
-## Activities: Returns
-
-Find what each of these return? (Hint: use mongoose docs)
-
-```js
-Person.find().exec(err, person => {});
-Event.findOne({name: "Lightening Party"}).exec(err, event => {});
 Car.findById(req.params.carId).exec(err, car => {});
-Company.findOne({_id: req.params.companyId})
+
+Company.findOne({ _id: req.params.companyId })
        .populate('employees')
        .exec(err, company => {});
 ```
 
 Use your imagination and write sample JSON of what the last one might return.
-
-## Activity: Queries
-
-With a partner, write the queries in Mongoose for the following requests in English.
-
-1. Find all users
-1. Find one article by its id
-1. Find one user by their social security number
-1. Find all dogs that go to heaven sorted alphabetically by name
-1. Find the 10 most recent articles to be created
-1. Find the 10 oldest users
