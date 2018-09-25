@@ -1,4 +1,4 @@
-# RESTful API Routes
+# Intro to RESTful APIs & Service Oriented Archtecture
 
 1. 5 min Intro & Objectives
 1. 15 min Challenge 1
@@ -21,7 +21,7 @@
 
 ### RESTful APIs
 
-So far we've been making User Interfaces (UI's) by returning HTML templates to the client, but what if we want to let other applications use our web server, such as a mobile app or another web server? In that case we want to make an API.
+So far we've been making User Interfaces (UI's) by returning HTML templates to the client, but what if we want to let other applications use our web server, such as a mobile app client, a desktop client, a front end framework, or another web server? In that case we want to make an API. We'd want to follow a **Service Oriented Architecture** or **SOA**.
 
 ![realtime-api.png](assets/realtime-api.png)
 

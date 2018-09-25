@@ -6,20 +6,45 @@
 
 1. Tell the story of the origins of JavaScript
 1. List some of the most dramatic improvements of JavaScript with ES6 (ES2015)
-1. Explain some of the potential future features of JavaScript versions and other projects like **Typescript**.
+1. Explain some of the potential future features of JavaScript versions and the role of other JS-based projects like **Typescript**.
 
-## Netscape Invents a Browser "Glue Language"
+## What is JavaScript?
+
+### Multi-Paradigm
+
+JavaScript is **Multi-Paradigm** meaning it is a flexible language that can be used with various programming paradigms, namely:
+
+* Procedural/Imperative
+* Object Oriented/Classical
+* Prototypical
+* Functional
+
+Being a paradigm tolerant JS developer
+
+[![Being a paradigm tolerant JS developer](https://img.youtube.com/vi/ZvRksoVsSJE/0.jpg)](https://www.youtube.com/watch?v=ZvRksoVsSJE)
+
+### Event Driven—The Event Loop
+
+It uses an Event Loop. What the heck is that? - Watch this video to find out.
+
+Philip Roberts: What the heck is the event loop anyway? | JSConf EU
+
+[![Philip Roberts: What the heck is the event loop anyway? | JSConf EU](https://img.youtube.com/vi/8aGhZQkoFbQ/0.jpg)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
+
+
+## History of JavaScript
+
+### Netscape Invents a Browser "Glue Language"
 
 Originally JavaScript was meant to be a "glue language" to allow developers to write scripts to make the client more dynamic.
 
 Netscape (now Mozilla), the first major web browser, brought in Brendan Eich to create the language. He made the prototype of Javascript in 10 days, in May 1995. Originally called "Mocha", and then "LiveScript", but finally Netscape settled on "JavaScript" by December.
 
-## Standardization
+### Standardization
 
 
-## Internet Explorer Holds Out
-
-
+### Internet Explorer Holds Out
 
 ## V8 Engine
 
@@ -28,30 +53,6 @@ https://medium.freecodecamp.org/understanding-the-core-of-nodejs-the-powerful-ch
 https://en.wikipedia.org/wiki/Chrome_V8
 
 [![Franzi Hinkelmann - KEYNOTE- The V8 Engine and Node.js - Oct 2017](https://img.youtube.com/vi/PsDqH_RKvyc/0.jpg)](https://www.youtube.com/watch?v=PsDqH_RKvyc)
-
-## Node.js
-
-
-## Multi-Paradigm
-
-JavaScript is **Multi-Paradigm** meaning it is a flexible language that can be used with various programming paradigms, namely:
-
-* Procedural/Imperative
-* Object Oriented
-* Prototypical
-* Functional
-
-Being a paradigm tolerant JS developer
-
-[![Being a paradigm tolerant JS developer](https://img.youtube.com/vi/ZvRksoVsSJE/0.jpg)](https://www.youtube.com/watch?v=ZvRksoVsSJE)
-
-## Event Loop
-
-It uses an Event Loop. What the heck is that? - Watch this video to find out.
-
-Philip Roberts: What the heck is the event loop anyway? | JSConf EU
-
-[![Philip Roberts: What the heck is the event loop anyway? | JSConf EU](https://img.youtube.com/vi/8aGhZQkoFbQ/0.jpg)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
 ## ECMAScript Timeline - ES3, ES4, ES5, ES6 (ES2015)
 

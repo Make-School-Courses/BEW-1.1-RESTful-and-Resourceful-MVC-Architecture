@@ -28,7 +28,7 @@
 
 ## Invented in 2009 by Ryan Dahl
 
-Ryan Dahl at JSConf 2009
+Ryan Dahl at JSConf 2009 introduced a JavaScript server he had build using the V8 engine he called it "an event-driven, single-threaded, non-blocking I/O Runtime written in C called Node.js".
 
 ![OG Node.js Presentation](https://www.youtube.com/watch?v=ztspvPYybIY)
 
