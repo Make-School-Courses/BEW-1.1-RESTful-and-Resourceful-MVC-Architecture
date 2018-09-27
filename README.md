@@ -18,7 +18,7 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 1. Master and memorize Resourceful Routes and in general describe the importance of Resourceful web architecture.
 1. Read and write to a Document-Based (NoSQL) database (in this case MongoDB) using a Object Document Mapper (ODM)
 1. Master ExpressJS and extend it by installing, initializing, and using its various middleware packages including server-side templating using HandlebarsJS.
-1. Master intial controller testing patterns with Mocha.js and Chai.js
+1. Master initial controller testing patterns with Mocha.js and Chai.js
 
 ### Tutorials & Projects
 
