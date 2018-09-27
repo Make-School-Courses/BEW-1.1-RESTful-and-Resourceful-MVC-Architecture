@@ -1,21 +1,13 @@
 # Intro to RESTful APIs & Service Oriented Archtecture
 
-1. 5 min Intro & Objectives
-1. 15 min Challenge 1
-1. 20 min TT on RESTful APIs, Service-based, and Microservice Architecture
-1. 20 min Challenge 2
-1. 10 min Break
-1. 30 min Challenge 3
-1. 5 min Wrap up
-
-## Objectives
+## Objectives (5 min)
 
 1. Define what an API and RESTful API is
 1. Define our routes to respond to JSON requests
 
-## Activity - Explore Service Oriented Architecture
+## Activity - Explore Service Oriented Architecture (10 min)
 
-1. With a partner pick 2 companies on [stackshare.io](https://stackshare.io/stacks) and examine the services and languages they use. Google the services you are not familiar with.
+With a partner pick 2 companies on [stackshare.io](https://stackshare.io/stacks) and examine the services and languages they use. Google the services you are not familiar with.
 
 ## Overview
 
