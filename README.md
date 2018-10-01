@@ -30,7 +30,7 @@ Although you can develop webservers in many languages, we will focus on JavaScri
     - 100% test coverage of all routes
     - A conventional UI using Bootstrap 4
     - Pushed live to Heroku
-    - AJAX requests for POST/PUT/DELETE requests - Server-side rendering for GET requests
+    - AJAX requests for POST/PUT/DELETE requests - Server-side rendering for GET requests (optional)
     - No jQuery :D
     - Use an external API (optional)
 
