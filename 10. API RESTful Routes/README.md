@@ -130,11 +130,14 @@ Respond to application/json
 
 ```js
 app.get('/posts', function(req, res){
-  if (req.header('Content-Type') == 'application/json') {
-    return res.send({ post: post }); //=> RETURN JSON
-  } else {
-    return res.render('posts-show', { post: post }); //=> RENDER A TEMPLATE
-  }
+
+  ...
+  
+  //=> RETURN JSON 
+  if (req.header('Content-Type') == 'application/json') { return res.send({ post: post }); }
+
+  //=> RETURN HTML
+  return res.render('posts-show', { post: post }); //=> RENDER A TEMPLATE
 });
 ```
 
