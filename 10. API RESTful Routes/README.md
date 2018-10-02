@@ -65,6 +65,42 @@ A Microservices Architecture is SOA on steroids. It further breaks up services i
 
 To make our server a RESTful API, we need our server to respond intelligently to JSON requests. Since we already have RESTful routes that return HTML, we have two options, either we can make separate whole controllers, or we can check if the request coming in has the `Content-Type` header of `application/json`, and then behave accordingly.
 
+Monolithic
+
+```
+controllers
+  - posts.js
+  - comments.js
+```
+
+Separate Controllers
+
+```
+controllers
+  api
+    - posts.js
+    - comments.js
+  - posts.js
+  - comments.js
+```
+
+Versioned API 
+
+```
+controllers
+  api
+    v1
+      - posts.js
+      - comments.js
+    v2
+      - posts.js
+      - comments.js
+  - posts.js
+  - comments.js
+```
+
+
+
 New API routes
 ```js
 // INDEX
@@ -77,12 +113,23 @@ app.get('/api/posts/:id', function(req, res){
 
 });
 
+// INDEX
+app.get('/api/v1/posts', function(req, res){
+
+});
+
+// SHOW
+app.get('/api/v1/posts/:id', function(req, res){
+
+});
+
 // ETC
 ```
 
 Respond to application/json
+
 ```js
-app.get('/api/posts', function(req, res){
+app.get('/posts', function(req, res){
   if (req.header('Content-Type') == 'application/json') {
     return res.send({ post: post }); //=> RETURN JSON
   } else {
