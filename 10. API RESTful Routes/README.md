@@ -48,13 +48,6 @@ Large companies build their own custom services for their various flows. However
 1. AWS S3 for file storage
 1. Firebase for chat rooms
 
-## Activity: Diagramming a Service-based Architecture (10 min)
-
-1. Imagine you have a service-based architecture where a browser, mobile, and desktop clients all communicate with a server. Draw a picture of the request response cycles for these clients and the server.
-1. Now imagine you add using Stripe.com to process payments. Add this to your picture.
-1. Now imagine you use Twillio.com to send text messages. Add this to your picture.
-1. Now imagine you use AWS S3 to save images that users upload and serve them back when requested. Add this to your picture.
-
 ### Microservices Architecture
 
 A Microservices Architecture is SOA on steroids. It further breaks up services into sometimes even single routes and hyper specialized sorts of databases and technology.
