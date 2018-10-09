@@ -8,13 +8,13 @@
 1. List some of the most dramatic improvements of JavaScript with ES6 (ES2015)
 1. Explain some of the potential future features of JavaScript versions and the role of other JS-based projects like **Typescript**.
 
-## History of Ramen
+## History of Ramen (in Movies)
 
-1. Before the Dawn of Ramen 
-1. World War II
-1. The Birth of Ramen
-1. Diversification
-1. Ramen Goes Global
+1. Dawn of the Ramen - Pre History
+1. Saving Private Ramen - Crisis
+1. Dawn of the Ramen - Invention
+1. Gramlins II - Diversification
+1. Ramen Goes West - Internationalization
 
 ## Activity: History of JavaScript
 
