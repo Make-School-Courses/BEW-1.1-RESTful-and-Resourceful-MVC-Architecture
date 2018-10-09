@@ -8,6 +8,14 @@
 1. List some of the most dramatic improvements of JavaScript with ES6 (ES2015)
 1. Explain some of the potential future features of JavaScript versions and the role of other JS-based projects like **Typescript**.
 
+## History of Ramen
+
+1. Before the Dawn of Ramen 
+1. World War II
+1. The Birth of Ramen
+1. Diversification
+1. Ramen Goes Global
+
 ## Activity: History of JavaScript
 
 In teams of 3 go to the whiteboard and create a timeline for the history of JavaScript. Decide on major epochs, conflicts, dead-ends, and changes. List the major changes to the language for each phase of your historical timeline. Also consider why this change was made and what the downstream effects were on the ecosystem as a whole.
