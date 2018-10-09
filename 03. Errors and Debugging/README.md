@@ -40,11 +40,15 @@ When you want to Google an error, google the error type and the error message st
 1. Use `console.log()` to debug the Giphy API tutorial's main route. Print out the `req` and Giphy API `response` objects.
   * Super long, too long to paste
 1. Use Node's native debugger to do the same thing.
+<<<<<<< HEAD
   * ''
 1. Now use `node-inspector` to do the same thing.
   * Run node with argument 'inspect' with 'debugger' at breakpoint
+=======
+1. Now use `locus` to do the same thing.
+>>>>>>> b4fe508d3ba1f57887737fb6d70e4749a647e200
 
-1. Run these snippets of JS in your Node REPL (type `node` in your bash terminal) and in your Chrome Console tab. Examine errors and see what you would have to do to fix them (so they did not throw an error).
+1. Run these snippets of JS in your Node REPL (type `node` in your bash terminal) or in a repl.it console. Each will return an error. See what you would have to do to fix them so they did not throw an error.
 
 	```js
 	// 1

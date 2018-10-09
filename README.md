@@ -18,14 +18,21 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 1. Master and memorize Resourceful Routes and in general describe the importance of Resourceful web architecture.
 1. Read and write to a Document-Based (NoSQL) database (in this case MongoDB) using a Object Document Mapper (ODM)
 1. Master ExpressJS and extend it by installing, initializing, and using its various middleware packages including server-side templating using HandlebarsJS.
-1. Master intial controller testing patterns with Mocha.js and Chai.js
+1. Master initial controller testing patterns with Mocha.js and Chai.js
 
 ### Tutorials & Projects
 
-- [Giphy Search App](https://www.makeschool.com/academy/track/giphy-search-app-with-node-js) tutorial. - 1-3 days
-- [Rotten Potatoes](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js). 4-8 days
-- [Rotten Potatoes: Part Deux](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js-rge) 3-5 days
-- A Contractor Project - The instructor will roleplay being a client to your engineering team.
+- [Giphy Search App](https://www.makeschool.com/academy/track/giphy-search-app-with-node-js) tutorial. - Finish before end of week 1
+- [Rotten Potatoes](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js). Finish before end of week 2
+- [Rotten Potatoes: Part Deux](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js-rge). Finish before beginning of week 4 (not required)
+- A Contractor Project - The instructor will roleplay being a client to your engineering team. Finish by beginning of week 7. Project requirements:
+    - CRUD >=2 Resources and associate them
+    - 100% test coverage of all routes
+    - A conventional UI using Bootstrap 4
+    - Pushed live to Heroku
+    - AJAX requests for POST/PUT/DELETE requests - Server-side rendering for GET requests (optional)
+    - No jQuery :D
+    - Use an external API (optional)
 
 ## Evaluation
 
@@ -35,7 +42,7 @@ To pass this course you must meet the following requirements:
 - No more than four excused absences
 - Make up all classwork from all absences
 - Finish all required tutorials and projects
-- Pass the final exam >=80%
+- Pass the final exam.
 
 
 ## Lessons
