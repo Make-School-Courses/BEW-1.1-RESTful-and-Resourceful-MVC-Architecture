@@ -21,4 +21,5 @@
 1. Tell the main epochs in the history of JavaScript
 1. Define and describe the characteristics of REST
 1. Define convention over configuration
+1. List the benefits of a service-oriented architecture over a monolithic architecture
 
