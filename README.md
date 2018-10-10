@@ -42,9 +42,7 @@ To pass this course you must meet the following requirements:
 - No more than four excused absences
 - Make up all classwork from all absences
 - Finish all required tutorials and projects
-- Pass the final exam
-
-**If the students compile a study guide accepted by the instructor, 50% of the Final Exam will come from it**
+- Pass the final exam - Review topics in the study guide.
 
 
 ## Lessons
