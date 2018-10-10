@@ -1,7 +1,7 @@
 ## Study Guide
 
 
-1. Describe the most commonly used bootstrap components
+1. Describe, draw pictures of, and provide examples of the most commonly used bootstrap components, e.g. responsive grid, typography, responsive utilities, forms, cards, etc.
 1. Understand HTTP and memorize standard verbs and status codes
 1. Label all the parts of a URL
 1. Define and describe the characteristics of Node.js
