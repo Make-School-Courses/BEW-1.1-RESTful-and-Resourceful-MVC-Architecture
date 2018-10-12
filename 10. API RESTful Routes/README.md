@@ -58,7 +58,7 @@ A Microservices Architecture is SOA on steroids. It further breaks up services i
 
 To make our server a RESTful API, we need our server to respond intelligently to JSON requests. Since we already have RESTful routes that return HTML, we have two options, either we can make separate whole controllers, or we can check if the request coming in has the `Content-Type` header of `application/json`, and then behave accordingly.
 
-Monolithic
+#### Same Controllers
 
 ```
 controllers
@@ -66,7 +66,7 @@ controllers
   - comments.js
 ```
 
-Separate Controllers
+#### Separate Controllers
 
 ```
 controllers
@@ -77,7 +77,7 @@ controllers
   - comments.js
 ```
 
-Versioned API 
+#### Versioned API 
 
 ```
 controllers
@@ -92,34 +92,7 @@ controllers
   - comments.js
 ```
 
-
-
-New API routes
-```js
-// INDEX
-app.get('/api/posts', function(req, res){
-
-});
-
-// SHOW
-app.get('/api/posts/:id', function(req, res){
-
-});
-
-// INDEX
-app.get('/api/v1/posts', function(req, res){
-
-});
-
-// SHOW
-app.get('/api/v1/posts/:id', function(req, res){
-
-});
-
-// ETC
-```
-
-Respond to application/json
+#### Same Controllers - Respond to `application/json`
 
 ```js
 app.get('/posts', function(req, res){
@@ -134,9 +107,51 @@ app.get('/posts', function(req, res){
 });
 ```
 
+
+#### New API controller routes
+
+```js
+// API ROUTES
+
+// INDEX
+app.get('/api/posts', function(req, res){
+
+});
+
+// SHOW
+app.get('/api/posts/:id', function(req, res){
+
+});
+
+```
+
+```js
+// VERSIONED API ROUTES
+
+// INDEX
+app.get('/api/v1/posts', function(req, res){
+
+});
+
+// SHOW
+app.get('/api/v1/posts/:id', function(req, res){
+
+});
+
+// ETC
+```
+
 > Notice that the NEW and EDIT routes are not necessary with a RESTful API.
 
-## Activity: Video (10 min)
+## Activity: Make Rotten Potatoes Respond to JSON 
+
+Download [Insomnia RESTful API Client](https://insomnia.rest/)
+
+## Project Planning with Todo.txt
+
+If you are building a project
+
+## Optional Activity: Video (10 min)
 
 REST API concepts and examples
 
