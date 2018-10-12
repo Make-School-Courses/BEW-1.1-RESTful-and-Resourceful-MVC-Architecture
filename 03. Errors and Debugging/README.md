@@ -38,33 +38,49 @@ When you want to Google an error, google the error type and the error message st
 ## Baseline Challenges
 
 1. Use `console.log()` to debug the Giphy API tutorial's main route. Print out the `req` and Giphy API `response` objects.
+  * Super long, too long to paste
 1. Use Node's native debugger to do the same thing.
+<<<<<<< HEAD
+  * ''
+1. Now use `node-inspector` to do the same thing.
+  * Run node with argument 'inspect' with 'debugger' at breakpoint
+=======
 1. Now use `locus` to do the same thing.
+>>>>>>> b4fe508d3ba1f57887737fb6d70e4749a647e200
 
 1. Run these snippets of JS in your Node REPL (type `node` in your bash terminal) or in a repl.it console. Each will return an error. See what you would have to do to fix them so they did not throw an error.
 
 	```js
 	// 1
-	num.toPrecision(500)
+	var num = 2
+	num.toPrecision(50)
 
 	//2
-	let x;
+	let x = 1;
+	let y = 1;
 	x = y + 1;
 
 	//4
+	var int = 1;
 	int.toUpperCase();
 
 	//3
-	let horse;
+	var horse = {
+		height: 5
+	};
 	horse.height;
 
 	//5
-	let person;
+	let person = {
+		eatsASandwhich : function() {
+			return "yum"
+		}
+	};
 	person.eatsASandwhich();
 
 	// Run this lastt one in your browser's console
-	//6 
-	eval("alert('Hello)");
+	//6
+	eval("alert('Hello')");
 	```
 
 1. Read the following code snippet. What should it do? Can you run it in your console in your browser? What error do you get? Can you fix it?
@@ -77,12 +93,13 @@ When you want to Google an error, google the error type and the error message st
 	for (i = 0; i < peoplesNames.length; i++) {
 	    if (peoplesNames[i].length < 4) {
 		shortNames.push(peoplesNames[i])
-	    } else
+		} else {
 		longNames.push(peoplesNames[i])
 	    }
 	}
 	console.log(shortNames);
 	console.log(longNames);
 	```
+	  * The code snipped sorts short names(< 4 characters) and long names into respective arrays.  The error was an unexpected token, this was fixed by adding an opening bracket after the else statement.
 
 ![js-error-1](assets/js-error-1.png)
