@@ -143,13 +143,13 @@ app.get('/api/v1/posts/:id', function(req, res){
 
 > Notice that the NEW and EDIT routes are not necessary with a RESTful API.
 
-## Activity: Make Rotten Potatoes Respond to JSON 
+## Activity: Make Rotten Potatoes Respond to JSON - 30 min
 
-Download [Insomnia RESTful API Client](https://insomnia.rest/)
-
-## Project Planning with Todo.txt
-
-If you are building a project
+1. Download [Insomnia RESTful API Client](https://insomnia.rest/)
+2. Use it to make a request to your "/" route. You should see the HTML that returns to any browser.
+3. Now update your root route '/' logic to respond with JSON `reviews` if the `Content-Type` is `application/json`.
+4. In your headers in insomnia add "Content-Type" "application/json" and make a request to '/'. You should see the JSON.
+5. Now make the same change to the rest of your Review routes.
 
 ## Optional Activity: Video (10 min)
 
