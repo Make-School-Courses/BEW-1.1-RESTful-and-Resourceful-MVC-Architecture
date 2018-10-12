@@ -1,5 +1,6 @@
 ## Study Guide
 
+At least 50% of the test will come from from these topics. 
 
 1. Describe, draw pictures of, and provide examples of the most commonly used bootstrap components, e.g. responsive grid, typography, responsive utilities, forms, cards, etc.
 1. Understand HTTP and memorize standard verbs and status codes
