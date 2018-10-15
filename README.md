@@ -27,6 +27,7 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 - [Rotten Potatoes: Part Deux](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js-rge). Finish before beginning of week 4 (not required)
 - A Contractor Project - The instructor will roleplay being a client to your engineering team. Finish by beginning of week 7. Project requirements:
     - Written in JavaScript using Node.js, Express.js, and MongoDB
+    - Written in MVC with separate files for each concern
     - CRUD >=2 Resources and associate them
     - 100% test coverage of all routes
     - A conventional UI using Bootstrap 4
