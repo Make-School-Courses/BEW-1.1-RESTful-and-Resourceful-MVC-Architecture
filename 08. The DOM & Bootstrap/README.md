@@ -60,7 +60,7 @@ Italy did not exist when he lived, but he lived in what are now Italian cities, 
 <p>
 The belief that humanity is the greatest good in the world. Greater even than God.
 
-![Creation of Adam](creation-of-adam.jpg)
+![Creation of Adam](assets/creation-of-adam.jpg)
 </p>
 </details>
 
