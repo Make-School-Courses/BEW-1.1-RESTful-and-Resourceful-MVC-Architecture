@@ -1,13 +1,14 @@
 # URLs, HTTP, and REST
 
-## [Slides](https://docs.google.com/presentation/d/1YwafbC4N1Bjz1AQRJvEA6mm1gA_n_BZQTaUHOeCaAPw/edit?usp=sharing)
-
 ## Objectives
 
 1. Identify and describe each part of a URL and HTTP Request.
 1. Define and explain REST
 
-## Initial Exercise
+## Demo: Giphy Search (cont) and Q&A
+  - User-Centered Development
+
+## Initial Exercise 10 min.
 
 1. Write your home address out and diagram what each part is called.
 
@@ -47,12 +48,19 @@ HTTP Verbs are the following:
 
 The most common HTTP statuses are the following. Here is a [complete list](https://httpstatuses.com):
 
+* 100 - Informational Response
 * 200 - Success
-* 400 - Bad request
+* 300 - Redirection
+* 400 - Client Error (Bad Request)
 * 401 - Unauthorized
 * 404 - Not found
 * 418 - [I'm a tea pot](https://httpstatuses.com/418)
 * 500 - Internal Server Error
+
+## Work
+
+1. Complete the [Giphy API Search Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) - Due Middle of week one (today!)
+1. Start [Rotten Potatoes Tutorial](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js) - Due End of Week 2.
 
 ## Resources
 
@@ -61,14 +69,3 @@ The most common HTTP statuses are the following. Here is a [complete list](https
 1. [REST Wikipedia Article](https://en.wikipedia.org/wiki/Representational_state_transfer)
 1. [REST & HTTP](https://www.youtube.com/watch?v=LHJk_ISxHHc)
 1. [Intro to REST](https://www.youtube.com/watch?v=YCcAE2SCQ6k)
-
-## Baseline Challenges
-
-1. Using the above resources answer these technical interview questions:
-    1. List out the HTTP action verbs. Which ones make changes to the state, and which ones do not?
-    1. What are HTTP response status codes? Which ones mean success and which failure?
-    1. What is the difference between HTTP and HTTPS?
-    1. What does REST stand for?
-    1. What are the reasons to use a "RESTful" server?
-    1. What are the constraints of a RESTful server?
-1. Complete the [Giphy API Search Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment)

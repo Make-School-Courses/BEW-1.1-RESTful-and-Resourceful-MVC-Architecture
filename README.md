@@ -51,88 +51,18 @@ To pass this course you must meet the following requirements:
 13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
 
 1. Request-Response Cycle and MVC Architecture
-    - **Before Class**
-        -  Complete all Prework
-    - **In Class Activities**
-        - Why are we studying JavaScript, Node.js, and Express.js?
-        - Compare & Contrast Web Servers vs. Frameworks
-        - Know the field of Web Frameworks
-    - **After Class**
-        - Begin [Giphy Search App](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment)
 1. URLs, HTTP(S), and REST
-    - **In Class Activities**
-        - Diagram the Request/Response Cycle
-        - Diagram URLs
-        - Diagram HTTP Requests
-        - Q&A for Giphy Search App
-    - **After Class**
-        - Finish Giphy Search App
-1. Reading Errors and Debugging
-    - **In Class Activities**
-        - [Identifying Errors Activity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
-        - Reading Errors Demo
-        - Review of Giphy App Solution
-    - **After Class**
-        - Start Rotten Potatoes Tutorial
-1. Resourceful Routing
-    - **In Class Activities**
-        - Diagram Request/Response Cycle with MVC
-        - Tour of a large project
-        - Resource naming and routing activity
-    - **After Class**
-        - Study for Resourceful Routing Quiz
-        - Rotten Potatoes Tutorial
+1. Resourceful Routing & Reading Errors
 1. Document-based Databases, Associations & Queries with Mongoose
-    - **In Class Activities**
-        - Intro to Document-Based Databases
-        - MongoDB Command Line Demo
-        - RESTful Routing - Index - Rotten Potatoes
-    - **After Class**
-         - Rotten Potatoes Tutorial
 1. Testing RESTful Routes
-    - **In Class Activities**
-        - Review types of tests - Unit/Model, Route/Controller, Interaction/End-to-End/View
-        - Route/Controller Test Demo
-        - Compare and Contrast Test Driven Development vs. Regular Testing
-    - **After Class**
-        - Rotten Potatoes
 1. The DOM, HTML, CSS, Events and Listeners
-    - **In Class Activities**
-    - **After Class**
 1. Bootstrap - the Grid, Typography, Forms, and Buttons
-    - **In Class Activities**
-        - Intro to Contractor Project
-        - User-Centered Development Demo - Yagni
-        - Rapid Prototyping Templates with Bootstrap Activity
-        - Adding Bootstrap Themes
-    - **After Class**
-        - Contractor Project - rapid prototype wireframes in bootstrap
 1. Environment Strategies, Heroku, and Deployment
-    - **In Class Activities**
-        - Intro to DevOps & Deploying to Heroku
-        - Resourceful Routes Quiz II
-    - **After Class**
-        - Complete Rotten Potatoes Tutorial
+1. People's Choice Day
+1. Lab Day
 1. RESTful APIs & Service Oriented Architecture
-    - **In Class Activities**
-        - API Exploration Activity
-        - Fetch vs. Axios
-        - Adding JSON routes to Rotten Potatoes
-    - **After Class**
-        - User Narratives and Wireframes for Contractor Project
-1. A Brief History of JavaScript - Summative Assessment
-    - **In Class Activities**
-    - **After Class**
-        - Contractor Project
-        - Prepare Contractor Project Presentation and Demo
-1. Node.js Under the Hood
-    - **In Class Activities**
-    - **After Class**
-        - Contractor Project
-1. Contractor Project Presentations
-    - **In Class Activities**
-        - Presentations
-        - Complete Summative Assessment
+1. A Brief History of JavaScript & Node.js
+1. Summative Assessment
 
 ## Make School Course Policies
 

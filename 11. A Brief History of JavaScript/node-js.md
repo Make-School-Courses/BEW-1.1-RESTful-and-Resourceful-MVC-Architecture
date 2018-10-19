@@ -1,4 +1,3 @@
-
 ## Event Driven
 
 "Defined simply: event-driven programming is application flow control that is determined by events or changes in state." - [Understanding the Node.js Event Loop](https://nodesource.com/blog/understanding-the-nodejs-event-loop/)
@@ -17,7 +16,7 @@
 
 ## Written in C
 
-
+It is written in C, not in JavaScript :D.
 
 ## Invented in 2009 by Ryan Dahl
 
@@ -26,11 +25,10 @@ Ryan Dahl at JSConf 2009 introduced a JavaScript server he had build using the V
 ![OG Node.js Presentation](https://www.youtube.com/watch?v=ztspvPYybIY)
 
 
-Typescript
-Deno
+## What's Next
 
-https://thenewstack.io/node-js-creator-blasts-node-js-offers-a-secure-typescript-based-alternative/
+Now Ryan Dahl is making a competitor to node called Deno written in Typescript.
 
-https://github.com/denoland/deno
-
-https://thenewstack.io/node-js-creator-blasts-node-js-offers-a-secure-typescript-based-alternative/
+* https://github.com/denoland/deno
+* https://thenewstack.io/node-js-creator-blasts-node-js-offers-a-secure-typescript-based-alternative/
+* https://thenewstack.io/node-js-creator-blasts-node-js-offers-a-secure-typescript-based-alternative/
