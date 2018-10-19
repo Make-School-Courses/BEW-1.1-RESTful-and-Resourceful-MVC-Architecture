@@ -68,6 +68,9 @@ Here is a diagram of an integrated look at the Request-Response Cycle and MVC:
 ![mvc req res](assets/mvc-req-res.jpeg)
 
 ## Demo: Giphy Search 20 min
+
+Watch the instructor code and narrate what they do on a live project, and take notes of things that you notice that they do and questions you would like to ask them at the end of 20 minutes.
+
   - User-Centered Development
 
 ## Work

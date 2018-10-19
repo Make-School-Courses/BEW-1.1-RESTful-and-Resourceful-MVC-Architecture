@@ -2,13 +2,11 @@
 
 ## Objectives
 
-1. Use technical shadowing to learn and onboard
 1. Explain and utilize the process of User-Centered Development
 1. Conduct solo, pair, and team project planning
 
-## Activity: 20 min Technical Shadowing and Q&A
-
-Watch the instructor code and narrate what they do on a live project, and take notes of things that you notice that they do and questions you would like to ask them at the end of 20 minutes.
+## Demo: Rotten Potatoes and Q&A
+  - Mongo, Models, and Mongoose
 
 ## User-Centered Development
 

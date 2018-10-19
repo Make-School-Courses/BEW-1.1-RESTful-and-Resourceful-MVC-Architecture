@@ -54,9 +54,8 @@ Connect resources in boxes with arrows depending on their relationship:
 1. Many-to-Many  "<=>"
 1. One-to-Many "-->"
 
-![dr-erd](assets/dr-erd.jpg)
-![blog-erd](assets/blog-erd.jpg)
-
+![Blog erd](assets/blog-erd.jpeg)
+![School erd](assets/school-erd.jpeg)
 
 ## Activity - Drawing ERDs (15 min)
 
@@ -75,8 +74,6 @@ In a document-based database these **Resource Associations** are modeled in a fe
 1. Reference Documents (very common)
 1. Value Associations (pretty common)
 1. Embedded Documents (very rare)
-
-
 
 ### Reference Documents (very common)
 

@@ -26,6 +26,10 @@ A route is a url, a web endpoint, a path, or you might just call it a link. Rout
 
 **Please memorize these routes.**
 
+Nested Routes
+
+![Nested Routes](assets/nested-routes.png)
+
 ### REST in Express.js
 
 Express.js is built to accommodate a RESTful and Resourceful routes.
@@ -81,13 +85,16 @@ app.listen(3000);
     - GET `/classes/:classId/students`
     - GET `/epoch/:eraId/dinosaurs`
 1. Work with a partner to define what the route would be for the following resources:
-    - show me all the classes
-    - show me all a users comments
-    - show a single article by an author
-    - show all the fish alive in the pliocene epoch
+    - All the classes
+    - All a users comments
+    - A single article by an author
+		- the menu items from one restaurant
+		- Give me the form to make a new fish
     - create a new fish
-    - see the edit form to edit a fish for lake Winibego
-    - update a fish record for lake Winibego.
+		- Update a fish
+    - The details of one hotel
+    - All guests going to an event
+		- Delete a fish
 1. Come up with 3 or more routes that do not follow the Resourceful pattern, but sites still commonly use. (hint: "/about-us")
 
 ## Break 10 min
@@ -120,7 +127,6 @@ When you want to Google an error, google the error type and the error message st
 ## Resources
 
 1. [restful_routes.md - github version of RESTful routes image](https://gist.github.com/alexpchin/09939db6f81d654af06b)
-
 1. [Three Options to Debug Node](https://spin.atomicobject.com/2015/09/25/debug-node-js/)
 1. [Node's Debugger](https://nodejs.org/api/debugger.html)
 1. [Locus](https://www.npmjs.com/package/locus)

@@ -76,49 +76,6 @@ Documents are grouped into **Collections**. And these collections should have th
 1. No migrations - no timeline of updates to database structure
 1. "Schemaless" - can be too unstructured
 
-
-## ODM
-
-Mongoose is a ODM (object document mapping) express middleware that makes it easier to interact with a MongoDB database. It lets you create and validate attributes and create model and instance methods and many other common OXM features.
-
-### Model
-
-To interact with the database, we use an abstraction called a **Model**. Like a resource, you can tell if something is a model because it is single and capitalized. For example:
-
-* Article
-* Pet
-* Building
-* City
-* Trip
-
-A model is like a prototype for an object because you can assign it attributes and define static and instance methods for it. You can also set validations on a model's attributes.
-
-  ```js
-    var mongoose = require('mongoose')
-    var Schema = mongoose.Schema;
-
-    var CommentSchema = new Schema({
-        createdAt     : { type: Date }
-      , updatedAt     : { type: Date }
-
-      , body   : { type: String, required: true }
-    })
-
-    // SET createdAt and updatedAt
-    CommentSchema.pre('save', function(next) {
-      now = new Date();
-      this.updatedAt = now;
-      if ( !this.createdAt ) {
-        this.createdAt = now;
-      }
-      next();
-    });
-
-    var Comment = mongoose.model('Comment', CommentSchema);
-
-    module.exports = Comment;
-  ```
-
 ## Resources
 
 1. [Mongo Shell Quick Reference](https://docs.mongodb.com/manual/reference/mongo-shell/)
@@ -135,11 +92,12 @@ A model is like a prototype for an object because you can assign it attributes a
 1. Delete that article.
 1. Download [Robo 3T](https://robomongo.org/) and look at the database you created with the mongo shell.
 
-
 ## 10 Minute Break
 
 
-## ODMs & Queries
+## ODM
+
+Mongoose is a ODM (object document mapping) express middleware that makes it easier to interact with a MongoDB database. It lets you create and validate attributes and create model and instance methods and many other common OXM features.
 
 Why use an ODM
 
@@ -151,13 +109,23 @@ Why use an ODM
 * Converts BSON into JS Object
 * Promises
 
-## Models
+### Model
+
+To interact with the database, we use an abstraction called a **Model**. Like a resource, you can tell if something is a model because it is single and capitalized. For example:
+
+* Article
+* Pet
+* Building
+* City
+* Trip
+
+A model is like a prototype for an object because you can assign it attributes and define static and instance methods for it. You can also set validations on a model's attributes.
 
 ```js
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var blogSchema = new Schema({
+var postSchema = new Schema({
   title:  String,
   author: String,
   body:   String,
@@ -169,6 +137,10 @@ var blogSchema = new Schema({
     favs:  Number
   }
 });
+
+var Post = mongoose.model('Post', postSchema);
+
+module.exports = Post;
 ```
 
 ## Common Queries and Helpers
@@ -213,53 +185,6 @@ As a one-liner:
 Tank.find({ size: 'small' }).where('createdDate').gt(oneYearAgo).exec(callback);
 ```
 
-### Populating Referenced Subdocuments
-
-Using the query helper `.populate()` you can pull in a subdocument referenced by the subdocument's ID. For example, imagine that Stories belong to an Author, and Authors have man Fans.
-
-```js
-Story.
-  findOne({ title: 'Casino Royale' }).
-  populate('author').
-  exec(function (err, story) {
-    if (err) return handleError(err);
-    console.log('The author is %s', story.author.name);
-    // prints "The author is Ian Fleming"
-  });
-```
-
-=>
-
-```json
-/* WITHOUT POPULATE */
-{
-    "_id": "23j4l3jl432jkl4jl23",
-    "title": "Casino Royal",
-    "author": "234hjk32423g432jh4"
-}
-
-/* WITH POPULATE */
-{
-    "_id": "23j4l3jl432jkl4jl23",
-    "title": "Casino Royal",
-    "author":{
-            _id: "234hjk32423g432jh4",
-            name: "Bob Daniels",
-            fans: ["2k32j4j24j2l4lk23j4", "lk23j4kj234l23jj4l"]
-        }
-}
-```
-
-```js
-// to get the fans...
-Author.
-  findById(authorId).
-  populate('fans').
-  exec(function (err, author) {
-    console.log(author)
-  });
-```
-
 ## Activity #1: Write these queries in JavaScript using mongoose syntax
 
 Write the queries using mongoose syntax https://mongoosejs.com/docs/api.html
@@ -276,15 +201,17 @@ Write the queries using mongoose syntax https://mongoosejs.com/docs/api.html
 ## Activity #2: Find what each of these return? (Hint: use mongoose docs)
 
 ```js
-Person.find().exec(err, people => {});
+Person.find().sort({age: 1}).limit(100).then(err, people => {});
 
-Event.findOne({ name: "Lightening Party" }).exec(err, event => {});
+Event.findOne({ name: "Lightening Party" }).then(err, event => {});
 
-Car.findById(req.params.carId).exec(err, car => {});
+Car.findById(req.params.carId).then(err, car => {});
 
-Company.findOne({ _id: req.params.companyId })
-       .populate('employees')
-       .exec(err, company => {});
+Company.findOne({ _id: req.params.companyId }).then(err, company => {});
+
+Monster.find({ type: "crawly" }).limit(10).sort({ferocity: 1}).then(err, monster => {});
+
+User.find({ age: {$gt: 18, $lt: 65 }}).then(err, users => {});
+
+User.find({likes: {$in: ['chatting', 'candle making']}}).then(err, users => {});
 ```
-
-Use your imagination and write sample JSON of what the last one might return.

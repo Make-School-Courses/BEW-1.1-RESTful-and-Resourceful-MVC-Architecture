@@ -56,10 +56,10 @@ To pass this course you must meet the following requirements:
 1. Resourceful Routing & Reading Errors
 1. Document-based Databases, Associations & Queries with Mongoose
 1. Testing RESTful Routes
+1. Lab Day
 1. The DOM, HTML, CSS, Events and Listeners
 1. Bootstrap - the Grid, Typography, Forms, and Buttons
 1. Environment Strategies, Heroku, and Deployment
-1. People's Choice Day
 1. Lab Day
 1. RESTful APIs & Service Oriented Architecture
 1. A Brief History of JavaScript & Node.js
