@@ -13,7 +13,7 @@
 1. The Ramen Before Time - Pre History
 1. Saving Private Ramen - Crisis
 1. Dawn of the Ramen - Invention
-1. Gramlens II - Diversification
+1. X Ra-Men - Diversification
 1. Ramen Goes West - Internationalization
 
 ## Activity: History of JavaScript

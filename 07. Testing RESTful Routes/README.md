@@ -2,9 +2,28 @@
 
 ## Objectives
 
-1. Identify the various types of testing and pick the right test for a module.
-1. Have familiarized oneself with the node testing suite using Mocha and Chai.
-1. Master controller testing for RESTful routes.
+1. List various types of automated tests
+1. Define a test runner and an assertion library
+1. Implement route tests for one resource
+1. List when it is ok to test and not to test
+
+## Why Learn Automated Testing?
+
+<details><summary>CLICK ME</summary>
+<p>
+
+1. Saves time in a large code base - the more code you write the more chances you have errors - Regression tests
+1. Other developers can contribute to your project
+1. Before PROD - fewer bugs, more uptime
+1. Catches edge cases—outlier cases
+1. TDD - Test Driven Development
+1. Required
+1. Big code bases
+1. Open source projects
+1. Not write test - small projects, solo, private (not public), not validated
+
+</p>
+</details>
 
 ## Testing (Mocha.js)
 
