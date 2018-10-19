@@ -57,11 +57,11 @@ Italy did not exist when he lived, but he lived in what are now Italian cities, 
 1. The beginnings of modern civil rights
 
 <details><summary>What is Humanism?</summary>
-  <p>
-    The belief that humanity is the greatest good in the world. Greater even than God.
+<p>
+The belief that humanity is the greatest good in the world. Greater even than God.
 
-    ![Creation of Adam](creation-of-adam.jpg)
-  </p>
+![Creation of Adam](creation-of-adam.jpg)
+</p>
 </details>
 
 ## Overview: An Analogy for the DOM—The Body (10 min)
