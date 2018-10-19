@@ -7,25 +7,38 @@
 1. Implement route tests for one resource
 1. List when it is ok to test and not to test
 
-## Why Learn Automated Testing?
+## What?, Why?, and When?
 
-<details><summary>CLICK ME</summary>
+Automated testing is writing code that tests if your code is working.
+
+<details><summary>Why Learn Automated Testing</summary>
 <p>
 
 1. Saves time in a large code base - the more code you write the more chances you have errors - Regression tests
 1. Other developers can contribute to your project
 1. Before PROD - fewer bugs, more uptime
 1. Catches edge cases—outlier cases
-1. TDD - Test Driven Development
+1. TDD - Test Driven Development - is a thing
 1. Required
 1. Big code bases
 1. Open source projects
-1. Not write test - small projects, solo, private (not public), not validated
 
 </p>
 </details>
 
-## Testing (Mocha.js)
+<details><summary>When You Can NOT Test</summary>
+<p>
+
+1. Small projects
+1. Solo projects
+1. Private (not public) projects
+1. Startups without validation that they will work
+
+</p>
+</details>
+
+
+## Testing with Mocha.js
 
 Depending on who you ask there are various forms of testing. For our purposes we will rely on the MVC architecture to define the various forms of tests:
 
@@ -35,13 +48,29 @@ Depending on who you ask there are various forms of testing. For our purposes we
 
 **Unit tests** are very resilient and will rarely break as you make changes to your code, they provide very narrow test coverage to your application as a whole so you have to write a lot of them.
 
-**View tests** are more broad (they test more parts of your code simultaneously), but they are more brittle - meaning they can break because you made a trivial change, e.g. changed the HTML/CSS of your website.
-
 **Routes Testing** or testing our controllers are in a bit of a Goldilocks position where they are broad and test a lot of behavior across the model and the controller, but they are not too brittle that they will break when we change something minor like the styling.
 
-We will focus primarily on routes testing.
+**View tests** are more broad (they test more parts of your code simultaneously), but they are more brittle - meaning they can break because you made a trivial change, e.g. changed the HTML/CSS of your website.
 
-### Assertions & Assertion Libraries (Chai.js)
+#### Brittleness
+
+How easily a test breaks. A test that is too brittle tests "too much", and if it is not brittle enough it tests "too little". e.g. assert(a == a) is not brittle enough.
+
+#### Test Coverage
+
+If a feature has an automated test associated with it, it is "covered". A project with 100% test coverage has all its features covered by tests.
+
+## ConcepTest - 10 min
+
+Which form of testing is the most efficient? (i.e. is the least brittle while providing the most test coverage)
+
+<ol type="A">
+  <li>Unit Tests</li>
+  <li>UI Test</li>
+  <li>Routes Tests</li>
+</ol>
+
+### Assertions & Assertion Libraries - Chai.js
 
 An **Assertion** is a true/false statement that defines a test. Mocha.js ships with [Node.js's native assertion library (`assert`)](https://nodejs.org/api/assert.html), which is very simple, and sometimes clunky way to write assertions. Mocha.js itself actually recommends that you use an **Assertion Library** like [Chai.js](http://chaijs.com/) that gives assertions more elegance and range.
 
@@ -145,6 +174,16 @@ describe('Site', function() {
 });
 ```
 
+## Activity: Reading and Q&A
+
+Read [Testing Node.js in 2018](https://hackernoon.com/testing-node-js-in-2018-10a04dd77391)
+
+1. What is a test runner? Which do they use and why?
+1. What is Chai? Why do they use it at Winds?
+1. What is mocking?
+1. What are some use cases for Sinon?
+1. What is Continuous Integration (CI)? When do you use it?
+
 ## Resources
 
 1. [Mocha](https://mochajs.org/#installation)
@@ -156,5 +195,4 @@ describe('Site', function() {
 
 ### Reading
 
-[Hacker Noon: Testing Node.js](https://hackernoon.com/testing-node-js-in-2018-10a04dd77391)
 [An Overview of JavaScript Testing in 2018](https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3)

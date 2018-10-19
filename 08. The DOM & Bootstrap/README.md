@@ -19,12 +19,50 @@ Pick a new website. Now draw wireframes on a sheet of paper for one page of each
 
 ## Objectives (5 min)
 
+1. List the major characteristics of the Renaissance.
 1. Define the DOM, list its parts, and describe its hierarchical structure
 1. Manipulate the DOM with JS
 1. Style the DOM with CSS
 1. Add bootstrap to any project
 1. Utilize bootstraps most basic css classes to define a conventional web design
 1. Deploying a bootstrap responsive grid, navbar, and forms.
+
+## The Renaissance (1300-1600's in Europe) - Major Characteristics
+
+**Leonardo Da Vinci** was a Renaissance **polymath** and **multipotentialite**—that is, someone who cultivates many skills and becomes an expert in many bodies of knowledge. He made significant contributions to invention, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography. He designed a prototype of the first helicopter, painted the Mona Lisa, and made strides in anatomy.
+
+Italy did not exist when he lived, but he lived in what are now Italian cities, Florence, Milan, Rome, Bologna, Venice, and lived the final years of his life in France (which did exist at that time).
+
+#### The Causes of the Renaissance
+
+1. The reemergence of trade around the Mediterranean and Europe
+1. The Crusades
+1. Demographic changes from the Black Plague
+1. The cultural conditions of Florence
+
+#### Renaissance People
+
+1. Donatello - 1386 – 13 December 1466
+1. Leonardo Da Vinci - 15 April 1452 – 2 May 1519
+1. Michelangelo - 6 March 1475 – 18 February 1564
+1. Raphael - April 6 1483 – April 6, 1520
+1. Machiavelli - 3 May 1469 – 21 June 1527
+1. Shakespeare - 26 April 1564 – 23 April 1616
+
+#### The Renaissance Was Characterized
+
+1. The rise of **Humanism**
+1. Adoration of classical Greek and Roman culture
+1. The beginnings of modern science
+1. The beginnings of modern civil rights
+
+<details><summary>What is Humanism?</summary>
+  <p>
+    The belief that humanity is the greatest good in the world. Greater even than God.
+
+    ![Creation of Adam](creation-of-adam.jpg)
+  </p>
+</details>
 
 ## Overview: An Analogy for the DOM—The Body (10 min)
 
@@ -289,7 +327,7 @@ Many great painters began their careers making deliberate copies of the masterwo
     ```html
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     ```
-    
+
 1. Now using only bootstrap components make a static HTML/CSS prototype of your wireframe. Do not write any custom CSS, edit colors.
 1. For any images, use [placeholder.com](https://placeholder.com/) images.
 
