@@ -36,12 +36,12 @@ var express = require('express');
 var app = express();
 
 // INDEX
-app.get('/posts', function(req, res){
+app.get('/posts', (req, res) => {
 
 });
 
 // SHOW
-app.get('/posts/:id', function(req, res){
+app.get('/posts/:id', (req, res) => {
 
 });
 
