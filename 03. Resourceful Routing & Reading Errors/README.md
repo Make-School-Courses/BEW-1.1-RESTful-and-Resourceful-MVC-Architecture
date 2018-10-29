@@ -85,13 +85,14 @@ app.listen(3000);
     - All the classes
     - All a users comments
     - A single article by an author
-		- the menu items from one restaurant
-		- Give me the form to make a new fish
+    - the menu items from one restaurant
+    - Give me the form to make a new fish
     - create a new fish
-		- Update a fish
+    - Update a fish
     - The details of one hotel
     - All guests going to an event
-		- Delete a fish
+    - Delete a fish
+    
 1. Come up with 3 or more routes that do not follow the Resourceful pattern, but sites still commonly use. (hint: "/about-us")
 
 ## Break 10 min
