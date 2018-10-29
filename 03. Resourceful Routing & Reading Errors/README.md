@@ -103,8 +103,6 @@ Errors generally will tell you what is wrong with your code. Take the time to re
 
 JavaScript errors you will see in two places. In your terminal (server errors) and in your console (client errors). In either case, errors have the same parts. An error type ("ReferenceError"), a specific error message ("num is not defined"), and then a **Stack Trace**.
 
-![Error Example](assets/error-example.png)
-
 The **Stack Trace** is the last commands the computer ran in reverse chronological error. Most of these commands happen on code you did not write and therefore cannot debug. However, usually the one line of code in the stack trace that you DID write is the one you need to fix.
 
 When you want to Google an error, google the error type and the error message statement. e.g. `ReferenceError: num is not defined`.
