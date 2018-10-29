@@ -7,16 +7,13 @@
 1. Read and interpret errors to find out your next step (google them!)
 1. Use the native JavaScript `debugger` function
 
-## Demo: Giphy Api (Final) 20 min
-	- .gitignore
-	- User-Centered Development
-
 ## Giphy Feedback Tips
-	- Indentation, Indentation, Indentation
-	- Breaking with no search term
-	- Commenting out unused code
-	- Git init inside of project directory
-	- Not following convention (rare)
+
+- Indentation, Indentation, Indentation
+- Breaking with no search term
+- Commenting out unused code
+- Git init inside of project directory
+- Not following convention (rare)
 
 ## Routing
 
@@ -120,9 +117,11 @@ When you want to Google an error, google the error type and the error message st
 1. **URIError** - An error in encodeURI() has occurred - 99% of the time you screwed up the format of a URL or request.
 
 ## Demo: Starting Rotten Potatoes - 20 min
-	- Errors
-	- console.log()
-	- debugger
+
+- User-Centered Development
+- Errors
+- `eval(require('locus'))`
+- console.log()
 
 ## Resources
 
