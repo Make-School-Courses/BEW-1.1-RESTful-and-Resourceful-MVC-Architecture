@@ -26,7 +26,7 @@ Users have many Likes
 Has and Belongs to Many in Eventbright
 
 Users have many Events as reservations
-Users belong to Events as guests
+Users belong to many Events as guests
 ```
 
 ```
