@@ -12,6 +12,10 @@ Consider three resources: Fishes, Bears, Trees, and Picnics
 
 ![erd-bears](assets/erd-bears.jpg)
 
+1. Bears have many trees, trees belong to one bear
+2. Bears have one fish, fish belongs to one bear
+3. Bears have and belong to many picnics
+
 ## Associations (10 min)
 
 There are three sorts of resource associations:
