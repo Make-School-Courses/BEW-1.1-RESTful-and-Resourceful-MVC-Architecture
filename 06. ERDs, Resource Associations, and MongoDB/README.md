@@ -2,9 +2,9 @@
 
 ## Objectives
 
+1. Master drawing a simple Entity Relationship Diagrams (ERDs) (2-5 resources)
 1. Utilize the common verbiage for defining **Resource Associations**
-1. Master Mongoose queries for associated resources, including the function `.populate()`
-1. Master the simplest ERD diagrams
+1. Gain familiarity with Mongoose queries for associated resources, including the function `.populate()`
 
 ## ERD Bears
 
