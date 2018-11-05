@@ -6,6 +6,12 @@
 1. Master Mongoose queries for associated resources, including the function `.populate()`
 1. Master the simplest ERD diagrams
 
+## ERD Bears
+
+Consider three resources: Fishes, Bears, Trees, and Picnics
+
+![erd-bears](assets/erd-bears.jpeg)
+
 ## Associations (10 min)
 
 There are three sorts of resource associations:
