@@ -10,7 +10,7 @@
 
 Consider three resources: Fishes, Bears, Trees, and Picnics
 
-![erd-bears](assets/erd-bears.jpeg)
+![erd-bears](assets/erd-bears.jpg)
 
 ## Associations (10 min)
 
