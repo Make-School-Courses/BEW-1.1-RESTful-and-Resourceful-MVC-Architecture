@@ -89,6 +89,7 @@ In a document-based database these **Resource Associations** are modeled in a fe
 
 Very common for one-to-many and many-to-many associations.
 
+*Have Many/Belongs To* - Users have many posts, Posts belong to Users as "Author"
 ```js
 // USER HAS MANY POSTS
 {
@@ -113,16 +114,35 @@ Implementation:
 
 ```js
 const UserSchema = new Schema({
-    , name      : { type: String, required: true }
+    name      : { type: String, required: true },
 
-    , rsvps     : [{ type: Schema.Types.ObjectId, ref: 'Event' }]
+    posts     : [{ type: Schema.Types.ObjectId, ref: 'Post' }]
+});
+
+const PostSchema = new Schema({
+    title      : { type: String, required: true },
+    body       : { type: String, required: true },
+
+    author     : { type: Schema.Types.ObjectId, ref: 'User' }
+});
+
+```
+
+
+*Has and Belongs to Many* - Users Have and Belong to Many Events as "Guests"
+
+```js
+const UserSchema = new Schema({
+    name      : { type: String, required: true },
+
+    rsvps     : [{ type: Schema.Types.ObjectId, ref: 'Event' }]
 });
 
 const EventSchema = new Schema({
-    , title      : { type: String, required: true }
-    , desc       : { type: String, required: true }
+    title      : { type: String, required: true },
+    desc       : { type: String, required: true },
 
-    , guests     : [{ type: Schema.Types.ObjectId, ref: 'User' }]
+    guests     : [{ type: Schema.Types.ObjectId, ref: 'User' }]
 });
 ```
 
