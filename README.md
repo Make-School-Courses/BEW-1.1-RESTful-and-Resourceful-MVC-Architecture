@@ -4,7 +4,7 @@
 
 The web is a very fun place to build things! There is no quicker and more readily available way to share information and enter into commerce than the internet, and there's no faster way than to build a website and web server.
 
-In this course the goal will be to explore the three major **Patterns** or **Architectures** that make up the web and websites: REST, Resources, and MVC. These patterns are language independent and are repeated across nearly any server you work on or build.
+In this course the goal will be to explore the two major **Patterns** or **Architectures** that make up the web and websites: **Resourceful Architecture**, and **Model-View-Controler (MVC) Architecture**. These patterns are language independent and are repeated across nearly any server you work on or build.
 
 Although you can develop webservers in many languages, we will focus on JavaScript and NodeJS. The web is becoming ever more JavaScripty. JavaScript has now risen to being, by many metrics, the fastest growing and widest used language on the web. Now with the invention of NodeJS, you can write your client and your server in JS creating interesting synergies and benefits across a stack and within a development team. Also with the emergence of tools like React Native, Ionic, Johnny-Five, and many others, JavaScript is becoming a versatile tool across many platforms even outside of the desktop and mobile web browsers.
 
