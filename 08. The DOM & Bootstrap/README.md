@@ -58,7 +58,8 @@ Italy did not exist when he lived, but he lived in what are now Italian cities, 
 
 <details><summary>What is Humanism?</summary>
 <p>
-The belief that humanity is the greatest good in the world. Greater even than God.
+
+> The belief that humanity is the greatest good in the world. Greater even than God.
 
 ![Creation of Adam](assets/creation-of-adam.jpg)
 </p>
