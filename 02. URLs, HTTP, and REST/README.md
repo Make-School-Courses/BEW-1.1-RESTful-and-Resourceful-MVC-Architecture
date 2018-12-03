@@ -3,7 +3,6 @@
 ## Objectives
 
 1. Identify and describe each part of a URL and HTTP Request.
-1. Define and explain REST
 
 ## Demo: Giphy Search (cont) and Q&A
   - User-Centered Development

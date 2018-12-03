@@ -7,16 +7,13 @@
 1. Read and interpret errors to find out your next step (google them!)
 1. Use the native JavaScript `debugger` function
 
-## Demo: Giphy Api (Final) 20 min
-	- .gitignore
-	- User-Centered Development
-
 ## Giphy Feedback Tips
-	- Indentation, Indentation, Indentation
-	- Breaking with no search term
-	- Commenting out unused code
-	- Git init inside of project directory
-	- Not following convention (rare)
+
+- Indentation, Indentation, Indentation
+- Breaking with no search term
+- Commenting out unused code
+- Git init inside of project directory
+- Not following convention (rare)
 
 ## Routing
 
@@ -39,12 +36,12 @@ var express = require('express');
 var app = express();
 
 // INDEX
-app.get('/posts', function(req, res){
+app.get('/posts', (req, res) => {
 
 });
 
 // SHOW
-app.get('/posts/:id', function(req, res){
+app.get('/posts/:id', (req, res) => {
 
 });
 
@@ -88,13 +85,14 @@ app.listen(3000);
     - All the classes
     - All a users comments
     - A single article by an author
-		- the menu items from one restaurant
-		- Give me the form to make a new fish
+    - the menu items from one restaurant
+    - Give me the form to make a new fish
     - create a new fish
-		- Update a fish
+    - Update a fish
     - The details of one hotel
     - All guests going to an event
-		- Delete a fish
+    - Delete a fish
+    
 1. Come up with 3 or more routes that do not follow the Resourceful pattern, but sites still commonly use. (hint: "/about-us")
 
 ## Break 10 min
@@ -104,8 +102,6 @@ app.listen(3000);
 Errors generally will tell you what is wrong with your code. Take the time to read them carefully and use them to solve your problems rapidly.
 
 JavaScript errors you will see in two places. In your terminal (server errors) and in your console (client errors). In either case, errors have the same parts. An error type ("ReferenceError"), a specific error message ("num is not defined"), and then a **Stack Trace**.
-
-![Error Example](assets/error-example.png)
 
 The **Stack Trace** is the last commands the computer ran in reverse chronological error. Most of these commands happen on code you did not write and therefore cannot debug. However, usually the one line of code in the stack trace that you DID write is the one you need to fix.
 
@@ -120,9 +116,11 @@ When you want to Google an error, google the error type and the error message st
 1. **URIError** - An error in encodeURI() has occurred - 99% of the time you screwed up the format of a URL or request.
 
 ## Demo: Starting Rotten Potatoes - 20 min
-	- Errors
-	- console.log()
-	- debugger
+
+- User-Centered Development
+- Errors
+- `eval(require('locus'))`
+- console.log()
 
 ## Resources
 

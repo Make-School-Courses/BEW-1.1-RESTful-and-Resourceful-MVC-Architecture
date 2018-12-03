@@ -2,9 +2,19 @@
 
 ## Objectives
 
+1. Master drawing a simple Entity Relationship Diagrams (ERDs) (2-5 resources)
 1. Utilize the common verbiage for defining **Resource Associations**
-1. Master Mongoose queries for associated resources, including the function `.populate()`
-1. Master the simplest ERD diagrams
+1. Gain familiarity with Mongoose queries for associated resources, including the function `.populate()`
+
+## ERD Bears
+
+Consider three resources: Fishes, Bears, Trees, and Picnics
+
+![erd-bears](assets/erd-bears.jpg)
+
+1. Bears have many trees, trees belong to one bear
+2. Bears have one fish, fish belongs to one bear
+3. Bears have and belong to many picnics
 
 ## Associations (10 min)
 
@@ -26,7 +36,7 @@ Users have many Likes
 Has and Belongs to Many in Eventbright
 
 Users have many Events as reservations
-Users belong to Events as guests
+Users belong to many Events as guests
 ```
 
 ```
@@ -79,6 +89,7 @@ In a document-based database these **Resource Associations** are modeled in a fe
 
 Very common for one-to-many and many-to-many associations.
 
+*Have Many/Belongs To* - Users have many posts, Posts belong to Users as "Author"
 ```js
 // USER HAS MANY POSTS
 {
@@ -103,16 +114,35 @@ Implementation:
 
 ```js
 const UserSchema = new Schema({
-    , name      : { type: String, required: true }
+    name      : { type: String, required: true },
 
-    , rsvps     : [{ type: Schema.Types.ObjectId, ref: 'Event' }]
+    posts     : [{ type: Schema.Types.ObjectId, ref: 'Post' }]
+});
+
+const PostSchema = new Schema({
+    title      : { type: String, required: true },
+    body       : { type: String, required: true },
+
+    author     : { type: Schema.Types.ObjectId, ref: 'User' }
+});
+
+```
+
+
+*Has and Belongs to Many* - Users Have and Belong to Many Events as "Guests"
+
+```js
+const UserSchema = new Schema({
+    name      : { type: String, required: true },
+
+    rsvps     : [{ type: Schema.Types.ObjectId, ref: 'Event' }]
 });
 
 const EventSchema = new Schema({
-    , title      : { type: String, required: true }
-    , desc       : { type: String, required: true }
+    title      : { type: String, required: true },
+    desc       : { type: String, required: true },
 
-    , guests     : [{ type: Schema.Types.ObjectId, ref: 'User' }]
+    guests     : [{ type: Schema.Types.ObjectId, ref: 'User' }]
 });
 ```
 
