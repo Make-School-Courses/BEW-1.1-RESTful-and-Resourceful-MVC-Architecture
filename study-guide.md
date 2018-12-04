@@ -2,6 +2,8 @@
 
 At least 50% of the test will come from from these topics. 
 
+If you have a disability that requires any accomodation for the final exam (such as extra time), please reach out to Jen or Anne to make sure this is documented according to the [Make School Accommodations Policy](https://docs.google.com/document/u/1/d/1C4Nm-aWa-l_omuyJRkOoNCBpxcK4LvyYlhcdzvNjwGs/edit#heading=h.s2ivlubnpny2) and then clarify with your instructor what accommodations will be made. 
+
 1. Describe, draw pictures of, and provide examples of the most commonly used bootstrap components, e.g. responsive grid, typography, responsive utilities, forms, cards, etc.
 1. Understand HTTP and memorize standard verbs and status codes
 1. Label all the parts of a URL
