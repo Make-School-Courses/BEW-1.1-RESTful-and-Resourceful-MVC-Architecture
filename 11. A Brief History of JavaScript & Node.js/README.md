@@ -22,7 +22,7 @@ In teams of 3 go to the whiteboard and create a timeline for the history of Java
 
 What are the newest projects in the JavaScript ecosystem? What are the newest changes to the language? Where could the language be heading?
 
-Make sure to include the following pieces of the history of JS (not in chronological order):
+As you develop your history, don't forget to include the following important pieces of the history of JS (not in chronological order):
 
 1. CoffeeScript
 1. Netscape (Mozilla)
