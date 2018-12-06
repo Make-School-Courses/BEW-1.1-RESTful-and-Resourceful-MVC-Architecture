@@ -6,32 +6,15 @@
 
 1. Tell the story of the origins of JavaScript
 1. List some of the most dramatic improvements of JavaScript with ES6 (ES2015)
-1. Explain some of the potential future features of JavaScript versions and the role of other JS-based projects like **Typescript**.
+1. Explain some of the potential future features of JavaScript versions and the role of other JS-based projects.
 
-## History of Ramen (in Movies)
+## Activity: History of JavaScript Group Presentation
 
-1. The Ramen Before Time - Pre History
-1. Saving Private Ramen - Crisis
-1. Ramen of the Dead - Invention
-1. X Ra-Men - Diversification
-1. Ramen Goes West - Internationalization
+Break into groups of 3. Each team takes an equal number of years since 1995 when JS was invented and one team takes "the future". Spend 20 minutes researching your span of time, each person make a slide to explain one or more of the major events of your time period in the history of JavaScript. Now everyone presents, and each person present one slide of the deck that is the History of JavaScript.
 
-## Activity: History of JavaScript
+Now find another two groups (a team of 6) and spend 20 minutes answering the following question:
 
-In teams of 3 go to the whiteboard and create a timeline for the history of JavaScript. Decide on major epochs, conflicts, dead-ends, and changes. List the major changes to the language for each phase of your historical timeline. Also consider why this change was made and what the downstream effects were on the ecosystem as a whole.
-
-What are the newest projects in the JavaScript ecosystem? What are the newest changes to the language? Where could the language be heading?
-
-As you develop your history, don't forget to include the following important pieces of the history of JS (not in chronological order):
-
-1. CoffeeScript
-1. Netscape (Mozilla)
-1. Browser Wars
-1. TypeScript
-1. Node.js
-1. Internet Explorer holding out
-1. The V8 Engine
-1. ECMA 4 Failure
+**What were the three most important events or projects in the history of JS? Why?**
 
 ## Break 10 min
 
