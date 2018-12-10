@@ -23,17 +23,21 @@ Although you can develop webservers in many languages, we will focus on JavaScri
 ### Tutorials & Projects
 
 - [Giphy Search App](https://www.makeschool.com/academy/track/giphy-search-app-with-node-js) tutorial. - Finish before end of week 1
-- [Rotten Potatoes](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js). Finish before end of week 2
+- [Rotten Potatoes](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js). Finish before end of week 2 (must have at least 10 meaningful commits)
 - [Rotten Potatoes: Part Deux](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js-rge). Finish before beginning of week 4 (not required)
-- A Contractor Project - The instructor will roleplay being a client to your engineering team. Finish by beginning of week 7. Project requirements:
+- Contractor Project V1 - Beginning of Week 5
+- Contractor Project V2 - Beginning of Week 6
+- Contractor Project V3 - Middle of Week 7 (Presentations)
     - Written in JavaScript using Node.js, Express.js, and MongoDB
     - Written in MVC with separate files for each concern
     - CRUD >=2 Resources and associate them
     - 100% test coverage of all routes
     - A conventional UI using Bootstrap 4
     - Pushed live to Heroku
-    - AJAX requests for POST/PUT/DELETE requests - Server-side rendering for GET requests (optional)
-    - No jQuery :D
+    - > 10 commits
+    - Presentation => 
+        - Present the feature (and its code) that you are most proud of
+    - AJAX requests for POST/PUT/DELETE requests - Server-side rendering for GET requests (optional)    
     - Use an external API (optional)
 
 ## Evaluation
