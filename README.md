@@ -35,8 +35,7 @@ Although you can develop webservers in many languages, we will focus on JavaScri
     - A conventional UI using Bootstrap 4
     - Pushed live to Heroku
     - Must have at least 10 agile commits
-    - Presentation => 
-        - Present the feature (and its code) that you are most proud of
+    - Presentation => Present the feature (and its code) that you are most proud of 
     - AJAX requests for POST/PUT/DELETE requests - Server-side rendering for GET requests (optional)    
     - Use an external API (optional)
 
