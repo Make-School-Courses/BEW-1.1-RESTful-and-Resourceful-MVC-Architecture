@@ -1,8 +1,12 @@
-# BEW 1.1: RESTful and Resourceful MVC Architecture
-
 <p align="center">
   <img src="node.png" height="110">
 </p>
+
+# BEW1.1 - RESTful & Resourceful Architecture
+
+| Guide | Slack | Office Hours | Shortlink | Tracker | Request 1-on-1 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| [**Dani**](https://github.com/droxey) | _#bew1-1_ | 3:30 - 4:30pm _(Location)_ | [make.sc/bew1-1](https://make.sc/bew1-1) | [make.sc/trackbew1.1](make.sc/trackbew1.1) | [Click to Request](https://make.sc/codewithdani) |
 
 ## Course Description
 
