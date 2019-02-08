@@ -1,4 +1,4 @@
-# RESTful and Resourceful MVC Architecture
+# BEW 1.1: RESTful and Resourceful MVC Architecture
 
 <p align="center">
   <img src="node.png" height="110">
