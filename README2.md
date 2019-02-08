@@ -28,7 +28,7 @@ Tutorials are to help you get started in a topic.  They are graded on completion
 
 1. [**REQUIRED**] [**Giphy Search App**](https://www.makeschool.com/academy/track/giphy-search-app-with-node-js): Complete by Friday, Week 1 _(must have at least 4 agile commits)_
 2. [**REQUIRED**] [**Rotten Potatoes**](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js): Complete by Friday, Week 2 _(must have at least 10 agile commits)_
-3. [**OPTIONAL**] [**Rotten Potatoes: Part Deux**](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js-rge): Complete Friday, Week 4
+3. [**OPTIONAL**] [**Rotten Potatoes: Part Deux**](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js-rge): Complete by Friday, Week 4
 
 
 ### Projects
