@@ -6,7 +6,7 @@
 
 | Guide | Slack | Office Hours | Shortlink | Tracker | Request 1-on-1 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| [**Dani**](https://github.com/droxey) | _#bew1-1_ | 3:30 - 4:30pm _(Location)_ | [make.sc/bew1-1](https://make.sc/bew1-1) | [make.sc/trackbew1.1](make.sc/trackbew1.1) | [Click to Request](https://make.sc/codewithdani) |
+| [**Dani**](https://github.com/droxey) | _#bew1-1_ | Day 3:30 - 4:30pm _(Location)_ | [make.sc/bew1-1](https://make.sc/bew1-1) | [make.sc/trackbew1.1](make.sc/trackbew1.1) | [Click to Request](https://make.sc/codewithdani) |
 
 ## Course Description
 
