@@ -1,12 +1,12 @@
 # RESTful and Resourceful MVC Architecture
 
+<p align="center">
+  <img src="node.png" height="110">
+</p>
+
 ## Course Description
 
-The web is a very fun place to build things! There is no quicker and more readily available way to share information and enter into commerce than the internet, and there's no faster way than to build a website and web server.
-
-In this course the goal will be to explore the two major **Patterns** or **Architectures** that make up the web and websites: **Resourceful Architecture**, and **Model-View-Controler (MVC) Architecture**. These patterns are language independent and are repeated across nearly any server you work on or build.
-
-Although you can develop webservers in many languages, we will focus on JavaScript and NodeJS. The web is becoming ever more JavaScripty. JavaScript has now risen to being, by many metrics, the fastest growing and widest used language on the web. Now with the invention of NodeJS, you can write your client and your server in JS creating interesting synergies and benefits across a stack and within a development team. Also with the emergence of tools like React Native, Ionic, Johnny-Five, and many others, JavaScript is becoming a versatile tool across many platforms even outside of the desktop and mobile web browsers.
+This course covers the three major patterns or architectures that make the web work; REST, Resources, and MVC. Students will use JavaScript, ExpressJS and NodeJS to illustrate these patterns, but the patterns themselves are language independent and are repeated across many common servers. Other key concepts covered include server-side templating, controller testing, associating and nesting resources, state, convention over configuration, and the request-response cycle.
 
 ## Prerequisites
 
@@ -35,8 +35,8 @@ Although you can develop webservers in many languages, we will focus on JavaScri
     - A conventional UI using Bootstrap 4
     - Pushed live to Heroku
     - Must have at least 10 agile commits
-    - Presentation => Present the feature (and its code) that you are most proud of 
-    - AJAX requests for POST/PUT/DELETE requests - Server-side rendering for GET requests (optional)    
+    - Presentation => Present the feature (and its code) that you are most proud of
+    - AJAX requests for POST/PUT/DELETE requests - Server-side rendering for GET requests (optional)
     - Use an external API (optional)
 
 ## Evaluation
