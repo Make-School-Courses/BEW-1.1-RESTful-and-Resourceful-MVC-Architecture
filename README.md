@@ -18,11 +18,11 @@ This course covers the three major patterns or architectures that make the web w
 
 ## Learning Objectives
 
-1. Master the MVC architecture for web server development.
-2. Master and memorize Resourceful Routes and in general describe the importance of Resourceful web architecture.
-3. Read and write to a Document-Based (NoSQL) database (in this case MongoDB) using a Object Document Mapper (ODM)
-4. Master ExpressJS and extend it by installing, initializing, and using its various middleware packages including server-side templating using HandlebarsJS.
-5. Master initial controller testing patterns with Mocha.js and Chai.js
+1. Explain the MVC architecture for web server development.
+2. Use Resourceful Routes and explain the importance of Resourceful web architecture.
+3. Read and write to a Document-Based (NoSQL) database using a Object Document Mapper (ODM)
+4. Use Web applcation frameworks, middleware packages, and server-side templating.
+5. Implement controller testing patterns.
 
 ## Class Assignments
 
