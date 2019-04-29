@@ -21,7 +21,7 @@ This course covers the three major patterns or architectures that make the web w
 1. Explain the MVC architecture for web server development.
 2. Use Resourceful Routes and explain the importance of Resourceful web architecture.
 3. Read and write to a Document-Based (NoSQL) database using a Object Document Mapper (ODM)
-4. Use Web applcation frameworks, middleware packages, and server-side templating.
+4. Use Web application frameworks, middleware packages, and server-side templating.
 5. Implement controller testing patterns.
 
 ## Class Assignments
