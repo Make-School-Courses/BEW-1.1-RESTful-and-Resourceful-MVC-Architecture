@@ -30,7 +30,7 @@ This course covers the three major patterns or architectures that make the web w
 
 Tutorials are to help you get started in a topic.  They are graded on completion only.
 
-1. [**Giphy Search App**](https://www.makeschool.com/academy/track/giphy-search-app-with-node-js): Complete by Friday, Week 1 _(must have at least 4 agile commits)_
+1. [**Gif Search App**](https://www.makeschool.com/academy/track/gif-search-app-ynu): Complete by Friday, Week 1 _(must have at least 4 agile commits)_
 2. [**Rotten Potatoes**](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js): Complete by Friday, Week 2 _(must have at least 10 agile commits)_
 3. [**Rotten Potatoes: Part Deux**](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js-rge): Complete by Friday, Week 4
 
