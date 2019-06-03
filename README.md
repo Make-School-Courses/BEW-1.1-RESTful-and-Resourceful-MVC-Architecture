@@ -24,6 +24,22 @@ This course covers the three major patterns or architectures that make the web w
 4. Use Web application frameworks, middleware packages, and server-side templating.
 5. Implement controller testing patterns.
 
+## Schedule
+
+| Class  |                 Topics                  |
+|:-----:|:---------------------------------------:|
+|  1            | [Request-Response Cycle and MVC Architecture](./01.%20Request-Response%20Cycle%20and%20MVC%20Architecture) |
+|  2               | [URLs, HTTP, and REST](./02.%20URLs%2C%20HTTP%2C%20and%20REST) |
+|  3           | [Resourceful Routing & Reading Errors](./03.%20Resourceful%20Routing%20%26%20Reading%20Errors) |
+|  4               | [Document-based Databases](./04.%20Document-based%20Databases) |
+|  5            | [ERDs, Resource Associations, and MongoDB](./05.%20ERDs%2C%20Resource%20Associations%2C%20and%20MongoDB) |
+|  6               | [Testing RESTful Routes](./06.%20Testing%20RESTful%20Routes) |
+|  7            | [The DOM & Bootstrap](./07.%20The%20DOM%20%26%20Bootstrap) |
+|  8               | [Project Planning and User-Centered Development](./08.%20Project%20Planning%20and%20User-Centered%20Development) |
+| 9              | [RESTful APIs & Service Oriented Architecture](./09.%20API%20RESTful%20Routes) |
+| 10                 | [A Brief History of JavaScript](./10.%20A%20Brief%20History%20of%20JavaScript%20%26%20Node.js) |  
+| 11              | Final Exam |
+
 ## Class Assignments
 
 ### Tutorials
