@@ -76,7 +76,7 @@ Watch the instructor code and narrate what they do on a live project, and take n
 ## Work
 
 1. Install [Emmet](https://emmet.io/) or another HTML snippet package to your text editor to make you fast at HTML writing.
-1. Begin the [Giphy API Tutorial](https://www.makeschool.com/academy/track/gif-search-app-ynu). You should plan to finish this tutorial by the following Monday.
+1. Begin the [Gif API Tutorial](https://www.makeschool.com/academy/track/gif-search-app-ynu). You should plan to finish this tutorial by the following Monday.
 
 ## Resources
 
