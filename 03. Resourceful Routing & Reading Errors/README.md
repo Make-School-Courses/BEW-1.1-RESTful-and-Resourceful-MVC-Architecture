@@ -7,7 +7,7 @@
 1. Read and interpret errors to find out your next step (google them!)
 1. Use the native JavaScript `debugger` function
 
-## Giphy Feedback Tips
+## Gif Search Feedback Tips
 
 - Indentation, Indentation, Indentation
 - Breaking with no search term
