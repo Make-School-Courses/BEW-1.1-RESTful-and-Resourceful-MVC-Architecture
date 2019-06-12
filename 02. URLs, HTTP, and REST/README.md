@@ -4,7 +4,7 @@
 
 1. Identify and describe each part of a URL and HTTP Request.
 
-## Demo: Giphy Search (cont) and Q&A
+## Demo: Gif Search (cont) and Q&A
   - User-Centered Development
 
 ## Initial Exercise 10 min.
@@ -58,7 +58,7 @@ The most common HTTP statuses are the following. Here is a [complete list](https
 
 ## Work
 
-1. Complete the [Giphy API Search Tutorial](https://www.makeschool.com/online-courses/tutorials/giphy-search-app-with-node-js/your-node-environment) - Due Middle of week one (today!)
+1. Complete the [Gif API Search Tutorial](https://www.makeschool.com/academy/track/gif-search-app-ynu) - Due Middle of week one (today!)
 1. Start [Rotten Potatoes Tutorial](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js) - Due End of Week 2.
 
 ## Resources
