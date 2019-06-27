@@ -23,7 +23,7 @@ So far we've been making User Interfaces (UI's) by returning HTML templates to t
 
 An API is a set of web endpoints that respond to JSON (or XML) rather than with HTML templates. Basically, UI's are how people use your website, while API's are how other computers use your app.
 
-We've already used APIs - like those found at [RapidAPI.com](rapidapi.com) - but now we want to make our own.
+We've already used APIs - like those found at [RapidAPI.com](https://rapidapi.com/) - but now we want to make our own.
 
 To make our server a RESTful API, we need our server to respond intelligently to JSON requests. Since we already have RESTful routes that return HTML, we have two options, either we can make separate whole controllers, or we can check if the request coming in has the `Content-Type` header of `application/json`, and then behave accordingly.
 
