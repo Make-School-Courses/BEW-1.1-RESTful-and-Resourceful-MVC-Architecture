@@ -26,7 +26,7 @@ Automated testing is writing code that tests if your code is working.
 </p>
 </details>
 
-<details><summary>When You Can NOT Test</summary>
+<details><summary>When Testing Is A Lower Priority</summary>
 <p>
 
 1. Small projects
