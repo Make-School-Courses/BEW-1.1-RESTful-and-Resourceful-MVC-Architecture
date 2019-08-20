@@ -10,7 +10,7 @@
 
 ## Course Description
 
-This course covers the three major patterns or architectures that make the web work; REST, Resources, and MVC. Students will use JavaScript, ExpressJS and NodeJS to illustrate these patterns, but the patterns themselves are language independent and are repeated across many common servers. Other key concepts covered include server-side templating, controller testing, associating and nesting resources, state, convention over configuration, and the request-response cycle.
+This course covers the three major patterns or architectures that make the web work; REST, Resources, and MVC. Students will learn language independent patterns that are repeated across many common servers. Other key concepts covered include server-side templating, controller testing, associating and nesting resources, state, convention over configuration, and the request-response cycle.
 
 ## Prerequisites
 
