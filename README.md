@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="node.png" height="110">
+  <img src="https://miro.medium.com/max/876/1*0G5zu7CnXdMT9pGbYUTQLQ.png" height="110">
 </p>
 
-# BEW1.1 - RESTful & Resourceful Architecture
+# BEW1.1 - RESTful & Resourceful MVC Architecture
 
 | Guide | Slack | Office Hours | Shortlink | Tracker | Request 1-on-1 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
