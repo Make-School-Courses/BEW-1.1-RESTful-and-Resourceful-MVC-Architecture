@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="node.png" height="110">
+  <img src="https://miro.medium.com/max/876/1*0G5zu7CnXdMT9pGbYUTQLQ.png" height="110">
 </p>
 
-# BEW1.1 - RESTful & Resourceful Architecture
+# BEW1.1 - RESTful & Resourceful MVC Architecture
 
 | Guide | Slack | Office Hours | Shortlink | Tracker | Request 1-on-1 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -10,7 +10,7 @@
 
 ## Course Description
 
-This course covers the three major patterns or architectures that make the web work; REST, Resources, and MVC. Students will use JavaScript, ExpressJS and NodeJS to illustrate these patterns, but the patterns themselves are language independent and are repeated across many common servers. Other key concepts covered include server-side templating, controller testing, associating and nesting resources, state, convention over configuration, and the request-response cycle.
+This course covers the three major patterns or architectures that make the web work; REST, Resources, and MVC. Students will learn language independent patterns that are repeated across many common servers. Other key concepts covered include server-side templating, controller testing, associating and nesting resources, state, convention over configuration, and the request-response cycle.
 
 ## Prerequisites
 
@@ -28,17 +28,19 @@ This course covers the three major patterns or architectures that make the web w
 
 | Class  |                 Topics                  |
 |:-----:|:---------------------------------------:|
-|  1            | [Request-Response Cycle and MVC Architecture](./01.%20Request-Response%20Cycle%20and%20MVC%20Architecture) |
-|  2               | [URLs, HTTP, and REST](./02.%20URLs%2C%20HTTP%2C%20and%20REST) |
-|  3           | [Resourceful Routing & Reading Errors](./03.%20Resourceful%20Routing%20%26%20Reading%20Errors) |
-|  4               | [Document-based Databases](./04.%20Document-based%20Databases) |
-|  5            | [ERDs, Resource Associations, and MongoDB](./05.%20ERDs%2C%20Resource%20Associations%2C%20and%20MongoDB) |
-|  6               | [Testing RESTful Routes](./06.%20Testing%20RESTful%20Routes) |
-|  7            | [The DOM & Bootstrap](./07.%20The%20DOM%20%26%20Bootstrap) |
-|  8               | [Project Planning and User-Centered Development](./08.%20Project%20Planning%20and%20User-Centered%20Development) |
-| 9              | [RESTful APIs & Service Oriented Architecture](./09.%20API%20RESTful%20Routes) |
-| 10                 | [A Brief History of JavaScript](./10.%20A%20Brief%20History%20of%20JavaScript%20%26%20Node.js) |  
-| 11              | Final Exam |
+|  1            | [Static Website](./Lessons/01-Static-Website) |
+|  2               | [Git and GitHub](./Lessons/02-Git-and-GitHub) |
+|  3           | [Request Response Cycle and MVC Architecture](./Lessons/03-Request-Response-Cycle-and-MVC-Architecture) |
+|  4               | [Intro to Flask](./Lessons/04-Intro-to-Flask) |
+|  5            | [URLs, HTTP, REST, and Reading Errors](./Lessons/05-URLs-HTTP-REST-and-Reading-Errors) |
+|  6               | [Testing RESTful Routes](./Lessons/06-Testing-RESTful-Routes) |
+|  7            | [Document-Based Databases](./Lessons/07-Document-Based-Databases) |
+|  8               | [ERDs, Resource Associations, and MongoDB](./Lessons/08-ERDs-Resource-Associations-and-MongoDB) |
+| 9              | [Project Planning and User-Centered Development](./Lessons/09-Project-Planning-and-User-Centered-Development) |
+| 10                 | [The DOM and Bootstrap](./Lessons/10-The-DOM-and-Bootstrap) |  
+| 11              | Contractor Project Lab Day |
+| 12              | [RESTful APIs and Deployment Environments](./Lessons/11-RESTful-APIs-and-Deployment-Environments) |
+| 13              | Final Contractor Project Presentations |
 
 ## Class Assignments
 
@@ -46,35 +48,12 @@ This course covers the three major patterns or architectures that make the web w
 
 Tutorials are to help you get started in a topic.  They are graded on completion only.
 
-1. [**Gif Search App**](https://www.makeschool.com/academy/track/gif-search-app-ynu): Complete by Friday, Week 1 _(must have at least 4 agile commits)_
-2. [**Rotten Potatoes**](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js): Complete by Friday, Week 2 _(must have at least 10 agile commits)_
-3. [**Rotten Potatoes: Part Deux**](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js-rge): Complete by Friday, Week 4
+1. [**Rotten Potatoes**](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js): Complete by Friday, Week 5 _(must have at least 10 agile commits)_
 
-### **Contractor Project**
+### Projects
 
-#### Phases
-
-- V1 - Beginning of Week 5
-- V2 - Beginning of Week 6
-- V3 - Middle of Week 7 (Presentations)
-
-#### Requirements
-
-_**You must meet ALL requirements to pass the Contractor Project.**_ Stretch challenges are optional, and are opportunities to dive deeper upon early project completion.
-
-- Written in JavaScript using Node.js, Express.js, and MongoDB
-- Written in MVC with separate files for each concern
-- CRUD >=2 Resources and associate them
-- 100% test coverage of all routes
-- A conventional UI using Bootstrap 4
-- Pushed live to Heroku
-- Must have at least 10 agile commits
-- Presentation => Present the feature (and its code) that you are most proud of
-
-##### Stretch Challenges
-
-- AJAX requests for POST/PUT/DELETE requests - Server-side rendering for GET requests (optional)
-- Use an external API (optional)
+- [Gif Search](https://docs.google.com/document/d/1symUDRsZ1i2xf8F2mwAGFJtLjbOXqCj0JyrIgTtFNT0/edit?usp=sharing) (done in partners)
+- [Contractor Project](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit?usp=sharing)
 
 ## Evaluation
 
