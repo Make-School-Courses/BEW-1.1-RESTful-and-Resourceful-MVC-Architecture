@@ -1,4 +1,5 @@
-/** MakeSchool theme for reveal.js. */
+/** MakeSchool theme for Reveal.js. */
+
 @import url('https://use.typekit.net/zyr1voy.css');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&display=swap');
 
@@ -24,7 +25,7 @@ body {
 
 .reveal {
   font-family: "proxima-nova", Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: normal;
   color: #303030;
 }
@@ -80,6 +81,7 @@ body {
 
 .reveal h3 {
   font-size: 1.3em;
+  margin: 0 0 -5px 0;
 }
 
 .reveal h4,
@@ -97,8 +99,9 @@ body {
  * OTHER
  *********************************************/
 .reveal p {
-  margin: 20px 0;
+  margin: 40px 0;
   line-height: 1.3;
+  text-align: left;
 }
 
 /* Ensure certain elements are never larger than the slide itself */
@@ -121,9 +124,8 @@ body {
 .reveal ol,
 .reveal dl,
 .reveal ul {
-  display: inline-block;
-  text-align: left;
-  margin: 0 0 0 1em;
+  display: block;
+  margin: 18px 0 54px 1em;
 }
 
 .reveal ol {
@@ -147,7 +149,24 @@ body {
 .reveal ol ol,
 .reveal ol ul {
   display: block;
-  margin-left: 40px;
+  margin-left: 54px;
+  margin-top: 9px;
+  margin-bottom: 18px;
+}
+
+.reveal ul li,
+.reveal ul li,
+.reveal ol li,
+.reveal ol li {
+  margin-bottom: 18px;
+}
+
+.reveal ul ul li,
+.reveal ul ol li,
+.reveal ol ol li,
+.reveal ol ul li {
+  font-size: 1.7rem;
+  color: #4A4A4A;
 }
 
 .reveal dt {
@@ -161,11 +180,12 @@ body {
 .reveal blockquote {
   display: block;
   position: relative;
-  width: 70%;
+  width: 100%;
   margin: 20px auto;
   padding: 5px;
   font-style: italic;
   background: rgba(255, 255, 255, 0.05);
+  line-height: 100%;
 }
 
 .reveal blockquote p:first-child,
@@ -181,7 +201,7 @@ body {
   display: block;
   position: relative;
   width: 100%;
-  margin: 20px auto;
+  margin: 0 auto;
   text-align: left;
   font-size: 0.75em;
   font-family: monospace;
@@ -213,11 +233,12 @@ body {
 .reveal pre code {
   display: block;
   padding: 5px;
-  overflow: auto;
+  overflow: autoa;
   max-height: 400px;
-  word-wrap: normal;
+  word-wrap: break-word;
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .reveal table {

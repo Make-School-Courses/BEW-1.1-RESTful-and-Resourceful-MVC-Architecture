@@ -4,5 +4,6 @@
   "autoPlayMedia": false,
   "slideNumber": "h/v",
   "showSlideNumber": "all",
-  "hash": false
+  "hash": false,
+  "width": 1400
 }
