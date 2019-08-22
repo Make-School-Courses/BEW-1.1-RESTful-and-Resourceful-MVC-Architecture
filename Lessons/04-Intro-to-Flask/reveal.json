@@ -5,5 +5,9 @@
   "slideNumber": "c/t",
   "showSlideNumber": "all",
   "controlsTutorial": true,
-  "controlsLayout": "edges"
+  "controlsLayout": "edges",
+  "transition": "fade",
+  "transitionSpeed": "slow",
+  "minScale": 0.5,
+  "maxScale": 3
 }
