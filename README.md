@@ -60,8 +60,8 @@ Tutorials are to help you get started in a topic.  They are graded on completion
 To pass this course you must meet the following requirements:
 
 - Complete all required tutorials
-- Pass all projects according to the requirements
-- Pass the final summative assessment >=75%
+- Pass all projects according to the requirements and rubrics
+- Pass all weekly quizzes (lowest quiz will be dropped)
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
 

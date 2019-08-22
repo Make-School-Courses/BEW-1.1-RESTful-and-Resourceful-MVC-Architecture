@@ -332,6 +332,16 @@ Many great painters began their careers making deliberate copies of the masterwo
 1. Now using only bootstrap components make a static HTML/CSS prototype of your wireframe. Do not write any custom CSS, edit colors.
 1. For any images, use [placeholder.com](https://placeholder.com/) images.
 
+## Code Review Pt. 3
+
+Before you submit your contractor project, you must get a code review on your project.
+
+Remember you can get a peer, TA, Senior, or Coach to do this!
+
+## Homework
+
+- Get a code review for your contractor project before your presentations, and **put the name of the code reviewer and the link to the commit reviewed in the tracker!**
+
 ## Resources
 
 1. [Bootstrap](http://getbootstrap.com/)
