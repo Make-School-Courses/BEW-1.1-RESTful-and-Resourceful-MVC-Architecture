@@ -6,6 +6,7 @@ author: Dani Roxberry <dani@makeschool.com>
 <!-- Run this slideshow via the following command: -->
 <!-- reveal-md README.md -w --css=makeschool.css -->
 
+
 <!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
 # Intro to Flask
 
@@ -151,7 +152,7 @@ Today, we'll use our knowledge from prior classes to guide us:
 
 --
 
-### Getting Started (10m)
+### Getting Started (5m)
 
 **1**. Create a file named `app.py`:
 
@@ -216,6 +217,7 @@ def hit_counter():
  ```python
 from flask import Flask
 
+
 hits = 0
 
 def hit_counter():
@@ -228,14 +230,13 @@ def hit_counter():
 
 ### Define App Variable
 
-<br>
+Declare a variable named `app`, and instantiate the Flask class.
 
  ```python
 from flask import Flask
 
+
 app = Flask(__name__)
-
-
 hits = 0
 
 def hit_counter():
@@ -253,8 +254,8 @@ Add `@app.route` to the top of the function definition and explain that this **d
  ```python
 from flask import Flask
 
-app = Flask(__name__)
 
+app = Flask(__name__)
 hits = 0
 
 @app.route("/")
@@ -266,17 +267,15 @@ def hit_counter():
 
 --
 
-### Add `__main__`
+### Declare The Entrypoint
 
 Last, define `__main__`:
-
 
  ```python
 from flask import Flask
 
+
 app = Flask(__name__)
-
-
 hits = 0
 
 @app.route("/")

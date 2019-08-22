@@ -2,8 +2,8 @@
   "controls": false,
   "progress": true,
   "autoPlayMedia": false,
-  "slideNumber": "h/v",
+  "slideNumber": "c/t",
   "showSlideNumber": "all",
-  "hash": false,
-  "width": 1400
+  "controlsTutorial": true,
+  "controlsLayout": "edges"
 }
