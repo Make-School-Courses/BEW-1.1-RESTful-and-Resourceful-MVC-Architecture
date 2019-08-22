@@ -206,10 +206,10 @@ Now that you know how everything works, try it yourself.  Set up a Mongo connect
 You don't need to make more than one file for this activity, although in the future we'll modularize our database code.
 
 ```py
-# import necessary dependencies
+# Import necessary dependencies.
 from flask import Flask
 
-# initialize your Mongo connection and create the Mongo variable
+# Initialize your Mongo connection and create the Mongo variable.
 app = Flask(__name__)
 
 

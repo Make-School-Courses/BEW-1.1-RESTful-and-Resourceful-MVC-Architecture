@@ -38,7 +38,7 @@ There are three sorts of resource associations:
     * User has one Profile
     * User has one Credit Card
 
-## Entity Relationship Diagrams—ERDs (5 min)
+## Entity Relationship Diagrams — ERDs (5 min)
 
 Before you code a project, it is good to spend about an hour completing three deliverables:
 
@@ -81,9 +81,26 @@ In a document-based database these **Resource Associations** are modeled in a fe
 
 Very common for one-to-many and many-to-many associations.
 
-*Have Many/Belongs To* - Users have many Posts, Posts belong to Users as "Author"
+#### Have Many/Belongs To
 
-```js
+Users have many Posts, Posts belong to Users as "Author"
+
+```py
+from pprint import pprint
+
+
+# First, find a specific User. Then print the titles of all Posts:
+the_user = db.Users.find_one({"_id_": user_id})
+for post in the_user.posts.find():
+    pprint(post.title)
+
+# Or, find all the posts written by this specific user.
+db.Posts.find({"author": user_id})
+```
+
+The following BSON is returned after executing the code:
+
+```json
 // USER HAS MANY POSTS
 {
   "name": "John Brown",
@@ -95,107 +112,78 @@ Very common for one-to-many and many-to-many associations.
   "title": "John Brown",
   "author": "asf675as6f6a4s6f"
 }
-
-// TODO: Convert to Python
-// GIVE ME A USER AND ALL THEIR POSTS
-User.findById(userId).populate('posts').then(...).catch(...);
-
-
-// TODO: Convert to Python
-// GIVE ME ALL POSTS BY ONE USER
-Post.find({author: userId}).then(...).catch(...);
 ```
 
-Implementation:
+#### Has and Belongs to Many
 
-```js
-// TODO: Convert to Python
-const UserSchema = new Schema({
-    name      : { type: String, required: true },
+Users Have and Belong to Many Events as "Guests"
 
-    posts     : [{ type: Schema.Types.ObjectId, ref: 'Post' }]
-});
-
-const PostSchema = new Schema({
-    title      : { type: String, required: true },
-    body       : { type: String, required: true },
-
-    author     : { type: Schema.Types.ObjectId, ref: 'User' }
-});
-
-```
-
-
-*Has and Belongs to Many* - Users Have and Belong to Many Events as "Guests"
-
-```js
-// TODO: Convert to Python
-const UserSchema = new Schema({
-    name      : { type: String, required: true },
-
-    rsvps     : [{ type: Schema.Types.ObjectId, ref: 'Event' }]
-});
-
-const EventSchema = new Schema({
-    title      : { type: String, required: true },
-    desc       : { type: String, required: true },
-
-    guests     : [{ type: Schema.Types.ObjectId, ref: 'User' }]
-});
-```
-
-### Value Association (pretty common)
-
-```js
-// Post belongs to Subreddit
-{
-  "title": "",
-  "subreddit": "Jugglers Anonymous"
+```py
+# Add a user to represent a single Guest:
+first_guest = {
+  "name": "Dani",
+  "rsvps": []
 }
 
-// GIVE ME ALL POSTS IN ONE SUBREDDIT
-// TODO: Convert to Python
-Post.find({subreddit: "Jugglers Anonymous"}).then(...).catch(...);
+# Insert the new Guest:
+first_guest_id = db.Guests.insert_one(guest).inserted_id
 
-// User belongs to City
+# Create a dictionary to represent a new Event.
+# Add our first guest to the list of invitees:
+new_event = {
+  "title": "Burning Man",
+  "description": "Hang out in the desert",
+  "guests": [first_guest_id]
+}
+
+# Insert the Event object into the Events collection.
+# Once added to the collection, we can store the saved Event ID for later use:
+new_event_id = db.Events.insert_one(new_event).inserted_id
+
+# Allow the first_guest to RSVP for the new_event:
+db.Guests.find_one_and_update({'_id': first_guest_id}, {'$push': {'rsvps': new_event }})
+```
+
+#### Value Association (pretty common)
+
+```json
+{
+  "title": "Mastering the Three Ball Cascade",
+  "subreddit": "Jugglers Anonymous"
+}
+```
+
+```py
+# Return all Posts in a specific subreddit:
+juggling_posts = db.Posts.find({subreddit: "Jugglers Anonymous"})
+for post in juggling_posts:
+    print(post.title)
+```
+
+```json
 {
   "name": "John Brown",
   "city": "San Francisco"
 }
-
-// GIVE ME ALL USERS IN ONE CITY
-// TODO: Convert to Python
-User.find({city: "San Francisco"}).then(...).catch(...);
 ```
 
-Implementation:
-
-```js
-
-// TODO: Convert to Python
-const mongoose = require('mongoose'),
-      Schema = mongoose.Schema;
-
-const RestaurantSchema = new Schema({
-    , name       : { type: String, required: true }
-    , category   : String
-    , tags       : [String]
-
-    , owner      : { type: Schema.Types.ObjectId, ref: 'User', required: true }
-},{
-    timestamps: true
-});
-
-module.exports = mongoose.model('Review', ReviewSchema);
+```py
+# Return all Users in a specific city:
+sf_users = db.Users.find({"city": "San Francisco"})
+for user in sf_users:
+    print(user.name)
 ```
 
 ### Embedded Documents (very rare)
 
-Rare for one-to-many associations. Only use when you always want all children to appear with the parent. Also if you don't want to edit the children very much or at all.
+Rare for one-to-many associations.
 
-```js
-// Comments belong to Post
-{
+Only use when you always want all children to appear with the parent.
+
+Also if you don't want to edit the children very much or at all.
+
+```py
+embedded_post = {
   "title": "Awesome Article",
   "comments": [
     { "content": "What a great article" },
@@ -203,23 +191,7 @@ Rare for one-to-many associations. Only use when you always want all children to
   ]
 }
 
-```
-
-Implementation:
-
-```js
-// TODO: Convert to Python
-const CommentSchema = new Schema({ title: String, content: String });
-
-const ArticleSchema = new Schema({
-    , title      : { type: String, required: true }
-    , content    : { type: String, required: true }
-
-    , author     : { type: Schema.Types.ObjectId, ref: 'User', required: true }
-    , comments   : [CommentSchema]
-},{
-    timestamps: true
-});
+db.Posts.insert_one(embedded_post)
 ```
 
 ## Activity: Code Review (15 min)
