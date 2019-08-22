@@ -48,7 +48,7 @@ This course covers the three major patterns or architectures that make the web w
 
 Tutorials are to help you get started in a topic.  They are graded on completion only.
 
-1. [**Rotten Potatoes**](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js): Complete by Friday, Week 5 _(must have at least 10 agile commits)_
+1. [**Playlistr**](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c): Complete by Friday, Week 5 _(must have at least 10 agile commits)_
 
 ### Projects
 
