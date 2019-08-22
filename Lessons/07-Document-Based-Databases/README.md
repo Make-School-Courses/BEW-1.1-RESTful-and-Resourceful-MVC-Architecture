@@ -70,7 +70,7 @@ Why use a Document-Base Database?
 
 ### MongoDB Queries
 
-[Mongo Shell Quick Reference](https://docs.MongoDB.com/manual/reference/mongo-shell/) - Use this to manually manipulate your database.
+[Mongo Shell Quick Reference](https://docs.mongodb.com/manual/reference/mongo-shell/) - Use this to manually manipulate your database.
 
 [Robo 3T](https://robomongo.org/) - A GUI (graphics user interface) for MongoDB.  Lets you visualize, understand, and confirm that your database works.
 
@@ -80,7 +80,7 @@ Learning the MongoDB shell is useful for quickly getting info from your database
 
 You can think of queries as the language through which you ask Mongo for the data you want.  Here's a list of some of the most used queries:
 
-Documentation can be found [here](https://docs.MongoDB.com/manual/tutorial/getting-started/).
+Documentation can be found [here](https://docs.mongodb.com/manual/tutorial/getting-started/).
 
 `find(query)` - can be combined with search terms like `.find({ age: 18 })` or to select all documents can be passed an empty query `.find({})`.  Returns all documents matching the query.
 
@@ -161,7 +161,7 @@ We can save that to Mongo, which will create a model for the data you input if o
 ```py
 # THIS IS AN EXAMPLE OF DOCUMENT BASED DATABASES, NOT USER AUTHENTICATION
 @app.route("/users")
-def createUser(methods=["POST"]):
+def create_user(methods=["POST"]):
   # format form data to JSON
   data = request.get_json()
   # make sure they agreed to terms of service
