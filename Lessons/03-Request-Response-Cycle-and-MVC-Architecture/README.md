@@ -66,7 +66,7 @@ Take some time right now to reach out to someone for a code review!
 
 ## Homework
 
-1. Get a code review on your Spaceman project before you submit it. **Put the name of the code reviewer in the progress tracker**
+1. Get a code review on your Spaceman project before you submit it. **Put the name of the code reviewer, and link to the commit that was reviewed in the progress tracker**
 1. Install [Emmet](https://emmet.io/) or another HTML snippet package to your text editor to make you fast at HTML writing.
 1. [GA's Free Dash Tutorial (HTML/CSS)](https://dash.generalassemb.ly/)
 1. [Learn CSS in 12 Min](https://www.youtube.com/watch?v=0afZj1G0BIE) (Video - 12 min)
