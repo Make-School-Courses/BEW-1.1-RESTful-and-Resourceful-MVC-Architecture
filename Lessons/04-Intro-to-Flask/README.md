@@ -269,7 +269,7 @@ def hit_counter():
 
 ### Declare The Entrypoint
 
-Last, define `__main__`:
+Last, define `__main__`. :
 
  ```python
 from flask import Flask

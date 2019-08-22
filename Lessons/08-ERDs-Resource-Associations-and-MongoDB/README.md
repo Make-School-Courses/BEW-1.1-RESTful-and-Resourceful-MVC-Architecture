@@ -2,9 +2,8 @@
 
 ## Objectives
 
-1. Master drawing a simple Entity Relationship Diagrams (ERDs) (2-5 resources)
+1. Master drawing a simple **Entity Relationship Diagrams** (ERDs) (2-5 resources)
 1. Utilize the common verbiage for defining **Resource Associations**
-1. Gain familiarity with Mongoose queries for associated resources, including the function `.populate()`
 
 ## ERD Bears
 
@@ -20,49 +19,42 @@ Consider three resources: Fishes, Bears, Trees, and Picnics
 
 There are three sorts of resource associations:
 
-1. **One-to-Many** or Has Many/Belongs To
-1. **One-to-One** or Has One/Belongs To
-1. **Many-to-Many** or Has And Belongs to Many, or Has Many Through
+1. **One-to-Many** or *Has Many/Belongs To*
+1. **One-to-One** or *Has One/Belongs To*
+1. **Many-to-Many** or *Has And Belongs to Many*, or *Has Many Through*
 
-```
-One to many in Facebook:
+### Examples
 
-Users have many Posts
-Users have many Comments
-Users have many Likes
-```
+* **[Common] Facebook** - One to Many:
+    * Users have many Posts
+    * Users have many Comments
+    * Users have many Likes
 
-```
-Has and Belongs to Many in Eventbright
+* **[Common] Eventbright** - Has and Belongs to Many:
+    * Users have many Events as reservations
+    * Users belong to many Events as guests
 
-Users have many Events as reservations
-Users belong to many Events as guests
-```
-
-```
-Has One/Belongs To (Rare)
-
-User has one Profile
-User has one Credit Card
-```
+* **[Rare] Eventbright** - Has One/Belongs To
+    * User has one Profile
+    * User has one Credit Card
 
 ## Entity Relationship Diagrams—ERDs (5 min)
 
 Before you code a project, it is good to spend about an hour completing three deliverables:
 
 1. User Journeys (UX)
-1. Wireframes (UI)
-1. An Entity Relationship Diagram (Architecture)
+2. Wireframes (UI)
+3. An Entity Relationship Diagram (Architecture)
 
 These three will give you an baseline idea of the structure of your project before beginning. And they only take a few minutes to complete.
 
-Let's look at how to draw ERD's.
+Let's look at how to draw ERDs.
 
 Connect resources in boxes with arrows depending on their relationship:
 
-1. Many-to-One "=>"
-1. Many-to-Many  "<=>"
-1. One-to-Many "-->"
+1. Many-to-One: `=>`
+1. Many-to-Many: `<=>`
+1. One-to-Many: `-->`
 
 ![Blog erd](assets/blog-erd.jpeg)
 ![School erd](assets/school-erd.jpeg)
@@ -75,21 +67,22 @@ Draw ERDs for the core features of 3 the following applications. You can pick yo
 1. Pinterest
 1. Airbnb
 1. Facebook
-1. The AppStore
+1. Apple App Store
 
-## Modeling these Associations in MongoDB (20 min)
+## Modeling Associations Using MongoDB (20 min)
 
 In a document-based database these **Resource Associations** are modeled in a few ways. Here they are ordered by frequency
 
 1. Reference Documents (very common)
-1. Value Associations (pretty common)
-1. Embedded Documents (very rare)
+2. Value Associations (pretty common)
+3. Embedded Documents (very rare)
 
 ### Reference Documents (very common)
 
 Very common for one-to-many and many-to-many associations.
 
-*Have Many/Belongs To* - Users have many posts, Posts belong to Users as "Author"
+*Have Many/Belongs To* - Users have many Posts, Posts belong to Users as "Author"
+
 ```js
 // USER HAS MANY POSTS
 {
@@ -103,9 +96,12 @@ Very common for one-to-many and many-to-many associations.
   "author": "asf675as6f6a4s6f"
 }
 
+// TODO: Convert to Python
 // GIVE ME A USER AND ALL THEIR POSTS
 User.findById(userId).populate('posts').then(...).catch(...);
 
+
+// TODO: Convert to Python
 // GIVE ME ALL POSTS BY ONE USER
 Post.find({author: userId}).then(...).catch(...);
 ```
@@ -113,6 +109,7 @@ Post.find({author: userId}).then(...).catch(...);
 Implementation:
 
 ```js
+// TODO: Convert to Python
 const UserSchema = new Schema({
     name      : { type: String, required: true },
 
@@ -132,6 +129,7 @@ const PostSchema = new Schema({
 *Has and Belongs to Many* - Users Have and Belong to Many Events as "Guests"
 
 ```js
+// TODO: Convert to Python
 const UserSchema = new Schema({
     name      : { type: String, required: true },
 
@@ -156,6 +154,7 @@ const EventSchema = new Schema({
 }
 
 // GIVE ME ALL POSTS IN ONE SUBREDDIT
+// TODO: Convert to Python
 Post.find({subreddit: "Jugglers Anonymous"}).then(...).catch(...);
 
 // User belongs to City
@@ -165,12 +164,15 @@ Post.find({subreddit: "Jugglers Anonymous"}).then(...).catch(...);
 }
 
 // GIVE ME ALL USERS IN ONE CITY
+// TODO: Convert to Python
 User.find({city: "San Francisco"}).then(...).catch(...);
 ```
 
 Implementation:
 
 ```js
+
+// TODO: Convert to Python
 const mongoose = require('mongoose'),
       Schema = mongoose.Schema;
 
@@ -200,11 +202,13 @@ Rare for one-to-many associations. Only use when you always want all children to
     { "content": "Agreed!" }
   ]
 }
+
 ```
 
 Implementation:
 
 ```js
+// TODO: Convert to Python
 const CommentSchema = new Schema({ title: String, content: String });
 
 const ArticleSchema = new Schema({
@@ -220,12 +224,12 @@ const ArticleSchema = new Schema({
 
 ## Activity: Code Review (15 min)
 
-Pair up and review each other's Rotten Potatoes.
+Pair up and review one another's implementation of Playlistr.
 
 Review code for:
 
 1. Completeness
-1. Variable naming
-1. Spacing and Indentation
-1. Modularity and file structure
-1. Usability and style
+2. Variable naming
+3. Spacing and Indentation
+4. Modularity and file structure
+5. Usability and style
