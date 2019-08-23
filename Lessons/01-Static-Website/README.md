@@ -28,11 +28,7 @@ By the end of today, you should be able to…
 1. Include their achievements, super powers, skills, and experience.
 1. Add some CSS - demonstrate using the developer tools
 
---
-
-## This is a slide
-
---
+---
 
 ## TT
 
