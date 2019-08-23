@@ -1,8 +1,16 @@
+---
+title:  Static Websites
+author: Adam Braus <braus@makeschool.com>
+---
+
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
 # Static Website
 
-# [Slides](https://docs.google.com/presentation/d/1_gruAkD-jI-Ev0geTcbiFpjhFFzHH-9TSZVIctJFvnc/edit?usp=sharing)
+[Slides](https://docs.google.com/presentation/d/1_gruAkD-jI-Ev0geTcbiFpjhFFzHH-9TSZVIctJFvnc/edit?usp=sharing)
 
-# Learning Outcomes
+---
+
+## Learning Outcomes
 
 By the end of today, you should be able to…
 
@@ -11,14 +19,22 @@ By the end of today, you should be able to…
 1. Make a static web page using HTML & CSS
 1. Use a browser’s developer tools to examine and change the HTML & CSS of a website.
 
-# HTML/CSS & Developer Tools Demo
+---
+
+## HTML/CSS & Developer Tools Demo
 
 1. Create a new folder with index.html and style.css
 1. Make a brief resume for your favorite fictional character using only HTML
 1. Include their achievements, super powers, skills, and experience.
 1. Add some CSS - demonstrate using the developer tools
 
-# TT
+--
+
+## This is a slide
+
+--
+
+## TT
 
 See slides for details on all of the below topics:
 
@@ -29,21 +45,20 @@ See slides for details on all of the below topics:
 - CSS Vocabulary
 - Common CSS Properties
 
-# Break
+---
 
-# Activity - Resume
+## Break
+
+---
+
+## Activity - Resume
 
 Make a resume for your favorite fictional character using HTML & CSS. Include their address, skills, experience, and achievements.
 
-# Activity - Hacking Websites with Developer Tools Demo
+---
 
-1. Demonstrate making HTML 
+## Activity - Hacking Websites with Developer Tools Demo
+
+1. Demonstrate making HTML
 1. Demonstrate making CSS changes using developer tools.
 1. Show how to change an image.
-
-
-
-
-
-
-
