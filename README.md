@@ -60,10 +60,10 @@ Tutorials are to help you get started in a topic.  They are graded on completion
 To pass this course, students must meet the following requirements:
 
 - Complete **all** required coding tutorials: 
-    - [**Playlistr**](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c)
+    - Playlistr ([Rubric](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c))
 - Complete **all** required coding projects (this includes all commit requirements and homework related to each project):
-    - [Gif Search](https://docs.google.com/document/d/1symUDRsZ1i2xf8F2mwAGFJtLjbOXqCj0JyrIgTtFNT0/edit?usp=sharing) (done in partners)
-    - [Contractor Project](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit?usp=sharing)
+    - Gif Search ([Rubric](https://docs.google.com/document/d/1symUDRsZ1i2xf8F2mwAGFJtLjbOXqCj0JyrIgTtFNT0/edit?usp=sharing))
+    - Contractor Project ([Rubric](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit?usp=sharing))
 - Submit all code and writing with rubric scores by the due dates listed above
 - Pass all submissions according to the associated coding challenge rubrics
 - Pass all weekly quizzes (there will be a total of 5 quizzes, lowest quiz will be dropped)
