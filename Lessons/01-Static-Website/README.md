@@ -1,9 +1,6 @@
----
-title:  Static Websites
-author: Adam Braus <braus@makeschool.com>
----
 
-# HTML & CSS
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
+# Static Website
 
 ### [Slides](https://docs.google.com/presentation/d/1_gruAkD-jI-Ev0geTcbiFpjhFFzHH-9TSZVIctJFvnc/edit?usp=sharing)
 
