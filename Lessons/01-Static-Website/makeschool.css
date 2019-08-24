@@ -63,23 +63,26 @@ body {
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: normal;
-  text-transform: uppercase;
   text-shadow: none;
+  text-transform: uppercase;
   word-wrap: break-word;
 }
 
 .reveal h1 {
   font-size: 2em;
-  color: #0D4062;
-  margin-top: 20%;
+  background-color: #087CB8;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 25px;
 }
 
 .reveal h2 {
-  font-size: 1.6em;
   color: #087CB8;
+  font-size: 1.6em;
 }
 
 .reveal h3 {
+  color: #0D4062;
   font-size: 1.3em;
   margin: 0 0 -5px 0;
 }
@@ -219,12 +222,16 @@ body {
 }
 
 .reveal p code,
+.reveal h1 code,
+.reveal h2 code,
+.reveal h3 code,
 .reveal ol li code,
 .reveal ul li code {
   font-family: 'Ubuntu Mono', monospace;
-  font-weight: 700;
-  background: #12739e;
-  color: white;
+  font-weight: 400;
+  border: 1px solid #12739e;
+  /* box-shadow: 3px 3px #12749e9c; */
+  /* background-color: white; */
   padding: 1px 5px 2px 5px;
   display: inline-block;
   vertical-align: baseline;
@@ -366,8 +373,8 @@ body {
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.3);
-  color: #4BB1E4;
+  background: rgba(0, 0, 0, 0.1);
+  color: #087CB8;
 }
 
 .reveal .progress span {
@@ -386,8 +393,8 @@ body {
 }
 
 .reveal pre {
-  box-shadow: none;
-  border: 2px solid #87898C33;
+  box-shadow: 5px;
+  border: 2px solid #CCC;
 }
 
 .reveal p,
