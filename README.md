@@ -4,10 +4,11 @@
 
 # BEW1.1 - RESTful & Resourceful MVC Architecture
 
+<!-- REMOVED DUE TO NOT BEING MAINTAINED CURRENTLY
 | Guide | Slack | Office Hours | Shortlink | Tracker | Request 1-on-1 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | [**Dani**](https://github.com/droxey) | _#bew1-1_ | Day 3:30 - 4:30pm _(Location)_ | [make.sc/bew1-1](https://make.sc/bew1-1) | [make.sc/trackbew1.1](make.sc/trackbew1.1) | [Click to Request](https://make.sc/codewithdani) |
-
+-->
 ## Course Description
 
 This course covers the three major patterns or architectures that make the web work; REST, Resources, and MVC. Students will learn language independent patterns that are repeated across many common servers. Other key concepts covered include server-side templating, controller testing, associating and nesting resources, state, convention over configuration, and the request-response cycle.
@@ -57,13 +58,24 @@ Tutorials are to help you get started in a topic.  They are graded on completion
 
 ## Evaluation
 
-To pass this course you must meet the following requirements:
+To pass this course, students must meet the following requirements:
 
-- Complete all required tutorials
-- Pass all projects according to the requirements and rubrics
-- Pass all weekly quizzes (lowest quiz will be dropped)
+- Complete **all** required coding tutorials: 
+    - Playlistr ([Rubric](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c))
+- Complete **all** required coding projects (this includes all commit requirements and homework related to each project):
+    - Gif Search ([Rubric](https://docs.google.com/document/d/1symUDRsZ1i2xf8F2mwAGFJtLjbOXqCj0JyrIgTtFNT0/edit?usp=sharing))
+    - Contractor Project ([Rubric](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit?usp=sharing))
+- Submit all code and writing with rubric scores by the due dates listed above
+- Pass all submissions according to the associated coding challenge rubrics
+- Pass all weekly quizzes (there will be a total of 5 quizzes, lowest quiz will be dropped)
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
+
+_To pass each project or tutorial, students must earn the required number of points or higher indicated on the associated rubric. Note that all points within one project or tutorial submission are fungible (that is, interchangeable) and so if one portion of work is below the "Met All Expectations" column of the rubric, another portion of work submitted can "Exceed Expectations" (generally by completing stretch challenges) to earn an extra point to make up for the missing one. Therefore, it's wise to complete stretch challenges as "insurance" in case some work does not meet expectations._
+
+_Another way to think of the submissions is a game where your goal is to earn enough points to pass in whatever way you see fit, with rubrics as the rules of the game that you can optimize against and "win" to pass the course._
+
+_The instructor or teaching assistants will review students' submissions and verify or correct their self-assessed scores, then share feedback with the student through a GitHub issue opened on their repository. Feedback will include their status on that submission (that is, whether their work is passing the rubric). Resubmissions will not be considered unless the instructor has approved a resubmission in writing due to exceptional circumstances._
 
 
 ## Make School Course Policies
