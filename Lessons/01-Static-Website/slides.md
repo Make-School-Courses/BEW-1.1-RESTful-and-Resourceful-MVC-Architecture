@@ -1,7 +1,6 @@
 
 # Static Websites
 
-### [Slides](https://docs.google.com/presentation/d/1_gruAkD-jI-Ev0geTcbiFpjhFFzHH-9TSZVIctJFvnc/edit?usp=sharing)
 
 ---
 
