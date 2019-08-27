@@ -4,10 +4,11 @@
 
 # BEW1.1 - RESTful & Resourceful MVC Architecture
 
+<!-- REMOVED DUE TO NOT BEING MAINTAINED CURRENTLY
 | Guide | Slack | Office Hours | Shortlink | Tracker | Request 1-on-1 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | [**Dani**](https://github.com/droxey) | _#bew1-1_ | Day 3:30 - 4:30pm _(Location)_ | [make.sc/bew1-1](https://make.sc/bew1-1) | [make.sc/trackbew1.1](make.sc/trackbew1.1) | [Click to Request](https://make.sc/codewithdani) |
-
+-->
 ## Course Description
 
 This course covers the three major patterns or architectures that make the web work; REST, Resources, and MVC. Students will learn language independent patterns that are repeated across many common servers. Other key concepts covered include server-side templating, controller testing, associating and nesting resources, state, convention over configuration, and the request-response cycle.

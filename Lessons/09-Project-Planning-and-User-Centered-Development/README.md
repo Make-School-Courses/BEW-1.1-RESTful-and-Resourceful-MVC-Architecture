@@ -5,9 +5,6 @@
 1. Explain and utilize the process of User-Centered Development
 1. Conduct solo, pair, and team project planning
 
-## Demo: Rotten Potatoes and Q&A
-  - Mongo, Models, and Mongoose
-
 ## User-Centered Development
 
 User-Centered Development means breaking down a coding project into **user stories** and then coding each one through as a user would use the software. It has the pattern of predicting the next error, and using these predicted errors to guide the process of development.
