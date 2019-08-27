@@ -29,18 +29,18 @@ This course covers the three major patterns or architectures that make the web w
 
 | Class  |                 Topics                  |
 |:-----:|:---------------------------------------:|
-|  1            | [Static Website](./Lessons/01-Static-Website) |
-|  2               | [Git and GitHub](./Lessons/02-Git-and-GitHub) |
-|  3           | [Request Response Cycle and MVC Architecture](./Lessons/03-Request-Response-Cycle-and-MVC-Architecture) |
-|  4               | [Intro to Flask](./Lessons/04-Intro-to-Flask) |
-|  5            | [URLs, HTTP, REST, and Reading Errors](./Lessons/05-URLs-HTTP-REST-and-Reading-Errors) |
-|  6               | [Testing RESTful Routes](./Lessons/06-Testing-RESTful-Routes) |
-|  7            | [Document-Based Databases](./Lessons/07-Document-Based-Databases) |
-|  8               | [ERDs, Resource Associations, and MongoDB](./Lessons/08-ERDs-Resource-Associations-and-MongoDB) |
-| 9              | [Project Planning and User-Centered Development](./Lessons/09-Project-Planning-and-User-Centered-Development) |
-| 10                 | [The DOM and Bootstrap](./Lessons/10-The-DOM-and-Bootstrap) |  
+|  1            | [Static Website](./Lessons/01-Static-Website/README) |
+|  2               | [Git and GitHub](./Lessons/02-Git-and-GitHub/README) |
+|  3           | [Request Response Cycle and MVC Architecture](./Lessons/03-Request-Response-Cycle-and-MVC-Architecture/README) |
+|  4               | [Intro to Flask](./Lessons/04-Intro-to-Flask/README) |
+|  5            | [URLs, HTTP, REST, and Reading Errors](./Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README) |
+|  6               | [Testing RESTful Routes](./Lessons/06-Testing-RESTful-Routes/README) |
+|  7            | [Document-Based Databases](./Lessons/07-Document-Based-Databases/README) |
+|  8               | [ERDs, Resource Associations, and MongoDB](./Lessons/08-ERDs-Resource-Associations-and-MongoDB/README) |
+| 9              | [Project Planning and User-Centered Development](./Lessons/09-Project-Planning-and-User-Centered-Development/README) |
+| 10                 | [The DOM and Bootstrap](./Lessons/10-The-DOM-and-Bootstrap/README) |  
 | 11              | Contractor Project Lab Day |
-| 12              | [RESTful APIs and Deployment Environments](./Lessons/11-RESTful-APIs-and-Deployment-Environments) |
+| 12              | [RESTful APIs and Deployment Environments](./Lessons/11-RESTful-APIs-and-Deployment-Environments/README) |
 | 13              | Final Contractor Project Presentations |
 
 ## Class Assignments
