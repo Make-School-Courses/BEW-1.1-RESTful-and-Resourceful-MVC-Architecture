@@ -42,3 +42,8 @@ Make a resume for your favorite fictional character using HTML & CSS. Include th
 1. Demonstrate making HTML 
 1. Demonstrate making CSS changes using developer tools.
 1. Show how to change an image.
+
+# Homework
+
+1. Finish up your Fictional Character Resume (introduced in class) - Due Tuesday, Sept 3.
+1. "Hack" 2 sites and post screenshots to the class slack channel @bew1-1-server-side-python - Due Wednesday, Aug 28.
