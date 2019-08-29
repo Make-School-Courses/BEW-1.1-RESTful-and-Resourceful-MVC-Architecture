@@ -112,6 +112,10 @@ Guidelines:
 
 [Source](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53)
 
+## Homework
+
+1. Finish your Resume Website and push it to GitHub - Due Tuesday, Sept 3
+
 ## Additional Resources
 
 1. [MS Branching tutorial](http://make.sc/git-branching)
