@@ -1,4 +1,4 @@
-# Intro to RESTful APIs & Service Oriented Architecture
+# RESTful APIs & Deployment Environments
 
 ## Objectives (5 min)
 
