@@ -115,6 +115,7 @@ Guidelines:
 ## Homework
 
 1. Finish your Resume Website and push it to GitHub - Due Tuesday, Sept 3
+1. Optional - [MS Branching tutorial](http://make.sc/git-branching)
 
 ## Additional Resources
 
