@@ -1,4 +1,4 @@
-# Document-Based Databases and Flask PyMongo
+# Document-Based Databases
 
 ![banner-image.jpg](assets/banner-image.jpg)
 
