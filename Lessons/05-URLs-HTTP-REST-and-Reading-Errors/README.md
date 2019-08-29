@@ -172,6 +172,8 @@ Then you can simply declare the image with Pillow like so:
 picture = Image.open("filename.png")
 ```
 
+**Submission:** Make a repo and push your script up to GitHub. Place a link to your repo in the progress tracker
+
 ## Resources
 
 1. [Slides](https://docs.google.com/presentation/d/1PfQ_apXeAe56HwJia4FwP9rg6f4Awj95MbrsqxdUMZE/edit?usp=sharing)
