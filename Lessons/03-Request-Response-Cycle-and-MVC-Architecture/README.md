@@ -58,21 +58,21 @@ Provide time for reading the spec, allowing people to find partners, etc. (30 mi
 
 ## Code Review (15 min)
 
-You must get a code review on the Spaceman project before you submit it
+You must get a code review on the Mad Libs project before you submit it.
 
-**Question:** What are some code review best practices you learned from the [learning session](https://docs.google.com/presentation/d/1um-xrcB_gvxrsY0eAuFShDgNasNnoQUF-BBFJ9RiV54/edit?usp=sharing)?
+**Question:** *What are some code review best practices you learned from the [learning session](https://docs.google.com/presentation/d/1um-xrcB_gvxrsY0eAuFShDgNasNnoQUF-BBFJ9RiV54/edit?usp=sharing)?*
 
-Take some time right now to reach out to someone for a code review!
+Take some time **right now** to reach out to someone for a code review!
 
 ## Homework
 
 1. Get a code review on your Spaceman project before you submit it. **Put the name of the code reviewer, and link to the commit that was reviewed in the progress tracker**
-1. Install [Emmet](https://emmet.io/) or another HTML snippet package to your text editor to make you fast at HTML writing.
-1. [GA's Free Dash Tutorial (HTML/CSS)](https://dash.generalassemb.ly/)
-1. [Learn CSS in 12 Min](https://www.youtube.com/watch?v=0afZj1G0BIE) (Video - 12 min)
-1. [Code Academy JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
-1. [CSS Cross-Country (Only Lesson 1)](https://www.codeschool.com/courses/css-cross-country) (Tutorial - 45min)
-1. [Semantic HTML (Videos 2 hrs)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
+2. Install [Emmet](https://emmet.io/) or another HTML snippet package to your text editor to make you fast at HTML writing.
+3. [GA's Free Dash Tutorial (HTML/CSS)](https://dash.generalassemb.ly/)
+4. [Learn CSS in 12 Min](https://www.youtube.com/watch?v=0afZj1G0BIE) (Video - 12 min)
+5. [Code Academy JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
+6. [CSS Cross-Country (Only Lesson 1)](https://www.codeschool.com/courses/css-cross-country) (Tutorial - 45min)
+7. [Semantic HTML (Videos 2 hrs)](https://www.youtube.com/playlist?list=PLWjCJDeWfDdc0Sp_DinOWnodw3KnWCwc1)
 
 ## Resources
 
