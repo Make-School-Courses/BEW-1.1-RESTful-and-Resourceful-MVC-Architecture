@@ -1,4 +1,4 @@
-# Testing Resourceful Routes
+# Testing RESTful Routes
 
 ## Objectives
 

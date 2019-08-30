@@ -1,4 +1,4 @@
-# MongoDB Associations & Queries
+# ERDs, Resource Associations, & MongoDB
 
 ## Objectives
 
