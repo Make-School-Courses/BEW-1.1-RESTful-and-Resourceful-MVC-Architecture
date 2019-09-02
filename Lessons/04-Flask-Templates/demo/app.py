@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 from random import choice, sample
 
 app = Flask(__name__)
@@ -11,37 +11,18 @@ compliments = [
 @app.route('/')
 def index():
     """Show the homepage and ask the user's name."""
-    return """
-    <form action='/compliment'>
-        <p>
-            What is your name?
-            <input type="text" name="name"/>
-        </p>
-        <p>
-            <input type="checkbox" name="show_compliments"/>
-            Show Compliments
-        </p>
-        <p>
-            How many compliments?
-            <select name="num_compliments">
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-        </p>
-        <input type="submit">
-    </form>
-    """
+    return render_template('index.html')
 
 @app.route('/compliment')
 def get_compliment():
     """Give the user a compliment"""
     name = request.args.get('name')
     num_compliments = int(request.args.get('num_compliments'))
-    should_show_compliments = request.args.get('show_compliments')
-    compliments_to_show = ', '.join(sample(compliments, num_compliments))
+    show_compliments = request.args.get('show_compliments')
+    compliments_to_show = sample(compliments, num_compliments)
 
-    if should_show_compliments:
-        return f'Hello there, {name}! You are so {compliments_to_show}!'
-    else:
-        return f'Hello there, {name}! Have a nice day!'
+    return render_template(
+        'compliments.html', 
+        name=name,
+        show_compliments=show_compliments,
+        compliments=compliments_to_show)

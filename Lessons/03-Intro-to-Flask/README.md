@@ -414,6 +414,6 @@ How many compliments?
 
 ### Homework
 
-Complete your `Horoscope` project and use a Google Form to collect user data and make a more accurate prediction. Use the [starter code](demo/) as a guide!
+Complete your `Horoscope` project and use a Google Form to collect user data and make a more accurate prediction. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/blob/master/Lessons/03-Intro-to-Flask/demo/app.py) as a guide!
 
 

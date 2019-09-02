@@ -20,9 +20,20 @@ TODO
 
 ---
 
-## **[5m]** Learning Objectives
+## Learning Objectives
 
-TODO
+By the end of today, you should be able to:
+
+1. Identify uses of dictionaries
+1. Use a dictionary to store & pass data
+1. Render a Flask web page using a Jinja template
+1. Use template control flow structures such as for loops & conditionals
+
+---
+
+## Jinja
+
+
 
 ---
 
