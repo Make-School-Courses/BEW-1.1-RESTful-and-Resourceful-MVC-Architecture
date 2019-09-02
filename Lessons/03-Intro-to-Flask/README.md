@@ -10,7 +10,7 @@ author: Dani Roxberry <dani@makeschool.com>
 <!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
 # Intro to Flask
 
-### BEW 1.1 / Day 7
+### BEW 1.1 / Day 6
 
 ---
 
@@ -35,9 +35,20 @@ author: Dani Roxberry <dani@makeschool.com>
 ---
 
 <!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
-# Introducting Flask
+# Introducing Flask
 
 ## **[25m]** TT: Welcome to Web Servers
+
+--
+
+### What is a Web Server?
+
+When you navigate to a web page:
+
+1. The **client** (your browser) sends a request for that page's URL. 
+1. The **server** (e.g. a datacenter) sends a response containing HTML data.
+
+![Request-Response](assets/req-res.gif)
 
 --
 
@@ -121,34 +132,11 @@ Use the next **5 minutes** to:
     - **STEP 2**: Downloads the package's latest codebase and store it in a temporary directory
     - **STEP 3**: Installs the `packagename` codebase in a special Python directory
 
---
-
-## **[5m]** Recap
-
-### Review
-
-- Flask is a **popular microframework**, written in Python.
-- It allows us to **create a server** with very little code.
-- We can **install Flask**, or any other Python package(s) **using `pip3`**.
-
-### Integrate
-
-Today, we'll use our knowledge from prior classes to guide us:
-
-| BEW 1.1                | CS 1.1                |
-| ---------------------- | --------------------- |
-| Git & GitHub           | Variables & Functions |
-| Request-Response Cycle | Pseudocode            |
-
----
-
-## **[10m]** Break
-
 ---
 
 ## **[45m]** Guided Activity
 
-### Designing a Hit Counter
+### Giving Compliments
 
 --
 
@@ -172,38 +160,78 @@ You'll **write all your code inside `app.py`** --- for now!
 
 --
 
-### Think / Pair / Share (25m)
+### Make a List of Compliments
 
-- **THINK**: Pseudocode a function that increments a counter each time it's called.
-    - **PROTIP**: **Pseudocode it on paper**, outside of your editor, first.
+Let's create a **list** containing our compliments:
 
-- **PAIR**: When you're done, **find a buddy** and **code it up!**
-
-- **SHARE**: After writing the code:
-    - **Compare your solution** with the team next to you.
-    - **Test it out together**. Did it work?
-
-<br>
-_If you finish early, **commit your code**!_
+```python
+compliments = ['coolio', 'smashing', 'neato', 'fantabulous']
+```
 
 --
 
-### Solution (5m)
+### Write a Function
 
-<br>
+Let's make the user feel really great whenever this function is called!
 
 ```python
-hits = 0
+compliments = ['coolio', 'smashing', 'neato', 'fantabulous']
 
-def hit_counter():
-    """Returns a count of how many times this function was called."""
-    hits += 1
-    return hits
+def get_compliment():
+    compliment = compliments[0]
+    return f'Hello user! You are so {compliment}!'
 ```
+
+--
+
+### Get a Random Compliment
+
+At the very top of your file, type:
+
+```python
+from random import choice
+```
+
+Now we can change the `get_compliment` function like so:
+
+```python
+def get_compliment():
+    compliment = choice(compliments)
+    return f'Hello user! You are so {compliment}!'
+```
+
+--
+
+### Demo
+
+Let's run our function!
+
+```bash
+$ python3 -i app.py
+>>> give_compliment()
+'Hello there, user! You are so terrific!'
+```
+
+--
+
+### Activity [25m]
+
+Write a function `get_horoscope` that gives the user a random prediction for their day. Use the starter code to guide you.
+
+```python
+from random import choice
+
+compliments = ['coolio', 'smashing', 'neato', 'fantabulous']
+
+def get_compliment():
+    compliment = choice(compliments)
+    return f'Hello user! You are so {compliment}!'
+```
+
 
 ---
 
-## **[15m]** TT: Flask + Function = Website
+## Flask + Function = Website
 
 - We're about to **create our first server**!
 - Servers are the **most common form of backend**.
@@ -216,14 +244,7 @@ def hit_counter():
 
  ```python
 from flask import Flask
-
-
-hits = 0
-
-def hit_counter():
-  """Returns a count of how many times this function was called."""
-  hits += 1
-  return hits
+...
  ```
 
 --
@@ -235,14 +256,9 @@ Declare a variable named `app`, and instantiate the Flask class.
  ```python
 from flask import Flask
 
-
 app = Flask(__name__)
-hits = 0
 
-def hit_counter():
-  """Returns a count of how many times this function was called."""
-  hits += 1
-  return hits
+...
  ```
 
 --
@@ -252,37 +268,22 @@ def hit_counter():
 Add `@app.route` to the top of the function definition and explain that this **decorator** on top of the function makes it an **endpoint**:
 
  ```python
-from flask import Flask
+...
 
-
-app = Flask(__name__)
-hits = 0
-
-@app.route("/")
-def hit_counter():
-  """Returns a count of how many times this function was called."""
-  hits += 1
-  return hits
+@app.route('/')
+def get_compliment():
+    compliment = random.choice(compliments)
+    return f'Hello user! You are so {compliment}!'
  ```
 
 --
 
 ### Declare The Entrypoint
 
-Last, define `__main__`. :
+Last, define `__main__` at the **bottom** of the file.
 
  ```python
-from flask import Flask
-
-
-app = Flask(__name__)
-hits = 0
-
-@app.route("/")
-def hit_counter():
-  """Returns a count of how many times this function was called."""
-  hits += 1
-  return hits
+ ...
 
 if __name__ == "__main__":
    app.run(debug=True)
@@ -300,31 +301,119 @@ $ flask run
 
 ---
 
-### Stretch Challenges
+## Query Strings
 
-1. What is `__name__`? What does it do in `app.py`?
-2. What flag allows you to reload flask every time you make a change to `app.py`?
-3. Currently, the number of hits resets back to `0` when we run `flask run`
-      1. Why does this happen?
-      2. Can you use what you learned about MongoDB to fix it?
-
----
-
-## **[5m]** After Class
-
-### Homework
-
-**Create a request-response flow diagram for a minimalistic `.gif` search site that returns a list of `.gif`s from the [Tenor API](https://tenor.com/gifapi/documentation).**
-
-Your diagram should show:
-
-1. The ability to **type a search term into a search box** in a browser.
-2. After hitting submit, the user should **receive `.gif`s that match the search term** returned and displayed.
-3. Which endpoint(s) will be called during this process?
-    1. **BONUS**: How can you call an endpoint using HTML?
+A **query string** is a way for the user to pass data through a URL.
 
 --
 
-### Example Deliverable
+### Query String Example
 
-TODO
+Here's one example of a query string! It's kind of like a **variable**. What would that look like in our app?
+
+![Query](assets/query.jpg)
+
+--
+
+### Import `request`
+
+In `app.py`, change your import line to the following:
+
+```python
+from flask import Flask, request
+```
+
+--
+
+### Extract a Query String
+
+In your Flask app function, make another variable for the user:
+
+```python
+@app.route('/compliment')
+def get_compliment():
+    """Give the user a compliment"""
+    name = request.args.get('name')
+    compliment = choice(compliments)
+    return f'Hello there, {name}! You are so {compliment}!'
+```
+
+---
+
+## HTML Forms
+
+Let's build on our HTML knowledge by writing a **form**!
+
+Forms are useful for:
+- Collecting user data
+- Personalizing a web page
+
+In this case, we want to know our user's name.
+
+--
+
+### Adding a Form
+
+Let's add another route for `/` (aka the home page).
+
+```python
+@app.route('/')
+def index():
+    """Show the homepage and ask the user's name."""
+    return """
+    <form action='/compliment'>
+        What is your name?
+        <input type="text" name="name"></input>
+        <input type="submit">
+    </form>
+    """
+```
+
+--
+
+### More Form Components
+
+HTML Forms can include the following:
+
+- Text Box
+- Password
+- Dropdown
+- Check Box
+- Radio Buttons
+- File Input
+- Submit Button
+
+--
+
+### Checkbox
+
+We can add a **checkbox** to our page:
+
+```html
+<input type="checkbox" name="show_compliments"/>
+Show Compliments
+```
+
+--
+
+### Drop Down
+
+We can add a **dropdown** to our page:
+
+```html
+How many compliments?
+<select name="num_compliments">
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+</select>
+```
+
+---
+
+
+### Homework
+
+Complete your `Horoscope` project and use a Google Form to collect user data and make a more accurate prediction. Use the [starter code](demo/) as a guide!
+
+
