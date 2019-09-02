@@ -2,8 +2,8 @@
 - **Lessons**
   - [Static Website](Lessons/01-Static-Website/README.md)
   - [Git and GitHub](Lessons/02-Git-and-GitHub/README.md)
-  - [Request Response Cycle and MVC Architecture](Lessons/03-Request-Response-Cycle-and-MVC-Architecture/README.md)
-  - [Intro to Flask](Lessons/04-Intro-to-Flask/README.md)
+  - [Intro to Flask](Lessons/03-Intro-to-Flask/README.md)
+  - [Flask Templating](Lessons/04-Flask-Templating/README.md)
   - [URLs, HTTP, REST, and Reading Errors](Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md)
   - [Testing RESTful Routes](Lessons/06-Testing-RESTful-Routes/README.md)
   - [Document-Based Databases](Lessons/07-Document-Based-Databases/README.md)

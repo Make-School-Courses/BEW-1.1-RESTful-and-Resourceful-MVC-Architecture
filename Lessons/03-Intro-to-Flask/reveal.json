@@ -1,5 +1,5 @@
 {
-  "controls": false,
+  "controls": true,
   "progress": true,
   "autoPlayMedia": false,
   "slideNumber": "c/t",

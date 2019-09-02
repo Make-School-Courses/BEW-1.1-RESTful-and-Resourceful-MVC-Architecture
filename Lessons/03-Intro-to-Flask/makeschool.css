@@ -13,6 +13,16 @@ section.has-dark-background h6 {
   color: #F3F3F3;
 }
 
+section.has-dark-background p code {
+    color: #0D4062;
+    border: 1px white solid;
+    background: white;
+}
+
+section.has-dark-background a {
+    color: #18a9f5;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -71,7 +81,13 @@ body {
 .reveal h1 {
   font-size: 2em;
   color: #0D4062;
-  margin-top: 20%;
+  border: 5px #0D4062 dotted;
+  border-radius: 25px;
+}
+
+.reveal h1.header {
+    margin-top: 20%;
+    border: none;
 }
 
 .reveal h2 {
@@ -228,6 +244,7 @@ body {
   padding: 1px 5px 2px 5px;
   display: inline-block;
   vertical-align: baseline;
+  font-size: 1.75rem;
 }
 
 .reveal pre code {
@@ -327,7 +344,6 @@ body {
 
 .reveal section img.plain {
   border: 0;
-  box-shadow: none;
 }
 
 .reveal a img {
@@ -367,7 +383,7 @@ body {
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.3);
-  color: #4BB1E4;
+  color: #087CB8;
 }
 
 .reveal .progress span {
@@ -386,7 +402,6 @@ body {
 }
 
 .reveal pre {
-  box-shadow: none;
   border: 2px solid #87898C33;
 }
 
