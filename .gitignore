@@ -1,2 +1,9 @@
 .DS_Store
 *.code-workspace
+
+# ignore environment folder
+env/
+
+# ignore auto-generated python files
+__pycache__
+*.pyc
