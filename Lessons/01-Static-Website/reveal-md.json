@@ -4,6 +4,8 @@
   "theme": "white",
   "highlightTheme": "atom-one-light",
   "scripts": [
-
+  ],
+  "css": [
+      "makeschool.css"
   ]
 }

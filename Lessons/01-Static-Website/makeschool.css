@@ -13,6 +13,16 @@ section.has-dark-background h6 {
   color: #F3F3F3;
 }
 
+section.has-dark-background p code {
+    color: #0D4062;
+    border: 1px white solid;
+    background: white;
+}
+
+section.has-dark-background a {
+    color: #18a9f5;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -63,26 +73,29 @@ body {
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: normal;
-  text-shadow: none;
   text-transform: uppercase;
+  text-shadow: none;
   word-wrap: break-word;
 }
 
 .reveal h1 {
   font-size: 2em;
-  background-color: #087CB8;
-  color: white;
-  text-transform: uppercase;
+  color: #0D4062;
+  border: 5px #0D4062 dashed;
   border-radius: 25px;
 }
 
+.reveal .header h1 {
+    margin-top: 20%;
+    border: none;
+}
+
 .reveal h2 {
-  color: #087CB8;
   font-size: 1.6em;
+  color: #087CB8;
 }
 
 .reveal h3 {
-  color: #0D4062;
   font-size: 1.3em;
   margin: 0 0 -5px 0;
 }
@@ -222,26 +235,23 @@ body {
 }
 
 .reveal p code,
-.reveal h1 code,
-.reveal h2 code,
-.reveal h3 code,
 .reveal ol li code,
 .reveal ul li code {
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 400;
-  border: 1px solid #12739e;
-  /* box-shadow: 3px 3px #12749e9c; */
-  /* background-color: white; */
+  border: 1px #12739e solid;
+  background-color: white;
   padding: 1px 5px 2px 5px;
   display: inline-block;
   vertical-align: baseline;
+  font-size: 1.75rem;
 }
 
 .reveal pre code {
   display: block;
   padding: 5px;
   overflow: autoa;
-  max-height: 400px;
+  max-height: 300px;
   word-wrap: break-word;
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 400;
@@ -329,12 +339,11 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #303030;
+  border: 0px solid #303030;
 }
 
 .reveal section img.plain {
   border: 0;
-  box-shadow: none;
 }
 
 .reveal a img {
@@ -367,13 +376,60 @@ body {
  *********************************************/
 .reveal .controls {
   color: #4BB1E4;
+  border-right-width: 22px;
 }
+
+.reveal .controls button {
+    font-size: 0.5em;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    top: auto !important;
+    left: auto !important;
+}
+.reveal .controls .controls-arrow:before, 
+.reveal .controls .controls-arrow:after {
+    display: none;
+}
+
+.reveal .slide-number {
+    display: none !important;
+}
+
+.reveal .controls .navigate-left {
+    border-right:15px solid #087CB8; 
+    right: 12.6em !important;
+    bottom: 7.4em !important;
+}
+
+.reveal .controls .navigate-right {
+    border-left: 15px solid #087CB8;
+    right: 1.2em !important;
+    bottom: 7.4em !important;
+}
+
+.reveal .controls .navigate-up {
+    border-bottom: 15px solid #087CB8;
+    right: 7.4em !important;
+    bottom: 12.6em !important;
+}
+
+.reveal .controls .navigate-down {
+    border-top: 15px solid #087CB8;
+    right: 7.4em !important;
+    bottom: 1.2em !important;
+}
+
+
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   color: #087CB8;
 }
 
@@ -393,8 +449,7 @@ body {
 }
 
 .reveal pre {
-  box-shadow: 5px;
-  border: 2px solid #CCC;
+  border: 2px solid #87898C33;
 }
 
 .reveal p,
