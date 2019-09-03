@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Intro to Flask</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/atom-one-light.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./_assets/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+<!-- Run this slideshow via the following command: -->
+<!-- reveal-md README.md -w --css=makeschool.css -->
+
+
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
+<h1 class="header">Flask Templating with Jinja</h1>
+
+### BEW 1.1 / Day 7
+</script></section><section  data-markdown><script type="text/template">
+## Agenda
+
+TODO
+</script></section><section  data-markdown><script type="text/template">
+## Learning Objectives
+
+By the end of today, you should be able to:
+
+1. Explain the uses of templates 
+<!-- .element: class="fragment" data-fragment-index="1" -->
+1. Render a Flask web page using a Jinja template
+<!-- .element: class="fragment" data-fragment-index="2" -->
+1. Use template control flow structures such as for loops & conditionals
+<!-- .element: class="fragment" data-fragment-index="3" -->
+</script></section><section ><section data-markdown><script type="text/template">
+# Review
+</script></section><section data-markdown><script type="text/template">
+## Discussion
+#### (5 min)
+
+With your partner, discuss:
+
+- What is a web server?
+- What is Flask, and what does it do?
+</script></section><section data-markdown><script type="text/template">
+## Our Project So Far
+
+We defined two **routes**, one for the homepage `/` and one for the `/compliments` page. 
+</script></section><section data-markdown><script type="text/template">
+## Home Page Route
+
+Our homepage route looks like this:
+
+```python
+@app.route('/')
+def index():
+    """Show the homepage and ask the user's name."""
+    return """
+    <form action='/compliment'>
+        <p>
+            What is your name?
+            <input type="text" name="name"/>
+        </p>
+        <p>
+            <input type="checkbox" name="show_compliments"/>
+            Show Compliments
+        </p>
+        <p>
+            How many compliments?
+            <select name="num_compliments">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </p>
+        <input type="submit">
+    </form>
+    """
+```
+
+What could we improve about this?
+</script></section><section data-markdown><script type="text/template">
+## Separate Concerns
+
+There's HTML code in our Python file! Let's fix that.
+</script></section></section><section ><section data-markdown><script type="text/template">
+# Jinja Templates
+</script></section><section data-markdown><script type="text/template">
+## What are Templates?
+
+Templates are special HTML files that:
+
+- Can use variables passed from your Flask route
+- Can use some control structures (for loops, if/else)
+- Can inherit from other templates to avoid repetition
+</script></section><section data-markdown><script type="text/template">
+## Add a Templates Folder
+
+Put all of your template HTML files in a folder called `templates`.
+
+```bash
+my_project_directory/
+    app.py
+    templates/
+        index.html
+        compliments.html
+```
+</script></section><section data-markdown><script type="text/template">
+## Add HTML to Template
+
+Let's move the HTML code from the `/` route into its own `index.html` template. It should look like:
+
+```html
+<form action='/compliment'>
+    <p>
+        What is your name?
+        <input type="text" name="name"/>
+    </p>
+    <p>
+        <input type="checkbox" name="show_compliments"/>
+        Show Compliments
+    </p>
+    <p>
+        How many compliments?
+        <select name="num_compliments">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </p>
+    <input type="submit">
+</form>
+```
+</script></section><section data-markdown><script type="text/template">
+## Render Template
+
+At the top of `app.py`, import `render_template`:
+
+```python
+from flask import render_template
+```
+
+Then change our route to call the `render_template` function:
+
+```python
+@app.route('/')
+def index():
+    """Show the homepage and ask the user's name."""
+    return render_template('index.html')
+```
+</script></section><section data-markdown><script type="text/template">
+## Check that it Works
+
+Let's try running our server again!
+
+```bash
+$ flask run
+```
+</script></section></section><section ><section data-markdown><script type="text/template">
+# Passing Data
+</script></section><section data-markdown><script type="text/template">
+## Update the `/compliment` route
+
+Let's do the same thing for `/compliment`! Here's our code so far. What do we need to change?
+
+```python
+@app.route('/compliment')
+def get_compliment():
+    """Give the user a compliment"""
+    name = request.args.get('name')
+    show_compliments = request.args.get('show_compliments')
+    compliment = choice(compliments)
+
+    if show_compliments:
+        return f'Hello there, {name}! You are so {compliment}!'
+    else:
+        return f'Hello there, {name}! Have a nice day!'
+```
+</script></section><section data-markdown><script type="text/template">
+## Render a Template
+
+Let's change the `/compliment` route to render a template instead. This time, we need to pass in some data.
+
+```python
+@app.route('/compliment')
+def get_compliment():
+    """Give the user a compliment"""
+    name = request.args.get('name')
+    show_compliments = request.args.get('show_compliments')
+    compliment = choice(compliments)
+
+    return render_template(
+        'compliments.html', 
+        name=name, 
+        show_compliments=show_compliments, 
+        compliment=compliment)
+```
+</script></section><section data-markdown><script type="text/template">
+## Write the Template
+
+Create a new file in the `templates` folder, called `compliments.html`. 
+
+Note that Jinja templates use a double curly bracket `{{ }}` to display variables or expressions.
+
+```html
+<p>
+    Hello there, {{ name }}! You are so {{ compliment }}!
+</p>
+```
+</script></section></section><section ><section data-markdown><script type="text/template">
+# Template Control Flow
+</script></section><section data-markdown><script type="text/template">
+## Conditionals
+
+Let's add a conditional to `compliments.html` so that we will only show a compliment if the user checked 'Show Compliment'. 
+
+In Jinja we use `{% %}` to indicate control structures.
+
+```html
+{% if show_compliments %}
+    You are so {{ compliment }}!
+{% else %}
+    Have a nice day!
+{% endif %}
+```
+</script></section><section data-markdown><script type="text/template">
+## Passing a List of Compliments
+
+Let's modify our route in `app.py` to pass in a list of compliments instead:
+
+```python
+from random import sample
+
+...
+
+@app.route('/compliment')
+def get_compliment():
+    """Give the user a compliment"""
+    name = request.args.get('name')
+    show_compliments = request.args.get('show_compliments')
+    compliments_to_show = sample(compliments, 3)
+
+    return render_template(
+        'compliments.html', 
+        name=name, 
+        show_compliments=show_compliments, 
+        compliments=compliments_to_show)
+```
+</script></section><section data-markdown><script type="text/template">
+## Loops
+
+I want my `compliments.html` file to look like:
+
+```html
+Hi user! You are so:
+<ul>
+    <li>brilliant</li>
+    <li>smashing</li>
+    <li>tenacious</li>
+</ul>
+```
+</script></section><section data-markdown><script type="text/template">
+## Loops
+
+Now add a loop to `compliments.html`:
+
+```html
+{% if show_compliments %}
+    You are so:
+    <ul>
+        {% for compliment in compliments %}
+            <li>{{ compliment }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    Have a nice day!
+{% endif %}
+```
+</script></section></section><section ><section data-markdown><script type="text/template">
+# Template Inheritance
+</script></section><section data-markdown><script type="text/template">
+## Why Inherit Templates?
+
+Most websites have some content that is the same for every web page:
+
+- Header, footer
+- Title, styles
+- Etc.
+
+We want to put that content in one place so that we can inherit it and avoid repeated code.
+</script></section><section data-markdown><script type="text/template">
+## Create `base.html`
+
+Let's put another file, `base.html`, in our `templates` folder.
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>
+```
+</script></section><section data-markdown><script type="text/template">
+## Extend Base
+
+Now we can **override** the `content` block in our child templates. Let's modify `compliments.html`:
+
+```html
+{% extends 'base.html' %}
+
+{% block title %}
+    Receive Compliments!
+{% endblock %}
+
+{% block content %}
+    {% if show_compliments %}
+        You are so:
+        <ul>
+            {% for compliment in compliments %}
+                <li>{{ compliment }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        Have a nice day!
+    {% endif %}
+{% endblock %}
+```
+</script></section><section data-markdown><script type="text/template">
+## Extend Base
+
+And `index.html`:
+
+```html
+{% extends 'base.html' %}
+
+{% block title %}
+    Enter Your Info
+{% endblock %}
+
+{% block body %}
+<form action='/compliment'>
+    <p>
+        What is your name?
+        <input type="text" name="name"/>
+    </p>
+    <p>
+        <input type="checkbox" name="show_compliments"/>
+        Show Compliments
+    </p>
+    <p>
+        How many compliments?
+        <select name="num_compliments">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </p>
+    <input type="submit">
+</form>
+{% endblock %}
+```
+</script></section><section data-markdown><script type="text/template">
+## Customize Compliments
+
+
+</script></section></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="#0D4062" -->
+## Homework
+
+TODO
+
+
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
