@@ -1,6 +1,6 @@
 
 <!-- Run this slideshow via the following command: -->
-<!-- reveal-md README.md -w --css=makeschool.css -->
+<!-- reveal-md README.md -w -->
 
 
 <!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
