@@ -18,6 +18,7 @@
 1. Flask Review
 1. Jinja Templates
 1. Template Control Flow
+1. Break
 1. Template Inheritance
 1. Activity: Horoscope App
 1. Introducing Gif Search
@@ -318,6 +319,11 @@ Now add a loop to `compliments.html`:
     Have a nice day!
 {% endif %}
 ```
+
+<!-- > -->
+
+## Break [10 minutes]
+<!-- .slide: data-background="#087CB8" -->
 
 <!-- > -->
 
