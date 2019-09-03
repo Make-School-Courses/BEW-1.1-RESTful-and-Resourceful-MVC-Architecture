@@ -81,7 +81,7 @@ body {
 .reveal h1 {
   font-size: 2em;
   color: #0D4062;
-  border: 5px #0D4062 dotted;
+  border: 5px #0D4062 dashed;
   border-radius: 25px;
 }
 
@@ -251,7 +251,7 @@ body {
   display: block;
   padding: 5px;
   overflow: autoa;
-  max-height: 400px;
+  max-height: 300px;
   word-wrap: break-word;
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 400;
@@ -376,7 +376,54 @@ body {
  *********************************************/
 .reveal .controls {
   color: #4BB1E4;
+  border-right-width: 22px;
 }
+
+.reveal .controls button {
+    font-size: 0.5em;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    top: auto !important;
+    left: auto !important;
+}
+.reveal .controls .controls-arrow:before, 
+.reveal .controls .controls-arrow:after {
+    display: none;
+}
+
+.reveal .slide-number {
+    display: none !important;
+}
+
+.reveal .controls .navigate-left {
+    border-right:15px solid #087CB8; 
+    right: 12.6em !important;
+    bottom: 7.4em !important;
+}
+
+.reveal .controls .navigate-right {
+    border-left: 15px solid #087CB8;
+    right: 1.2em !important;
+    bottom: 7.4em !important;
+}
+
+.reveal .controls .navigate-up {
+    border-bottom: 15px solid #087CB8;
+    right: 7.4em !important;
+    bottom: 12.6em !important;
+}
+
+.reveal .controls .navigate-down {
+    border-top: 15px solid #087CB8;
+    right: 7.4em !important;
+    bottom: 1.2em !important;
+}
+
+
 
 /*********************************************
  * PROGRESS BAR

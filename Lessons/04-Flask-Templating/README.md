@@ -49,10 +49,372 @@ With your partner, discuss:
 
 ## Our Project So Far
 
+We defined two **routes**, one for the homepage `/` and one for the `/compliments` page. 
+
+--
+
+## Home Page Route
+
+Our homepage route looks like this:
+
+```python
+@app.route('/')
+def index():
+    """Show the homepage and ask the user's name."""
+    return """
+    <form action='/compliment'>
+        <p>
+            What is your name?
+            <input type="text" name="name"/>
+        </p>
+        <p>
+            <input type="checkbox" name="show_compliments"/>
+            Show Compliments
+        </p>
+        <p>
+            How many compliments?
+            <select name="num_compliments">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </p>
+        <input type="submit">
+    </form>
+    """
+```
+
+What could we improve about this?
+
+--
+
+## Separate Concerns
+
+There's HTML code in our Python file! Let's fix that.
+
 ---
 
+# Jinja Templates
 
-# Jinja
+--
+
+## What are Templates?
+
+Templates are special HTML files that:
+
+- Can use variables passed from your Flask route
+- Can use some control structures (for loops, if/else)
+- Can inherit from other templates to avoid repetition
+
+--
+
+## Add a Templates Folder
+
+Put all of your template HTML files in a folder called `templates`.
+
+```bash
+my_project_directory/
+    app.py
+    templates/
+        index.html
+        compliments.html
+```
+
+--
+
+## Add HTML to Template
+
+Let's move the HTML code from the `/` route into its own `index.html` template. It should look like:
+
+```html
+<form action='/compliment'>
+    <p>
+        What is your name?
+        <input type="text" name="name"/>
+    </p>
+    <p>
+        <input type="checkbox" name="show_compliments"/>
+        Show Compliments
+    </p>
+    <p>
+        How many compliments?
+        <select name="num_compliments">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </p>
+    <input type="submit">
+</form>
+```
+
+--
+
+## Render Template
+
+At the top of `app.py`, import `render_template`:
+
+```python
+from flask import render_template
+```
+
+Then change our route to call the `render_template` function:
+
+```python
+@app.route('/')
+def index():
+    """Show the homepage and ask the user's name."""
+    return render_template('index.html')
+```
+
+--
+
+## Check that it Works
+
+Let's try running our server again!
+
+```bash
+$ flask run
+```
+
+---
+
+# Passing Data
+
+--
+
+## Update the `/compliment` route
+
+Let's do the same thing for `/compliment`! Here's our code so far. What do we need to change?
+
+```python
+@app.route('/compliment')
+def get_compliment():
+    """Give the user a compliment"""
+    name = request.args.get('name')
+    show_compliments = request.args.get('show_compliments')
+    compliment = choice(compliments)
+
+    if show_compliments:
+        return f'Hello there, {name}! You are so {compliment}!'
+    else:
+        return f'Hello there, {name}! Have a nice day!'
+```
+
+--
+
+## Render a Template
+
+Let's change the `/compliment` route to render a template instead. This time, we need to pass in some data.
+
+```python
+@app.route('/compliment')
+def get_compliment():
+    """Give the user a compliment"""
+    name = request.args.get('name')
+    show_compliments = request.args.get('show_compliments')
+    compliment = choice(compliments)
+
+    return render_template(
+        'compliments.html', 
+        name=name, 
+        show_compliments=show_compliments, 
+        compliment=compliment)
+```
+
+--
+
+## Write the Template
+
+Create a new file in the `templates` folder, called `compliments.html`. 
+
+Note that Jinja templates use a double curly bracket `{{ }}` to display variables or expressions.
+
+```html
+<p>
+    Hello there, {{ name }}! You are so {{ compliment }}!
+</p>
+```
+
+---
+
+# Template Control Flow
+
+--
+
+## Conditionals
+
+Let's add a conditional to `compliments.html` so that we will only show a compliment if the user checked 'Show Compliment'. 
+
+In Jinja we use `{% %}` to indicate control structures.
+
+```html
+{% if show_compliments %}
+    You are so {{ compliment }}!
+{% else %}
+    Have a nice day!
+{% endif %}
+```
+
+--
+
+## Passing a List of Compliments
+
+Let's modify our route in `app.py` to pass in a list of compliments instead:
+
+```python
+from random import sample
+
+...
+
+@app.route('/compliment')
+def get_compliment():
+    """Give the user a compliment"""
+    name = request.args.get('name')
+    show_compliments = request.args.get('show_compliments')
+    compliments_to_show = sample(compliments, 3)
+
+    return render_template(
+        'compliments.html', 
+        name=name, 
+        show_compliments=show_compliments, 
+        compliments=compliments_to_show)
+```
+
+--
+
+## Loops
+
+I want my `compliments.html` file to look like:
+
+```html
+Hi user! You are so:
+<ul>
+    <li>brilliant</li>
+    <li>smashing</li>
+    <li>tenacious</li>
+</ul>
+```
+
+--
+
+## Loops
+
+Now add a loop to `compliments.html`:
+
+```html
+{% if show_compliments %}
+    You are so:
+    <ul>
+        {% for compliment in compliments %}
+            <li>{{ compliment }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    Have a nice day!
+{% endif %}
+```
+
+---
+
+# Template Inheritance
+
+--
+
+## Why Inherit Templates?
+
+Most websites have some content that is the same for every web page:
+
+- Header, footer
+- Title, styles
+- Etc.
+
+We want to put that content in one place so that we can inherit it and avoid repeated code.
+
+--
+
+## Create `base.html`
+
+Let's put another file, `base.html`, in our `templates` folder.
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>
+```
+
+--
+
+## Extend Base
+
+Now we can **override** the `content` block in our child templates. Let's modify `compliments.html`:
+
+```html
+{% extends 'base.html' %}
+
+{% block title %}
+    Receive Compliments!
+{% endblock %}
+
+{% block content %}
+    {% if show_compliments %}
+        You are so:
+        <ul>
+            {% for compliment in compliments %}
+                <li>{{ compliment }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        Have a nice day!
+    {% endif %}
+{% endblock %}
+```
+
+--
+
+## Extend Base
+
+And `index.html`:
+
+```html
+{% extends 'base.html' %}
+
+{% block title %}
+    Enter Your Info
+{% endblock %}
+
+{% block body %}
+<form action='/compliment'>
+    <p>
+        What is your name?
+        <input type="text" name="name"/>
+    </p>
+    <p>
+        <input type="checkbox" name="show_compliments"/>
+        Show Compliments
+    </p>
+    <p>
+        How many compliments?
+        <select name="num_compliments">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </p>
+    <input type="submit">
+</form>
+{% endblock %}
+```
+
+--
+
+## Customize Compliments
 
 
 

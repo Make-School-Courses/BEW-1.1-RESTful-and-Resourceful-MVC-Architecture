@@ -38,10 +38,10 @@ def get_compliment():
     """Give the user a compliment"""
     name = request.args.get('name')
     num_compliments = int(request.args.get('num_compliments'))
-    should_show_compliments = request.args.get('show_compliments')
-    compliments_to_show = ', '.join(sample(compliments, num_compliments))
+    show_compliments = request.args.get('show_compliments')
+    nice_things = ', '.join(sample(compliments, num_compliments))
 
-    if should_show_compliments:
-        return f'Hello there, {name}! You are so {compliments_to_show}!'
+    if show_compliments:
+        return f'Hello there, {name}! You are so {nice_things}!'
     else:
         return f'Hello there, {name}! Have a nice day!'

@@ -26,5 +26,3 @@ def get_compliment():
         name=name,
         show_compliments=show_compliments,
         compliments=compliments_to_show)
-
-@app.route('/user')

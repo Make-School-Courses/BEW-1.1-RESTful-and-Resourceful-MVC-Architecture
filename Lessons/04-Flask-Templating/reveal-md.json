@@ -3,7 +3,11 @@
   "verticalSeparator": "^\n--\n",
   "theme": "white",
   "highlightTheme": "atom-one-light",
+  "watch": true,
+  "static": "_static",
   "scripts": [
-
+  ],
+  "css": [
+      "makeschool.css"
   ]
 }

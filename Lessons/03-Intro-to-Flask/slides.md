@@ -190,7 +190,7 @@ compliments = ['coolio', 'smashing', 'neato', 'fantabulous']
 
 def get_compliment():
     compliment = compliments[0]
-    return f'Hello user! You are so {compliment}!'
+    return f'Hello there, user! You are so {compliment}!'
 ```
 
 --
@@ -208,7 +208,7 @@ Now we can change the `get_compliment` function like so:
 ```python
 def get_compliment():
     compliment = choice(compliments)
-    return f'Hello user! You are so {compliment}!'
+    return f'Hello there, user! You are so {compliment}!'
 ```
 
 --
@@ -220,7 +220,7 @@ Let's run our function!
 ```bash
 $ python3 -i app.py
 >>> give_compliment()
-'Hello user! You are so terrific!'
+'Hello there, user! You are so terrific!'
 ```
 
 --
@@ -236,7 +236,7 @@ compliments = ['coolio', 'smashing', 'neato', 'fantabulous']
 
 def get_compliment():
     compliment = choice(compliments)
-    return f'Hello user! You are so {compliment}!'
+    return f'Hello there, user! You are so {compliment}!'
 ```
 
 ---
@@ -286,7 +286,7 @@ Add `@app.route` to the top of the function. This **decorator** on top of the fu
 @app.route('/compliment')
 def get_compliment():
     compliment = random.choice(compliments)
-    return f'Hello user! You are so {compliment}!'
+    return f'Hello there, user! You are so {compliment}!'
  ```
 
 --
