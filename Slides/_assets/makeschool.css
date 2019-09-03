@@ -27,8 +27,8 @@ section.has-dark-background a {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #F3F3F3 url('https://res.cloudinary.com/makeschool/image/upload/v1/BrandGuidelines/logo_white_background.svg') no-repeat left 8px bottom 10px;
-  background-size: 116px 32px;
+  background: #F3F3F3 url('https://res.cloudinary.com/makeschool/image/upload/v1/BrandGuidelines/logo_white_background.svg') no-repeat left 20px bottom 20px;
+  background-size: 232px 64px;
   background-clip: border-box;
   color: #303030;
 }
@@ -413,13 +413,13 @@ body {
 
 .reveal .controls .navigate-up {
     border-bottom: 25px solid #087CB8;
-    right: 7em !important;
+    right: 7.1em !important;
     bottom: 12.6em !important;
 }
 
 .reveal .controls .navigate-down {
     border-top: 25px solid #087CB8;
-    right: 7em !important;
+    right: 7.1em !important;
     bottom: 1.2em !important;
 }
 
