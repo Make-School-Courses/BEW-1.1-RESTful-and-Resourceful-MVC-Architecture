@@ -1,7 +1,3 @@
----
-title:  Intro to Flask
-author: Dani Roxberry <dani@makeschool.com>
----
 
 <!-- Run this slideshow via the following command: -->
 <!-- reveal-md README.md -w --css=makeschool.css -->
@@ -12,13 +8,13 @@ author: Dani Roxberry <dani@makeschool.com>
 
 ### BEW 1.1 / Day 7
 
----
+<!-- > -->
 
 ## Agenda
 
 TODO
 
----
+<!-- > -->
 
 ## Learning Objectives
 
@@ -31,11 +27,11 @@ By the end of today, you should be able to:
 1. Use template control flow structures such as for loops & conditionals
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
----
+<!-- > -->
 
 # Review
 
---
+<!-- v -->
 
 ## Discussion
 #### (5 min)
@@ -45,13 +41,13 @@ With your partner, discuss:
 - What is a web server?
 - What is Flask, and what does it do?
 
---
+<!-- v -->
 
 ## Our Project So Far
 
 We defined two **routes**, one for the homepage `/` and one for the `/compliments` page. 
 
---
+<!-- v -->
 
 ## Home Page Route
 
@@ -86,17 +82,17 @@ def index():
 
 What could we improve about this?
 
---
+<!-- v -->
 
 ## Separate Concerns
 
 There's HTML code in our Python file! Let's fix that.
 
----
+<!-- > -->
 
 # Jinja Templates
 
---
+<!-- v -->
 
 ## What are Templates?
 
@@ -106,7 +102,7 @@ Templates are special HTML files that:
 - Can use some control structures (for loops, if/else)
 - Can inherit from other templates to avoid repetition
 
---
+<!-- v -->
 
 ## Add a Templates Folder
 
@@ -120,7 +116,7 @@ my_project_directory/
         compliments.html
 ```
 
---
+<!-- v -->
 
 ## Add HTML to Template
 
@@ -148,7 +144,7 @@ Let's move the HTML code from the `/` route into its own `index.html` template. 
 </form>
 ```
 
---
+<!-- v -->
 
 ## Render Template
 
@@ -167,7 +163,7 @@ def index():
     return render_template('index.html')
 ```
 
---
+<!-- v -->
 
 ## Check that it Works
 
@@ -177,11 +173,11 @@ Let's try running our server again!
 $ flask run
 ```
 
----
+<!-- > -->
 
 # Passing Data
 
---
+<!-- v -->
 
 ## Update the `/compliment` route
 
@@ -201,7 +197,7 @@ def get_compliment():
         return f'Hello there, {name}! Have a nice day!'
 ```
 
---
+<!-- v -->
 
 ## Render a Template
 
@@ -222,7 +218,7 @@ def get_compliment():
         compliment=compliment)
 ```
 
---
+<!-- v -->
 
 ## Write the Template
 
@@ -236,11 +232,11 @@ Note that Jinja templates use a double curly bracket `{{ }}` to display variable
 </p>
 ```
 
----
+<!-- > -->
 
 # Template Control Flow
 
---
+<!-- v -->
 
 ## Conditionals
 
@@ -256,7 +252,7 @@ In Jinja we use `{% %}` to indicate control structures.
 {% endif %}
 ```
 
---
+<!-- v -->
 
 ## Passing a List of Compliments
 
@@ -281,7 +277,7 @@ def get_compliment():
         compliments=compliments_to_show)
 ```
 
---
+<!-- v -->
 
 ## Loops
 
@@ -296,7 +292,7 @@ Hi user! You are so:
 </ul>
 ```
 
---
+<!-- v -->
 
 ## Loops
 
@@ -315,11 +311,11 @@ Now add a loop to `compliments.html`:
 {% endif %}
 ```
 
----
+<!-- > -->
 
 # Template Inheritance
 
---
+<!-- v -->
 
 ## Why Inherit Templates?
 
@@ -331,7 +327,7 @@ Most websites have some content that is the same for every web page:
 
 We want to put that content in one place so that we can inherit it and avoid repeated code.
 
---
+<!-- v -->
 
 ## Create `base.html`
 
@@ -349,7 +345,7 @@ Let's put another file, `base.html`, in our `templates` folder.
 </html>
 ```
 
---
+<!-- v -->
 
 ## Extend Base
 
@@ -376,7 +372,7 @@ Now we can **override** the `content` block in our child templates. Let's modify
 {% endblock %}
 ```
 
---
+<!-- v -->
 
 ## Extend Base
 
@@ -412,13 +408,13 @@ And `index.html`:
 {% endblock %}
 ```
 
---
+<!-- v -->
 
 ## Customize Compliments
 
 
 
----
+<!-- > -->
 
 <!-- .slide: data-background="#0D4062" -->
 ## Homework

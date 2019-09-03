@@ -1,9 +1,11 @@
 {
-  "separator": "^\n---\n",
-  "verticalSeparator": "^\n--\n",
+  "separator": "^\n<!-- > -->\n",
+  "verticalSeparator": "^\n<!-- v -->\n",
   "theme": "white",
   "highlightTheme": "atom-one-light",
   "scripts": [
-
+  ],
+  "css": [
+      "makeschool.css"
   ]
 }
