@@ -3,8 +3,8 @@
 <!-- reveal-md README.md -w -->
 
 
-<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
-<h1 class="header">Intro to Flask</h1>
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class: header -->
+# Intro to Flask
 
 ### BEW 1.1 / Day 6
 
@@ -35,8 +35,8 @@ By the end of today, you should be able to:
 
 <!-- > -->
 
-<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
-<h1 class="header">Introducing Flask</h1>
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class: header -->
+# Introducing Flask
 
 ### Welcome to Web Servers
 
