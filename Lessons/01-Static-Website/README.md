@@ -1,6 +1,6 @@
 # Static Website
 
-# [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/#/Lessons/01-Static-Website/slides.md)
+# [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/01-Static-Website.html)
 
 # [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/01-Static-Website/demo)
 
