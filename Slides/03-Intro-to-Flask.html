@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>Intro to Flask</title>
+    <title>reveal-md</title>
     <link rel="stylesheet" href="./css/reveal.css" />
     <link rel="stylesheet" href="./css/theme/white.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/atom-one-light.css" />
@@ -15,15 +15,14 @@
   <body>
     <div class="reveal">
       <div class="slides"><section  data-markdown><script type="text/template">
-
 <!-- Run this slideshow via the following command: -->
-<!-- reveal-md README.md -w --css=makeschool.css -->
+<!-- reveal-md README.md -w -->
 
 
-<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
-<h1 class="header">Intro to Flask</h1>
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+# Intro to Flask
 
-### BEW 1.1 / Day 6
+### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/03-Intro-to-Flask.html)
 </script></section><section  data-markdown><script type="text/template">
 ## Agenda
 
@@ -46,10 +45,10 @@ By the end of today, you should be able to:
 3. Use what you've learned in CS and BEW classes thus far to build and run your first Python server implemented in Flask.
 <!-- .element: class="fragment" data-fragment-index="3" -->
 </script></section><section ><section data-markdown><script type="text/template">
-<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
-<h1 class="header">Introducing Flask</h1>
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+# Introducing Flask
 
-### Welcome to Web Servers
+### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/03-Intro-to-Flask.html)
 </script></section><section data-markdown><script type="text/template">
 ## What is a Web Server?
 
@@ -58,7 +57,7 @@ When you navigate to a web page:
 1. The **client** (your browser) sends a request for that page's URL. 
 1. The **server** (e.g. a datacenter) sends a response containing HTML data.
 
-<img alt="Request-Response" src="_assets/req-res.gif" width="600px"/>
+<img alt="Request-Response" src="assets/req-res.gif" width="600px"/>
 <!-- .element: class="fragment" data-fragment-index="1" -->
 </script></section><section data-markdown><script type="text/template">
 ## What is a Web Server?
@@ -281,7 +280,7 @@ A **query string** is a way for the user to pass data through a URL.
 
 Here's one example of a query string! It's kind of like a **variable**. What would that look like in our app?
 
-![Query](_assets/query.jpg)
+![Query](assets/query.jpg)
 </script></section><section data-markdown><script type="text/template">
 ## Import `request`
 

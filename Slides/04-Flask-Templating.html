@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>Intro to Flask</title>
+    <title>reveal-md</title>
     <link rel="stylesheet" href="./css/reveal.css" />
     <link rel="stylesheet" href="./css/theme/white.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/atom-one-light.css" />
@@ -18,19 +18,26 @@
   <body>
     <div class="reveal">
       <div class="slides"><section  data-markdown><script type="text/template">
-
 <!-- Run this slideshow via the following command: -->
-<!-- reveal-md README.md -w --css=makeschool.css -->
+<!-- reveal-md README.md -w -->
 
 
-<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
-<h1 class="header">Flask Templating with Jinja</h1>
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+# Flask Templating with Jinja
 
-### BEW 1.1 / Day 7
+### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/04-Flask-Templating.html)
+
+### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/04-Flask-Templating/demo)
 </script></section><section  data-markdown><script type="text/template">
 ## Agenda
 
-TODO
+1. Learning Objectives
+1. Flask Review
+1. Jinja Templates
+1. Template Control Flow
+1. Template Inheritance
+1. Activity: Horoscope App
+1. Introducing Gif Search
 </script></section><section  data-markdown><script type="text/template">
 ## Learning Objectives
 
@@ -376,15 +383,46 @@ And `index.html`:
 </script></section><section data-markdown><script type="text/template">
 ## Customize Compliments
 
+I want to put the code for displaying a single compliment in its own HTML page. That way, I can include it in multiple places!
 
-</script></section></section><section  data-markdown><script type="text/template">
+Make a file `compliment.html` in your `templates` folder:
+
+```html
+<li>{{ compliment }}</li>
+```
+</script></section><section data-markdown><script type="text/template">
+## Include Compliment
+
+Now, I can include this file in `compliments.html`:
+
+```html
+You are so:
+<ul>
+    {% for compliment in compliments %}
+        {% include 'compliment.html' %}
+    {% endfor %}
+</ul>
+```
+</script></section></section><section ><section data-markdown><script type="text/template">
+# Activity
+</script></section><section data-markdown><script type="text/template">
+## Expand your Horoscope App
+
+Modify your Horoscope app to use Jinja templates. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/04-Flask-Templating/demo) as a guide!
+</script></section></section><section ><section data-markdown><script type="text/template">
+# Gif Search
+</script></section><section data-markdown><script type="text/template">
+## Introducing the Gif Search Project
+
+Demo
+
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
 TODO
 
 
-</script></section></div>
+</script></section></section></div>
     </div>
 
     <script src="./js/reveal.js"></script>

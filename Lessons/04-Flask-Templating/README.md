@@ -3,16 +3,24 @@
 <!-- reveal-md README.md -w -->
 
 
-<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" -->
-<h1 class="header">Flask Templating with Jinja</h1>
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+# Flask Templating with Jinja
 
-### BEW 1.1 / Day 7
+### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/04-Flask-Templating.html)
+
+### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/04-Flask-Templating/demo)
 
 <!-- > -->
 
 ## Agenda
 
-TODO
+1. Learning Objectives
+1. Flask Review
+1. Jinja Templates
+1. Template Control Flow
+1. Template Inheritance
+1. Activity: Horoscope App
+1. Introducing Gif Search
 
 <!-- > -->
 
@@ -412,9 +420,48 @@ And `index.html`:
 
 ## Customize Compliments
 
+I want to put the code for displaying a single compliment in its own HTML page. That way, I can include it in multiple places!
 
+Make a file `compliment.html` in your `templates` folder:
+
+```html
+<li>{{ compliment }}</li>
+```
+
+<!-- v -->
+
+## Include Compliment
+
+Now, I can include this file in `compliments.html`:
+
+```html
+You are so:
+<ul>
+    {% for compliment in compliments %}
+        {% include 'compliment.html' %}
+    {% endfor %}
+</ul>
+```
 
 <!-- > -->
+
+# Activity
+
+<!-- v -->
+
+## Expand your Horoscope App
+
+Modify your Horoscope app to use Jinja templates. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/04-Flask-Templating/demo) as a guide!
+
+<!-- > -->
+
+# Gif Search
+
+<!-- v -->
+
+## Introducing the Gif Search Project
+
+Demo
 
 <!-- .slide: data-background="#0D4062" -->
 ## Homework

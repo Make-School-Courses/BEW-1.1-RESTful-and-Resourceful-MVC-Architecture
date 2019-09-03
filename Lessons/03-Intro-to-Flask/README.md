@@ -13,12 +13,13 @@
 ## Agenda
 
 1. [Learning Objectives](#learning-objectives)
-2. [Welcome to Web Servers](#welcome-to-web-servers)
-3. [**[5m]** Recap](#5m-recap)
-4. [**[10m]** Break](#10m-break)
-5. [**[45m]** Guided Activity](#45m-guided-activity)
-6. [**[15m]** TT: Flask + Function = Website](#15m-tt-flask--function--website)
-7. [**[5m]** After Class](#5m-after-class)
+1. [Welcome to Web Servers](#welcome-to-web-servers)
+1. [Activity: Write a Function](#write-a-function)
+1. [Break](#break)
+1. [Add a Flask Route](#add-a-flask-route)
+1. [Query Strings](#query-strings)
+1. [HTML Forms](#html-forms)
+1. [Homework](#homework)
 
 <!-- > -->
 
@@ -36,9 +37,7 @@ By the end of today, you should be able to:
 <!-- > -->
 
 <!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# Introducing Flask
-
-### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/03-Intro-to-Flask.html)
+# Welcome to Web Servers
 
 <!-- v -->
 
@@ -234,6 +233,12 @@ def get_compliment():
     compliment = choice(compliments)
     return f'Hello there, user! You are so {compliment}!'
 ```
+
+<!-- > -->
+
+
+## Break [10 minutes]
+<!-- .slide: data-background="#087CB8" -->
 
 <!-- > -->
 
