@@ -14,11 +14,12 @@
 
 ## Agenda
 
+1. **Quiz: Timed, 20 minutes w/ 5 minute break**
 1. [Learning Objectives](#learning-objectives)
 1. [Welcome to Web Servers](#welcome-to-web-servers)
 1. [Activity: Write a Function](#write-a-function)
-1. [Break](#break)
 1. [Add a Flask Route](#add-a-flask-route)
+1. [Break](#break)
 1. [Query Strings](#query-strings)
 1. [HTML Forms](#html-forms)
 1. [Homework](#homework)
