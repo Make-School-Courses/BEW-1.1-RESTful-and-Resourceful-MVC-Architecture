@@ -6,9 +6,9 @@
 <!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Intro to Flask
 
-### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/03-Intro-to-Flask.html)
+### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/03-Intro-to-Flask.html ':ignore')
 
-### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/03-Intro-to-Flask/demo)
+### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/03-Intro-to-Flask/demo ':ignore')
 
 <!-- > -->
 
@@ -48,7 +48,7 @@ By the end of today, you should be able to:
 
 When you navigate to a web page:
 
-1. The **client** (your browser) sends a request for that page's URL. 
+1. The **client** (your browser) sends a request for that page's URL.
 1. The **server** (e.g. a datacenter) sends a response containing HTML data.
 
 <img alt="Request-Response" src="assets/req-res.gif" width="600px"/>
