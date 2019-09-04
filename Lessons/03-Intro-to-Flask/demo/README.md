@@ -9,5 +9,5 @@ $ pip3 install flask
 Run the app:
 
 ```bash
-$ flask run
+$ export FLASK_ENV=development; flask run
 ```
