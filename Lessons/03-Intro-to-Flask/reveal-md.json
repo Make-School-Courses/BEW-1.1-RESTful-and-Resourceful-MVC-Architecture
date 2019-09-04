@@ -3,6 +3,8 @@
   "verticalSeparator": "^\n<!-- v -->\n",
   "theme": "white",
   "highlightTheme": "atom-one-light",
+  "watch": true,
+  "title": "BEW 1.1",
   "scripts": [
   ],
   "css": [
