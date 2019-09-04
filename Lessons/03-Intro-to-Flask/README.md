@@ -48,7 +48,7 @@ By the end of today, you should be able to:
 
 When you navigate to a web page:
 
-1. The **client** (your browser) sends a request for that page's URL.
+1. The **client** (your browser) sends a request for that page's URL. 
 1. The **server** (e.g. a datacenter) sends a response containing HTML data.
 
 <img alt="Request-Response" src="assets/req-res.gif" width="600px"/>
@@ -216,7 +216,7 @@ def get_compliment():
 Let's run our function!
 
 ```bash
-$ python3 app.py
+$ python3 -i app.py
 >>> give_compliment()
 'Hello there, user! You are so terrific!'
 ```
