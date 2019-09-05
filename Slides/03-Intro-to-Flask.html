@@ -4,13 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>reveal-md</title>
+    <title>BEW 1.1 Slides</title>
     <link rel="stylesheet" href="./css/reveal.css" />
     <link rel="stylesheet" href="./css/theme/white.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/atom-one-light.css" />
     <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
-    <link rel="stylesheet" href="./assets/makeschool.css" />
+    <link rel="stylesheet" href="./_assets/makeschool.css" />
 
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
   </head>
   <body>
     <div class="reveal">
@@ -22,20 +25,27 @@
 <!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Intro to Flask
 
-### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/03-Intro-to-Flask.html)
+### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/03-Intro-to-Flask.html ':ignore')
 
-### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/03-Intro-to-Flask/demo)
+### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/03-Intro-to-Flask/demo ':ignore')
 </script></section><section  data-markdown><script type="text/template">
 ## Agenda
 
+1. **Quiz: Timed, 20 minutes w/ 5 minute break**
 1. [Learning Objectives](#learning-objectives)
 1. [Welcome to Web Servers](#welcome-to-web-servers)
 1. [Activity: Write a Function](#write-a-function)
-1. [Break](#break)
 1. [Add a Flask Route](#add-a-flask-route)
+1. [Break](#break)
 1. [Query Strings](#query-strings)
 1. [HTML Forms](#html-forms)
 1. [Homework](#homework)
+</script></section><section  data-markdown><script type="text/template">
+
+## Quiz [20 mins]
+
+### 5 mins break
+<!-- .slide: data-background="#087CB8" -->
 </script></section><section  data-markdown><script type="text/template">
 ## Learning Objectives
 
@@ -55,8 +65,8 @@ By the end of today, you should be able to:
 
 When you navigate to a web page:
 
-1. The **client** (your browser) sends a request for that page's URL. 
-1. The **server** (e.g. a datacenter) sends a response containing HTML data.
+1. The **client** (your browser) sends a request for that page's URL.
+2. The **server** (e.g. a datacenter) sends a response containing HTML data.
 
 <img alt="Request-Response" src="assets/req-res.gif" width="600px"/>
 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -196,7 +206,7 @@ Let's run our function!
 
 ```bash
 $ python3 -i app.py
->>> give_compliment()
+>>> get_compliment()
 'Hello there, user! You are so terrific!'
 ```
 </script></section><section data-markdown><script type="text/template">
@@ -271,10 +281,10 @@ if __name__ == "__main__":
 </script></section><section data-markdown><script type="text/template">
 ## Prove it Works
 
-Test the function by running `flask run` on the terminal:
+Test the function by running `python3 app.py` on the terminal:
 
 ```bash
-$ flask run
+$ python3 app.py
 ```
 </script></section></section><section ><section data-markdown><script type="text/template">
 # Query Strings
@@ -331,7 +341,7 @@ def index():
     <form action='/compliment'>
         What is your name?
         <input type="text" name="name"></input>
-        <button type="submit">
+        <button type="submit">Submit</button>
     </form>
     """
 ```
@@ -373,7 +383,7 @@ How many compliments?
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
-Complete your `Horoscope` project and use a Google Form to collect user data and make a more accurate prediction. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/blob/master/Lessons/03-Intro-to-Flask/demo/app.py) as a guide!
+Complete your `Horoscope` project and use an HTML Form to collect user data and make a more accurate prediction. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/blob/master/Lessons/03-Intro-to-Flask/demo/app.py) as a guide!
 
 
 </script></section></div>
