@@ -297,7 +297,7 @@ Add `@app.route` to the top of the function. This **decorator** on top of the fu
 
 @app.route('/compliment')
 def get_compliment():
-    compliment = random.choice(compliments)
+    compliment = choice(compliments)
     return f'Hello there, user! You are so {compliment}!'
  ```
 
@@ -318,10 +318,11 @@ if __name__ == "__main__":
 
 ## Prove it Works
 
-Test the function by running `python3 app.py` on the terminal:
+Test the function by running `flask run` on the terminal:
 
 ```bash
-$ python3 app.py
+$ export FLASK_ENV=development
+$ flask run
 ```
 
 <!-- > -->

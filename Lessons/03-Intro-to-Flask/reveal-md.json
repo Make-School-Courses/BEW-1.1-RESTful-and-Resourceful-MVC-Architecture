@@ -4,7 +4,8 @@
   "theme": "white",
   "highlightTheme": "atom-one-light",
   "watch": true,
-  "title": "BEW 1.1",
+  "title": "BEW 1.1 Slides",
+  "static": "_static",
   "scripts": [
   ],
   "css": [
