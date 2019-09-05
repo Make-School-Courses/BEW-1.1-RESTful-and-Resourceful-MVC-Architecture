@@ -26,6 +26,14 @@
 
 <!-- > -->
 
+
+## Quiz [20 mins]
+
+### 5 mins break
+<!-- .slide: data-background="#087CB8" -->
+
+<!-- > -->
+
 ## Learning Objectives
 
 By the end of today, you should be able to:
@@ -49,7 +57,7 @@ By the end of today, you should be able to:
 When you navigate to a web page:
 
 1. The **client** (your browser) sends a request for that page's URL.
-1. The **server** (e.g. a datacenter) sends a response containing HTML data.
+2. The **server** (e.g. a datacenter) sends a response containing HTML data.
 
 <img alt="Request-Response" src="assets/req-res.gif" width="600px"/>
 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -216,7 +224,7 @@ def get_compliment():
 Let's run our function!
 
 ```bash
-$ python3 app.py
+$ python3 -i app.py
 >>> give_compliment()
 'Hello there, user! You are so terrific!'
 ```
@@ -310,10 +318,10 @@ if __name__ == "__main__":
 
 ## Prove it Works
 
-Test the function by running `flask run` on the terminal:
+Test the function by running `python3 app.py` on the terminal:
 
 ```bash
-$ flask run
+$ python3 app.py
 ```
 
 <!-- > -->
@@ -384,7 +392,7 @@ def index():
     <form action='/compliment'>
         What is your name?
         <input type="text" name="name"></input>
-        <button type="submit">
+        <button type="submit">Submit</button>
     </form>
     """
 ```
@@ -434,6 +442,6 @@ How many compliments?
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
-Complete your `Horoscope` project and use a Google Form to collect user data and make a more accurate prediction. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/blob/master/Lessons/03-Intro-to-Flask/demo/app.py) as a guide!
+Complete your `Horoscope` project and use an HTML Form to collect user data and make a more accurate prediction. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/blob/master/Lessons/03-Intro-to-Flask/demo/app.py) as a guide!
 
 
