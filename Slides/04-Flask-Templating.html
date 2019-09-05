@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>reveal-md</title>
+    <title>BEW 1.1 Slides</title>
     <link rel="stylesheet" href="./css/reveal.css" />
     <link rel="stylesheet" href="./css/theme/white.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/atom-one-light.css" />
@@ -35,6 +35,7 @@
 1. Flask Review
 1. Jinja Templates
 1. Template Control Flow
+1. Break
 1. Template Inheritance
 1. Activity: Horoscope App
 1. Introducing Gif Search
@@ -90,7 +91,7 @@ def index():
                 <option value="3">Three</option>
             </select>
         </p>
-        <input type="submit">
+        <button type="submit">Submit</button>
     </form>
     """
 ```
@@ -145,7 +146,7 @@ Let's move the HTML code from the `/` route into its own `index.html` template. 
             <option value="3">Three</option>
         </select>
     </p>
-    <input type="submit">
+    <button type="submit">Submit</button>
 </form>
 ```
 </script></section><section data-markdown><script type="text/template">
@@ -293,7 +294,10 @@ Now add a loop to `compliments.html`:
     Have a nice day!
 {% endif %}
 ```
-</script></section></section><section ><section data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">
+## Break [10 minutes]
+<!-- .slide: data-background="#087CB8" -->
+</script></section><section ><section data-markdown><script type="text/template">
 # Template Inheritance
 </script></section><section data-markdown><script type="text/template">
 ## Why Inherit Templates?
@@ -376,7 +380,7 @@ And `index.html`:
             <option value="3">Three</option>
         </select>
     </p>
-    <input type="submit">
+    <button type="submit">Submit</button>
 </form>
 {% endblock %}
 ```
@@ -409,20 +413,25 @@ You are so:
 ## Expand your Horoscope App
 
 Modify your Horoscope app to use Jinja templates. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/04-Flask-Templating/demo) as a guide!
+
+- Another Option: Personality Test
 </script></section></section><section ><section data-markdown><script type="text/template">
 # Gif Search
 </script></section><section data-markdown><script type="text/template">
 ## Introducing the Gif Search Project
 
 Demo
-
+</script></section></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
-TODO
+- Finish Horoscope app
+  - Will not be collected, but we highly encourage you to complete it to get more comfortable with Flask and templating!
+
+- Start on Gif Search - due Wed, Sept. 18
 
 
-</script></section></section></div>
+</script></section></div>
     </div>
 
     <script src="./js/reveal.js"></script>

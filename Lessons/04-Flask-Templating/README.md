@@ -84,7 +84,7 @@ def index():
                 <option value="3">Three</option>
             </select>
         </p>
-        <input type="submit">
+        <button type="submit">Submit</button>
     </form>
     """
 ```
@@ -149,7 +149,7 @@ Let's move the HTML code from the `/` route into its own `index.html` template. 
             <option value="3">Three</option>
         </select>
     </p>
-    <input type="submit">
+    <button type="submit">Submit</button>
 </form>
 ```
 
@@ -417,7 +417,7 @@ And `index.html`:
             <option value="3">Three</option>
         </select>
     </p>
-    <input type="submit">
+    <button type="submit">Submit</button>
 </form>
 {% endblock %}
 ```
@@ -459,6 +459,8 @@ You are so:
 
 Modify your Horoscope app to use Jinja templates. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/04-Flask-Templating/demo) as a guide!
 
+- Another Option: Personality Test
+
 <!-- > -->
 
 # Gif Search
@@ -469,9 +471,14 @@ Modify your Horoscope app to use Jinja templates. Use the [starter code](https:/
 
 Demo
 
+<!-- > -->
+
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
-TODO
+- Finish Horoscope app
+  - Will not be collected, but we highly encourage you to complete it to get more comfortable with Flask and templating!
+
+- Start on Gif Search - due Wed, Sept. 18
 
 

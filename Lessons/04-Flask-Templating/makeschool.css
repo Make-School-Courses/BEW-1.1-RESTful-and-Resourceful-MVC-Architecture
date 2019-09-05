@@ -3,26 +3,6 @@
 @import url('https://use.typekit.net/zyr1voy.css');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&display=swap');
 
-section.has-dark-background,
-section.has-dark-background h1,
-section.has-dark-background h2,
-section.has-dark-background h3,
-section.has-dark-background h4,
-section.has-dark-background h5,
-section.has-dark-background h6 {
-  color: #F3F3F3;
-}
-
-section.has-dark-background p code {
-    color: #0D4062;
-    border: 1px white solid;
-    background: white;
-}
-
-section.has-dark-background a {
-    color: #18a9f5;
-}
-
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -458,4 +438,33 @@ body {
 .reveal .slides section,
 .reveal .slides section>section {
   line-height: 1.2;
+}
+
+
+/*********************************************
+ * DARK BACKGROUND
+ *********************************************/
+
+section.has-dark-background,
+section.has-dark-background h1,
+section.has-dark-background h2,
+section.has-dark-background h3,
+section.has-dark-background h4,
+section.has-dark-background h5,
+section.has-dark-background h6,
+.reveal section.has-dark-background ul ul li,
+.reveal section.has-dark-background ol ol li,
+.reveal section.has-dark-background ol ul li,
+.reveal section.has-dark-background ul ol li {
+  color: #F3F3F3;
+}
+
+section.has-dark-background p code {
+    color: #0D4062;
+    border: 1px white solid;
+    background: white;
+}
+
+section.has-dark-background a {
+    color: #18a9f5;
 }
