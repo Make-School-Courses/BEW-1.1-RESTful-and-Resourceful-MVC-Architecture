@@ -225,7 +225,7 @@ Let's run our function!
 
 ```bash
 $ python3 -i app.py
->>> give_compliment()
+>>> get_compliment()
 'Hello there, user! You are so terrific!'
 ```
 
