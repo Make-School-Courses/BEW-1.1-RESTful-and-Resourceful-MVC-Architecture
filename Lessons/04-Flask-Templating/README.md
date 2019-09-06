@@ -399,7 +399,7 @@ And `index.html`:
     Enter Your Info
 {% endblock %}
 
-{% block body %}
+{% block content %}
 <form action='/compliment'>
     <p>
         What is your name?
