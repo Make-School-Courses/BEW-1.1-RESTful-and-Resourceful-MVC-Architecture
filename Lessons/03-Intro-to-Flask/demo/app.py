@@ -45,3 +45,6 @@ def get_compliment():
         return f'Hello there, {name}! You are so {nice_things}!'
     else:
         return f'Hello there, {name}! Have a nice day!'
+
+if __name__ == '__main__':
+    app.run(debug=True)
