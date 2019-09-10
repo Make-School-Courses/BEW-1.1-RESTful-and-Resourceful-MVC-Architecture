@@ -1,74 +1,71 @@
-<!-- Run this slideshow via the following command: -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>BEW 1.1 Slides</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/atom-one-light.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./assets/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- Run this slideshow via the following command: -->
 <!-- reveal-md README.md -w -->
 
 
 <!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # URLs, HTTP, REST, and Reading Errors
-
-### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/05-URLs-HTTP-REST-and-Reading-Errors.html)
-
-### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/05-URLs-HTTP-REST-and-Reading-Errors/demo)
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Learning Outcomes
 
 1. Describe the uses of an API 
 1. Write an API request using `curl`
 1. Describe the purpose of JSON and use Python to access JSON data
 1. Use the `requests` library to write an API request
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 # Warm-Up
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Warm-Up
 
 1. What is a route?
 1. What is a template, and why do we use templates? 
 1. I want to display a template called `marshmallows.html` on the web page `/candy`. What steps should I follow?
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # APIs
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Review: URLs & Requests
 
 The web works with a series of unique addresses like the postal service. These addresses are called URLs or **Uniform Resource Locator**.
 
 ![URL](assets/query.jpg)
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## APIs
 
 - **A**pplication **P**rogramming **I**nterface
 - Used to get data from a web URL
 - Just like a normal website! Except instead of serving HTML, it is serving JSON data
 - We want to use that data in our web app
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Example: Chuck Norris API
 
 Get a random Chuck Norris joke!
 
 http://www.icndb.com/api/
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## URL Query Parameters
 
 What if I only want a nerdy joke?
 
 http://api.icndb.com/jokes/random?limitTo=nerdy
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Introducing: `curl`
 
 We can also execute this same API query in Terminal:
@@ -88,20 +85,14 @@ And we get the result:
 ```
 
 Try it out!
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Summary
 
 - APIs don't make any assumptions about how you will *use* the data.
 - Thus, they tend to give you more data than is necessary.
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # JSON
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What is JSON?
 
 - **J**ava**S**cript **O**bject **N**otation 
@@ -109,9 +100,7 @@ Try it out!
 - Consists of **key-value pairs**:
   - Key is a string
   - Value could be a **primitive** (string, number), a **list**, or another JSON **object**
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Activity
 
 With a partner, see if you can determine what this JSON data represents:
@@ -129,9 +118,7 @@ With a partner, see if you can determine what this JSON data represents:
   "Total": 40000
 }
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Accessing JSON
 
 We can make a JSON object in our Python code:
@@ -146,13 +133,9 @@ And access it like:
 >>> my_json['num_cats']
 1
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Activity: Cards API
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Deck of Cards API [25 mins]
 
 1. Point your browser to http://deckofcardsapi.com
@@ -160,9 +143,7 @@ And access it like:
 1. See how far you can get!
 
 <img src="assets/cards.jpg" alt="Deck of cards" width="200px">
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Let's play Blackjack!
 
 Aim of the game: Get as close to 21 as you can without going over! With a partner:
@@ -173,13 +154,9 @@ Aim of the game: Get as close to 21 as you can without going over! With a partne
 
 #### J/K/Q worth 10, A worth either 1 or 11 (you choose)
 
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # The requests Library
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Install requests
 
 Install the `requests` library:
@@ -187,9 +164,7 @@ Install the `requests` library:
 ```bash
 $ pip3 install requests
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Using requests
 
 Use the `requests.get` function to send a GET request to your API.
@@ -202,9 +177,7 @@ This function returns a `Response` Object. We need to call `.json()` to get the 
 >>> r = requests.get("http://api.icndb.com/jokes/random?limitTo=nerdy")
 >>> joke_json = r.json()
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Get the Data
 
 Remember that our JSON data looks like this:
@@ -224,9 +197,7 @@ Once we have a JSON object, we can extract the fields we want using bracket nota
 >>> joke_str
 "Chuck Norris can spawn threads that complete before they are started."
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Set the Query String
 
 The part of the URL after the `?` is the **query string**.
@@ -240,9 +211,7 @@ If our URL has a lot of query parameters, it can get a little messy.
 ```txt
 http://fakeapi.com/search?term=wow+very+long&filter=much+long+wow&name=whoa+cool+person
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Set the Query String
 
 We can use `requests` to set the query string for us:
@@ -255,13 +224,9 @@ my_params = {
 }
 r = requests.get("http://fakeapi.com/search", params=my_params)
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Flask and APIs
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Let's Make a `/joke` Flask Route
 
 ```python
@@ -278,9 +243,7 @@ def make_joke():
     joke_str = joke_json["value"]["joke"]
     return joke_str
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Run the Server
 
 Let's try running it!
@@ -289,25 +252,17 @@ Let's try running it!
 $ export FLASK_ENV=development
 $ flask run
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Gif Search
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Demo
 
 Demo
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Request an API Key
 
 Go to https://tenor.com/developer/dashboard and request an API key!
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Use Your API Key
 
 ```python
@@ -321,9 +276,7 @@ response = requests.get(
     'https://api.tenor.com/v1/search',
     params=params)
 ```
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 ## Resources
 
 1. [Slides](https://docs.google.com/presentation/d/1PfQ_apXeAe56HwJia4FwP9rg6f4Awj95MbrsqxdUMZE/edit?usp=sharing)
@@ -332,3 +285,54 @@ response = requests.get(
 1. [REST Wikipedia Article](https://en.wikipedia.org/wiki/Representational_state_transfer)
 1. [REST & HTTP](https://www.youtube.com/watch?v=LHJk_ISxHHc)
 1. [Intro to REST](https://www.youtube.com/watch?v=YCcAE2SCQ6k)
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
