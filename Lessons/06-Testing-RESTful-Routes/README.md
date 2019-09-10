@@ -275,7 +275,7 @@ Which form of testing is the most efficient? (i.e. is the least brittle while pr
 
 Continue working on GIF Search with your partner! **Remember to log your pair programming session in the tracker!**
 
-**Stretch Challenge:** Aim for full test coverage of your GIF Search project.
+**Stretch Challenge:** Aim for full test coverage of your GIF Search project!
 
 <!-- > -->
 
