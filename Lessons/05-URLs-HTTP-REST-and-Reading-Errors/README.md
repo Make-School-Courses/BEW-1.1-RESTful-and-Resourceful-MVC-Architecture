@@ -11,6 +11,19 @@
 
 <!-- > -->
 
+## Agenda
+
+1. What is an API? How do we use one?
+1. Activity: Blackjack
+1. Dictionaries
+1. The JSON Data Type
+1. Break
+1. The `requests` library
+1. Flask and APIs
+1. GIF Search Project
+
+<!-- > -->
+
 ## Learning Outcomes
 
 1. Describe the uses of an API 
@@ -98,6 +111,106 @@ Try it out!
 
 <!-- > -->
 
+# Activity: Cards API
+
+<!-- v -->
+
+## Deck of Cards API [25 mins]
+
+1. Point your browser to http://deckofcardsapi.com
+1. Using `curl`, follow the steps to create a deck of cards, draw 2 cards, and reshuffle
+1. See how far you can get!
+
+<img src="assets/cards.jpg" alt="Deck of cards" width="200px">
+
+<!-- v -->
+
+## Let's play Blackjack!
+
+Aim of the game: Get as close to 21 as you can without going over! With a partner:
+
+1. Draw 1 card from a new deck - This card is shared
+1. From the *same* deck (but on different computers), each person draw 2 cards
+1. On your turn: Decide whether to stay or draw another card
+
+#### J/K/Q worth 10, A worth either 1 or 11 (you choose)
+
+
+<!-- > -->
+
+# Dictionaries
+
+<!-- v -->
+
+## What is a Dictionary?
+
+A **dictionary** is a Python data type that stores key-value pairs.
+
+| Key         | Value       |
+| ----------- | ----------- |
+| "name"      | "Bananas" |
+| "price"     | 0.99        |
+| "num_in_stock" | 200        |
+
+<!-- v -->
+
+## How do we use Dictionaries?
+
+We can use a dictionary in Python like:
+
+```python
+fruit = {
+    "name": "Bananas",
+    "price": 0.99,
+    "num_in_stock": 200
+}
+```
+
+<!-- v -->
+
+## Accessing a Field
+
+We can access a field in our dictionary like:
+
+```python
+>>> fruit["name"]
+"Bananas"
+```
+
+<!-- v -->
+
+## Setting a Field
+
+We can set a new field in our dictionary like:
+
+```python
+fruit["color"] = "yellow"
+```
+
+This is exactly like using a list! Except instead of being associated with a numerical *index*, the values are associated with a string *key*.
+
+<!-- v -->
+
+## Practice
+
+Open up the Python interpreter and type the following:
+
+```python
+>>> fruit = {
+...     "name": "Bananas",
+...     "price": 0.99
+... }
+```
+
+Try setting and accessing at least 2 different fields.
+
+<!-- > -->
+
+## Break [10 minutes]
+<!-- .slide: data-background="#087CB8" -->
+
+<!-- > -->
+
 # JSON
 
 <!-- v -->
@@ -137,42 +250,15 @@ With a partner, see if you can determine what this JSON data represents:
 We can make a JSON object in our Python code:
 
 ```python
->>> my_json = { "name": "Meredith", "num_cats": 1, "is_student": False }
+>>> my_json = { "name": "Bananas", "price": 0.99, "num_in_stock": 200 }
 ```
 
 And access it like:
 
 ```python
->>> my_json['num_cats']
-1
+>>> my_json["name"]
+"Bananas"
 ```
-
-<!-- > -->
-
-# Activity: Cards API
-
-<!-- v -->
-
-## Deck of Cards API [25 mins]
-
-1. Point your browser to http://deckofcardsapi.com
-1. Using `curl`, follow the steps to create a deck of cards, draw 2 cards, and reshuffle
-1. See how far you can get!
-
-<img src="assets/cards.jpg" alt="Deck of cards" width="200px">
-
-<!-- v -->
-
-## Let's play Blackjack!
-
-Aim of the game: Get as close to 21 as you can without going over! With a partner:
-
-1. Draw 1 card from a new deck - This card is shared
-1. From the *same* deck (but on different computers), each person draw 2 cards
-1. On your turn: Decide whether to stay or draw another card
-
-#### J/K/Q worth 10, A worth either 1 or 11 (you choose)
-
 
 <!-- > -->
 
