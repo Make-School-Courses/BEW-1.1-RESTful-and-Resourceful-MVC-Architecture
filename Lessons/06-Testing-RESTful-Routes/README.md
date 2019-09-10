@@ -35,6 +35,8 @@
 1. Implement route tests for one resource
 1. List when it is ok to test and not to test
 
+<!-- > -->
+
 <!-- .slide: data-background="./header.jpg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Why Test Our Routes?
 
@@ -55,7 +57,7 @@
 
 <!-- v -->
 
-### When Testing Is A Lower Priority
+### When Is Testing A Lower Priority
 
 <!-- v -->
 
@@ -118,6 +120,8 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
+<!-- v -->
+
 ## Assertions
 
 What does `assertEqual` mean? This is an example of an assertion! An **Assertion** is a true/false statement that defines a test. In the above example, we're testing to make sure the `greet_by_name('Dani')` function returns `Hello, Dani!` as an answer.
@@ -139,7 +143,11 @@ OK
 
 Great! Our test passed!
 
-**Question:** What would happen if we change:
+<!-- v -->
+
+## Question
+
+What would happen if we change:
 
 ```python
 self.assertEqual(greet_by_name('Dani'), 'Hello, Dani!')
@@ -150,6 +158,8 @@ To the following:
 ```python
 self.assertEqual(greet_by_name('Dani'), 'Hello, Meredith!')
 ```
+
+<!-- v -->
 
 Our two parameters to `assertEqual` no longer match, so the test would fail!
 
@@ -189,7 +199,7 @@ def get_compliment():
 
 Write a test file called `test_compliment.py` and test it out! See if you can break the test
 
-**Stretch Challenges:** Write more tests, or look into doing tests using [other types of assetions](https://docs.python.org/3.7/library/unittest.html#unittest.TestCase.assertNotEqual). If you've done all of that, write unit tests for your fully completed Horoscope app and aim to have at least one test for each function.
+**Stretch Challenges:** Write more tests, or look into doing tests using [other types of assertions](https://docs.python.org/3.7/library/unittest.html#unittest.TestCase.assertNotEqual). If you've done all of that, write unit tests for your fully completed Horoscope app and aim to have at least one test for each function.
 
 <!-- > -->
 
@@ -200,7 +210,7 @@ Write a test file called `test_compliment.py` and test it out! See if you can br
 
 # Route Tests
 
-**Routes Testing** is in a bit of a Goldilocks position where it is broad and tests a lot of behavior, but they are not too brittle that they will break when we change something minor like the styling.
+**Routes Testing** is in a bit of a Goldilocks position where it is broad and tests a lot of behavior, but they are not too brittle such that they will break when we change something minor like the styling.
 
 <!-- v -->
 
@@ -258,6 +268,7 @@ Which form of testing is the most efficient? (i.e. is the least brittle while pr
   <li>Routes Tests</li>
 </ol>
 
+<!-- > -->
 
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
@@ -265,6 +276,8 @@ Which form of testing is the most efficient? (i.e. is the least brittle while pr
 Continue working on GIF Search with your partner! **Remember to log your pair programming session in the tracker!**
 
 **Stretch Challenge:** Aim for full test coverage of your GIF Search project.
+
+<!-- > -->
 
 # Resources
 - [Python unittest docs](https://docs.python.org/3/library/unittest.html)
