@@ -1,3 +1,8 @@
+<!-- Run this slideshow via the following command: -->
+<!-- reveal-md README.md -w -->
+
+
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Testing RESTful Routes
 
 ### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/06-Testing-RESTful-Routes.html ':ignore')
@@ -30,6 +35,7 @@
 1. Implement route tests for one resource
 1. List when it is ok to test and not to test
 
+<!-- .slide: data-background="./header.jpg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Why Test Our Routes?
 
 **Automated testing** is writing code that tests if your code is working.
@@ -252,6 +258,13 @@ Which form of testing is the most efficient? (i.e. is the least brittle while pr
   <li>Routes Tests</li>
 </ol>
 
+
+<!-- .slide: data-background="#0D4062" -->
+## Homework
+
+Continue working on GIF Search with your partner! **Remember to log your pair programming session in the tracker!**
+
+**Stretch Challenge:** Aim for full test coverage of your GIF Search project.
 
 # Resources
 - [Python unittest docs](https://docs.python.org/3/library/unittest.html)
