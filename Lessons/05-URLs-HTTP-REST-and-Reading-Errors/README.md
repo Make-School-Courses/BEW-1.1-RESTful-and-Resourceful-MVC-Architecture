@@ -1,178 +1,324 @@
+<!-- Run this slideshow via the following command: -->
+<!-- reveal-md README.md -w -->
+
+
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # URLs, HTTP, REST, and Reading Errors
+
+<!-- > -->
 
 ## Learning Outcomes
 
-1. Describe the uses of an API client library
-1. Identify and describe each part of a URL and HTTP Request.
-1. Identify and use RESTful and URL routes
-1. Read and interpret errors to find out your next step (google them!)
+1. Describe the uses of an API 
+1. Write an API request using `curl`
+1. Describe the purpose of JSON and use Python to access JSON data
+1. Use the `requests` library to write an API request
 
+<!-- > -->
 
-## Initial Exercise 10 min.
+# Warm-Up
 
-1. Write your home address out and diagram what each part is called.
+<!-- v -->
 
-## URLs & Requests
+## Warm-Up
+
+1. What is a route?
+1. What is a template, and why do we use templates? 
+1. I want to display a template called `marshmallows.html` on the web page `/candy`. What steps should I follow?
+
+<!-- > -->
+
+# APIs
+
+<!-- v -->
+
+## Review: URLs & Requests
 
 The web works with a series of unique addresses like the postal service. These addresses are called URLs or **Uniform Resource Locator**.
 
-They are the most obvious part of any request to a server.
-
-![Detailed Req-Res](assets/req-res-detailed.gif)
-
-URLs have a distinct anatomy and as a web developer you ought to memorize each part of a url - just as if you were a postal worker, you'd need to know what a zip code was!
-
 ![URL](assets/query.jpg)
 
-URLs are the surface level of any request to a web server. However, there is more information in a request.
+<!-- v -->
 
-![Request](assets/request.png)
+## APIs
 
-To view more about a request use the Sources tab of your Chrome web tools. Load a web page and click XHS and then select the request you want to review.
+- **A**pplication **P**rogramming **I**nterface
+- Used to get data from a web URL
+- Just like a normal website! Except instead of serving HTML, it is serving JSON data
+- We want to use that data in our web app
 
-![Sources tab](assets/sources-tab.png)
+<!-- v -->
 
-## REST & HTTP
+## Example: Chuck Norris API
 
-REST is the most widely used standard convention for web server behavior. You'll research more about REST in the challenges below.
+Get a random Chuck Norris joke!
 
-HTTP is a protocol that we use to send and receive requests between servers and clients. HTTP has **HTTP Verbs** and **HTTP Statuses** and you should memorize both.
+http://www.icndb.com/api/
 
-HTTP Verbs are the following:
+<!-- v -->
 
-1. GET
-1. POST
-1. PUT
-1. PATCH
-1. DELETE
+## URL Query Parameters
 
-The most common HTTP statuses are the following. Here is a [complete list](https://httpstatuses.com):
+What if I only want a nerdy joke?
 
-* 100 - Informational Response
-* 200 - Success
-* 300 - Redirection
-* 400 - Client Error (Bad Request)
-* 401 - Unauthorized
-* 404 - Not found
-* 418 - [I'm a tea pot](https://httpstatuses.com/418)
-* 500 - Internal Server Error
+http://api.icndb.com/jokes/random?limitTo=nerdy
 
-## JSON
+<!-- v -->
 
-**JavaScript Object Notation** (JSON) is the standard format for transmitting human readable data across the web.  These consist entirely of key-pair values, but these values can be arrays as well as single values.
+## Introducing: `curl`
 
-This is an example of JSON:
+We can also execute this same API query in Terminal:
+
+```bash
+$ curl "http://api.icndb.com/jokes/random?limitTo=nerdy"
+```
+
+And we get the result:
+
+```json
+{ "type": "success", "value": { 
+    "id": 505, 
+    "joke": "Chuck Norris can spawn threads that complete before they are started.", 
+    "categories": ["nerdy"] }
+}
+```
+
+Try it out!
+
+<!-- v -->
+
+## Summary
+
+- APIs don't make any assumptions about how you will *use* the data.
+- Thus, they tend to give you more data than is necessary.
+
+<!-- > -->
+
+# JSON
+
+<!-- v -->
+
+## What is JSON?
+
+- **J**ava**S**cript **O**bject **N**otation 
+- A standard format for transmitting data across the web and between different programming languages
+- Consists of **key-value pairs**:
+  - Key is a string
+  - Value could be a **primitive** (string, number), a **list**, or another JSON **object**
+
+<!-- v -->
+
+## Activity
+
+With a partner, see if you can determine what this JSON data represents:
 
 ```js
 {
   "Order#": "309873457",
   "Name": "Jeff Bezoz",
   "Items": [
-    "Used Tissue",
-    "Elon's Musk",
-    "Bill's Gates"
+    { "Item_Name": "Used Tissue", "Price": 4.99 },
+    { "Item_Name": "Elon's Musk", "Price": 2500 },
+    { "Item_Name": "Bill's Gates", "Price": 1495.01 }
   ],
   "Address": "2000 Pennsilvania Avenue, Washington D.C.",
-  "Paid": 40000
+  "Total": 40000
 }
 ```
 
-Keys like `Order#` and `Name` pair to strings, while the `Items` key is paired to an array, holding multiple values.  
+<!-- v -->
 
-JSON is referenced using dot notation, so referencing it should look similar to class attributes and methods in Python.  
+## Accessing JSON
 
-Lets say we have a super simple Flask app with a single endpoint, receiving the JSON data shown above.  
+We can make a JSON object in our Python code:
 
-```py 
+```python
+>>> my_json = { "name": "Meredith", "num_cats": 1, "is_student": False }
+```
+
+And access it like:
+
+```python
+>>> my_json['num_cats']
+1
+```
+
+<!-- > -->
+
+# Activity: Cards API
+
+<!-- v -->
+
+## Deck of Cards API [25 mins]
+
+1. Point your browser to http://deckofcardsapi.com
+1. Using `curl`, follow the steps to create a deck of cards, draw 2 cards, and reshuffle
+1. See how far you can get!
+
+<img src="assets/cards.jpg" alt="Deck of cards" width="200px">
+
+<!-- v -->
+
+## Let's play Blackjack!
+
+Aim of the game: Get as close to 21 as you can without going over! With a partner:
+
+1. Draw 1 card from a new deck - This card is shared
+1. From the *same* deck (but on different computers), each person draw 2 cards
+1. On your turn: Decide whether to stay or draw another card
+
+#### J/K/Q worth 10, A worth either 1 or 11 (you choose)
+
+
+<!-- > -->
+
+# The requests Library
+
+<!-- v -->
+
+## Install requests
+
+Install the `requests` library:
+
+```bash
+$ pip3 install requests
+```
+
+<!-- v -->
+
+## Using requests
+
+Use the `requests.get` function to send a GET request to your API.
+
+This function returns a `Response` Object. We need to call `.json()` to get the JSON data.
+
+```python
+>>> import requests
+
+>>> r = requests.get("http://api.icndb.com/jokes/random?limitTo=nerdy")
+>>> joke_json = r.json()
+```
+
+<!-- v -->
+
+## Get the Data
+
+Remember that our JSON data looks like this:
+
+```python
+{ "type": "success", "value": { 
+    "id": 505, 
+    "joke": "Chuck Norris can spawn threads that complete before they are started.", 
+    "categories": ["nerdy"] }
+}
+```
+
+Once we have a JSON object, we can extract the fields we want using bracket notation:
+
+```python
+>>> joke_str = joke_json["value"]["joke"]
+>>> joke_str
+"Chuck Norris can spawn threads that complete before they are started."
+```
+
+<!-- v -->
+
+## Set the Query String
+
+The part of the URL after the `?` is the **query string**.
+
+```txt
+http://api.icndb.com/jokes/random?limitTo=nerdy
+```
+
+If our URL has a lot of query parameters, it can get a little messy.
+
+```txt
+http://fakeapi.com/search?term=wow+very+long&filter=much+long+wow&name=whoa+cool+person
+```
+
+<!-- v -->
+
+## Set the Query String
+
+We can use `requests` to set the query string for us:
+
+```python
+my_params = {
+    "term": "wow very long",
+    "filter": "much long wow",
+    "name": "whoa cool person"
+}
+r = requests.get("http://fakeapi.com/search", params=my_params)
+```
+
+<!-- > -->
+
+# Flask and APIs
+
+<!-- v -->
+
+## Let's Make a `/joke` Flask Route
+
+```python
+import requests
 from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/JSON", methods=['POST']):
-def json_receiving_endpoint():
-    ...
+@app.route('/joke')
+def make_joke():
+    params = { "limitTo": "nerdy" }
+    r = requests.get("http://api.icndb.com/jokes/random", params=params)
+    joke_json = r.json()
+    joke_str = joke_json["value"]["joke"]
+    return joke_str
 ```
 
-We can reference the JSON in the request (if it exists) by using `request.get_json()`, and then using dot notation to get specific values like this:
+<!-- v -->
 
-```py
-    ...
-    data = request.get_json()
-    print(data.Name)
-    print(data.Items[1])
-    print(data.Paid)    
+## Run the Server
+
+Let's try running it!
+
+```bash
+$ export FLASK_ENV=development
+$ flask run
 ```
 
-which would print the following to your console when the endpoint gets a request:
+<!-- > -->
 
-```
-    Jeff Bezoz
-    Elon's Musk
-    40000
-```
+# Gif Search
 
-Note that while JSON isn't always case-sensitive in the wild, its conventional and expected of clean code.
+<!-- v -->
 
-## Activity #1 - Programmatically access JSON data
-Using the [Chuck Norris API]("https://api.chucknorris.io/"), write a Flask endpoint that returns a random Chuck Norris joke as a string, using the server code above or writing your own.  You can simply use a `return` statement here, as it will send the string as a response.  
+## Demo
 
-## API Client Libraries
-API Client Libraries can be described as cutting the middle man out of working with external code, and often make it so you don't even have to deal with JSON.  Normally, accessing services programmatically can be a hassle and make your code more convuluted but client libraries are essentially classes, with attributes and methods, that are designed to reduce configuration time while lending themselves easily to all use cases.
+Demo
 
-A normal API call requires you to:
+<!-- v -->
 
- 1. copy and paste a hard coded URL
- 2. format it with query parameters in the right places
- 3. send a fetch request
- 4. Parse the request into a workable format
+## Request an API Key
 
-Client Libraries make developers lives a lot easier because you only have to:
+Go to https://tenor.com/developer/dashboard and request an API key!
 
-1. Import the library
-2. Use the provided functions and syntax
+<!-- v -->
 
-This allow for more predictable output from the API, cleaner code, and in most cases is much faster to implement.  API wrappers and some python packages are examples of API client libraries.
+## Use Your API Key
 
-## Activity #2 - Getting Comfortable With URL Queries
+```python
+import requests
 
-Raw API Blackjack
-
-###### Find a partner, and both will need to have the code and run it
-
-We'll be using the [Deck of Cards API]("http://deckofcardsapi.com/").  First, read the documentation on the Deck of Cards API website.  One person has to shuffle a new deck with an API call and share the deck ID with a partner. 
-
-Now both people should open Postman and create a query to draw 2 cards from the same deck which will be the hand for each player.  Open another tab in postman and make a new query for a single card from the same deck. 
-
-Now both players should query for a starting hand, and decide to draw with the single card query or stay with their hand, each trying to get as close to 21 without going over (going over 21 is an instant loss).  If you want to draw multiple times, make a new tab or redraw and remember your previous cards.
-
-The person that didn't create the deck should open another tab in Postman and reshuffle the same deck (not the same as making a new one).  Play a best of 3 to complete the activity.  
-
-
-## Homework
-
-Write a sentence in a notebook and take a picture, or download an image with text in it.  Using [Pytesseract]("https://pypi.org/project/pytesseract/")'s API client library, and write a script that outputs the text of that image.  
-
-You'll need to install the Pillow package for image processing: 
-
-```sh
-pip3 install pytesseract
-pip3 install pillow
+params = {
+    "q": query_term,
+    "Key": "WL6NLFPEQRYR"
+}
+response = requests.get(
+    'https://api.tenor.com/v1/search',
+    params=params)
 ```
 
-and to import them in your script:
-
-```py
-from PIL import Image
-import pytesseract
-```
-
-Then you can simply declare the image with Pillow like so:
-
-```py
-picture = Image.open("filename.png")
-```
-
-**Submission:** Make a repo and push your script up to GitHub. Place a link to your repo in the progress tracker
+<!-- > -->
 
 ## Resources
 
