@@ -1,4 +1,23 @@
-<!-- Run this slideshow via the following command: -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>BEW 1.1 Slides</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/atom-one-light.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./assets/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- Run this slideshow via the following command: -->
 <!-- reveal-md README.md -w -->
 
 
@@ -6,9 +25,7 @@
 # Testing RESTful Routes
 
 ### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/06-Testing-RESTful-Routes.html ':ignore')
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Agenda
 
 1. **Quiz: Timed, 20 minutes w/ 5 minute break**
@@ -18,34 +35,26 @@
 1. [Unit Tests](#unit-tests) 
 1. [Break](#break)
 1. [Route Tests](#route-tests)
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Quiz [20 mins]
 
 ### 5 mins break
 <!-- .slide: data-background="#087CB8" -->
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Learning Objectives
 
 1. List various types of automated tests
 1. Define unit tests and how to implement them in Python
 1. Implement route tests for one resource
 1. List when it is ok to test and not to test
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 <!-- .slide: data-background="./header.jpg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Why Test Our Routes?
 
 **Automated testing** is writing code that tests if your code is working.
 
 ### Question: Why Learn Automated Testing?
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 1. Saves time in a large code base - the more code you write the more chances you have errors - Regression tests
 1. Other developers can contribute to your project
 1. Before PROD - fewer bugs, more uptime
@@ -54,13 +63,9 @@
 1. Required
 1. Big code bases
 1. Open source projects
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ### When Is Testing A Lower Priority
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 1. Small projects
 1. Solo projects
 1. Private (not public) projects
@@ -68,9 +73,7 @@
 
 </p>
 </details>
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 # Forms of Testing
 
 Depending on who you ask there are various forms of testing. We'll go over a couple of the most foundational tests you can run on your projects:
@@ -80,17 +83,13 @@ Depending on who you ask there are various forms of testing. We'll go over a cou
 
 Writing these kinds of tests will help us achieve comprehensive **test coverage**. If a feature has an automated test associated with it, it is considered "covered". **A project with 100% test coverage has all its features covered by tests.**
 
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 # Unit Tests
 
 **Unit tests** are very resilient and will rarely break as you make changes to your code, they provide very _narrow test coverage_ to your application as a whole so you have to write a lot of them.
 
 Python has a built in unit test library called [unittest](https://docs.python.org/3.7/library/unittest.html) that we'll use for running our unit tests going forward.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Example
 
 Here's an example of a unit test that checks the output of a `greet_by_name` function. Check out the comments for details. Let's call this file `test_greeting.py`:
@@ -119,15 +118,11 @@ class GreetByNameTests(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Assertions
 
 What does `assertEqual` mean? This is an example of an assertion! An **Assertion** is a true/false statement that defines a test. In the above example, we're testing to make sure the `greet_by_name('Dani')` function returns `Hello, Dani!` as an answer.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Run the Test
 
 If you were to run this function, you'd see the following output:
@@ -142,9 +137,7 @@ OK
 ```
 
 Great! Our test passed!
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Question
 
 What would happen if we change:
@@ -158,9 +151,7 @@ To the following:
 ```python
 self.assertEqual(greet_by_name('Dani'), 'Hello, Meredith!')
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 Our two parameters to `assertEqual` no longer match, so the test would fail!
 
 ```bash
@@ -182,9 +173,7 @@ Ran 1 test in 0.001s
 
 FAILED (failures=1)
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Activity: You Try!
 
 Remember the first draft of your `get_compliments()` function from your Horoscope app?
@@ -200,26 +189,18 @@ def get_compliment():
 Write a test file called `test_compliment.py` and test it out! See if you can break the test
 
 **Stretch Challenges:** Write more tests, or look into doing tests using [other types of assertions](https://docs.python.org/3.7/library/unittest.html#unittest.TestCase.assertNotEqual). If you've done all of that, write unit tests for your fully completed Horoscope app and aim to have at least one test for each function.
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 # Break [10 minutes]
 <!-- .slide: data-background="#087CB8" -->
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 # Route Tests
 
 **Routes Testing** is in a bit of a Goldilocks position where it is broad and tests a lot of behavior, but they are not too brittle such that they will break when we change something minor like the styling.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What does "Brittle" mean?
 
 How easily a test breaks. A test that is too brittle tests "too much", and if it is not brittle enough it tests "too little". e.g. `assert(a == a)` is not brittle enough.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Route Testing Example
 
 Back to testing routes, here's an example of testing a route, adapted from [Damyanon](https://damyanon.net/post/flask-series-testing/):
@@ -248,17 +229,13 @@ class AppTests(unittest.TestCase):
         # assert the status code of the response
         self.assertEqual(result.status_code, 200) 
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Activity: Test GIF Search!
 
 Work with your partner and write some route tests for your GIF Search project! 
 
 **Stretch Challenge:** Write some unit tests for GIF Search as well
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 ## ConcepTest
 
 Which form of testing is the most efficient? (i.e. is the least brittle while providing the most test coverage)
@@ -267,17 +244,63 @@ Which form of testing is the most efficient? (i.e. is the least brittle while pr
   <li>Unit Tests</li>
   <li>Routes Tests</li>
 </ol>
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
 Continue working on GIF Search with your partner! **Remember to log your pair programming session in the tracker!**
 
-**Stretch Challenge:** Aim for full test coverage of your GIF Search project!
-
-<!-- > -->
-
+**Stretch Challenge:** Aim for full test coverage of your GIF Search project.
+</script></section><section  data-markdown><script type="text/template">
 # Resources
-- [Python unittest docs](https://docs.python.org/3/library/unittest.html)
+- [Python unittest docs](https://docs.python.org/3/library/unittest.html)</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
