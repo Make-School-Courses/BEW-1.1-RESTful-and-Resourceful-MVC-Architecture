@@ -31,8 +31,8 @@ This course covers the three major patterns or architectures that make the web w
 |:-----:|:---------------------------------------:|
 |  1            | [Static Website](Lessons/01-Static-Website/README.md) |
 |  2               | [Git and GitHub](Lessons/02-Git-and-GitHub/README.md) |
-|  3           | [Request Response Cycle and MVC Architecture](Lessons/03-Request-Response-Cycle-and-MVC-Architecture/README.md) |
-|  4               | [Intro to Flask](Lessons/04-Intro-to-Flask/README.md) |
+|  3           | [Intro to Flask](Lessons/03-Intro-to-Flask/README.md) |
+|  4               | [Flask-Templating](Lessons/04-Flask-Templating/README.md) |
 |  5            | [URLs, HTTP, REST, and Reading Errors](./Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) |
 |  6               | [Testing RESTful Routes](./Lessons/06-Testing-RESTful-Routes/README.md) |
 |  7            | [Document-Based Databases](./Lessons/07-Document-Based-Databases/README.md) |
