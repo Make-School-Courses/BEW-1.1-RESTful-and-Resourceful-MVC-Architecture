@@ -37,55 +37,80 @@
 
 <!-- > -->
 
-<!-- .slide: data-background="./header.jpg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Why Test Our Routes?
 
-**Automated testing** is writing code that tests if your code is working.
+<!-- v -->
 
-### Question: Why Learn Automated Testing?
+## What is Automated Testing?
+
+**Manual testing** means manually running your program many times, with various test cases.
+<!-- .element: class="fragment" data-fragment-index="1" -->
+- Example: How you (probably) tested Spaceman
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+**Automated testing** is writing code that tests your code *for you*.
+<!-- .element: class="fragment" data-fragment-index="3" -->
+- Example: Writing code that tests the correctness of Spaceman - either a single function, or the entire program
+<!-- .element: class="fragment" data-fragment-index="4" -->
 
 <!-- v -->
 
-1. Saves time in a large code base - the more code you write the more chances you have errors - Regression tests
-1. Other developers can contribute to your project
-1. Before PROD - fewer bugs, more uptime
-1. Catches edge cases—outlier cases
-1. TDD - Test Driven Development - is a thing
-1. Required
-1. Big code bases
-1. Open source projects
+## Why Learn Automated Testing?
+
+1. Ensures that your next change won't break anything that was previously working
+<!-- .element: class="fragment" data-fragment-index="1" -->
+  - These are called **regression** tests 
+1. Other developers can contribute to your project without fear of breaking it
+<!-- .element: class="fragment" data-fragment-index="2" -->
+1. Improves accuracy of your code - easier to test many edge cases
+<!-- .element: class="fragment" data-fragment-index="3" -->
+  - What is an **edge case**?
 
 <!-- v -->
 
-### When Is Testing A Lower Priority
+## When Is Testing A Lower Priority?
 
-<!-- v -->
-
-1. Small projects
+1. Small projects<!-- .element: class="fragment" data-fragment-index="1" -->
 1. Solo projects
+<!-- .element: class="fragment" data-fragment-index="2" -->
 1. Private (not public) projects
-1. Startups without validation that they will work
+<!-- .element: class="fragment" data-fragment-index="3" -->
 
-</p>
-</details>
 
 <!-- > -->
 
 # Forms of Testing
 
-Depending on who you ask there are various forms of testing. We'll go over a couple of the most foundational tests you can run on your projects:
+<!-- v -->
 
-1. **Unit Testing**
-1. **Routes Testing** 
+## How can I test my code?
 
-Writing these kinds of tests will help us achieve comprehensive **test coverage**. If a feature has an automated test associated with it, it is considered "covered". **A project with 100% test coverage has all its features covered by tests.**
+We'll go over a couple of the most foundational tests you can run on your projects:
 
+1. **Unit Testing** - tests a single function
+1. **Route Testing** - tests what is served by a single route
+
+<!-- v -->
+
+## What is 'test coverage'?
+
+Writing these tests will help us achieve comprehensive **test coverage**. If a feature has an automated test associated with it, it is considered "covered". 
+
+<img src="assets/spaceman_flowchart.png" alt="flowchart of Spaceman project" height="200px"/>
+
+A project with **100% test coverage** has all its features covered by tests.
 
 <!-- > -->
 
 # Unit Tests
 
-**Unit tests** are very resilient and will rarely break as you make changes to your code, they provide very _narrow test coverage_ to your application as a whole so you have to write a lot of them.
+<!-- v -->
+
+## What are Unit Tests?
+
+**Unit tests** test the output or return value of a single function.
+
+They are very **resilient** and will rarely break as you make changes to your code, but they provide very _narrow test coverage_ to your application as a whole so you have to write a lot of them.
 
 Python has a built in unit test library called [unittest](https://docs.python.org/3.7/library/unittest.html) that we'll use for running our unit tests going forward.
 
@@ -96,7 +121,7 @@ Python has a built in unit test library called [unittest](https://docs.python.or
 Here's an example of a unit test that checks the output of a `greet_by_name` function. Check out the comments for details. Let's call this file `test_greeting.py`:
 
 ```python
-# test_greeting.pu
+# test_greeting.py
 # Import in the Python unittest library
 import unittest
 
@@ -105,10 +130,9 @@ def greet_by_name(name):
   greeting = "Hello, " + name + "!"
   return greeting
 
-# What's the class keyword mean here? 
-# You'll find out in the CS OOP classes coming soon!
-# For now, know that your tests must start in a similiar manner starting with "class", 
-# a name, and the unittest.TestCase parameter
+# Q: What's the class keyword mean here? 
+# A: You'll find out in the CS OOP classes coming soon!
+# For now, know that your tests must look like this.
 class GreetByNameTests(unittest.TestCase):
     # For each test in the class, make a method where self is the parameter
     def test_default_greeting(self):
@@ -124,7 +148,9 @@ if __name__ == '__main__':
 
 ## Assertions
 
-What does `assertEqual` mean? This is an example of an assertion! An **Assertion** is a true/false statement that defines a test. In the above example, we're testing to make sure the `greet_by_name('Dani')` function returns `Hello, Dani!` as an answer.
+What does `assertEqual` mean? This is an example of an assertion! 
+
+An **Assertion** is a true/false statement that defines a test. In the above example, we're testing to make sure the `greet_by_name('Dani')` function returns `Hello, Dani!` as an answer.
 
 <!-- v -->
 
@@ -161,6 +187,8 @@ self.assertEqual(greet_by_name('Dani'), 'Hello, Meredith!')
 
 <!-- v -->
 
+## Fail!
+
 Our two parameters to `assertEqual` no longer match, so the test would fail!
 
 ```bash
@@ -187,7 +215,7 @@ FAILED (failures=1)
 
 ## Activity: You Try!
 
-Remember the first draft of your `get_compliments()` function from your Horoscope app?
+Remember the first draft of your `get_compliments()` function from the Compliments app?
 
 ```python
 compliments = ['coolio', 'smashing', 'neato', 'fantabulous']
@@ -197,18 +225,20 @@ def get_compliment():
     return f'Hello there, user! You are so {compliment}!'
 ```
 
-Write a test file called `test_compliment.py` and test it out! See if you can break the test
-
-**Stretch Challenges:** Write more tests, or look into doing tests using [other types of assertions](https://docs.python.org/3.7/library/unittest.html#unittest.TestCase.assertNotEqual). If you've done all of that, write unit tests for your fully completed Horoscope app and aim to have at least one test for each function.
+Write a test file called `test_compliment.py` and test it out! See if you can break the test.
 
 <!-- > -->
 
-# Break [10 minutes]
+## Break [10 minutes]
 <!-- .slide: data-background="#087CB8" -->
 
 <!-- > -->
 
 # Route Tests
+
+<!-- v -->
+
+## What is Route Testing?
 
 **Routes Testing** is in a bit of a Goldilocks position where it is broad and tests a lot of behavior, but they are not too brittle such that they will break when we change something minor like the styling.
 
@@ -279,5 +309,5 @@ Continue working on GIF Search with your partner! **Remember to log your pair pr
 
 <!-- > -->
 
-# Resources
+## Resources
 - [Python unittest docs](https://docs.python.org/3/library/unittest.html)
