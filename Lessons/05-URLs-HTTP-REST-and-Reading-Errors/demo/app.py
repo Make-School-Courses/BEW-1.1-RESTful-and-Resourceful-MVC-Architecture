@@ -10,3 +10,6 @@ def make_joke():
     joke_json = r.json()
     joke_str = joke_json["value"]["joke"]
     return joke_str
+
+if __name__ == "__main__":
+    app.run(debug=True)
