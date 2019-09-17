@@ -12,6 +12,7 @@
 ## Agenda
 
 1. **Quiz: Timed, 20 minutes w/ 5 minute break**
+1. FSP Support Survey
 1. [Learning Objectives](#learning-objectives)
 1. [Why Test Our Routes?](#why-test-our-routes?) 
 1. [Forms of Testing](#forms-of-testing)
@@ -25,6 +26,20 @@
 
 ### 5 mins break
 <!-- .slide: data-background="#087CB8" -->
+
+<!-- > -->
+
+## FSP Support Survey (5 mins)
+
+**What Are The New FSP Level Up Sessions?**
+
+Required hour long sessions Mon/Tue/Wed/Thu where we will:
+
+1. Review old material
+1. Do slower and deeper explanations
+1. Explain how to think programmatically
+
+**Survey link:** make.sc/fsp-support-survey
 
 <!-- > -->
 
