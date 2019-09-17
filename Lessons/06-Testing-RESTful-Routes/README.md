@@ -36,7 +36,7 @@
 Required hour long sessions Mon/Tue/Wed/Thu where we will:
 
 1. Review old material
-1. Do slower and deeper explanations
+1. Do slower and more in-depth explanations
 1. Explain how to think programmatically
 
 **Survey link:** make.sc/fsp-support-survey
@@ -72,13 +72,10 @@ Required hour long sessions Mon/Tue/Wed/Thu where we will:
 
 ## Why Learn Automated Testing?
 
-1. Ensures that your next change won't break anything that was previously working
-<!-- .element: class="fragment" data-fragment-index="1" -->
+1. Ensures that your next change won't break anything that was previously working<!-- .element: class="fragment" data-fragment-index="1" -->
   - These are called **regression** tests 
-1. Other developers can contribute to your project without fear of breaking it
-<!-- .element: class="fragment" data-fragment-index="2" -->
-1. Improves accuracy of your code - easier to test many edge cases
-<!-- .element: class="fragment" data-fragment-index="3" -->
+1. Other developers can contribute to your project without fear of breaking it<!-- .element: class="fragment" data-fragment-index="2" -->
+1. Improves accuracy of your code - easier to test many edge cases<!-- .element: class="fragment" data-fragment-index="3" -->
   - What is an **edge case**?
 
 <!-- v -->
@@ -86,10 +83,8 @@ Required hour long sessions Mon/Tue/Wed/Thu where we will:
 ## When Is Testing A Lower Priority?
 
 1. Small projects<!-- .element: class="fragment" data-fragment-index="1" -->
-1. Solo projects
-<!-- .element: class="fragment" data-fragment-index="2" -->
-1. Private (not public) projects
-<!-- .element: class="fragment" data-fragment-index="3" -->
+1. Solo projects<!-- .element: class="fragment" data-fragment-index="2" -->
+1. Private (not public) projects<!-- .element: class="fragment" data-fragment-index="3" -->
 
 
 <!-- > -->
