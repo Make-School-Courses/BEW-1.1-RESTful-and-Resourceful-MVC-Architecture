@@ -39,7 +39,7 @@ Required hour long sessions Mon/Tue/Wed/Thu where we will:
 1. Do slower and more in-depth explanations
 1. Explain how to think programmatically
 
-**Survey link:** make.sc/fsp-support-survey
+**Survey link:** [make.sc/fsp-support-survey](http://make.sc/fsp-support-survey)
 
 <!-- > -->
 
