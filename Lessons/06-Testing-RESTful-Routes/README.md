@@ -96,7 +96,7 @@ We'll go over a couple of the most foundational tests you can run on your projec
 
 Writing these tests will help us achieve comprehensive **test coverage**. If a feature has an automated test associated with it, it is considered "covered". 
 
-<img src="assets/spaceman_flowchart.png" alt="flowchart of Spaceman project" height="200px"/>
+![flowchart of Spaceman project](assets/spaceman_flowchart.png)
 
 A project with **100% test coverage** has all its features covered by tests.
 
