@@ -27,21 +27,21 @@ This course covers the three major patterns or architectures that make the web w
 
 ## Schedule
 
-| Class  |                 Topics                  |
+| Class |                 Topics                 |
 |:-----:|:---------------------------------------:|
-|  1            | [Static Website](Lessons/01-Static-Website/README.md) |
-|  2               | [Git and GitHub](Lessons/02-Git-and-GitHub/README.md) |
-|  3           | [Intro to Flask](Lessons/03-Intro-to-Flask/README.md) |
-|  4               | [Flask-Templating](Lessons/04-Flask-Templating/README.md) |
-|  5            | [URLs, HTTP, REST, and Reading Errors](./Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) |
-|  6               | [Testing RESTful Routes](./Lessons/06-Testing-RESTful-Routes/README.md) |
-|  7            | [Document-Based Databases](./Lessons/07-Document-Based-Databases/README.md) |
-|  8               | [ERDs, Resource Associations, and MongoDB](./Lessons/08-ERDs-Resource-Associations-and-MongoDB/README.md) |
-| 9              | [Project Planning and User-Centered Development](./Lessons/09-Project-Planning-and-User-Centered-Development/README.md) |
-| 10                 | [The DOM and Bootstrap](./Lessons/10-The-DOM-and-Bootstrap/README.md) |
-| 11              | Contractor Project Lab Day |
-| 12              | [RESTful APIs and Deployment Environments](./Lessons/11-RESTful-APIs-and-Deployment-Environments/README.md) |
-| 13              | Final Contractor Project Presentations |
+|  1    | [Static Website](Lessons/01-Static-Website/README.md) |
+|  2    | [Git and GitHub](Lessons/02-Git-and-GitHub/README.md) |
+|  3    | [Intro to Flask](Lessons/03-Intro-to-Flask/README.md) |
+|  4    | [Flask-Templating](Lessons/04-Flask-Templating/README.md) |
+|  5    | [URLs, HTTP, REST, and Reading Errors](./Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) |
+|  6    | Review + GIF Search |
+|  7    | [Testing RESTful Routes](./Lessons/06-Testing-RESTful-Routes/README.md) |
+|  8    | [Model, View, Controller](./Lessons/07-Model-View-Controller/README.md)
+|  9    | [Document-Based Databases](./Lessons/08-Document-Based-Databases/README.md) |
+|  10   | [ERDs, Resource Associations, and MongoDB](./Lessons/09-ERDs-Resource-Associations-and-MongoDB/README.md) |
+|  11   | Contractor Project Lab Day |
+|  12   | [RESTful APIs and Deployment Environments](./Lessons/11-RESTful-APIs-and-Deployment-Environments/README.md) |
+|  13   | Final Contractor Project Presentations |
 
 ## Class Assignments
 
@@ -49,7 +49,7 @@ This course covers the three major patterns or architectures that make the web w
 
 Tutorials are to help you get started in a topic.  They are graded on completion only.
 
-1. [**Playlistr**](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c): Complete by Friday, Week 5 _(must have at least 10 agile commits)_
+1. [**Playlister**](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c): Complete by Friday, Week 5 _(must have at least 10 agile commits)_
 
 ### Projects
 
@@ -61,7 +61,7 @@ Tutorials are to help you get started in a topic.  They are graded on completion
 To pass this course, students must meet the following requirements:
 
 - Complete **all** required coding tutorials:
-    - Playlistr ([Rubric](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c))
+    - Playlister ([Rubric](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c))
 - Complete **all** required coding projects (this includes all commit requirements and homework related to each project):
     - Gif Search ([Rubric](https://docs.google.com/document/d/1symUDRsZ1i2xf8F2mwAGFJtLjbOXqCj0JyrIgTtFNT0/edit?usp=sharing))
     - Contractor Project ([Rubric](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit?usp=sharing))
