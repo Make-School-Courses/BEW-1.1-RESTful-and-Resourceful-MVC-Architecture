@@ -14,10 +14,7 @@ class GreetByNameTests(unittest.TestCase):
     # For each test in the class, make a method where self is the parameter
     def test_default_greeting(self):
         # the actual test
-        self.assertEqual(greet_by_name('Dani'), 'Hello, Meredith!')
-    
-    def test_another_greeting(self):
-        self.assertEqual(greet_by_name('Parker'), 'Hello, Parker!')
+        self.assertEqual(greet_by_name('Dani'), 'Hello, Dani!')
 
 # run the tests
 if __name__ == '__main__':

@@ -18,7 +18,7 @@ class AppTests(unittest.TestCase):
         # on the specified path
         result = self.app.get('/') 
 
-        self.assertIn(b'Goodbye', result.data)
+        self.assertIn(b'Hello', result.data)
 
         # assert the status code of the response
         self.assertEqual(result.status_code, 200) 
