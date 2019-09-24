@@ -133,6 +133,14 @@ Install MongoDB:
 ```bash
 $ brew tap mongodb/brew
 $ brew install mongodb-community@4.2
+$ sudo mkdir -p /data/db
+$ sudo chown -R $USER /data/db
+```
+
+In a separate terminal, run:
+
+```bash
+$ mongod
 ```
 
 Start the command-line interface:
