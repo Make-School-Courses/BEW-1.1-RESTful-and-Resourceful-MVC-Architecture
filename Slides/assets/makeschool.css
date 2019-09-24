@@ -327,7 +327,8 @@ body {
  *********************************************/
 
 .reveal section img {
-  margin: 0px;
+  display: block;
+  margin: 0px auto;
   background: rgba(255, 255, 255, 0.12);
   border: 0px solid #303030;
 }
