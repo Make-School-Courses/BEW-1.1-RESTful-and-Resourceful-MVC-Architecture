@@ -13,7 +13,11 @@ def play_dice_game():
     die1 = randint(1, 6)
     die2 = randint(1, 6)
 
-    return render_template("index.html", die1=die1, die2=die2, user_name=user_name)
+    return render_template(
+        "index.html", 
+        die1=die1, 
+        die2=die2, 
+        user_name=user_name)
 
 if __name__ == "__main__":
     app.run(debug=True)
