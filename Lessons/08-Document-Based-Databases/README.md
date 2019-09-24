@@ -259,17 +259,10 @@ db.Users.find({likes: {$in: ['chatting', 'candle making']}})
 
 ## Using Flask-PyMongo
 
-Let's import PyMongo:
+Let's install PyMongo:
 
-```python
-from flask_pymongo import PyMongo
-```
-
-And tell our Flask application where to find our database, with port `27017` (the default) and database name `test_db`.
-
-```python
-app.config["MONGO_URI"] = "mongodb://localhost:27017/test_db"
-mongo = PyMongo(app)
+```bash
+pip3 install Flask-PyMongo
 ```
 
 <!-- v -->
