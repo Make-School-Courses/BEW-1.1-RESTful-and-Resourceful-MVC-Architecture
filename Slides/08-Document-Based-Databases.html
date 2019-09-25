@@ -243,8 +243,8 @@ Here is an example route to **read** all users:
 ```py
 from bson.json_util import dumps
 
-@app.route("/users")
-def get_all_users(methods=["GET"]):
+@app.route("/users", methods=["GET"])
+def get_all_users():
   users_list = db.users.find({}) # empty query returns all
 
   # returning the user list in JSON form
