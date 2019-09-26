@@ -183,7 +183,7 @@ embedded_post = {
 db.Posts.insert_one(embedded_post)
 ```
 
-<!-- > -->
+<!-- v -->
 
 ## Activity
 
