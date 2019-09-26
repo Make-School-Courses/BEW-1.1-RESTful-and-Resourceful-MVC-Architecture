@@ -196,3 +196,12 @@ Choose one of your resource diagrams and decide whether to model the association
 - Playlister tutorial due on Tuesday, Oct 1 - Let Meredith know of any errors
 
 - [Contractor Project](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit) due on Thursday, Oct 10
+
+<!-- > -->
+
+## Resources
+
+- [Mongo Shell Quick Reference](https://docs.mongodb.com/manual/reference/mongo-shell/)
+- [Mongo Shell Manual](https://docs.mongodb.com/manual/mongo/)
+- [PyMongo Documentation](https://api.mongodb.com/python/current/)
+- [Flask-PyMongo Documentation](https://flask-pymongo.readthedocs.io/en/latest/)
