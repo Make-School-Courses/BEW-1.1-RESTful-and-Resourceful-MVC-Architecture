@@ -123,7 +123,7 @@ In a document-based database these **Resource Associations** are modeled in a fe
 
 <!-- v -->
 
-## Reference Documents - One-to-Many
+## Reference Documents
 
 In this case, each **document** (e.g. user or post) contains a reference to the **_id** field of the documents it's related to.
 
