@@ -146,6 +146,33 @@ def home_page():
 
 <!-- > -->
 
+# More Project Tips
+
+<!-- v -->
+
+## Workflow
+
+What should I write first? Here's a rough list.
+
+1. Choose a page from your wireframes to start with.
+<!-- .element: class="fragment" -->
+1. Write a route to correspond to that page.
+<!-- .element: class="fragment" -->
+1. Write a template for the page.
+<!-- .element: class="fragment" -->
+1. Repeat from step 1.
+<!-- .element: class="fragment" -->
+
+<!-- v -->
+
+## Reminder: Errors = Signposts!
+
+If you encounter an error, *it is telling you what to do next!*
+
+![Error Page](assets/error_page.png)
+
+<!-- v -->
+
 ## Example App
 
 Explore this [example app](https://candies-app-mm.herokuapp.com/) and its [source code](https://github.com/meredithcat/Candies-App-Contractor-Project).
