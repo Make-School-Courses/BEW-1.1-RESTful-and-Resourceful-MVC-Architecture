@@ -179,6 +179,14 @@ Explore this [example app](https://candies-app-mm.herokuapp.com/) and its [sourc
 
 <!-- > -->
 
+## Announcements
+
+Playlister tutorial is due **today** by 11:59pm! Add your repository link to the [Progress Tracker](https://make.sc/bew1.1-tracker).
+
+Contractor project is due on **Thursday, October 10** at 11:59pm.
+
+<!-- > -->
+
 ## Resources
 
 - [Flask Tutorial](https://pythonspot.com/flask-web-app-with-python/)
