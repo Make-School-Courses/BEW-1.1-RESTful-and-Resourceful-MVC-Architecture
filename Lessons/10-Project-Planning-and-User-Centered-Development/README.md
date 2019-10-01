@@ -2,7 +2,7 @@
 # Project Planning & User-Centered Development
 
 ### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/10-Project-Planning-and-User-Centered-Development.html ':ignore')
-### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/10-Project-Planning-and-User-Centered-Development/demo)
+### [Demo](https://github.com/meredithcat/Candies-App-Contractor-Project)
 
 <!-- > -->
 
@@ -23,7 +23,7 @@
 
 Wireframes are rough sketches of what you want your web pages to look like.
 
-Take a look at this [example]().
+Take a look at this [example](assets/wireframe_example.png).
 
 <!-- v -->
 
