@@ -8,9 +8,7 @@
   - [Testing RESTful Routes](Lessons/06-Testing-RESTful-Routes/README.md)
   - [Document-Based Databases](Lessons/08-Document-Based-Databases/README.md)
   - [ERDs, Resource Associations, and MongoDB](Lessons/09-ERDs-Resource-Associations-and-MongoDB/README.md)
-  - [Project Planning and User-Centered Development](Lessons/09-Project-Planning-and-User-Centered-Development/README.md)
-  - [The DOM and Bootstrap](Lessons/10-The-DOM-and-Bootstrap/README.md)
-  - Contractor Project Lab Day
+  - [Project Planning and User-Centered Development](Lessons/10-Project-Planning-and-User-Centered-Development/README.md)
   - [RESTful APIs and Deployment Environments](Lessons/11-RESTful-APIs-and-Deployment-Environments/README.md)
   - Final Contractor Project Presentations
 - **Tutorials**
