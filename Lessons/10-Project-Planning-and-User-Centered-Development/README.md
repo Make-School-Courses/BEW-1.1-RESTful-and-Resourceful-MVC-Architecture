@@ -47,7 +47,11 @@ Reminder that a **resource** is any entity you want to store in your database! E
 
 ## Activity [30 mins]
 
-Fill out the worksheet for *your specific project*.
+Fill out the worksheet for *your specific project*:
+
+- Wireframes
+- User Stories
+- Entity Relationship Diagram
 
 Once you finish each part, find a reviewer to look over your work and give feedback. ***Each part of the worksheet must be reviewed by a different person!***
 
