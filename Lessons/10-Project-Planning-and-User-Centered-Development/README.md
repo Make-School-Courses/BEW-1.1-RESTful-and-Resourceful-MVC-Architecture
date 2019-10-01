@@ -148,7 +148,7 @@ def home_page():
 
 ## Example App
 
-Explore this [example app](https://fruit-basket-mm.herokuapp.com/) and its [source code](https://github.com/meredithcat/Fruit-Baskets-Contractor-Project).
+Explore this [example app](https://candies-app-mm.herokuapp.com/) and its [source code](https://github.com/meredithcat/Candies-App-Contractor-Project).
 
 <!-- > -->
 
