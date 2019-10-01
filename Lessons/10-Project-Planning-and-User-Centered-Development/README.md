@@ -49,7 +49,7 @@ Reminder that a **resource** is any entity you want to store in your database! E
 
 Fill out the worksheet for *your specific project*.
 
-Once you finish each part, find a reviewer to look over your work and give feedback. *Each part of the worksheet **must be reviewed by a different person!***
+Once you finish each part, find a reviewer to look over your work and give feedback. ***Each part of the worksheet must be reviewed by a different person!***
 
 <!-- > -->
 
