@@ -177,12 +177,13 @@ body {
   margin-bottom: 18px;
 }
 
-.reveal .compact p {
-    margin-bottom: 20px;
-}
 
 .reveal .compact ul {
     margin: 0px;
+}
+
+.reveal .compact p {
+    margin-bottom: 20px;
 }
 
 .reveal .compact ul li,
@@ -474,4 +475,14 @@ body {
 .reveal .slides section,
 .reveal .slides section>section {
   line-height: 1.2;
+}
+
+span.redtext {
+    color: red;
+    font-weight: bold;
+}
+
+span.greentext {
+    color: green;
+    font-weight: bold;
 }
