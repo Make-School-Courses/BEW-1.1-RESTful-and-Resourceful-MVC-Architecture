@@ -1,6 +1,7 @@
 <p align="center"><img style="box-shadow: none; border: none; background: none;" src="./assets/heroku.svg" height="200"></p>
+<!-- .slide: class="header" -->
 
-# Ship Early, Ship Often
+# Deployment Environments: Ship Early, Ship Often
 
 ➡️ [**Slides**](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/11-Deployment-Environments.html ':ignore')
 
@@ -14,7 +15,7 @@
 4. [[**15m**] Activity: Hiding Secrets](#15m-activity-hiding-secrets)
 5. [[**10m**] BREAK](#10m-break)
 6. [[**25m**] Activity: Deployment Definitions](#25m-activity-deployment-definitions)
-7. [[**15m**] Activity: Playlistr Reflection](#15m-activity-playlistr-reflection)
+7. [[**15m**] Activity: Playlister Reflection](#15m-activity-playlistr-reflection)
 8. [[**20m**] Wrap Up: Define a Deployment Plan](#20m-wrap-up-define-a-deployment-plan)
 9. [Resources & Credits](#resources--credits)
 
@@ -181,7 +182,11 @@ It combines web hosting functionality with a rich marketplace of plugins to exte
 
 ## [**25m**] Activity: Deployment Definitions
 
+
+<div class="compact">
+
 Using the [Glossary of Heroku Terminology](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology), use your own words to define the following terms:
+
 
 1. App
 2. Add-On
@@ -191,7 +196,10 @@ Using the [Glossary of Heroku Terminology](https://devcenter.heroku.com/articles
 6. Procfile
 7. Release
 
+
 Discuss, then spend about 15 minutes writing **one** short sentence for each term.
+
+</div>
 
 <!-- v -->
 
