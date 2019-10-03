@@ -1,99 +1,193 @@
-<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# RESTful APIs & Deployment Environments
+<p align="center"><img style="box-shadow: none; border: none; background: none;" src="./assets/heroku.svg" height="200"></p>
+
+# Ship Early, Ship Often
+
+### Some Good Tagline
 
 ➡️ [**Slides**](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/11-RESTful-APIs-and-Deployment-Environments.html ':ignore')
 
 <!-- > -->
 
-## Objectives (5 min)
+### Agenda
 
-By the end of this class, you will be able to...
-
-1. Define a strategy for configuring your development and production environment.
-2. Protect private keys and other development secrets using `dotenv`.
-3. Practice deploying several applications to Heroku.
+1. [[**20m**] Quiz](#20m-quiz)
+2. [[**5m**] Objectives](#5m-objectives)
+3. [[**10m**] Overview: Environments](#10m-overview-environments)
+4. [[**15m**] Activity: Hiding Secrets](#15m-activity-hiding-secrets)
+5. [[**10m**] BREAK](#10m-break)
+6. [[**15m**] TT: Heroku](#15m-tt-heroku)
+7. [[**30m**] Activity: Going Live: Gif Search](#30m-activity-going-live-gif-search)
+8. [Resources & Credits](#resources--credits)
 
 <!-- > -->
 
-## Why Should I Learn This?
+## [**20m**] Quiz
 
 <!-- > -->
 
-## A Traditional Workflow for Release
+## [**5m**] Objectives
 
-Any software project has at a few separate **Environments**:
+**By the end of this class, you'll be able to...**
 
-- **Development (`DEV`)** on local machines
-- **Staging (`STAGING`)** on a production server (private for stabilization and load testing)
-- **Production (`PROD`)** on a production server
+1. Identify go-to strategies to  **release** web applications.
+2. Recognize and name the **environments** used during the development life cycle.
+3. Protect private keys and other **secrets** using `dotenv`.
+4. Create and **deploy** live Flask applications on Heroku.
+5. Send a friend or family member a link to a **working website**!
 
-![environments](assets/different-environments.jpg)
-![environments2](assets/pastedImage_1.png)
+<!-- v -->
 
-Your computer is the host for your development environment.
+### `TODO` Why Should I Learn This?
 
-Heroku will be the host we use for our Production environment. Heroku is a simple turn-key server solution that is free (but requires a credit card).
+<!-- > -->
 
-Heroku also provides a rich marketplace of plugins to extend and enhance your server such as monitor bugs, speed, and add databases.
+<!-- .slide: data-background="#11A31B" -->
 
-Additionally, we'll be using the "mLabs" plugin to add a production MongoDB database to our project.
+### Food for Thought
 
-These environments can vary slightly. Some common differences between `dev` and `prod` include:
-  - Different information in the `dev` database versus `production`.
-  - Production assets are typically minified or compiled
-  - Environment variables or `dotenv` settings always differ between environments
+> "**_Software and cathedrals are much the same &mdash; <br> first we build them, then we pray._**"
 
-As developers, it's prudent to keep these environments as similar to each other as possible. Even slight differences can cause a failure in production --- _even if it worked perfectly in development!_
+<strong>Sam Redwine</strong>, 4th International Software Process Workshop (1988)
 
-<p align="center"><img src="assets/interesting.jpg" height="200px">
+<!-- > -->
 
-## Environment Variables
+## [**10m**] Overview: Environments
 
-### Meet `.env`
+`TODO`: Add image of environments and code workflow here.
+
+<!-- v -->
+
+### 1️⃣ Development
+
+- On your computer, otherwise known as _**"locally"**_.
+- Where **ALL** code updates occur.
+- Connects to a database on your computer.
+- Run your **tests** here before pushing your code.
+- **Changes will not affect the live website**.
+- **EXAMPLE**: `http://localhost:5000`
+
+<!-- v -->
+
+### 2️⃣ Test / Staging
+
+- All of the **code now lives on a server**.
+- As similar to production as possible.
+- **EXAMPLE**: `https://projectname-test.herokuapp.com`
+
+<!-- v -->
+
+### 3️⃣ Production
+
+- **Highest priority** environment.
+- Where we "**go live**", "**launch**", or "**ship**" our website.
+- Real live **people will find bugs** you missed while coding!
+- **EXAMPLE**: `https://www.projectname.com`
+
+<!-- v -->
+
+### Minor Differences Allowed
+
+Environments *can* vary, but *should* be as **similar as possible**.
+
+**Acceptable differences** include:
+
+- **Environment variables** and other **configuration settings**.
+- Different **data** in your local database versus production.
+- Static **assets** in staging and production (`.css`, `.js`) are typically minified into a single, large file.
+
+<!-- v -->
+
+### Public Service Announcement
+
+<p align="center"><img style="box-shadow: none; border: none; background: none;" src="./assets/worksonmymachine.jpg" height="300"></p>
+
+When an **unhandled exception** occurs in your application, **your website will go offline**. This is known as **downtime**.
+
+Even **minor differences** can cause these kinds of  **unanticipated failures in production** --- _even if it worked perfectly in development!_
+
+<!-- v -->
+
+### Environment Variables
 
 Sometimes you can't save everything into your code files because that would be insecure. For example, if you use a third party service like Amazon Web Services (AWS), then there will be sensitive keys that if you expose to the world on a public Github repo, hackers will steal them and use your codes to rack up hundreds of dollars in fees.
 
-To secure such data, developers use encrypted environment variables that they store locally and in production.
+To secure such data, developers use **environment variables**,stored locally and in production.
 
-The `pip` package used to define these variables is called [`python-dotenv`](https://github.com/theskumar/python-dotenv).
+<!-- > -->
 
-## Activity: Protect your Tenor API Key
+## [**15m**] Activity: Hiding Secrets
 
-1. Add the `python-dotenv` package to your Gif Search project:
+### Protect Your Tenor API Key
+
+<!-- v -->
+
+### Step One
+
+Add the `python-dotenv` package to your Gif Search project:
 
 ```bash
 $ pip3 install python-dotenv
 ```
 
-1. Add a `.env` file with the following file:
+<!-- v -->
 
-   ```bash
-   TENOR_API_KEY=yourapikeyvalue
-   ```
+### Step Two
 
-1. Add the following code **at the very top** of your `app.py` file in order to use `.env` variables in Python:
+Add a `.env` file with the following **key-value pair**:
 
-   ```py
-   import os
+ ```bash
+ TENOR_API_KEY=yourapikeyvalue
+ ```
 
-   from dotenv import load_dotenv
-   load_dotenv()
-   ```
+- Keys and their values are separated by `=`
+- **PROTIP**: Don't use quotes in this file!
 
-1. Any variables you defined in the `.env` file can now be accessed via Python's `os.getenv()` function:
+<!-- v -->
 
-  ```py
-    import os
 
-    from dotenv import load_dotenv
-    load_dotenv()
+### Step Three
 
-    TENOR_API_KEY = os.getenv("TENOR_API_KEY")
-  ```
+Add the following code **at the very top** of your `app.py` file:
 
-## Activity (15 min)
+ ```py
+ import os
 
-### Going Live with Gif Search
+ from dotenv import load_dotenv
+ load_dotenv()
+ ```
+
+This code **imports** the `python-dotenv` library and **loads all the settings** in your `.env` file!
+
+<!-- v -->
+
+### Step Four
+
+Grab any setting you defined in the `.env` file via `os.getenv()`:
+
+```py
+  import os
+
+  from dotenv import load_dotenv
+  load_dotenv()
+
+  TENOR_API_KEY = os.getenv("TENOR_API_KEY")
+```
+
+<!-- > -->
+
+## [**10m**] BREAK
+
+<!-- > -->
+
+## [**15m**] TT: Heroku
+
+Heroku will be the host we use for our production environment. Heroku is a turn-key server solution that provides a rich marketplace of plugins to extend and enhance your server:
+
+`TODO`: List of Heroku features
+
+<!-- > -->
+
+## [**30m**] Activity: Going Live: Gif Search
 
 1. Execute `heroku create <<PROJECT NAME>>` to create a heroku project for your Gif Search app.
 
@@ -115,4 +209,10 @@ $ pip3 install python-dotenv
 
 5. Run `heroku open` one more time, and ensure the above commands fixed the bug found in the logs.
 
-6. Celebrate your very first push to production by sharing the link to your Gif Search project in [BEW 1.1 Tracker](make.sc/trackbew1.1).
+6. **Celebrate** your very first push to production! **Paste your link in the course Slack channel**.
+
+<!-- > -->
+
+## Resources & Credits
+
+- [Difference Between Development, Stage, And Production](https://dev.to/flippedcoding/difference-between-development-stage-and-production-d0p)
