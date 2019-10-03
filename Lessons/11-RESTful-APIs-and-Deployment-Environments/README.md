@@ -16,7 +16,7 @@
 4. [[**15m**] Activity: Hiding Secrets](#15m-activity-hiding-secrets)
 5. [[**10m**] BREAK](#10m-break)
 6. [[**15m**] TT: Heroku](#15m-tt-heroku)
-7. [[**30m**] Activity: Going Live: Gif Search](#30m-activity-going-live-gif-search)
+7. [[**30m**] Activity: Going Live - Gif Search](#30m-activity-going-live---gif-search)
 8. [Resources & Credits](#resources--credits)
 
 <!-- > -->
@@ -187,17 +187,28 @@ Heroku will be the host we use for our production environment. Heroku is a turn-
 
 <!-- > -->
 
-## [**30m**] Activity: Going Live: Gif Search
+## [**30m**] Activity: Going Live - Gif Search
+
+<!-- v -->
 
 1. Execute `heroku create <<PROJECT NAME>>` to create a heroku project for your Gif Search app.
 
-2. Push your code to heroku and run `heroku open` to open your project. _(It shouldn't work --- yet!)_
+<!-- v -->
 
-3. Run `heroku logs --tail` and read the logs to see why your deployment didn't go as planned.
-    - What error did you receive? What do you think could be missing?
-    - We haven't told Heroku about our `dotenv` settings!
+1. Push your code to heroku and run `heroku open` to open your project.
 
-4. Run the following commands to populate your `.env` variables in your current Heroku instance:
+_(It shouldn't work --- yet!)_
+
+<!-- v -->
+
+1. Run `heroku logs --tail` and read the logs to see why your deployment didn't go as planned.
+
+- What error did you receive? What do you think could be missing?
+- **We haven't told Heroku about our `dotenv` settings**!
+
+<!-- v -->
+
+1. Run the following commands to populate your `.env` variables in your current Heroku instance:
 
     ```bash
     $ heroku config:set FLASK_APP=app.py
@@ -207,9 +218,13 @@ Heroku will be the host we use for our production environment. Heroku is a turn-
     Setting TENOR_API_KEY and restarting flask-gifsearch... done, v3
     ```
 
-5. Run `heroku open` one more time, and ensure the above commands fixed the bug found in the logs.
+<!-- v -->
 
-6. **Celebrate** your very first push to production! **Paste your link in the course Slack channel**.
+1. Run `heroku open` one more time, and ensure the above commands fixed the bug found in the logs.
+
+<!-- v -->
+
+1. **Celebrate** your very first push to production! **Paste your link in the course Slack channel**.
 
 <!-- > -->
 
