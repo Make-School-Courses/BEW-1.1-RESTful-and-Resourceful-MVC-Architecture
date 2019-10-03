@@ -2,7 +2,7 @@
 
 # Ship Early, Ship Often
 
-➡️ [**Slides**](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/11-RESTful-APIs-and-Deployment-Environments.html ':ignore')
+➡️ [**Slides**](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/11-Deployment-Environments.html ':ignore')
 
 <!-- > -->
 
@@ -216,6 +216,8 @@ After a few minutes, we'll talk about the challenges you encountered!
 1. Consider the features you'll be developing for your contractor project.
 2. Write down three opportunities to push to staging during your development cycle.
 3. Review these potential deployments with someone you haven't worked with yet!
+
+<!-- > -->
 
 ## Resources & Credits
 
