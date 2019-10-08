@@ -70,3 +70,12 @@ In your small group, give your presentation again. Limit each presenter to 2 min
 Write your name on the board, along with the topic you'd like help with (e.g. MongoDB, Bootstrap, Heroku).
 
 If you see a topic you feel confident with, jump in and help someone else out!
+
+<!-- > -->
+
+## Announcements
+
+- Final presentations on Thursday - 2 minutes each, present your project idea & code
+- Contractor Project due Thursday midnight
+- No class Monday - Indigenous Peoples Day
+- Intensive starts on Tuesday, Oct. 15
