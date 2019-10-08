@@ -39,9 +39,10 @@ This course covers the three major patterns or architectures that make the web w
 |  8    | [Model, View, Controller](./Lessons/07-Model-View-Controller/README.md)
 |  9    | [Document-Based Databases](./Lessons/08-Document-Based-Databases/README.md) |
 |  10   | [ERDs, Resource Associations, and MongoDB](./Lessons/09-ERDs-Resource-Associations-and-MongoDB/README.md) |
-|  11   | [Project Planning and User-Centered Development](./Lessons/10-Project-Planning-and-User-Centered-Development) |
+|  11   | [Project Planning and User-Centered Development](./Lessons/10-Project-Planning-and-User-Centered-Development/README.md) |
 |  12   | [RESTful APIs and Deployment Environments](./Lessons/11-Deployment-Environments/README.md) |
-|  13   | Final Contractor Project Presentations |
+|  13   | [Presentation Practice](./Lessons/12-Presentation-Practice/README.md) |
+|  14   | Final Contractor Project Presentations |
 
 ## Class Assignments
 

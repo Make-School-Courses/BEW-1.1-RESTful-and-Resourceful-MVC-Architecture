@@ -10,6 +10,7 @@
   - [ERDs, Resource Associations, and MongoDB](Lessons/09-ERDs-Resource-Associations-and-MongoDB/README.md)
   - [Project Planning and User-Centered Development](Lessons/10-Project-Planning-and-User-Centered-Development/README.md)
   - [RESTful APIs and Deployment Environments](Lessons/11-Deployment-Environments/README.md)
+  - [Presentation Practice](Lessons/12-Presentation-Practice/README.md)
   - Final Contractor Project Presentations
 - **Tutorials**
   - [**Rotten Potatoes**](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js/README.md)
