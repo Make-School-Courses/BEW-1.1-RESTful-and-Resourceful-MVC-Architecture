@@ -6,11 +6,6 @@
 
 <!-- > -->
 
-<!-- .slide: data-background="#087CB8" -->
-## [**20m**] Quiz
-
-<!-- > -->
-
 ## [**5m**] Objectives
 
 **By the end of this class, you'll be able to...**
