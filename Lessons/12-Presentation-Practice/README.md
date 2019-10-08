@@ -55,7 +55,7 @@ Exchange feedback based on the presentation rubric.
 
 <!-- v -->
 
-## Small Group Practice [15 minutes]
+## Small Group Practice [20 minutes]
 
 In your small group, give your presentation again. Limit each presenter to 2 minutes or less, then spend 2 minutes giving feedback (Glows and Grows).
 
