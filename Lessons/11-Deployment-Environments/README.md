@@ -15,7 +15,7 @@
 4. [[**15m**] Activity: Hiding Secrets](#15m-activity-hiding-secrets)
 5. [[**10m**] BREAK](#10m-break)
 6. [[**25m**] Activity: Deployment Definitions](#25m-activity-deployment-definitions)
-7. [[**15m**] Activity: Playlister Reflection](#15m-activity-playlistr-reflection)
+7. [[**15m**] Activity: Playlistr Reflection](#15m-activity-playlistr-reflection)
 8. [[**20m**] Wrap Up: Define a Deployment Plan](#20m-wrap-up-define-a-deployment-plan)
 9. [Resources & Credits](#resources--credits)
 
@@ -133,6 +133,7 @@ Add a `.env` file with the following **key-value pair**:
  ```
 
 - Keys and their values are separated by `=`
+- No spaces in the key
 - **PROTIP**: Don't use quotes in this file!
 
 <!-- v -->
@@ -165,6 +166,12 @@ Grab any setting you defined in the `.env` file via `os.getenv()`:
 
   TENOR_API_KEY = os.getenv("TENOR_API_KEY")
 ```
+
+<!-- v -->
+
+### Step Five
+
+Add `.env` to the bottom of your `.gitignore` file.
 
 <!-- > -->
 
