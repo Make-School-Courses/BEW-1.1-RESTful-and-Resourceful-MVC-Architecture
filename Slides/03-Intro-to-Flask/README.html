@@ -1,17 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+    <title>BEW 1.1 Slides</title>
+    <link rel="stylesheet" href="./../css/reveal.css" />
+    <link rel="stylesheet" href="./../css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./../css/highlight/atom-one-light.css" />
+    <link rel="stylesheet" href="./../css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./../assets/Reveal/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
 <!-- Run this slideshow via the following command: -->
 <!-- reveal-md README.md -w -->
 
 
-<!-- .slide: data-background="./../Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Intro to Flask
 
 ### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/03-Intro-to-Flask.html ':ignore')
 
 ### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/03-Intro-to-Flask/demo ':ignore')
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Agenda
 
 1. **Quiz: Timed, 20 minutes w/ 5 minute break**
@@ -23,17 +40,13 @@
 1. [Query Strings](#query-strings)
 1. [HTML Forms](#html-forms)
 1. [Homework](#homework)
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 
 ## Quiz [20 mins]
 
 ### 5 mins break
 <!-- .slide: data-background="#087CB8" -->
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Learning Objectives
 
 By the end of today, you should be able to:
@@ -44,14 +57,10 @@ By the end of today, you should be able to:
 <!-- .element: class="fragment" data-fragment-index="2" -->
 3. Use what you've learned in CS and BEW classes thus far to build and run your first Python server implemented in Flask.
 <!-- .element: class="fragment" data-fragment-index="3" -->
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 <!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Welcome to Web Servers
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What is a Web Server?
 
 When you navigate to a web page:
@@ -61,24 +70,18 @@ When you navigate to a web page:
 
 <img alt="Request-Response" src="assets/req-res.gif" width="600px"/>
 <!-- .element: class="fragment" data-fragment-index="1" -->
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What is a Web Server?
 
 A **web server** is a program that's running on a machine and waiting for a web request.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What is Flask?
 
 Flask is a **web framework** that helps us to define how to respond to web requests.
 
 - **Which** web pages do we respond to
 - **What** is in our response (in this case, HTML code!)
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Who uses Flask?
 
 - Companies of all sizes (Google, Affirm, etc)
@@ -86,9 +89,7 @@ Flask is a **web framework** that helps us to define how to respond to web reque
 - RESTful API creators and maintainers
 - Data Engineers / Data Scientists
 - Startups during the MVP phase
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## How do I install it?
 
 Open `Terminal.app`, and type the following command:
@@ -98,9 +99,7 @@ $ pip3 install flask
 ```
 
 **PROTIP**: The `$` in front is a common paradigm that informs the programmer to execute the command in a terminal. Be sure not to type it out!
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Did I do it right?
 
 You'll see output that looks like this:
@@ -124,9 +123,7 @@ Collecting MarkupSafe>=0.23 (from Jinja2>=2.10.1->flask)
 Installing collected packages: itsdangerous, Werkzeug, click, MarkupSafe, Jinja2, flask
 Successfully installed Jinja2-2.10.1 MarkupSafe-1.1.1 Werkzeug-0.15.5 click-7.0 flask-1.1.1 itsdangerous-1.1.0
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## How can I check?
 
 Use the next **5 minutes** to:
@@ -136,9 +133,7 @@ Use the next **5 minutes** to:
   - **Verify** that Flask installed correctly with everyone at your table.
 
   - **Escalate any errors _(text in <span style="color:red;">RED</span>)_ by raising your hand and informing the instructor or a TA.**
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## So, what just happened?
 
 - **What is `pip3`**?
@@ -146,13 +141,9 @@ Use the next **5 minutes** to:
     - Included when you install Python
 
 - Running `pip3 install packagename` installs the package in a special Python directory
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Write a Function
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Getting Started
 
 Create a file named `app.py`:
@@ -162,9 +153,7 @@ Create a file named `app.py`:
  ```
 
 This `bash` command creates a blank file named `app.py` in your working directory.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Getting Started
 
 Open `app.py` in your favorite editor.
@@ -174,9 +163,7 @@ atom app.py
 ```
 
 You'll **write all your code inside `app.py`** --- for now!
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Make a List of Compliments
 
 Let's create a **list** containing our compliments in `app.py`:
@@ -184,9 +171,7 @@ Let's create a **list** containing our compliments in `app.py`:
 ```python
 compliments = ['coolio', 'smashing', 'neato', 'fantabulous']
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Write a Function
 
 Let's make the user feel really great whenever this function is called! Add the following to `app.py`:
@@ -198,9 +183,7 @@ def get_compliment():
     compliment = compliments[0]
     return f'Hello there, user! You are so {compliment}!'
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Get a Random Compliment
 
 At the very top of your file, type:
@@ -216,9 +199,7 @@ def get_compliment():
     compliment = choice(compliments)
     return f'Hello there, user! You are so {compliment}!'
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Demo
 
 Let's run our function!
@@ -228,9 +209,7 @@ $ python3 -i app.py
 >>> get_compliment()
 'Hello there, user! You are so terrific!'
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Activity
 
 Write a function `get_horoscope` that gives the user a random prediction for their day. Use the starter code to guide you.
@@ -244,25 +223,17 @@ def get_compliment():
     compliment = choice(compliments)
     return f'Hello there, user! You are so {compliment}!'
 ```
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 
 ## Break [10 minutes]
 <!-- .slide: data-background="#087CB8" -->
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 # Add a Flask Route
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Flask + Function = Website
 
 We'll make our function into a **route** so that it will display when the user visits our web page.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Add Flask Imports
 
 We'll need to **import** the `flask` library that we installed. Add the following to the top of `app.py`:
@@ -271,9 +242,7 @@ We'll need to **import** the `flask` library that we installed. Add the followin
 from flask import Flask
 ...
  ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Define App Variable
 
 Declare a variable named `app`, and instantiate the Flask class.
@@ -285,9 +254,7 @@ app = Flask(__name__)
 
 ...
  ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Decorate the Function
 
 Add `@app.route` to the top of the function. This **decorator** on top of the function makes it a **route**:
@@ -300,9 +267,7 @@ def get_compliment():
     compliment = choice(compliments)
     return f'Hello there, user! You are so {compliment}!'
  ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Declare The Entrypoint
 
 Last, define `__main__` at the **bottom** of the file.
@@ -313,9 +278,7 @@ Last, define `__main__` at the **bottom** of the file.
 if __name__ == "__main__":
    app.run(debug=True)
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Prove it Works
 
 Test the function by running `flask run` on the terminal:
@@ -324,13 +287,9 @@ Test the function by running `flask run` on the terminal:
 $ export FLASK_ENV=development
 $ flask run
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Query Strings
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Query String Example
 
 A **query string** is a way for the user to pass data through a URL.
@@ -338,9 +297,7 @@ A **query string** is a way for the user to pass data through a URL.
 Here's one example of a query string! It's kind of like a **variable**. What would that look like in our app?
 
 ![Query](assets/query.jpg)
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Import `request`
 
 In `app.py`, change your import line to the following:
@@ -348,9 +305,7 @@ In `app.py`, change your import line to the following:
 ```python
 from flask import Flask, request
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Extract a Query String
 
 In your Flask app function, make another variable for the user:
@@ -363,13 +318,9 @@ def get_compliment():
     compliment = choice(compliments)
     return f'Hello there, {name}! You are so {compliment}!'
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # HTML Forms
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What is an HTML form?
 
 An HTML **form** is a collection of **input elements**. Forms are useful for:
@@ -378,9 +329,7 @@ An HTML **form** is a collection of **input elements**. Forms are useful for:
 - Personalizing a web page
 
 In this case, we want to know our user's name.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Adding a Form
 
 Let's add another route for `/` (aka the home page).
@@ -397,9 +346,7 @@ def index():
     </form>
     """
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## More Form Components
 
 HTML Forms can include the following:
@@ -411,9 +358,7 @@ HTML Forms can include the following:
 - Radio Buttons
 - File Input
 - Submit Button
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Checkbox
 
 We can add a **checkbox** to our page:
@@ -422,9 +367,7 @@ We can add a **checkbox** to our page:
 <input type="checkbox" name="show_compliments"/>
 Show Compliments
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Drop Down
 
 We can add a **dropdown** to our page:
@@ -437,12 +380,61 @@ How many compliments?
     <option value="3">Three</option>
 </select>
 ```
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
 Complete your `Horoscope` project and use an HTML Form to collect user data and make a more accurate prediction. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/blob/master/Lessons/03-Intro-to-Flask/demo/app.py) as a guide!
 
 
+</script></section></div>
+    </div>
+
+    <script src="./../js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './../plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './../plugin/zoom-js/zoom.js', async: true },
+        { src: './../plugin/notes/notes.js', async: true },
+        { src: './../plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

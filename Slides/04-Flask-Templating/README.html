@@ -1,17 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+    <title>BEW 1.1 Slides</title>
+    <link rel="stylesheet" href="./../css/reveal.css" />
+    <link rel="stylesheet" href="./../css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./../css/highlight/atom-one-light.css" />
+    <link rel="stylesheet" href="./../css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./../assets/Reveal/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
 <!-- Run this slideshow via the following command: -->
 <!-- reveal-md README.md -w -->
 
 
-<!-- .slide: data-background="./../Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Flask Templating with Jinja
 
 ### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/04-Flask-Templating.html)
 
 ### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/04-Flask-Templating/demo)
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Agenda
 
 1. Learning Objectives
@@ -22,9 +39,7 @@
 1. Template Inheritance
 1. Activity: Horoscope App
 1. Introducing Gif Search
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Learning Objectives
 
 By the end of today, you should be able to:
@@ -35,13 +50,9 @@ By the end of today, you should be able to:
 <!-- .element: class="fragment" data-fragment-index="2" -->
 1. Use template control flow structures such as for loops & conditionals
 <!-- .element: class="fragment" data-fragment-index="3" -->
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 # Review
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Discussion
 #### (5 min)
 
@@ -49,15 +60,11 @@ With your partner, discuss:
 
 - What is a web server?
 - What is Flask, and what does it do?
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Our Project So Far
 
 We defined two **routes**, one for the homepage `/` and one for the `/compliments` page. 
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Home Page Route
 
 Our homepage route looks like this:
@@ -90,19 +97,13 @@ def index():
 ```
 
 What could we improve about this?
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Separate Concerns
 
 There's HTML code in our Python file! Let's fix that.
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Jinja Templates
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What are Templates?
 
 Templates are special HTML files that:
@@ -110,9 +111,7 @@ Templates are special HTML files that:
 - Can use variables passed from your Flask route
 - Can use some control structures (for loops, if/else)
 - Can inherit from other templates to avoid repetition
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Add a Templates Folder
 
 Put all of your template HTML files in a folder called `templates`.
@@ -124,9 +123,7 @@ my_project_directory/
         index.html
         compliments.html
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Add HTML to Template
 
 Let's move the HTML code from the `/` route into its own `index.html` template. It should look like:
@@ -152,9 +149,7 @@ Let's move the HTML code from the `/` route into its own `index.html` template. 
     <button type="submit">Submit</button>
 </form>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Render Template
 
 At the top of `app.py`, import `render_template`:
@@ -171,9 +166,7 @@ def index():
     """Show the homepage and ask the user's name."""
     return render_template('index.html')
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Check that it Works
 
 Let's try running our server again!
@@ -181,13 +174,9 @@ Let's try running our server again!
 ```bash
 $ flask run
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Passing Data
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Update the `/compliment` route
 
 Let's do the same thing for `/compliment`! Here's our code so far. What do we need to change?
@@ -205,9 +194,7 @@ def get_compliment():
     else:
         return f'Hello there, {name}! Have a nice day!'
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Render a Template
 
 Let's change the `/compliment` route to render a template instead. This time, we need to pass in some data.
@@ -226,9 +213,7 @@ def get_compliment():
         show_compliments=show_compliments, 
         compliment=compliment)
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Write the Template
 
 Create a new file in the `templates` folder, called `compliments.html`. 
@@ -240,13 +225,9 @@ Note that Jinja templates use a double curly bracket `{{ }}` to display variable
     Hello there, {{ name }}! You are so {{ compliment }}!
 </p>
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Template Control Flow
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Conditionals
 
 Let's add a conditional to `compliments.html` so that we will only show a compliment if the user checked 'Show Compliment'. 
@@ -260,9 +241,7 @@ In Jinja we use `{% %}` to indicate control structures.
     Have a nice day!
 {% endif %}
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Passing a List of Compliments
 
 Let's modify our route in `app.py` to pass in a list of compliments instead:
@@ -285,9 +264,7 @@ def get_compliment():
         show_compliments=show_compliments, 
         compliments=compliments_to_show)
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Loops
 
 I want my `compliments.html` file to look like:
@@ -300,9 +277,7 @@ Hi user! You are so:
     <li>tenacious</li>
 </ul>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Loops
 
 Now add a loop to `compliments.html`:
@@ -319,18 +294,12 @@ Now add a loop to `compliments.html`:
     Have a nice day!
 {% endif %}
 ```
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 ## Break [10 minutes]
 <!-- .slide: data-background="#087CB8" -->
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 # Template Inheritance
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Why Inherit Templates?
 
 Most websites have some content that is the same for every web page:
@@ -340,9 +309,7 @@ Most websites have some content that is the same for every web page:
 - Etc.
 
 We want to put that content in one place so that we can inherit it and avoid repeated code.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Create `base.html`
 
 Let's put another file, `base.html`, in our `templates` folder.
@@ -358,9 +325,7 @@ Let's put another file, `base.html`, in our `templates` folder.
     </body>
 </html>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Extend Base
 
 Now we can **override** the `content` block in our child templates. Let's modify `compliments.html`:
@@ -385,9 +350,7 @@ Now we can **override** the `content` block in our child templates. Let's modify
     {% endif %}
 {% endblock %}
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Extend Base
 
 And `index.html`:
@@ -421,9 +384,7 @@ And `index.html`:
 </form>
 {% endblock %}
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Customize Compliments
 
 I want to put the code for displaying a single compliment in its own HTML page. That way, I can include it in multiple places!
@@ -433,9 +394,7 @@ Make a file `compliment.html` in your `templates` folder:
 ```html
 <li>{{ compliment }}</li>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Include Compliment
 
 Now, I can include this file in `compliments.html`:
@@ -448,31 +407,21 @@ You are so:
     {% endfor %}
 </ul>
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Activity
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Expand your Horoscope App
 
 Modify your Horoscope app to use Jinja templates. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/04-Flask-Templating/demo) as a guide!
 
 - Another Option: Personality Test
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Gif Search
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Introducing the Gif Search Project
 
 Demo
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
@@ -482,3 +431,54 @@ Demo
 - Start on Gif Search - due Wed, Sept. 18
 
 
+</script></section></div>
+    </div>
+
+    <script src="./../js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './../plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './../plugin/zoom-js/zoom.js', async: true },
+        { src: './../plugin/notes/notes.js', async: true },
+        { src: './../plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

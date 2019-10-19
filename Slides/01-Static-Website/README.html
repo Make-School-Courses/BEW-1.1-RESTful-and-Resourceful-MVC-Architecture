@@ -1,10 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-<!-- .slide: data-background="./../Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+    <title>BEW 1.1 Slides</title>
+    <link rel="stylesheet" href="./../css/reveal.css" />
+    <link rel="stylesheet" href="./../css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./../css/highlight/atom-one-light.css" />
+    <link rel="stylesheet" href="./../css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./../assets/Reveal/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Static Websites
 
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Agenda
 
 1. Learning Outcomes
@@ -12,9 +29,7 @@
 1. Overview of CSS selectors
 1. Activity: Create an HTML/CSS resume for a fictional character
 1. How to "hack" a website with Developer Tools
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Learning Outcomes
 
 By the end of today, you should be able to…
@@ -23,33 +38,23 @@ By the end of today, you should be able to…
 1. Recognize the most common CSS properties
 1. Make a static web page using HTML & CSS
 1. Use a browser’s developer tools to examine and change the HTML & CSS of a website.
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 # Warm Up
 
 #### (5 minutes)
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Think, Pair, Share
 
 I have an idea of how I want my website to look. What are the steps I need to take to make it a reality?
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # HTML Essentials
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What is HTML?
 
 - **H**yper**T**ext **M**arkup **L**anguage
   - Not a programming language! No loops, conditionals, etc
 - Tells your browser how to structure content (text, images, links, etc)
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Elements
 
 The fundamental building block of HTML is an **element**.
@@ -57,9 +62,7 @@ The fundamental building block of HTML is an **element**.
   - Or only a single tag
 
 Tags are enclosed in angle brackets ( `<` and `>` )
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## The Document Type Declaration
 
 At the top of every HTML page, we need to tell the browser what type of markup to expect.
@@ -69,9 +72,7 @@ At the top of every HTML page, we need to tell the browser what type of markup t
 ```
 
 - The **doctype** tag is technically not an element.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## The `html` element
 
 All page content must go inside of the `html` start/close tags.
@@ -81,9 +82,7 @@ All page content must go inside of the `html` start/close tags.
 <html>
 </html>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## The `head` element
 
 Content that doesn't directly relate to the way the page is laid out - including the styles and title - go inside of the `head` element.
@@ -96,9 +95,7 @@ Content that doesn't directly relate to the way the page is laid out - including
     </head>
 </html>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## The `body` element
 
 The body contains all of the elements that will be displayed on the page itself.
@@ -114,9 +111,7 @@ The body contains all of the elements that will be displayed on the page itself.
     </body>
 </html>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Demo
 
 Let's put it all together! Save the code snippet below and open it in your browser.
@@ -132,13 +127,9 @@ Let's put it all together! Save the code snippet below and open it in your brows
     </body>
 </html>
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # HTML Page Elements
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Semantic HTML
 
 Semantic HTML tags add **meaning** to a web page, rather than just specifying how the page is laid out.
@@ -147,9 +138,7 @@ This is helpful because:
 - Screen readers can more easily translate the page
 - Code is easier to read and understand
 - Code is more organized and and reusable
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Header Tags
 
 Headers are used to set apart page, section, etc. headers.
@@ -162,9 +151,7 @@ Headers are used to set apart page, section, etc. headers.
     <p>Dogs are cool because...</p>
 </body>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Paragraph Tags
 
 The paragraph tag `<p>` is used to indicate a paragraph of text.
@@ -175,9 +162,7 @@ The paragraph tag `<p>` is used to indicate a paragraph of text.
     <p>Dogs are cool because...</p>
 </body>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## The Address Tag
 
 The address, or `<a>` tag, links to another web page.
@@ -187,9 +172,7 @@ The address, or `<a>` tag, links to another web page.
 ```html
 <a href="http://www.aspca.org">Adopt a Dog!</a>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## The Image Tag
 
 The `img` element is a **self-closing tag**. We often end it with `/` to indicate such.
@@ -199,9 +182,7 @@ The `img` element is a **self-closing tag**. We often end it with `/` to indicat
 ```html
 <img src="http://makeschool.com/images/dog" alt="cute dog" />
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Line Breaks
 
 We can add a **line break** like so:
@@ -209,9 +190,7 @@ We can add a **line break** like so:
 ```html
 <br />
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Bold and Italics
 
 We can specify that text should be **bold** with the `strong` tag, or *italic* with the `em` (emphasize) tag.
@@ -221,9 +200,7 @@ We can specify that text should be **bold** with the `strong` tag, or *italic* w
     Dogs are <strong>fluffy</strong> and <em>playful</em>.
 </p>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## List Items - Unordered
 
 We can make a bulleted **unordered list** with the `ul` tag, and add list items with the `li` tag.
@@ -237,9 +214,7 @@ We can make a bulleted **unordered list** with the `ul` tag, and add list items 
     </ul>
 </p>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## List Items - Ordered
 
 We can also make an **ordered list**, starting from 1, with the `ol` tag.
@@ -255,29 +230,21 @@ We can also make an **ordered list**, starting from 1, with the `ol` tag.
     </ol>
 </p>
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Pop Quiz!
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What does this do?
 
 ```html
 <a href="http://www.facebook.com">Take me to Google!</a>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What does this do?
 
 ```html
 <img src="http://makeschool.com/images/logo.png" />
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What does this do?
 
 ```html
@@ -287,18 +254,12 @@ We can also make an **ordered list**, starting from 1, with the `ol` tag.
     <li>Three</li>
 <ol>
 ```
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 ## Break [10 minutes]
 <!-- .slide: data-background="#087CB8" -->
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 # CSS Styles
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What is CSS?
 
 - **C**ascading **S**tyle **S**heets
@@ -316,9 +277,7 @@ We can link in a .css file inside of the `head` element:
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Anatomy of a CSS Selector
 
 ```css
@@ -330,9 +289,7 @@ body {
 - Select the `body` tag
 - Change the `color` **property**
 - To the **value** of `#333` (light gray)
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## CSS Combinators
 
 Sometimes we want to match a nested element.
@@ -344,9 +301,7 @@ section p {
 ```
 
 This means "Match every `p` element that is a descendant of a `section` element."
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## id Attribute
 
 We can add a **unique** id to an element...
@@ -362,9 +317,7 @@ We can add a **unique** id to an element...
     margin-left: 10px;
 }
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## class Attribute
 
 We can also add a class name to an element...
@@ -380,9 +333,7 @@ We can also add a class name to an element...
     border-color: #333;
 }
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## class/id Best Practices
 
 - Use class/id sparingly if possible.
@@ -397,32 +348,73 @@ Good:
 ```html
 <div class="error-msg">...</div>
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Let's Make a Webpage
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Activity: Resume [25 minutes]
 
 Make a resume for your favorite fictional character using HTML & CSS. Include their address, skills, experience, and achievements.
 
 Check out http://w3schools.com for HTML & CSS documentation and examples.
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Hacking Websites with Developer Tools
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Demo
-
-<!-- > -->
-<!-- .slide: data-background="#087CB8" -->
+</script></section></section><section  data-markdown><script type="text/template"><!-- .slide: data-background="#087CB8" -->
 
 ## Homework
 
 - Hack 2 websites
 - Take screenshots and share in **#bew1-1-server-side-python** Slack Channel
 - Be as creative as possible
+</script></section></div>
+    </div>
+
+    <script src="./../js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './../plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './../plugin/zoom-js/zoom.js', async: true },
+        { src: './../plugin/notes/notes.js', async: true },
+        { src: './../plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

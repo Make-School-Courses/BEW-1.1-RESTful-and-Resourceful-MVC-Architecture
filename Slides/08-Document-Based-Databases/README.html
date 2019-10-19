@@ -1,24 +1,37 @@
-<!-- .slide: data-background="./../Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>BEW 1.1 Slides</title>
+    <link rel="stylesheet" href="./../css/reveal.css" />
+    <link rel="stylesheet" href="./../css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./../css/highlight/atom-one-light.css" />
+    <link rel="stylesheet" href="./../css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./../assets/Reveal/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: data-background="./header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Document-Based Databases
 
 ### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/08-Document-Based-Databases.html ':ignore')
 ### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/08-Document-Based-Databases/demo)
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 
 ## Learning Outcomes
 
 1. Identify the pros and cons of a NoSQL or Document-based database
 1. Get comfortable with Mongo queries.
 1. Understand how to connect and use MongoDB in a Python web app
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 # Document-Based Databases
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Overview
 
 Document-Based Databases:
@@ -28,15 +41,11 @@ Document-Based Databases:
 
 We'll go over the specifics of these **collections** in a bit.
 
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 
 ![relational-vs-document](assets/relational-vs-document.jpg)
 
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## MongoDB
 
 - Can have several **databases**. Use 1 database for 1 project.
@@ -46,9 +55,7 @@ We'll go over the specifics of these **collections** in a bit.
   - `BlogPost` resource would be stored in `blog_posts` collection
 
 - Each collection supports **CRUD** operations
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## What is CRUD?
 
 - **C**reate, **R**ead, **U**pdate, **D**elete
@@ -56,9 +63,7 @@ We'll go over the specifics of these **collections** in a bit.
 - Represents the operations we can do on any one type of object
 
 - Example - Users: Create a new user, show all users, update a user, delete a user
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Identifiers
 
 MongoDB gives each document a unique identification number with the key `_id`. 
@@ -66,9 +71,7 @@ MongoDB gives each document a unique identification number with the key `_id`.
 It's sort of like dropping clothes off at the dry-cleaners.
 
 ![Dry Cleaners](assets/drycleaners.jpeg)
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Example
 
 So, if we saved a new project like this to a MongoDB database:
@@ -87,34 +90,24 @@ Then it will save something like this:
   title: "A New Project"
 }
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Pros
 
 1. Writes fast
 2. More flexible and easy to start
 3. "Schemaless" - can save anything you want regardless of datatype or schema
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Cons
 
 1. Slow to traverse (search)
 1. Slow to read from
 1. "Schemaless" - can become unstructured
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 ## Break [10 mins]
 <!-- .slide: data-background="#087CB8" -->
-
-<!-- > -->
-
+</script></section><section ><section data-markdown><script type="text/template">
 # MongoDB Shell
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## MongoDB Queries
 
 [Mongo Shell Quick Reference](https://docs.mongodb.com/manual/reference/mongo-shell/)
@@ -123,9 +116,7 @@ MongoDB Shell is useful for:
 - Quickly getting info from your database
 - Addressing/debugging errors
 - Inserting dummy data for testing your apps
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Getting Started
 
 Install MongoDB:
@@ -148,9 +139,7 @@ Start the command-line interface:
 ```bash
 $ mongo
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Create a Database
 
 Switch to a database:
@@ -159,9 +148,7 @@ Switch to a database:
 > use test
 switched to db test
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 
 ## Create
 
@@ -172,9 +159,7 @@ To create a new document in the collection `songs`:
 ```
 
 Try adding a few more on your own!
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Read
 
 To view all documents in the collection `songs`:
@@ -191,9 +176,7 @@ Or to view documents that satisfy a certain query, pass in some JSON:
 { "_id" : ObjectId("5d89999fb1db7e732ac60d78"), "artist" : "Toto", 
 "song_name" : "Africa" }
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Update
 
 We can update a single document:
@@ -208,9 +191,7 @@ Or update many at once:
 ```bash
 > db.songs.updateMany({artist: "Toto"}, { $set: {rating: 5} })
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Delete
 
 To delete a document:
@@ -218,9 +199,7 @@ To delete a document:
 ```bash
 > db.songs.deleteOne({song_title: "Rosanna"})
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 
 ## Activity [10 mins]
 
@@ -238,25 +217,17 @@ db.Users.find({ age: {$gt: 18, $lt: 65 }})
 
 db.Users.find({likes: {$in: ['chatting', 'candle making']}})
 ```
-
-<!-- > -->
-
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Flask-PyMongo
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## About Flask-PyMongo
 
 [PyMongo](https://api.MongoDB.com/python/current/) is the lower level toolset (released by python) that you'll use to query the database for the stuff you want.  You can import this from Flask PyMongo.
 
 [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) is a useful wrapper around PyMongo (and for your convenience comes packaged with PyMongo) that adds helper functions specifically for Flask.
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ![Flask-Mongo-Diagram](assets/Flask-Mongo-Diagram.jpeg)
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Using Flask-PyMongo
 
 Let's install PyMongo:
@@ -264,9 +235,7 @@ Let's install PyMongo:
 ```bash
 pip3 install Flask-PyMongo
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Writing a Route
 
 Here is an example route to **read** all users:
@@ -281,9 +250,7 @@ def get_all_users():
   # returning the user list in JSON form
   return dumps(users_list)
 ```
-
-<!-- v -->
-
+</script></section><section data-markdown><script type="text/template">
 ## Activity
 
 Copy the [demo code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/08-Document-Based-Databases/demo) and:
@@ -293,16 +260,62 @@ Copy the [demo code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-
   1. `delete_user_form` to display a form to enter a username
   1. `delete_user` to accept a POST request from the form and delete the user with specified username
 1. Try the same for **update**!
-
-<!-- > -->
-
+</script></section></section><section  data-markdown><script type="text/template">
 ## Announcements
 
 - Playlister tutorial due Tues, Oct. 1 (in 1 week)
 - Contractor project due Thurs, Oct. 10 (in 2.5 weeks) - take a look at the [Project Spec](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit) before our next class
-
-<!-- > -->
-
+</script></section><section  data-markdown><script type="text/template">
 ## Resources
 
-- [Flask-PyMongo Tutorial](https://medium.com/@riken.mehta/full-stack-tutorial-flask-react-docker-ee316a46e876)
+- [Flask-PyMongo Tutorial](https://medium.com/@riken.mehta/full-stack-tutorial-flask-react-docker-ee316a46e876)</script></section></div>
+    </div>
+
+    <script src="./../js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './../plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './../plugin/zoom-js/zoom.js', async: true },
+        { src: './../plugin/notes/notes.js', async: true },
+        { src: './../plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
