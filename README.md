@@ -25,24 +25,41 @@ This course covers the three major patterns or architectures that make the web w
 4. Use Web application frameworks, middleware packages, and server-side templating.
 5. Implement controller testing patterns.
 
-## Schedule
+## Class Calendar
 
-| Class |                 Topics                 |
-|:-----:|:---------------------------------------:|
-|  1    | [Static Website](Lessons/01-Static-Website/README.md) |
-|  2    | [Git and GitHub](Lessons/02-Git-and-GitHub/README.md) |
-|  3    | [Intro to Flask](Lessons/03-Intro-to-Flask/README.md) |
-|  4    | [Flask-Templating](Lessons/04-Flask-Templating/README.md) |
-|  5    | [URLs, HTTP, REST, and Reading Errors](./Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) |
-|  6    | Review + GIF Search |
-|  7    | [Testing RESTful Routes](./Lessons/06-Testing-RESTful-Routes/README.md) |
-|  8    | [Model, View, Controller](./Lessons/07-Model-View-Controller/README.md)
-|  9    | [Document-Based Databases](./Lessons/08-Document-Based-Databases/README.md) |
-|  10   | [ERDs, Resource Associations, and MongoDB](./Lessons/09-ERDs-Resource-Associations-and-MongoDB/README.md) |
-|  11   | [Project Planning and User-Centered Development](./Lessons/10-Project-Planning-and-User-Centered-Development/README.md) |
-|  12   | [RESTful APIs and Deployment Environments](./Lessons/11-Deployment-Environments/README.md) |
-|  13   | [Presentation Practice](./Lessons/12-Presentation-Practice/README.md) |
-|  14   | Final Contractor Project Presentations |
+| Class | Date        |                 Topics                 | Quiz Topic |
+|:-----:|:-----------:|:--------------------------------------:| |
+|  1    | Tue, Oct 22 | [Static Website](Lessons/01-Static-Website/README.md) | |
+|  2    | Thu, Oct 24 | [Git and GitHub](Lessons/02-Git-and-GitHub/README.md) | |
+|  3    | Tue, Oct 29 | [Intro to Flask](Lessons/03-Intro-to-Flask/README.md) | |
+|  4    | Thu, Oct 31 | [Flask-Templating](Lessons/04-Flask-Templating/README.md) | |
+|  5    | Tue, Nov 5  | [URLs, HTTP, REST, and Reading Errors](./Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) | [Quiz 1] |
+|  6    | Thu, Nov 7  | Review / URLs, HTTP, REST continued |  |
+|  7    | Tue, Nov 12 | [Testing RESTful Routes](./Lessons/06-Testing-RESTful-Routes/README.md) | |
+|  8    | Thu, Nov 14 | [Model, View, Controller](./Lessons/07-Model-View-Controller/README.md) | |
+|  9    | Tue, Nov 19 | [Document-Based Databases](./Lessons/08-Document-Based-Databases/README.md) | |
+|  10   | Thu, Nov 21 | [ERDs, Resource Associations, and MongoDB](./Lessons/09-ERDs-Resource-Associations-and-MongoDB/README.md) | [Quiz 2] |
+|  11   | Tue, Nov 26 | [Project Planning and User-Centered Development](./Lessons/10-Project-Planning-and-User-Centered-Development/README.md) | |
+|  -    | Thu, Nov 28 | **NO CLASS** - Thanksgiving | |
+|  12   | Tue, Dec 3 | [RESTful APIs and Deployment Environments](./Lessons/11-Deployment-Environments/README.md) | |
+|  13   | Thu, Dec 5 | [Lab Day](./Lessons/12-Presentation-Practice/README.md) | [Quiz 3] |
+|  14   | Tue, Dec 10 | Final Contractor Project Presentations | |
+|  15   | Thu, Dec 12 | Bonus Topic | |
+
+## Assignment Schedule
+
+All due dates are at 11:59 PM, PST on the date specified.
+
+| Assignment | Date Assigned | Due Date    | Submission Form   |
+|:----------:|:-------------:|:-----------:|:-----------------:|
+| Homework 1 | Thu, Oct 24   | Wed, Oct 30 | [Submit Homework] |
+| Homework 2 | Thu, Oct 31   | Wed, Nov 6  | [Submit Homework] |
+| Homework 3 | Thu, Nov 7    | Wed, Nov 13 | [Submit Homework] |
+| Homework 4 | Thu, Nov 14   | Wed, Nov 20 | [Submit Homework] |
+| Playlister Tutorial | Tue, Nov 19   | Tue, Nov 26 | [Submit Playlister] |
+| Contractor Project | Tue, Nov 28 | Mon, Dec 9 | [Submit Contractor Project] |
+| Contractor Project Final Resubmission | -  | Thu, Dec 12 | [Submit Contractor Project] |
+
 
 ## Class Assignments
 
@@ -52,23 +69,32 @@ Tutorials are to help you get started in a topic.  They are graded on completion
 
 1. [**Playlister**](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c): Complete by Friday, Week 5 _(must have at least 10 agile commits)_
 
+### Homeworks
+
+Homework assignments are designed to allow you to practice the skills learned in class. They are graded on completion only.
+
 ### Projects
 
-- [Gif Search](https://docs.google.com/document/d/1symUDRsZ1i2xf8F2mwAGFJtLjbOXqCj0JyrIgTtFNT0/edit?usp=sharing) (done in partners)
 - [Contractor Project](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit?usp=sharing)
+
+### Quizzes
+
+There will be a total of 3 quizzes given throughout the term, each covering roughly 1/3 of the course's material. Quizzes will be allotted 30 minutes each at the beginning of class, and each quiz has an associated [Study Guide]().
+
+Any student scoring <75% on a quiz **must** retake it in order to pass the course. Quiz retakes will be offered in the Mezzanine at 9:00 AM on Wednesdays, or by appointment. 
 
 ## Evaluation
 
 To pass this course, students must meet the following requirements:
 
 - Complete **all** required coding tutorials:
-    - Playlister ([Rubric](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c))
+    - [Playlister](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c)
+- Complete **all** required [homework assignments]()
 - Complete **all** required coding projects (this includes all commit requirements and homework related to each project):
-    - Gif Search ([Rubric](https://docs.google.com/document/d/1symUDRsZ1i2xf8F2mwAGFJtLjbOXqCj0JyrIgTtFNT0/edit?usp=sharing))
     - Contractor Project ([Rubric](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit?usp=sharing))
 - Submit all code and writing with rubric scores by the due dates listed above
-- Pass all submissions according to the associated coding challenge rubrics
-- Pass all weekly quizzes (there will be a total of 5 quizzes, lowest quiz will be dropped)
+- Pass all weekly quizzes (there will be a total of 3 quizzes, passing score is >70%)
+    - Quiz retakes are required for scores lower than 70%; retake score overrides previous score
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
 
