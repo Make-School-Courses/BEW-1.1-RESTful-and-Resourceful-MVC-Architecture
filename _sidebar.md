@@ -12,8 +12,11 @@
   - [RESTful APIs and Deployment Environments](Lessons/11-Deployment-Environments/README.md)
   - [Presentation Practice](Lessons/12-Presentation-Practice/README.md)
   - Final Contractor Project Presentations
+- **Homework**
+  - [**Homework 1-3**](Assignments/Weekly-Homework)
+- **Quizzes**
+  - [Quiz Study Guide](Assignments/Quiz-Study-Guide)
 - **Tutorials**
-  - [**Rotten Potatoes**](https://www.makeschool.com/academy/track/rotten-potatoes---movie-reviews-with-express-js/README.md)
+  - [**Playlister**](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c)
 - **Projects**
-    - [Gif Search](https://docs.google.com/document/d/1symUDRsZ1i2xf8F2mwAGFJtLjbOXqCj0JyrIgTtFNT0/edit?usp=sharing)
     - [Contractor Project](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit?usp=sharing)
