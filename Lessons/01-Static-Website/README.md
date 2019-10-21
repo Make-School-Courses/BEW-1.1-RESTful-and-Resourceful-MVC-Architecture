@@ -384,7 +384,7 @@ Form expert groups around your table. Fill in the rest of your worksheet for *at
 
 ## Homework
 
-- [Homework 1](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/#/Assignments/Weekly-Homework)
+- [Homework 1](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/#/Assignments/Weekly-Homework?id=homework-1)
 
 
 <!-- > -->

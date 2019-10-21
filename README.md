@@ -52,10 +52,10 @@ All due dates are at 11:59 PM, PST on the date specified.
 
 | Assignment | Date Assigned | Due Date    | Submission Form   |
 |:----------:|:-------------:|:-----------:|:-----------------:|
-| [Homework 1](Assignments/Weekly-Homework/) | Tue, Oct 22   | Mon, Oct 28 | [Submit Homework] |
-| [Homework 2](Assignments/Weekly-Homework/) | Tue, Oct 29   | Mon, Nov 4  | [Submit Homework] |
-| [Homework 3](Assignments/Weekly-Homework/) | Tue, Nov 5    | Mon, Nov 11 | [Submit Homework] |
-| [Homework 4](Assignments/Weekly-Homework/) | Tue, Nov 12   | Mon, Nov 18 | [Submit Homework] |
+| [Homework 1](Assignments/Weekly-Homework?id=homework-1) | Tue, Oct 22   | Mon, Oct 28 | [Submit Homework] |
+| [Homework 2](Assignments/Weekly-Homework?id=homework-2) | Tue, Oct 29   | Mon, Nov 4  | [Submit Homework] |
+| [Homework 3](Assignments/Weekly-Homework?id=homework-3) | Tue, Nov 5    | Mon, Nov 11 | [Submit Homework] |
+| [Homework 4](Assignments/Weekly-Homework?id=homework-4) | Tue, Nov 12   | Mon, Nov 18 | [Submit Homework] |
 | Playlister Tutorial | Tue, Nov 19   | Tue, Nov 26 | [Submit Playlister] |
 | Contractor Project | Tue, Nov 28 | Mon, Dec 9 | [Submit Contractor Project] |
 | Contractor Project Final Resubmission | -  | Thu, Dec 12 | [Submit Contractor Project] |
