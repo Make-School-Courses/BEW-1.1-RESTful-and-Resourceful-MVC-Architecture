@@ -87,7 +87,7 @@ There will be a total of 3 quizzes given throughout the term, each covering roug
 
 Quiz grades will be handed back using [Gradescope](https://www.gradescope.com/). Students may view their grade and prior work in preparation for the next quiz or retake. It is prohibited to share the quiz or your results with any other student in the course, and doing so will result in disciplinary action.
 
-Any student scoring <70% on a quiz **must** retake it in order to pass the course. Quiz retakes will be offered in the Mezzanine at 9:00 AM on the Tuesday following the quiz, or by appointment. 
+Any student scoring <70% on a quiz **must** retake it in order to pass the course. Quiz retakes will be offered at specified times following the quiz (dates/times TBD), or by appointment. 
 
 ## Evaluation
 
