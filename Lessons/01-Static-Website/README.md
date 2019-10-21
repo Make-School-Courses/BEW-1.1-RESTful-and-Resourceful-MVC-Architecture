@@ -369,8 +369,7 @@ Form elements:
 
 ## Jigsaw Activity Pt. 2
 
-Form expert groups around your table. Fill in the rest of your worksheet 
-
+Form expert groups around your table. Fill in the rest of your worksheet for *at least four* input elements.
 
 <!-- > -->
 
