@@ -4,6 +4,8 @@
 
 [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/01-Static-Website/README.html)
 
+[Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/01-Static-Website/demo)
+
 
 <!-- > -->
 
@@ -28,15 +30,11 @@ By the end of today, you should be able to…
 
 <!-- > -->
 
-# Warm Up
+## Warm Up (5 minutes)
 
-#### (5 minutes)
+Write a list of every HTML element you know, and its purpose. Write as many as you can!
 
-<!-- v -->
-
-## Think, Pair, Share
-
-I have an idea of how I want my website to look. What are the steps I need to take to make it a reality?
+- E.g. `head`, `body`, `img`, etc
 
 <!-- > -->
 
@@ -141,14 +139,9 @@ Let's put it all together! Save the code snippet below and open it in your brows
 
 <!-- v -->
 
-## Semantic HTML
+## Anatomy of an HTML Element
 
-Semantic HTML tags add **meaning** to a web page, rather than just specifying how the page is laid out.
-
-This is helpful because:
-- Screen readers can more easily translate the page
-- Code is easier to read and understand
-- Code is more organized and and reusable
+![](assets/basic-anatomy-of-xhtml-elements.png)
 
 <!-- v -->
 
@@ -295,126 +288,93 @@ We can also make an **ordered list**, starting from 1, with the `ol` tag.
 ## Break [10 minutes]
 <!-- .slide: data-background="#087CB8" -->
 
-<!-- > -->
-
-# CSS Styles
-
-<!-- v -->
-
-## What is CSS?
-
-- **C**ascading **S**tyle **S**heets
-- Tells our browser what the HTML elements should look like
-- If HTML is the bones of the webpage, CSS is the skin/clothing
-
---
-
-## Adding Style Sheets
-
-We can link in a .css file inside of the `head` element:
-
-```html
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-```
-
-<!-- v -->
-
-## Anatomy of a CSS Selector
-
-```css
-body {
-    color: #333;
-}
-```
-
-- Select the `body` tag
-- Change the `color` **property**
-- To the **value** of `#333` (light gray)
-
-<!-- v -->
-
-## CSS Combinators
-
-Sometimes we want to match a nested element.
-
-```css
-section p {
-    background-color: yellow;
-}
-```
-
-This means "Match every `p` element that is a descendant of a `section` element."
-
-<!-- v -->
-
-## id Attribute
-
-We can add a **unique** id to an element...
-
-```html
-<nav id="sidebar">...</nav>
-```
-
-...and select it:
-
-```css
-#sidebar {
-    margin-left: 10px;
-}
-```
-
-<!-- v -->
-
-## class Attribute
-
-We can also add a class name to an element...
-
-```html
-<article class="archived">...</article>
-```
-
-...and select it:
-
-```css
-.archived {
-    border-color: #333;
-}
-```
-
-<!-- v -->
-
-## class/id Best Practices
-
-- Use class/id sparingly if possible.
-- Use class/id names that describe an element's **purpose** (what it does), not its **presentation** (how it looks).
-
-Bad:
-```html
-<div class="red-bg">...</div>
-```
-
-Good:
-```html
-<div class="error-msg">...</div>
-```
 
 <!-- > -->
 
-# Let's Make a Webpage
+# HTML Forms
 
 <!-- v -->
 
-## Activity: Resume [25 minutes]
+## Why use forms?
 
-Make a resume for your favorite fictional character using HTML & CSS. Include their address, skills, experience, and achievements.
+1. Collect data about the user<!-- .element: class="fragment" -->
+1. Ask the user a question<!-- .element: class="fragment" -->
+1. Login or registration forms<!-- .element: class="fragment" -->
 
-Check out http://w3schools.com for HTML & CSS documentation and examples.
+<!-- v -->
+
+## A Simple Form
+
+```html
+<form action='/results' method='GET'>
+  What is your name?
+  <input type='text' name='firstname'>
+  <br>
+  <input type='submit' value='Submit!'>
+</form>
+```
+
+<!-- v -->
+
+## Anatomy of a Form
+
+Form attributes:
+
+- `action`: What URL am I sent to when I submit the form?
+- `method`: Is it a GET or a POST request?
+
+```html
+<form action='/results' method='GET'>
+```
+
+<!-- v -->
+
+## Anatomy of a Form
+
+Form element attributes:
+
+- `type`: What type of data am I collecting (e.g. number vs. text), and in what format?
+- `name`: What *label* am I putting on the data? *Hint*: This is kind of like a variable name!
+- `value`: What is the *default value* of the form element?
+
+```html
+<input type='text' name='favorite_color' value='blue'>
+```
+
+<!-- v -->
+
+## Jigsaw Activity [30 min]
+
+Get into groups of 4 or 5 and research a *specific* form element. Within your group, do the following:
+
+- Test out the form element in your browser. How does it work?
+- What *attributes* (such as `name`, `value`, etc) are required to use this form element? What do they do?
+- What *query string* results when you submit the form?
+
+*Every* person in the group *must* be able to present the findings!
+
+<aside class="notes">
+
+Form elements:
+- [select/option](https://www.w3schools.com/tags/att_select_form.asp)
+- [datalist](https://www.w3schools.com/tags/tag_datalist.asp)
+- [radio buttons](https://www.w3schools.com/tags/att_input_type_radio.asp)
+- [checkbox](https://www.w3schools.com/tags/att_input_type_checkbox.asp)
+- [date](https://www.w3schools.com/tags/att_input_type_date.asp)
+- [color](https://www.w3schools.com/tags/att_input_type_color.asp)
+
+</aside>
+
+<!-- v -->
+
+## Jigsaw Activity Pt. 2
+
+Form expert groups around your table. Fill in the rest of your worksheet 
+
 
 <!-- > -->
 
-# Hacking Websites with Developer Tools
+# Developer Tools
 
 <!-- v -->
 
@@ -425,6 +385,13 @@ Check out http://w3schools.com for HTML & CSS documentation and examples.
 
 ## Homework
 
-- Hack 2 websites
-- Take screenshots and share in **#bew1-1-server-side-python** Slack Channel
-- Be as creative as possible
+- [Homework 1](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/#/Assignments/Weekly-Homework)
+
+
+<!-- > -->
+
+## Resources
+
+- [HTML Basics](https://www.w3schools.com/html/html_basic.asp)
+- [HTML Form Elements](https://www.w3schools.com/html/html_form_elements.asp)
+- [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)

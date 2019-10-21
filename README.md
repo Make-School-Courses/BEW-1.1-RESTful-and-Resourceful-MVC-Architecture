@@ -32,11 +32,11 @@ This course covers the three major patterns or architectures that make the web w
 |  1    | Tue, Oct 22 | [Static Website](Lessons/01-Static-Website/README.md) | |
 |  2    | Thu, Oct 24 | [Git and GitHub](Lessons/02-Git-and-GitHub/README.md) | |
 |  3    | Tue, Oct 29 | [Intro to Flask](Lessons/03-Intro-to-Flask/README.md) | |
-|  4    | Thu, Oct 31 | [Flask-Templating](Lessons/04-Flask-Templating/README.md) | |
-|  5    | Tue, Nov 5  | [URLs, HTTP, REST, and Reading Errors](Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) | [Quiz 1](Assignments/Quiz-Study-Guide/) |
-|  6    | Thu, Nov 7  | Review / URLs, HTTP, REST continued |  |
+|  4    | Thu, Oct 31 | [Flask Templating](Lessons/04-Flask-Templating/README.md) | |
+|  5    | Tue, Nov 5  | [URLs, HTTP, REST, and Reading Errors](Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) | |
+|  6    | Thu, Nov 7  | Review / URLs, HTTP, REST continued | [Quiz 1](Assignments/Quiz-Study-Guide/) |
 |  7    | Tue, Nov 12 | [Testing RESTful Routes](Lessons/06-Testing-RESTful-Routes/README.md) | |
-|  8    | Thu, Nov 14 | [Model, View, Controller](Lessons/07-Model-View-Controller/README.md) | |
+|  8    | Thu, Nov 14 | [Bootstrap] | |
 |  9    | Tue, Nov 19 | [Document-Based Databases](Lessons/08-Document-Based-Databases/README.md) | |
 |  10   | Thu, Nov 21 | [ERDs, Resource Associations, and MongoDB](Lessons/09-ERDs-Resource-Associations-and-MongoDB/README.md) | [Quiz 2](Assignments/Quiz-Study-Guide/) |
 |  11   | Tue, Nov 26 | [Project Planning and User-Centered Development](Lessons/10-Project-Planning-and-User-Centered-Development/README.md) | |
@@ -67,7 +67,7 @@ All due dates are at 11:59 PM, PST on the date specified.
 
 Tutorials are to help you get started in a topic.  They are graded on completion only.
 
-1. [**Playlister**](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c): Complete by Friday, Week 5 _(must have at least 10 agile commits)_
+- [**Playlister**](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c) _(must have at least 10 agile commits)_
 
 ### Homeworks
 
@@ -82,6 +82,8 @@ Projects are designed to allow you to explore the class topics in more depth by 
 ### Quizzes
 
 There will be a total of 3 quizzes given throughout the term, each covering roughly 1/3 of the course's material. Quizzes will be allotted 30 minutes each at the beginning of class, and each quiz has an associated [Study Guide](Assignments/Quiz-Study-Guide/).
+
+Quiz grades will be handed back using [Gradescope](https://www.gradescope.com/). Students may view their grade and prior work in preparation for the next quiz or retake. It is prohibited to share the quiz or your results with any other student in the course, and doing so will result in disciplinary action.
 
 Any student scoring <70% on a quiz **must** retake it in order to pass the course. Quiz retakes will be offered in the Mezzanine at 9:00 AM on the Tuesday following the quiz, or by appointment. 
 
