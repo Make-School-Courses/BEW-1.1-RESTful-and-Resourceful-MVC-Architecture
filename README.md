@@ -60,6 +60,8 @@ All due dates are at 11:59 PM, PST on the date specified.
 | Contractor Project | Tue, Nov 28 | Mon, Dec 9 | [Submit Contractor Project] |
 | Contractor Project Final Resubmission | -  | Thu, Dec 12 | [Submit Contractor Project] |
 
+[Submit Homework]: https://docs.google.com/spreadsheets/d/14AkHKwhmKjT352FSm-ord8-IDInLp7dFfCCfYbLI4Pw/edit#gid=0
+
 
 ## Class Assignments
 

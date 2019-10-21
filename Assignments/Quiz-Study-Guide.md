@@ -15,6 +15,7 @@ Quizzes will be given according to the [class calendar](#/README).
 
 ### Git & GitHub
 
+- Use basic Git commands (`git add`, `git commit`, `git status`, `git push/pull`) to make changes to your repository
 - Explain the benefits of using a version control system to track files
 
 ### Flask & Jinja
