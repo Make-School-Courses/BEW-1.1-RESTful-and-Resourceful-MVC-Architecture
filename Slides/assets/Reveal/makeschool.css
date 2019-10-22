@@ -20,7 +20,8 @@ section.has-dark-background p code {
 }
 
 section.has-dark-background a {
-    color: #18a9f5;
+    color: #fff;
+    text-decoration: underline;
 }
 
 /*********************************************
