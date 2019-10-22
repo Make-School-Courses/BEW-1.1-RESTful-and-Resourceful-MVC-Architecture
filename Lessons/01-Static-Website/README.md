@@ -29,7 +29,7 @@ By the end of today, you should be able to…
 1. Use a browser’s developer tools to examine and change the HTML & CSS of a website.
 
 <!-- > -->
-
+<div class="slides-only">
 ## Warm Up (5 minutes)
 
 Write a list of every HTML element you know, and its purpose. Write as many as you can!
@@ -133,6 +133,7 @@ Let's put it all together! Save the code snippet below and open it in your brows
 </html>
 ```
 
+</div>
 <!-- > -->
 
 # HTML Page Elements
@@ -249,38 +250,6 @@ We can also make an **ordered list**, starting from 1, with the `ol` tag.
         <li>Golden Doodle</li>
     </ol>
 </p>
-```
-
-<!-- > -->
-
-# Pop Quiz!
-
-<!-- v -->
-
-## What does this do?
-
-```html
-<a href="http://www.facebook.com">Take me to Google!</a>
-```
-
-<!-- v -->
-
-## What does this do?
-
-```html
-<img src="http://makeschool.com/images/logo.png" />
-```
-
-<!-- v -->
-
-## What does this do?
-
-```html
-<ol>
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
-<ol>
 ```
 
 <!-- > -->

@@ -149,3 +149,7 @@ table>tbody>tr>td::before {
   text-decoration: none;
   color: white;
 }
+
+.slides-only {
+    display: none;
+}
