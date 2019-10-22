@@ -24,9 +24,9 @@
 By the end of today, you should be able to…
 
 1. Recognize the most common HTML tags and their standard formatting
-1. Recognize the most common CSS properties
-1. Make a static web page using HTML & CSS
-1. Use a browser’s developer tools to examine and change the HTML & CSS of a website.
+1. Make a static web page using HTML
+1. Create a form to collect user data using HTML
+1. Use a browser’s developer tools to examine and change the HTML of a website
 
 <!-- > -->
 
@@ -325,9 +325,10 @@ Get into groups of 4 or 5 and research a *specific* form element. Within your gr
 
 *Every* person in the group *must* be able to present the findings!
 
-<aside class="notes">
+<!-- v -->
 
-Form elements:
+## Form elements
+
 - [select/option](https://www.w3schools.com/tags/att_select_form.asp)
 - [datalist](https://www.w3schools.com/tags/tag_datalist.asp)
 - [radio buttons](https://www.w3schools.com/tags/att_input_type_radio.asp)
@@ -335,7 +336,6 @@ Form elements:
 - [date](https://www.w3schools.com/tags/att_input_type_date.asp)
 - [color](https://www.w3schools.com/tags/att_input_type_color.asp)
 
-</aside>
 
 <!-- v -->
 

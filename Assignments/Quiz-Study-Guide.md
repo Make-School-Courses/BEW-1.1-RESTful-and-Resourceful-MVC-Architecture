@@ -21,7 +21,7 @@ Quizzes will be given according to the [class calendar](#/README).
 ### Flask & Jinja
 
 - Write a Flask route for a specific URL
-- Access form data using `request.args`
+- Access form data using `request.args` and `request.form`
 - Call `render_template` using *named parameters* to render an HTML file
 - Use Jinja2 `for` loops and `if` statements to display dynamic HTML based on data passed in
 
