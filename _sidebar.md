@@ -12,10 +12,8 @@
   - [RESTful APIs and Deployment Environments](Lessons/11-Deployment-Environments/README.md)
   - [Presentation Practice](Lessons/12-Presentation-Practice/README.md)
   - Final Contractor Project Presentations
-- **Homework**
-  - [**Homework 1-3**](Assignments/Weekly-Homework)
-- **Quizzes**
-  - [Quiz Study Guide](Assignments/Quiz-Study-Guide)
+- [**Homework**](Assignments/Weekly-Homework)
+- [**Quizzes**](Assignments/Quiz-Study-Guide)
 - **Tutorials**
   - [**Playlister**](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c)
 - **Projects**

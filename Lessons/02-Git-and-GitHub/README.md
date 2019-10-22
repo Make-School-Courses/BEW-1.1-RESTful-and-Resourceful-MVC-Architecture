@@ -1,6 +1,9 @@
+<!-- .slide: data-background="./../Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Git & Github
 
-## [Slides](https://docs.google.com/presentation/d/17NWgjqiLIGECLP456hGPU_f_QJNP38dOuSz3IU-R--I/edit?usp=sharing)
+### [Slides](https://docs.google.com/presentation/d/17NWgjqiLIGECLP456hGPU_f_QJNP38dOuSz3IU-R--I/edit?usp=sharing)
+
+<!-- > -->
 
 ## Learning Outcomes
 
@@ -8,20 +11,27 @@
 1. Create well-crafted commit messages.
 1. Practice basic pull requests and resolve basic merge conflicts.
 
+<!-- > -->
 
 ## Initial Exercise
 
-Ever heard of version control? Have you used it?
+Think of 3 challenges you have faced when using Git or GitHub. 
 
-Take a minute to write down what you know it's about or what you imagine it's related to if you're not familiar with the term.
+Then, share with a partner and compare/contrast your experiences.
 
-Share your answer and listen to other's comments. Then learn about what it is and why it's important.
+<!-- > -->
 
-## Version Control
+# Version Control
+
+<!-- v -->
+
+## What is Version Control?
 
 A version control system is basically a tracker of the changes made on a project by a group of people who work collaboratively.
 
 As any project grows and evolves, the confidence that any version can be recovered helps teams run tests, fix bugs and add new code.
+
+<!-- v -->
 
 Developers can review project history to find out:
 
