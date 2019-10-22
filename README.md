@@ -83,7 +83,7 @@ Projects are designed to allow you to explore the class topics in more depth by 
 
 ### Quizzes
 
-There will be a total of 3 quizzes given throughout the term, each covering roughly 1/3 of the course's material. Quizzes will be allotted 30 minutes each at the beginning of class, and each quiz has an associated [Study Guide](Assignments/Quiz-Study-Guide/).
+There will be a total of 3 quizzes given throughout the term, each covering roughly 1/3 of the course's material. Quizzes will be allotted 30 minutes each at the beginning of class, and each quiz has an associated [Study Guide](Assignments/Quiz-Study-Guide).
 
 Quiz grades will be handed back using [Gradescope](https://www.gradescope.com/). Students may view their grade and prior work in preparation for the next quiz or retake. It is prohibited to share the quiz or your results with any other student in the course, and doing so will result in disciplinary action.
 
