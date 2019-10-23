@@ -26,7 +26,7 @@ Stretch challenge question:
 
 In your project directory, create a folder called `templates` and move your `fortune_form.html` inside of it. 
 
-Create three new empty files, `index.html`, `fortune_results.html`, and `weather_form.html`, inside of your templates directory.
+Create two new empty files, `index.html` and `fortune_results.html`, inside of your templates directory.
 
 In your project's root directory, create a file called `app.py` and give it the following contents:
 
@@ -41,7 +41,7 @@ def index():
     return render_template('index.html')
 ```
 
-Create two new routes after the index route: one to display your fortune teller form (at the URL '/fortune') and one to display your still-empty weather form (at the URL '/weather').
+Create a new routes after the index route to display your fortune teller form (at the URL '/fortune').
 
 Update `index.html` to link to your two pages.
 
@@ -64,7 +64,13 @@ def fortune_results():
         # no other fortune applies, return default fortune
 ```
 
-Feel free to get creative here by combining inputs, using a random number, etc!
+Feel free to get creative here!
+
+Stretch challenges:
+
+- Use the Python `random` library ([documentation](https://docs.python.org/3/library/random.html)) to introduce some randomness into your fortunes. For example, a user who likes cats might get either "Watch out for cattiness!" or "Have a purrfect day!" depending on their random result.
+- Show the user a different image for each of your available fortunes.
+- Add styling to your page, and change the styling based on the fortune result. (Hint: Apply a different CSS class to your page elements depending on the fortune.)
 
 ## Homework 3
 
