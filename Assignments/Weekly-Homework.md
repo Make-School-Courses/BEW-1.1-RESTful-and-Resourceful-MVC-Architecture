@@ -41,9 +41,9 @@ def index():
     return render_template('index.html')
 ```
 
-Create a new routes after the index route to display your fortune teller form (at the URL '/fortune').
+Create a new route after the index route to display your fortune teller form (at the URL '/fortune').
 
-Update `index.html` to link to your two pages.
+Update `index.html` to link to your fortune page.
 
 Now, create another route for the URL '/fortune_results'. In this route, create at least **four possible fortunes** based on the user's input from the form page. Display the user's fortune by passing it as a named parameter to the `fortune_results.html` template. Here is an example to get you started:
 
