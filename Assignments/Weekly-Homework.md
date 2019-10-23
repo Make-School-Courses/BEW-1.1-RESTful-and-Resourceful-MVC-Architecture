@@ -66,10 +66,13 @@ def fortune_results():
 
 Feel free to get creative here!
 
+At the end, your function should either call `render_template` and pass in the fortune as a named parameter (recommended) or return an HTML string containing the fortune. Make sure to test out your routes to make sure that all fortunes are working as intended.
+
 Stretch challenges:
 
 - Use the Python `random` library ([documentation](https://docs.python.org/3/library/random.html)) to introduce some randomness into your fortunes. For example, a user who likes cats might get either "Watch out for cattiness!" or "Have a purrfect day!" depending on their random result.
 - Show the user a different image for each of your available fortunes.
+- Render an entirely different HTML file depending on the fortune.
 - Add styling to your page, and change the styling based on the fortune result. (Hint: Apply a different CSS class to your page elements depending on the fortune.)
 
 ## Homework 3
