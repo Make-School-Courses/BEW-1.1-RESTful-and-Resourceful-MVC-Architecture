@@ -85,7 +85,7 @@ Projects are designed to allow you to explore the class topics in more depth by 
 
 There will be a total of 3 quizzes given throughout the term, each covering roughly 1/3 of the course's material. Quizzes will be allotted 30 minutes each at the beginning of class, and each quiz has an associated [Study Guide](Assignments/Quiz-Study-Guide).
 
-Quiz grades will be handed back using [Gradescope](https://www.gradescope.com/). Students may view their grade and prior work in preparation for the next quiz or retake. It is prohibited to share the quiz or your results with any other student in the course, and doing so will result in disciplinary action.
+Quiz grades will be handed back using [Gradescope](https://www.gradescope.com/). Students may view their grade and prior work in preparation for the next quiz or retake. It is prohibited to share the quiz content with any other student in the course, and doing so will result in disciplinary action.
 
 Any student scoring <70% on a quiz **must** retake it in order to pass the course. Quiz retakes will be offered at specified times following the quiz (dates/times TBD), or by appointment. 
 
