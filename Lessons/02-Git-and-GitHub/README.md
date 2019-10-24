@@ -95,6 +95,10 @@ $ git push <remote_name> <branch_name>
 Usually, the remote name is called "origin" and the branch name is called "master". It's good to follow this convention unless you have multiple remotes or branches.
 </aside>
 
+<!-- v -->
+
+## Pull Changes
+
 You can pull in changes someone else has made with:
 
 ```bash
@@ -153,6 +157,11 @@ If you haven't yet, initialize a repository in your BEW1.1 Homework folder, and 
 
 <!-- > -->
 
+## Break [10 minutes]
+<!-- .slide: data-background="#087CB8" -->
+
+<!-- > -->
+
 # Activity: Create a Merge Conflict
 
 <!-- v -->
@@ -179,7 +188,9 @@ Try `git pull origin master`. You should get a merge conflict! See if you can re
 
 Pair up with someone you haven't worked with yet.
 
-Clone your partner's repository. Then, both make changes to the _same lines of code_ and try to push your changes.
+Clone your partner's repository. Then, both make changes to the _same lines of code_ and try to push your changes. See if you can resolve the merge conflict!
+
+After resolving, commit and push your final changes. Now you should both see the same code.
 
 <!-- > -->
 
