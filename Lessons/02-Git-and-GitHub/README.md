@@ -8,8 +8,8 @@
 ## Learning Outcomes
 
 1. Understand how to take a real project and integrate it with Git/GitHub.
-1. Create well-crafted commit messages.
 1. Practice basic pull requests and resolve basic merge conflicts.
+1. Use the GitHub Desktop tool to see your changed files and make commits.
 
 <!-- > -->
 
@@ -230,7 +230,7 @@ It is...
 
 ## Homework
 
-- Homework 1 - Due Monday at midnight - link your repo in the progress tracker to submit
+- Homework 1 - Due Monday at midnight. Link your repo in the [Progress Tracker](https://docs.google.com/spreadsheets/d/14AkHKwhmKjT352FSm-ord8-IDInLp7dFfCCfYbLI4Pw/edit#gid=0) to submit!
 
 <!-- > -->
 
