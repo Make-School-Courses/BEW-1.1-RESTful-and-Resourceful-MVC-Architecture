@@ -50,7 +50,6 @@ A centralized file system is like a bank: There is one central "source of truth"
 
 GitHub is more like Bitcoin: Every person can have their own version of a repository that is equally valid! <!-- .element: class="fragment" -->
 
-- Unlike Bitcoin, we can also rewrite history! (This isn't recommended if others have already pulled your changes.)<!-- .element: class="fragment" -->
 
 <!-- > -->
 
@@ -92,7 +91,9 @@ $ git push <remote_name> <branch_name>
 ```
 
 <aside class="notes">
+
 Usually, the remote name is called "origin" and the branch name is called "master". It's good to follow this convention unless you have multiple remotes or branches.
+
 </aside>
 
 <!-- v -->
@@ -106,11 +107,13 @@ $ git pull <remote_name> <branch_name>
 ```
 
 <aside class="notes">
+
 - `git init` will initialize a Git repository inside of the current directory. We can prove it was initialized by using `ls -a` to see hidden files.
 - `git remote add origin` adds a _remote_ (short for "remote repository") named _origin_.
 - `git add` is like adding our files to a shopping cart. We may not want to check out just yet - this allows us to still make some changes before pushing.
 - `git commit` makes a _commit_ to our local repository containing our changes. It still won't be reflected in GitHub!
 - `git push` sends all of the commits we've made to the remote we added. The remote name by default is "origin", and the branch name by default is "master".
+
 </aside>
 
 <!-- v -->
