@@ -27,108 +27,206 @@ Then, share with a partner and compare/contrast your experiences.
 
 ## What is Version Control?
 
-A version control system is basically a tracker of the changes made on a project by a group of people who work collaboratively.
+Version control is software that helps a software team manage changes to source code over time. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
 
-As any project grows and evolves, the confidence that any version can be recovered helps teams run tests, fix bugs and add new code.
+Source: [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/what-is-version-control)
 
 <!-- v -->
 
-Developers can review project history to find out:
+## Benefits of Version Control
 
-- Which changes were made?
-- Who made the changes?
-- When were the changes made?
-- Why were changes needed?
+Version control allows you to:
 
-Git is an example of a distributed version control system, the most popular in the world as more than 70% of developers use it. Git allows full access to every file, branch, and iteration of a project, and allows every user access to a full and self-contained history of all changes.
+- Review previous versions of your code<!-- .element: class="fragment" -->
+- Revert to a previous version in case of errors<!-- .element: class="fragment" -->
+- Experiment with new features without fear of breaking your code<!-- .element: class="fragment" -->
+- Collaborate effectively & split up work without blocking each other's changes<!-- .element: class="fragment" -->
 
-No matter where users are in the world, they can collaborate to projects using git at any given time, from anywhere.
+<!-- v -->
 
-**About Github**
+## Git is Decentralized
 
-GitHub is a Git hosting repository that provides developers with tools to ship better code:
-- command line features
-- issues (threaded discussions)
-- pull requests
-- code review
+A centralized file system is like a bank: There is one central "source of truth" with a ledger of all changes made. <!-- .element: class="fragment" -->
 
-**The Workflow**
+GitHub is more like Bitcoin: Every person can have their own version of a repository that is equally valid! <!-- .element: class="fragment" -->
 
-The Git flow can be broken down into steps as follows:
+- Unlike Bitcoin, we can also rewrite history! (This isn't recommended if others have already pulled your changes.)<!-- .element: class="fragment" -->
 
-1. Create or clone a repository.
-1. Make all the changes needed to your files.
-1. Add the files to the staging area, what you want to update in the repo.
-1. Commit the files and add a message.
-1. Push the changes to the repo.
+<!-- > -->
 
-[Source](https://guides.github.com/introduction/git-handbook/)
+# Review: Bash Commands
 
-## In Class Activity I
+<!-- v -->
 
-- Create a movie up to step 2 (see slides for deails)
+## Bash Commands
 
-## Collaborating with GitHub
+How do we do the following in Bash?
 
-The great thing about Git is the ability to collaborate to a project. To do this we can follow the GitHub flow which looks similar to what you know already but with additional steps:
+- View the current file path? `pwd`<!-- .element: class="fragment" -->
+- Make a new directory? `mkdir name_of_directory`<!-- .element: class="fragment" -->
+- Navigate into (or out of) a directory? <span> `cd name_of_directory` or `cd ..`</span><!-- .element: class="fragment" -->
+- See all files in the current directory? `ls`<!-- .element: class="fragment" -->
+- Create a new file? `touch file_name`<!-- .element: class="fragment" -->
 
-The GitHub flow has six steps:
+<!-- > -->
 
-1. **Create a branch:** Topic branches allow teams to contribute to many parallel efforts.
-1. **Add commits:** Snapshots of development efforts within a branch create safe, revertible points in the project’s history.
-1. **Open a pull request:** Pull requests publicize a project’s ongoing efforts and set the tone for a transparent development process.
-1. **Discuss and review code:** Teams participate in code reviews by commenting, testing, and reviewing open pull requests. Code review is at the core of an open and participatory culture.
-1. **Merge:** Upon clicking merge, GitHub automatically performs the equivalent of a local ‘git merge’ operation. GitHub also keeps the entire branch development history on the merged pull request.
-1. **Deploy:** Teams can choose the best release cycles or incorporate continuous integration tools and operate with the assurance that code on the deployment branch has gone through a robust workflow.
+# Git Workflow
 
-[Source](https://guides.github.com/introduction/flow/)
+<!-- v -->
 
-**About branches**
-- A branch has a unique set of code changes.
-- Use a branch to isolate development work without affecting other branches in the repository.
-- Each repository has one default branch (master), and can have multiple other branches.
-- You can merge a branch into another branch using a pull request.
+## Basic Git Workflow
 
-[Source](https://help.github.com/en/articles/about-branches)
+Here is an example of how to initialize a Git repository:
 
-**Clone vs Fork**
+```bash
+$ git init
+$ git remote add <remote_name> <remote_url>
+```
 
-There are 3 ways to create a repository. One is by creating it on our own, to start a new project. But if we want to use an already existing project we can go in two directions: *Clone* or *Fork*.
+And how to make changes and push them to GitHub:
 
-- A fork is a copy of a repository that allows you to freely experiment with changes without affecting the original project.
-- A connection exists between your fork and the original repository itself.
-- If you clone a repo you won't be able to pull down changes from the original repository and if the project is owned by someone else you won't be able to contribute back (unless you are a collaborator)
+```bash
+$ git add <your_file_name>
+$ git commit -m "Update server code and add 2 routes"
+$ git push <remote_name> <branch_name>
+```
 
-[Source](https://github.community/t5/Support-Protips/The-difference-between-forking-and-cloning-a-repository/ba-p/1372)
+<aside class="notes">
+Usually, the remote name is called "origin" and the branch name is called "master". It's good to follow this convention unless you have multiple remotes or branches.
+</aside>
 
+You can pull in changes someone else has made with:
 
-## In Class Activity II
+```bash
+$ git pull <remote_name> <branch_name>
+```
 
-- Create a movie (see slides for deails)
+<aside class="notes">
+- `git init` will initialize a Git repository inside of the current directory. We can prove it was initialized by using `ls -a` to see hidden files.
+- `git remote add origin` adds a _remote_ (short for "remote repository") named _origin_.
+- `git add` is like adding our files to a shopping cart. We may not want to check out just yet - this allows us to still make some changes before pushing.
+- `git commit` makes a _commit_ to our local repository containing our changes. It still won't be reflected in GitHub!
+- `git push` sends all of the commits we've made to the remote we added. The remote name by default is "origin", and the branch name by default is "master".
+</aside>
 
-## Commit messages
+<!-- v -->
 
-The git commit subject line should always be able to complete the following sentence:
+## Git Clone
 
-**If applied, this commit will** *your subject line here*
+Another way to initialize a repository is to _clone_ an existing one.
 
-*Example: Add authentication to login.*
+```bash
+$ git clone <remote_url>
+```
 
-Guidelines:
-- Separate subject from body with a blank line
-- Use imperative mood in the subject
-- Wrap lines at ~70 characters
-- Start with capital letters
+Note that if you are not the repository's owner (or a collaborator), you will not be able to push your changes! Instead, create a new, empty GitHub repository and add it as a remote with `git remote add` as shown above.
 
-[Source](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53)
+<!-- v -->
+
+## Git Debugging
+
+There are a few useful commands to get the "lay of the land" and aid in debugging:
+
+- `git status` - Run before and/or after adding files
+- `git log` - shows previous commits
+- `git diff` - shows diffs in untracked files
+
+<!-- v -->
+
+## gitignore
+
+Add a file called `.gitignore` to specify any files that you don't want to be tracked. For example, my `.gitignore` file might include the following contents:
+
+```
+env/
+__pycache__
+.DS_STORE
+```
+
+Check out [gitignore.io](http://gitignore.io/) to automatically generate a .gitignore file!
+
+<!-- v -->
+
+## Activity: Set up your Homework Repository [5 min]
+
+If you haven't yet, initialize a repository in your BEW1.1 Homework folder, and follow the steps to push your changes to GitHub.
+
+<!-- > -->
+
+# Activity: Create a Merge Conflict
+
+<!-- v -->
+
+## What is a merge conflict?
+
+Merge conflicts occur when you attempt to pull in changes that _conflict with_ (i.e. change the same lines as) your changes.
+
+They are a normal part of working with Git and it's good to practice them!
+
+<!-- v -->
+
+## Let's Create a Merge Conflict! [10 mins]
+
+In your homework directory, change a few lines of code, add, and commit (but don't push).
+
+Then, go to the corresponding GitHub repository and change those _same_ lines of code in a _different_ way.
+
+Try `git pull origin master`. You should get a merge conflict! See if you can resolve it.
+
+<!-- v -->
+
+## Merge Conflicts with a Partner [15 mins]
+
+Pair up with someone you haven't worked with yet.
+
+Clone your partner's repository. Then, both make changes to the _same lines of code_ and try to push your changes.
+
+<!-- > -->
+
+# GitHub Desktop
+
+<!-- v -->
+
+## What is GitHub Desktop?
+
+<aside class="notes">
+GitHub Desktop is a desktop client that takes a lot of the pain out of using command-line Git. It will help you do all of the basic commands - add, commit, and push - and will give you visual reminders of what changes you have made.
+</aside>
+
+![Screenshot of GitHub Desktop](assets/github_desktop.png)
+
+<!-- v -->
+
+## Why GitHub Desktop?
+
+It is...
+
+- Easy and straightforward to use
+- More visual
+- Shows side-by-side file diffs
+
+<!-- v -->
+
+## How do I install it?
+
+[Download for MacOS!](https://desktop.github.com/)
+
+<!-- v -->
+
+## Demo
+
+<!-- > -->
 
 ## Homework
 
-1. Finish your Resume Website and push it to GitHub - Due Tuesday, Sept 3
-1. Optional - [MS Branching tutorial](http://make.sc/git-branching)
+- Homework 1 - Due Monday at midnight - link your repo in the progress tracker to submit
+
+<!-- > -->
 
 ## Additional Resources
 
+1. [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/setting-up-a-repository) - highly recommended if you want a deeper dive into Git, but most of it is not necessary for your day-to-day work
+1. [Fixing Common Mistakes (video)](https://www.youtube.com/watch?v=FdZecVxzJbk&t=954s)
 1. [MS Branching tutorial](http://make.sc/git-branching)
 1. [Info in commit messages](https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages)
 1. [More sources on resolving merge conflicts](https://codeforphilly.github.io/decentralized-data/tutorials/actually-using-git/lessons/conflicting-branches/)
