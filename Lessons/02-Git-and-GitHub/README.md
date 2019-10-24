@@ -1,7 +1,7 @@
 <!-- .slide: data-background="./../Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Git & Github
 
-### [Slides](https://docs.google.com/presentation/d/17NWgjqiLIGECLP456hGPU_f_QJNP38dOuSz3IU-R--I/edit?usp=sharing)
+### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/02-Git-and-GitHub/README.html#/)
 
 <!-- > -->
 
@@ -13,7 +13,7 @@
 
 <!-- > -->
 
-## Initial Exercise
+## Initial Exercise [5 mins]
 
 Think of 3 challenges you have faced when using Git or GitHub. 
 
