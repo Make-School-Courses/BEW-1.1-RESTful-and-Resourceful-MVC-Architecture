@@ -34,7 +34,7 @@ This course covers the three major patterns or architectures that make the web w
 |  3    | Tue, Oct 29 | [Intro to Flask](Lessons/03-Intro-to-Flask/README.md) | |
 |  4    | Thu, Oct 31 | [Flask Templating](Lessons/04-Flask-Templating/README.md) | |
 |  5    | Tue, Nov 5  | [URLs, HTTP, REST, and Reading Errors](Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) | |
-|  6    | Thu, Nov 7  | Review / URLs, HTTP, REST continued | [Quiz 1](Assignments/Quiz-Study-Guide#quiz-1) |
+|  6    | Thu, Nov 7  | [Documentation] | [Quiz 1](Assignments/Quiz-Study-Guide#quiz-1) |
 |  7    | Tue, Nov 12 | [Testing RESTful Routes](Lessons/06-Testing-RESTful-Routes/README.md) | |
 |  8    | Thu, Nov 14 | [Bootstrap] | |
 |  9    | Tue, Nov 19 | [Document-Based Databases](Lessons/08-Document-Based-Databases/README.md) | |
