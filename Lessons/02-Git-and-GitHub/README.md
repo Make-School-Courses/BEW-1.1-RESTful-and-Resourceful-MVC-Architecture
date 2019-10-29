@@ -133,6 +133,7 @@ There are a few useful commands to get the "lay of the land" and aid in debuggin
 
 - `git status` - Run before and/or after adding files
 - `git log` - shows previous commits
+- `git reflog` - shows all changes made to the repository (not just commits)
 - `git diff` - shows diffs in untracked files
 
 <!-- v -->

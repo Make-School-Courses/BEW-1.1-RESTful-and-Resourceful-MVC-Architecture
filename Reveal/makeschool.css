@@ -142,7 +142,7 @@ body {
 .reveal dl,
 .reveal ul {
   display: block;
-  margin: 18px 0 54px 1em;
+  margin: 0;
 }
 
 .reveal ol {
@@ -486,4 +486,8 @@ span.redtext {
 span.greentext {
     color: green;
     font-weight: bold;
+}
+
+span.smalltext {
+    font-size: 0.75em;
 }
