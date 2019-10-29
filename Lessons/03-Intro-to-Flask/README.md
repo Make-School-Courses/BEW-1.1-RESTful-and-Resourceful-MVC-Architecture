@@ -6,7 +6,7 @@
 <!-- .slide: data-background="./../Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Intro to Flask
 
-### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/03-Intro-to-Flask.html ':ignore')
+### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/03-Intro-to-Flask/README ':ignore')
 
 ### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/03-Intro-to-Flask/demo ':ignore')
 
@@ -14,14 +14,11 @@
 
 ## Agenda
 
-1. [Learning Objectives](#learning-objectives)
-1. [Welcome to Web Servers](#welcome-to-web-servers)
-1. [Activity: Write a Function](#write-a-function)
-1. [Add a Flask Route](#add-a-flask-route)
-1. [Break](#break)
-1. [Query Strings](#query-strings)
-1. [HTML Forms](#html-forms)
-1. [Homework](#homework)
+1. Learning Objectives
+1. Review: Flask
+1. Route Variables
+1. Query Strings
+1. GET vs. POST
 
 <!-- > -->
 
@@ -29,12 +26,10 @@
 
 By the end of today, you should be able to:
 
-1. Define what a web server is and how it relates to the backend.
-<!-- .element: class="fragment" data-fragment-index="1" -->
-2. Describe what the Flask framework is and how to use it.
-<!-- .element: class="fragment" data-fragment-index="2" -->
-3. Use what you've learned in CS and BEW classes thus far to build and run your first Python server implemented in Flask.
-<!-- .element: class="fragment" data-fragment-index="3" -->
+1. Describe what the Flask framework is and how to use it.
+1. Use route variables to pass data to a route function.
+1. Use an HTML Form to pass data to a route function via a query string.
+1. Compare and contrast GET and POST requests.
 
 <!-- > -->
 
@@ -304,7 +299,7 @@ A **POST** request occurs when we submit a form with a **POST** method.
 
 ## How can we accept a POST request?
 
-We can access the query parameters of a POST request using `request.form`.
+We can access the query parameters of a POST request using `request.form` instead of `request.args`.
 
 ```py
 @app.route('/login', methods=['POST'])
@@ -324,4 +319,4 @@ Complete [Homework #2](https://make-school-courses.github.io/BEW-1.1-RESTful-and
 
 ## Resources
 
-1. [Flask Quickstart Guide](https://flask.palletsprojects.com/en/1.1.x/quickstart/)
+- [Flask Quickstart Guide](https://flask.palletsprojects.com/en/1.1.x/quickstart/)
