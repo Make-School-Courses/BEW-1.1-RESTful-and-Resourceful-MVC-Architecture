@@ -314,7 +314,7 @@ def login():
 
 ## Vibe Check
 
-[make.sc/bew1.1-vibecheck](https://make.sc/bew1.1-vibe-check)
+[make.sc/bew1.1-vibe-check](https://make.sc/bew1.1-vibe-check)
 
 <!-- > -->
 
