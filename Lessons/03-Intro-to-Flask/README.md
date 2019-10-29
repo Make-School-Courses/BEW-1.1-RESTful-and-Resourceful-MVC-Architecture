@@ -48,7 +48,7 @@ Name as many types of HTML **form elements** as you can.
 **Flask** is the *glue* that connects your **route functions** to **the Internet**:
 
 - When you visit a page, Flask knows to run your function.
-- When that function returns, Flask sends the result back to the browser.
+- When that function *returns*, Flask sends the result back to the browser.
 
 ```py
 @app.route('/hello')
@@ -292,6 +292,8 @@ A **POST** request occurs when we submit a form with a **POST** method.
     Username: <input type='text' name='username'>
     <br>
     Password: <input type='password' name='password'>
+    <br>
+    <input type='submit'>
 </form>
 ```
 
