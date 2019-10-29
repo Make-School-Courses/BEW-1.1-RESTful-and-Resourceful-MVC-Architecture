@@ -32,17 +32,17 @@ This course covers the three major patterns or architectures that make the web w
 |  1    | Tue, Oct 22 | [Static Website](Lessons/01-Static-Website/README.md) | |
 |  2    | Thu, Oct 24 | [Git and GitHub](Lessons/02-Git-and-GitHub/README.md) | |
 |  3    | Tue, Oct 29 | [Intro to Flask](Lessons/03-Intro-to-Flask/README.md) | |
-|  4    | Thu, Oct 31 | [Flask Templating](Lessons/04-Flask-Templating/README.md) | |
-|  5    | Tue, Nov 5  | [URLs, HTTP, REST, and Reading Errors](Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) | |
-|  6    | Thu, Nov 7  | [Documentation] | [Quiz 1](Assignments/Quiz-Study-Guide#quiz-1) |
-|  7    | Tue, Nov 12 | [Testing RESTful Routes](Lessons/06-Testing-RESTful-Routes/README.md) | |
-|  8    | Thu, Nov 14 | [Bootstrap] | |
-|  9    | Tue, Nov 19 | [Document-Based Databases](Lessons/08-Document-Based-Databases/README.md) | |
-|  10   | Thu, Nov 21 | [ERDs, Resource Associations, and MongoDB](Lessons/09-ERDs-Resource-Associations-and-MongoDB/README.md) | [Quiz 2](Assignments/Quiz-Study-Guide#quiz-2) |
-|  11   | Tue, Nov 26 | [Project Planning and User-Centered Development](Lessons/10-Project-Planning-and-User-Centered-Development/README.md) | |
+|  4    | Thu, Oct 31 | [Flask Templating](Lessons/04-Flask-Templating/README.md) + Documentation | |
+|  5    | Tue, Nov 5  | APIs | [Quiz 1](Assignments/Quiz-Study-Guide#quiz-1) |
+|  6    | Thu, Nov 7  | More APIs / Testing | |
+|  7    | Tue, Nov 12 | More Testing | |
+|  8    | Thu, Nov 14 | Bootstrap | |
+|  9    | Tue, Nov 19 | Document-Based Databases | [Quiz 2](Assignments/Quiz-Study-Guide#quiz-2) |
+|  10   | Thu, Nov 21 | ERDs, Resource Associations, and MongoDB | |
+|  11   | Tue, Nov 26 | Project Planning and User-Centered Development | |
 |  -    | Thu, Nov 28 | **NO CLASS** - Thanksgiving | |
-|  12   | Tue, Dec 3 | [RESTful APIs and Deployment Environments](Lessons/11-Deployment-Environments/README.md) | |
-|  13   | Thu, Dec 5 | [Lab Day](Lessons/12-Presentation-Practice/README.md) | [Quiz 3](Assignments/Quiz-Study-Guide#quiz-3) |
+|  12   | Tue, Dec 3  | RESTful APIs and Deployment Environments | |
+|  13   | Thu, Dec 5  | Lab Day | [Quiz 3](Assignments/Quiz-Study-Guide#quiz-3) |
 |  14   | Tue, Dec 10 | Final Contractor Project Presentations | |
 |  15   | Thu, Dec 12 | Bonus Topic | |
 
@@ -57,7 +57,7 @@ All due dates are at 11:59 PM, PST on the date specified.
 | [Homework 3](Assignments/Weekly-Homework?id=homework-3) | Tue, Nov 5    | Mon, Nov 11 | [Submit Homework] |
 | [Homework 4](Assignments/Weekly-Homework?id=homework-4) | Tue, Nov 12   | Mon, Nov 18 | [Submit Homework] |
 | Playlister Tutorial | Tue, Nov 19   | Tue, Nov 26 | [Submit Playlister] |
-| Contractor Project | Tue, Nov 28 | Mon, Dec 9 | [Submit Contractor Project] |
+| Contractor Project | Tue, Nov 26 | Mon, Dec 9 | [Submit Contractor Project] |
 | Contractor Project Final Resubmission | -  | Thu, Dec 12 | [Submit Contractor Project] |
 
 [Submit Homework]: https://docs.google.com/spreadsheets/d/14AkHKwhmKjT352FSm-ord8-IDInLp7dFfCCfYbLI4Pw/edit#gid=0
