@@ -312,6 +312,12 @@ def login():
 
 <!-- > -->
 
+## Vibe Check
+
+[make.sc/bew1.1-vibecheck](https://make.sc/bew1.1-vibe-check)
+
+<!-- > -->
+
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
