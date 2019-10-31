@@ -16,12 +16,9 @@
 
 1. Learning Objectives
 1. Flask Review
-1. Jinja Templates
-1. Template Control Flow
-1. Break
-1. Template Inheritance
-1. Activity: Horoscope App
-1. Introducing Gif Search
+1. Jinja Templates & Template Control Flow
+1. Documentation
+
 
 <!-- > -->
 
@@ -38,64 +35,14 @@ By the end of today, you should be able to:
 
 <!-- > -->
 
-# Review
+## Warm-Up [5 min]
 
-<!-- v -->
+Compare and contrast the following:
 
-## Discussion
-#### (5 min)
+- **Route variables** (e.g. `/items/pumpkin_spice`)
+- **Query parameters** (e.g. `/items?query=pumpkin+spice`)
 
-With your partner, discuss:
-
-- What is a web server?
-- What is Flask, and what does it do?
-
-<!-- v -->
-
-## Our Project So Far
-
-We defined two **routes**, one for the homepage `/` and one for the `/compliments` page. 
-
-<!-- v -->
-
-## Home Page Route
-
-Our homepage route looks like this:
-
-```python
-@app.route('/')
-def index():
-    """Show the homepage and ask the user's name."""
-    return """
-    <form action='/compliment'>
-        <p>
-            What is your name?
-            <input type="text" name="name"/>
-        </p>
-        <p>
-            <input type="checkbox" name="show_compliments"/>
-            Show Compliments
-        </p>
-        <p>
-            How many compliments?
-            <select name="num_compliments">
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-        </p>
-        <button type="submit">Submit</button>
-    </form>
-    """
-```
-
-What could we improve about this?
-
-<!-- v -->
-
-## Separate Concerns
-
-There's HTML code in our Python file! Let's fix that.
+In what scenarios should you use each? Share with a partner.
 
 <!-- > -->
 
@@ -113,64 +60,31 @@ Templates are special HTML files that:
 
 <!-- v -->
 
-## Add a Templates Folder
 
-Put all of your template HTML files in a folder called `templates`.
-
-```bash
-my_project_directory/
-    app.py
-    templates/
-        index.html
-        compliments.html
-```
-
-<!-- v -->
-
-## Add HTML to Template
-
-Let's move the HTML code from the `/` route into its own `index.html` template. It should look like:
-
-```html
-<form action='/compliment'>
-    <p>
-        What is your name?
-        <input type="text" name="name"/>
-    </p>
-    <p>
-        <input type="checkbox" name="show_compliments"/>
-        Show Compliments
-    </p>
-    <p>
-        How many compliments?
-        <select name="num_compliments">
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-    </p>
-    <button type="submit">Submit</button>
-</form>
-```
-
-<!-- v -->
-
-## Render Template
+## Render a Template
 
 At the top of `app.py`, import `render_template`:
 
-```python
+```py
 from flask import render_template
 ```
 
 Then change our route to call the `render_template` function:
 
-```python
-@app.route('/')
-def index():
-    """Show the homepage and ask the user's name."""
-    return render_template('index.html')
+```py
+@app.route('/hello')
+def say_hello():
+    """Says hello."""
+    return render_template('greeting.html')
 ```
+
+<!-- v -->
+
+## Add the Template
+
+Add a file in the `templates` folder called `greeting.html`.
+
+Give it the contents `Hello, World!`.
 
 <!-- v -->
 
@@ -188,57 +102,33 @@ $ flask run
 
 <!-- v -->
 
-## Update the `/compliment` route
+## Make an `/items` route
 
-Let's do the same thing for `/compliment`! Here's our code so far. What do we need to change?
+We can pass *any kind of data* to our template. Here, let's pass in a list of items.
 
-```python
-@app.route('/compliment')
-def get_compliment():
-    """Give the user a compliment"""
-    name = request.args.get('name')
-    show_compliments = request.args.get('show_compliments')
-    compliment = choice(compliments)
+```py
+@app.route('/items')
+def show_items():
+    """Show a list of items."""
+    items_to_show = [
+        'Pumpkins',
+        'Karaoke Machine',
+        'Disco Ball'
+    ]
 
-    if show_compliments:
-        return f'Hello there, {name}! You are so {compliment}!'
-    else:
-        return f'Hello there, {name}! Have a nice day!'
+    return render_template('items_list.html', items=items_to_show)
 ```
 
 <!-- v -->
 
-## Render a Template
+## Update the Template
 
-Let's change the `/compliment` route to render a template instead. This time, we need to pass in some data.
-
-```python
-@app.route('/compliment')
-def get_compliment():
-    """Give the user a compliment"""
-    name = request.args.get('name')
-    show_compliments = request.args.get('show_compliments')
-    compliment = choice(compliments)
-
-    return render_template(
-        'compliments.html', 
-        name=name, 
-        show_compliments=show_compliments, 
-        compliment=compliment)
-```
-
-<!-- v -->
-
-## Write the Template
-
-Create a new file in the `templates` folder, called `compliments.html`. 
-
-Note that Jinja templates use a double curly bracket `{{ }}` to display variables or expressions.
+In Jinja, we can show the value of a variable using `{{` and `}}`.
 
 ```html
-<p>
-    Hello there, {{ name }}! You are so {{ compliment }}!
-</p>
+The items are:
+<br>
+{{ items }}
 ```
 
 <!-- > -->
@@ -247,78 +137,51 @@ Note that Jinja templates use a double curly bracket `{{ }}` to display variable
 
 <!-- v -->
 
-## Conditionals
-
-Let's add a conditional to `compliments.html` so that we will only show a compliment if the user checked 'Show Compliment'. 
-
-In Jinja we use `{% %}` to indicate control structures.
-
-```html
-{% if show_compliments %}
-    You are so {{ compliment }}!
-{% else %}
-    Have a nice day!
-{% endif %}
-```
-
-<!-- v -->
-
-## Passing a List of Compliments
-
-Let's modify our route in `app.py` to pass in a list of compliments instead:
-
-```python
-from random import sample
-
-...
-
-@app.route('/compliment')
-def get_compliment():
-    """Give the user a compliment"""
-    name = request.args.get('name')
-    show_compliments = request.args.get('show_compliments')
-    compliments_to_show = sample(compliments, 3)
-
-    return render_template(
-        'compliments.html', 
-        name=name, 
-        show_compliments=show_compliments, 
-        compliments=compliments_to_show)
-```
-
-<!-- v -->
-
 ## Loops
 
-I want my `compliments.html` file to look like:
+We can use a *loop* in Jinja using `{% for _ in _ %}`. Let's show each item on a separate line.
 
 ```html
-Hi user! You are so:
+The items are:
 <ul>
-    <li>brilliant</li>
-    <li>smashing</li>
-    <li>tenacious</li>
+{% for item in items %}
+  <li> {{ item }} </li>
+{% endfor %}
 </ul>
 ```
 
 <!-- v -->
 
-## Loops
+## Conditionals
 
-Now add a loop to `compliments.html`:
+Let's show a nice message to the user if there are no items.
+
+We can use an *if statement* in Jinja as follows:
 
 ```html
-{% if show_compliments %}
-    You are so:
-    <ul>
-        {% for compliment in compliments %}
-            <li>{{ compliment }}</li>
-        {% endfor %}
-    </ul>
+{% if items %}
+  <ul> ... </ul>
 {% else %}
-    Have a nice day!
+  No items to show!
 {% endif %}
 ```
+
+<!-- > -->
+
+# Write your Own Templates
+
+<!-- v -->
+
+## Challenges [25 min]
+
+1. Write a route that passes a list of songs to a template called `song_list.html`. Add your favorites!
+1. Write a route that passes a boolean for whether or not it is sunny to a template `weather.html`. Show a custom greeting depending on the weather!
+
+<!-- v -->
+
+## Stretch Challenge
+
+1. Use the `random` library to choose a random number. Pass the result to a template, and show the user either "You won!" or "You lost!" depending on the result.
 
 <!-- > -->
 
@@ -327,158 +190,119 @@ Now add a loop to `compliments.html`:
 
 <!-- > -->
 
-# Template Inheritance
+# Documentation
 
 <!-- v -->
 
-## Why Inherit Templates?
+## Why write documentation?
 
-Most websites have some content that is the same for every web page:
-
-- Header, footer
-- Title, styles
-- Etc.
-
-We want to put that content in one place so that we can inherit it and avoid repeated code.
-
-<!-- v -->
-
-## Create `base.html`
-
-Let's put another file, `base.html`, in our `templates` folder.
-
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>{% block title %}{% endblock %}</title>
-    </head>
-    <body>
-        {% block content %}{% endblock %}
-    </body>
-</html>
-```
-
-<!-- v -->
-
-## Extend Base
-
-Now we can **override** the `content` block in our child templates. Let's modify `compliments.html`:
-
-```html
-{% extends 'base.html' %}
-
-{% block title %}
-    Receive Compliments!
-{% endblock %}
-
-{% block content %}
-    {% if show_compliments %}
-        You are so:
-        <ul>
-            {% for compliment in compliments %}
-                <li>{{ compliment }}</li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        Have a nice day!
-    {% endif %}
-{% endblock %}
-```
-
-<!-- v -->
-
-## Extend Base
-
-And `index.html`:
-
-```html
-{% extends 'base.html' %}
-
-{% block title %}
-    Enter Your Info
-{% endblock %}
-
-{% block content %}
-<form action='/compliment'>
-    <p>
-        What is your name?
-        <input type="text" name="name"/>
-    </p>
-    <p>
-        <input type="checkbox" name="show_compliments"/>
-        Show Compliments
-    </p>
-    <p>
-        How many compliments?
-        <select name="num_compliments">
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-    </p>
-    <button type="submit">Submit</button>
-</form>
-{% endblock %}
-```
-
-<!-- v -->
-
-## Customize Compliments
-
-I want to put the code for displaying a single compliment in its own HTML page. That way, I can include it in multiple places!
-
-Make a file `compliment.html` in your `templates` folder:
-
-```html
-<li>{{ compliment }}</li>
-```
-
-<!-- v -->
-
-## Include Compliment
-
-Now, I can include this file in `compliments.html`:
-
-```html
-You are so:
 <ul>
-    {% for compliment in compliments %}
-        {% include 'compliment.html' %}
-    {% endfor %}
+<li>Makes your code easier for others to understand</li><!-- .element: class="fragment" -->
+<li>
+
+Makes your code easier for *you* to understand </li><!-- .element: class="fragment" -->
+<li>Forces you to make better decisions when writing code</li> <!-- .element: class="fragment" -->
 </ul>
+
+<!-- v -->
+
+## How can I write documentation?
+
+There are three ways we (typically) write documentation:
+
+1. **Code Comments**: Describe particularly confusing or complicated lines of code
+1. **Docstrings**: Describe *what* a single function does (not *how* it does it)
+1. **README**: Describe an entire project and give usage instructions
+
+<!-- > -->
+
+# Docstrings
+
+<!-- v -->
+
+## What is a docstring?
+
+A **docstring** (or **documentation string**) describes what a single function does. It goes at the beginning of the function and starts and ends with `"""`.
+
+```py
+def say_hello(name):
+    """Say hello to the specified user."""
+    return "Hello, " + name
 ```
 
-<!-- > -->
+<!-- v -->
 
-# Activity
+## Multi-Line Docstrings
+
+If the function takes inputs or returns an output, we can specify those as well.
+
+```py
+def multiply(x, y):
+    """
+    Multiplies 2 numbers and returns the result.
+    
+    Parameters:
+        x (int): The first operand.
+        y (int): The second operand.
+    
+    Returns:
+        int: The product of the 2 numbers.
+    """
+    return x * y
+```
 
 <!-- v -->
 
-## Expand your Horoscope App
+## Write some Docstrings [10 min]
 
-Modify your Horoscope app to use Jinja templates. Use the [starter code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/04-Flask-Templating/demo) as a guide!
+Write the function signature and docstring (*not the code!*) for the following functions:
 
-- Another Option: Personality Test
+1. A function that takes in 2 numbers and returns their sum.
+1. A function that takes in a list of numbers and returns their sum.
+1. A Flask route function that displays an item's detail page.
 
 <!-- > -->
 
-# Gif Search
+# READMEs
 
 <!-- v -->
 
-## Introducing the Gif Search Project
+## What is a README?
 
-Demo
+A **README** is a file, located in the root folder of your project, that describes:
+
+- A description of the project
+- Installation and usage instructions
+- Any other relevant information
+
+Typically, a README is written in **Markdown** and has a `.md` extension.
+
+<!-- v -->
+
+## Activity: Write a README [10 min]
+
+Visit [makeareadme.com](https://www.makeareadme.com/) and write a README.md file for your Fortune Teller project.
+
+*Finish early? Work on your Homework #2.*
 
 <!-- > -->
 
-<!-- .slide: data-background="#0D4062" -->
+## Vibe Check
+
+[make.sc/bew1.1-vibe-check](https://make.sc/bew1.1-vibe-check)
+
+<!-- > -->
+
+<!-- .slide: data-background="#087CB8" -->
 ## Homework
 
-- Finish Horoscope app
-  - Will not be collected, but we highly encourage you to complete it to get more comfortable with Flask and templating!
+Finish Homework 2 by Monday, Nov. 4
 
-- Start on Gif Search - due Wed, Sept. 18
+<!-- > -->
 
+## Resources
 
+- [Jinja Template Documentation](https://jinja.palletsprojects.com/en/2.10.x/templates/)
+- [GeeksForGeeks on Python Docstrings](https://www.geeksforgeeks.org/python-docstrings/)
+- [Python.org Docstring Conventions](https://www.python.org/dev/peps/pep-0257/)
+- [A Beginner's Guide to Documentation](https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/)
