@@ -491,3 +491,10 @@ span.greentext {
 span.smalltext {
     font-size: 0.75em;
 }
+
+.reveal ul p,
+.reveal ol p,
+.reveal ul li p,
+.reveal ol li p {
+    margin: 0;
+}

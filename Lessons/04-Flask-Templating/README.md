@@ -27,11 +27,9 @@
 By the end of today, you should be able to:
 
 1. Explain the uses of templates 
-<!-- .element: class="fragment" data-fragment-index="1" -->
 1. Render a Flask web page using a Jinja template
-<!-- .element: class="fragment" data-fragment-index="2" -->
 1. Use template control flow structures such as for loops & conditionals
-<!-- .element: class="fragment" data-fragment-index="3" -->
+1. Document your code using comments, docstrings, and a README
 
 <!-- > -->
 
@@ -195,6 +193,8 @@ We can use an *if statement* in Jinja as follows:
 <!-- v -->
 
 ## Why write documentation?
+
+Documentation is helpful because it...
 
 <ul>
 <li>Makes your code easier for others to understand</li><!-- .element: class="fragment" -->
