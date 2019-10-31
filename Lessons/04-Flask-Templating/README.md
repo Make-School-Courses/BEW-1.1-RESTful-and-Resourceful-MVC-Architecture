@@ -296,7 +296,7 @@ Visit [makeareadme.com](https://www.makeareadme.com/) and write a README.md file
 <!-- .slide: data-background="#087CB8" -->
 ## Homework
 
-Finish Homework 2 by Monday, Nov. 4
+Finish [Homework 2](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/#/Assignments/Weekly-Homework?id=homework-2) by Monday, Nov. 4
 
 <!-- > -->
 
