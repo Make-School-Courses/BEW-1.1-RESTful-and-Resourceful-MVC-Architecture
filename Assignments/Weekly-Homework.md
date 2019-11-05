@@ -37,7 +37,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    """Renders the home page with links to Fortune and Weather."""
+    """Renders the home page with link to Fortune page."""
     return render_template('index.html')
 ```
 
