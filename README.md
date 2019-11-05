@@ -33,7 +33,7 @@ This course covers the three major patterns or architectures that make the web w
 |  2    | Thu, Oct 24 | [Git and GitHub](Lessons/02-Git-and-GitHub/README.md) | |
 |  3    | Tue, Oct 29 | [Intro to Flask](Lessons/03-Intro-to-Flask/README.md) | |
 |  4    | Thu, Oct 31 | [Flask Templating](Lessons/04-Flask-Templating/README.md) + Documentation | |
-|  5    | Tue, Nov 5  | APIs | |
+|  5    | Tue, Nov 5  | [APIs](Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) | |
 |  6    | Thu, Nov 7  | More APIs / Testing | [Quiz 1](Assignments/Quiz-Study-Guide#quiz-1) |
 |  7    | Tue, Nov 12 | More Testing | |
 |  8    | Thu, Nov 14 | Bootstrap | |
