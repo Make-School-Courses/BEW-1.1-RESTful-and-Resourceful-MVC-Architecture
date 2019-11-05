@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -14,7 +14,10 @@ def show_items():
     items_to_show = [
         'Pumpkins',
         'Karaoke Machine',
-        'Disco Ball'
+        'Disco Ball',
+        'Fog Machine'
     ]
 
-    return render_template('items_list.html', items=items_to_show)
+    return render_template(
+        'items_list.html', 
+        items=items_to_show)

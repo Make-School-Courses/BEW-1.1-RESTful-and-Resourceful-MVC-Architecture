@@ -33,27 +33,13 @@
 
 <!-- > -->
 
-# Warm-Up
+## Warm Up [15 min]
 
-<!-- v -->
-
-## Warm-Up
-
-1. What is a route?
-1. What is a template, and why do we use templates? 
-1. I want to display a template called `marshmallows.html` on the web page `/candy`. What steps should I follow?
+I want to ask the user of my website what their favorite color is. How do I do so, and display the answer, in Flask?
 
 <!-- > -->
 
 # APIs
-
-<!-- v -->
-
-## Review: URLs & Requests
-
-The web works with a series of unique addresses like the postal service. These addresses are called URLs or **Uniform Resource Locator**.
-
-![URL](assets/query.jpg)
 
 <!-- v -->
 
@@ -66,9 +52,41 @@ The web works with a series of unique addresses like the postal service. These a
 
 <!-- v -->
 
+## What is a REST API?
+
+- **REST** = **Re**presentational **S**tate **T**ransfer
+- A REST API has endpoints that allow us to do operations on objects
+
+<!-- v -->
+
+## What are REST Operations?
+
+Aka, CRUD (Create, Read, Update, Delete) operations
+
+<ul>
+<li>
+
+**GET** `/dogs?breed=shiba+inu` - show me all shiba inu dogs (Read)
+</li> <!-- .element: class="fragment" -->
+<li>
+
+**GET** `/dogs/1` - show me the dog with id 1 (Read) </li> <!-- .element: class="fragment" -->
+<li>
+
+**POST** `/dogs` - enter a new dog into the database (Create) </li> <!-- .element: class="fragment" -->
+<li>
+
+**PUT/PATCH** `/dogs/1` - update the dog with id 1 (Update) </li> <!-- .element: class="fragment" -->
+<li>
+
+**DELETE** `/dogs/1` - delete the dog with id 1 (Delete) </li> <!-- .element: class="fragment" -->
+</ul>
+
+<!-- v -->
+
 ## Example: Chuck Norris API
 
-Get a random Chuck Norris joke!
+Follow the documentation to get a random Chuck Norris joke! 
 
 http://www.icndb.com/api/
 
@@ -82,63 +100,27 @@ http://api.icndb.com/jokes/random?limitTo=nerdy
 
 <!-- v -->
 
-## Introducing: `curl`
+## Introducing Postman
 
-We can also execute this same API query in Terminal:
+Download Postman for Mac here:
 
-```bash
-$ curl "http://api.icndb.com/jokes/random?limitTo=nerdy"
-```
-
-And we get the result:
-
-```json
-{ "type": "success", "value": { 
-    "id": 505, 
-    "joke": "Chuck Norris can spawn threads that complete before they are started.", 
-    "categories": ["nerdy"] }
-}
-```
-
-Try it out!
+https://www.getpostman.com/downloads/
 
 <!-- v -->
 
-## Summary
+## Activity [15 mins]
 
-- APIs don't make any assumptions about how you will *use* the data.
-- Thus, they tend to give you more data than is necessary.
+Use Postman to try out the Chuck Norris API! Use the documentation to help you complete the following challenges.
+
+1. Make a request for a random joke.
+1. Make a request for 100 jokes.
+1. Make a request for the list of joke categories.
 
 <!-- > -->
 
-# Activity: Cards API
-
-<!-- v -->
-
-## Deck of Cards API [25 mins]
-
-1. Point your browser to http://deckofcardsapi.com
-1. Using `curl`, follow the steps to create a deck of cards, draw 2 cards, and reshuffle
-1. See how far you can get!
-
-<img src="assets/cards.jpg" alt="Deck of cards" width="200px">
-
-<!-- v -->
-
-## Let's play Blackjack!
-
-Aim of the game: Get as close to 21 as you can without going over! With a partner:
-
-1. Draw 1 card from a new deck - This card is shared
-1. From the *same* deck (but on different computers), each person draw 2 cards
-1. On your turn: Decide whether to stay or draw another card
-
-#### J/K/Q worth 10, A worth either 1 or 11 (you choose)
 
 
-<!-- > -->
-
-# Dictionaries
+# Review: Dictionaries
 
 <!-- v -->
 
@@ -206,59 +188,9 @@ Try setting and accessing at least 2 different fields.
 
 <!-- > -->
 
+
 ## Break [10 minutes]
 <!-- .slide: data-background="#087CB8" -->
-
-<!-- > -->
-
-# JSON
-
-<!-- v -->
-
-## What is JSON?
-
-- **J**ava**S**cript **O**bject **N**otation 
-- A standard format for transmitting data across the web and between different programming languages
-- Consists of **key-value pairs**:
-  - Key is a string
-  - Value could be a **primitive** (string, number), a **list**, or another JSON **object**
-
-<!-- v -->
-
-## Activity
-
-With a partner, see if you can determine what this JSON data represents:
-
-```js
-{
-  "Order#": "309873457",
-  "Name": "Jeff Bezoz",
-  "Items": [
-    { "Item_Name": "Used Tissue", "Price": 4.99 },
-    { "Item_Name": "Elon's Musk", "Price": 2500 },
-    { "Item_Name": "Bill's Gates", "Price": 1495.01 }
-  ],
-  "Address": "2000 Pennsilvania Avenue, Washington D.C.",
-  "Total": 40000
-}
-```
-
-<!-- v -->
-
-## Accessing JSON
-
-We can make a JSON object in our Python code:
-
-```python
->>> my_json = { "name": "Bananas", "price": 0.99, "num_in_stock": 200 }
-```
-
-And access it like:
-
-```python
->>> my_json["name"]
-"Bananas"
-```
 
 <!-- > -->
 
@@ -282,7 +214,7 @@ Use the `requests.get` function to send a GET request to your API.
 
 This function returns a `Response` Object. We need to call `.json()` to get the JSON data.
 
-```python
+```py
 >>> import requests
 
 >>> r = requests.get("http://api.icndb.com/jokes/random?limitTo=nerdy")
@@ -295,7 +227,7 @@ This function returns a `Response` Object. We need to call `.json()` to get the 
 
 Remember that our JSON data looks like this:
 
-```python
+```py
 { "type": "success", "value": { 
     "id": 505, 
     "joke": "Chuck Norris can spawn threads that complete before they are started.", 
@@ -348,7 +280,24 @@ r = requests.get("http://fakeapi.com/search", params=my_params)
 
 <!-- v -->
 
-## Let's Make a `/joke` Flask Route
+## Let's Make a Joke Program
+
+
+```py
+import requests
+from pprint import PrettyPrinter
+
+pp = PrettyPrinter(indent=4)
+
+params = { "limitTo": "nerdy" }
+r = requests.get("http://api.icndb.com/jokes/random", params=params)
+joke_json = r.json()
+pp.pprint(joke_json)
+```
+
+<!-- v -->
+
+## Turn it Into a Flask Route
 
 ```python
 import requests
@@ -376,37 +325,11 @@ $ export FLASK_ENV=development
 $ flask run
 ```
 
-<!-- > -->
-
-# Gif Search
-
 <!-- v -->
 
-## Demo
+## Activity
 
-Demo
-
-<!-- v -->
-
-## Request an API Key
-
-Go to https://tenor.com/developer/dashboard and request an API key!
-
-<!-- v -->
-
-## Use Your API Key
-
-```python
-import requests
-
-params = {
-    "q": query_term,
-    "Key": "WL6NLFPEQRYR"
-}
-response = requests.get(
-    'https://api.tenor.com/v1/search',
-    params=params)
-```
+Modify the 
 
 <!-- > -->
 

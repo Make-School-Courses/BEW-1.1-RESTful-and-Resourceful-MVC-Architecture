@@ -1,3 +1,18 @@
-The items are:
-<br>
-{{ items }}
+{% if items %}
+    The items are:
+    <ul>
+    {% for item in items %}
+    <li> {{ item }} </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    No items to show!
+{% endif %}
+
+
+
+
+
+<br><br>
+
+The event is: {{ event }}
