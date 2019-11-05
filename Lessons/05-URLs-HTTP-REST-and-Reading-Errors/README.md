@@ -14,21 +14,19 @@
 ## Agenda
 
 1. What is an API? How do we use one?
-1. Activity: Blackjack
-1. Dictionaries
-1. The JSON Data Type
+1. Postman
+1. Dictionaries & JSON
 1. Break
 1. The `requests` library
 1. Flask and APIs
-1. GIF Search Project
 
 <!-- > -->
 
 ## Learning Outcomes
 
 1. Describe the uses of an API 
-1. Write an API request using `curl`
-1. Describe the purpose of JSON and use Python to access JSON data
+1. Write an API request using Postman
+1. Use Python to access JSON data
 1. Use the `requests` library to write an API request
 
 <!-- > -->
@@ -329,7 +327,10 @@ $ flask run
 
 ## Activity
 
-Modify the 
+Modify the code in our joke route to:
+
+1. Show a joke for "Ada Lovelace" instead of "Chuck Norris"
+1. Ask the user their name, and tell them a joke about themselves
 
 <!-- > -->
 
