@@ -77,5 +77,67 @@ Stretch challenges:
 
 ## Homework 3
 
-## Homework 4
+### Part 1: Explore the API
 
+Step 1: Go to the [OpenWeatherMap sign-up page](https://openweathermap.org/appid) and sign up for an account. After signing up, click on the "API keys" tab and copy the API key. This is the key that you will use for making your queries.
+
+Step 2: Open the [Postman](https://www.getpostman.com/downloads/) desktop client and enter the following URL:
+
+```
+http://api.openweathermap.org/data/2.5/weather?q=YOUR_CITY_HERE&appid=YOUR_APP_ID
+```
+
+Replace `YOUR_CITY_HERE` with the name of a city (e.g. `San+Francisco`), and replace `YOUR_APP_ID` with the API key you obtained in Step 1.
+
+Step 3: Answer the following discussion questions in your homework's README file:
+
+1. Describe the data contained in the API response. What can we discern about the weather in the specified city?
+
+1. How would we obtain the temperature in the specified city? Describe using Python dictionary syntax. (HINT: Assume that the JSON response is stored in a variable called `json_response`.)
+
+
+### Part 2: Display the temperature in a given city
+
+We will be creating a page on our site to show the weather in any given city. When finished, it will look something like this:
+
+![Demo of Weather API App](assets/weather_api.gif)
+
+In your templates directory, create a file called `weather_form.html`. Initialize it with the following contents:
+
+```html
+<form action="/weather_results">
+    Type in your city: <br>
+    <input type="text" name="city"><br>
+    <input type="submit" value="Submit!">
+</form>
+```
+
+Create a route in your `app.py` server file to display the weather form page at the URL `/weather`. Modify your `index.html` page to link to the weather form.
+
+Create another route for the `/weather_results` URL. Use `request.args` to get the value entered by the user:
+
+```py
+@app.route('/weather_results')
+def weather_results_page():
+    users_city = request.args.get('city')
+    ...
+```
+
+Next, import the `requests` library and use `requests.get` to make an API call to the URL you used in Part 1. Store the response in a variable called `response`.
+
+Call the `.json()` method on your response object. Using dictionary syntax, extract the temperature field from the JSON response.
+
+Finally, return a string containing the temperature and city to be rendered as HTML.
+
+**Stretch Challenges**:
+
+1. By default, the OpenWeather API returns temperatures in degrees Kelvin. Write a helper function to convert the temperature to Celcius or Fahrenheit, and use that before rendering the page.
+
+1. Modify your code to render a template instead of returning an HTML string.
+
+
+**Resources**:
+
+1. [OpenWeatherMap API Documentation](https://openweathermap.org/current)
+
+1. [How to Use Requests](https://pypi.org/project/requests/2.7.0/)

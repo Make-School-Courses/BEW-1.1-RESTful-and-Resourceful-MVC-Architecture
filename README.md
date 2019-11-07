@@ -54,9 +54,8 @@ All due dates are at 11:59 PM, PST on the date specified.
 |:----------:|:-------------:|:-----------:|:-----------------:|
 | [Homework 1](Assignments/Weekly-Homework?id=homework-1) | Tue, Oct 22   | Mon, Oct 28 | [Submit Homework] |
 | [Homework 2](Assignments/Weekly-Homework?id=homework-2) | Tue, Oct 29   | Mon, Nov 4  | [Submit Homework] |
-| [Homework 3](Assignments/Weekly-Homework?id=homework-3) | Tue, Nov 5    | Mon, Nov 11 | [Submit Homework] |
-| [Homework 4](Assignments/Weekly-Homework?id=homework-4) | Tue, Nov 12   | Mon, Nov 18 | [Submit Homework] |
-| Playlister Tutorial | Tue, Nov 19   | Tue, Nov 26 | [Submit Playlister] |
+| [Homework 3](Assignments/Weekly-Homework?id=homework-3) | Thu, Nov 5    | Thu, Nov 14 | [Submit Homework] |
+| Playlister Tutorial | Thu, Nov 14   | Tue, Nov 26 | [Submit Playlister] |
 | Contractor Project | Tue, Nov 26 | Mon, Dec 9 | [Submit Contractor Project] |
 | Contractor Project Final Resubmission | -  | Thu, Dec 12 | [Submit Contractor Project] |
 
@@ -95,7 +94,7 @@ To pass this course, students must meet the following requirements:
 
 - Complete **all** required coding tutorials:
     - [Playlister](https://www.makeschool.com/academy/track/playlistr-video-playlists-with-flask-and-mongodb-1c)
-- Complete **all** required [homework assignments]()
+- Complete **all** required [homework assignments](Assignments/Weekly-Homework)
 - Complete **all** required coding projects (this includes all commit requirements and homework related to each project):
     - Contractor Project ([Rubric](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit?usp=sharing))
 - Submit all code and writing with rubric scores by the due dates listed above
