@@ -89,7 +89,7 @@ http://api.openweathermap.org/data/2.5/weather?q=YOUR_CITY_HERE&appid=YOUR_APP_I
 
 Replace `YOUR_CITY_HERE` with the name of a city (e.g. `San+Francisco`), and replace `YOUR_APP_ID` with the API key you obtained in Step 1.
 
-Step 3: Answer the following discussion questions in your homework's README file:
+Step 3: Read over the API response. Answer the following discussion questions in your homework's README file:
 
 1. Describe the data contained in the API response. What can we discern about the weather in the specified city?
 
@@ -112,7 +112,9 @@ In your templates directory, create a file called `weather_form.html`. Initializ
 </form>
 ```
 
-Create a route in your `app.py` server file to display the weather form page at the URL `/weather`. Modify your `index.html` page to link to the weather form.
+Create a route in your `app.py` server file to display the weather form page at the URL `/weather`. 
+
+If you are writing a new app (rather than building off of the Fortune Teller app), create an `index.html` page and corresponding route. Modify it to link to the weather form using an `a href` tag.
 
 Create another route for the `/weather_results` URL. Use `request.args` to get the value entered by the user:
 
@@ -123,7 +125,18 @@ def weather_results_page():
     ...
 ```
 
-Next, import the `requests` library and use `requests.get` to make an API call to the URL you used in Part 1. Store the response in a variable called `response`.
+Next, import the `requests` library and use `requests.get` to make an API call to the URL you used in Part 1. Store the response in a variable called `response`. This should look something like:
+
+```py
+@app.route('/weather_results')
+def weather_results_page():
+    # ... get user's city
+    params = {
+        'q': users_city,
+        'appid': YOUR_API_KEY_HERE
+    }
+    response = requests.get('http://api.openweathermap.org/data/2.5/weather', params=params)
+```
 
 Call the `.json()` method on your response object. Using dictionary syntax, extract the temperature field from the JSON response.
 
