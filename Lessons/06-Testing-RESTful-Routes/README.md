@@ -6,7 +6,7 @@
 # Testing RESTful Routes
 
 ### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/06-Testing-RESTful-Routes/README)
-### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/06-Testing-RESTful-Routes/demo)
+### [Starter Code](https://github.com/Make-School-Labs/Flask-Testing-Starter)
 
 <!-- > -->
 
@@ -233,7 +233,9 @@ Go to [https://make.sc/bew1.1-vibe-check](https://make.sc/bew1.1-vibe-check) and
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
-Homework 3 (Weather App) is due tonight at midnight.
+Homework 3 (Weather App) is due on Thursday,  at midnight.
+
+If 
 
 <!-- > -->
 
