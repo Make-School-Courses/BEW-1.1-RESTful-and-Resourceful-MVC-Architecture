@@ -5,15 +5,13 @@
 <!-- .slide: data-background="./../Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Testing RESTful Routes
 
-### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/06-Testing-RESTful-Routes.html ':ignore')
+### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/06-Testing-RESTful-Routes.html)
 ### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/06-Testing-RESTful-Routes/demo)
 
 <!-- > -->
 
 ## Agenda
 
-1. **Quiz: Timed, 20 minutes w/ 5 minute break**
-1. FSP Support Survey
 1. [Learning Objectives](#learning-objectives)
 1. [Why Test Our Routes?](#why-test-our-routes?) 
 1. [Forms of Testing](#forms-of-testing)
@@ -23,33 +21,11 @@
 
 <!-- > -->
 
-## Quiz [20 mins]
-
-### 5 mins break
-<!-- .slide: data-background="#087CB8" -->
-
-<!-- > -->
-
-## FSP Support Survey (5 mins)
-
-**What Are The New FSP Level Up Sessions?**
-
-Required hour long sessions Mon/Tue/Wed/Thu where we will:
-
-1. Review old material
-1. Do slower and more in-depth explanations
-1. Explain how to think programmatically
-
-**Survey link:** [make.sc/fsp-support-survey](http://make.sc/fsp-support-survey)
-
-<!-- > -->
-
 ## Learning Objectives
 
 1. List various types of automated tests
 1. Define unit tests and how to implement them in Python
 1. Implement route tests for one resource
-1. List when it is ok to test and not to test
 
 <!-- > -->
 
@@ -61,12 +37,12 @@ Required hour long sessions Mon/Tue/Wed/Thu where we will:
 
 **Manual testing** means manually running your program many times, with various test cases.
 <!-- .element: class="fragment" data-fragment-index="1" -->
-- Example: How you (probably) tested Spaceman
+- Example: Running your app to see if it's working
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 **Automated testing** is writing code that tests your code *for you*.
 <!-- .element: class="fragment" data-fragment-index="3" -->
-- Example: Writing code that tests the correctness of Spaceman - either a single function, or the entire program
+- Example: Writing code that tests the correctness of your app for various user inputs
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 <!-- v -->
@@ -78,15 +54,6 @@ Required hour long sessions Mon/Tue/Wed/Thu where we will:
 1. Other developers can contribute to your project without fear of breaking it<!-- .element: class="fragment" data-fragment-index="2" -->
 1. Improves accuracy of your code - easier to test many edge cases<!-- .element: class="fragment" data-fragment-index="3" -->
   - What is an **edge case**?
-
-<!-- v -->
-
-## When Is Testing A Lower Priority?
-
-1. Small projects<!-- .element: class="fragment" data-fragment-index="1" -->
-1. Solo projects<!-- .element: class="fragment" data-fragment-index="2" -->
-1. Private (not public) projects<!-- .element: class="fragment" data-fragment-index="3" -->
-
 
 <!-- > -->
 
@@ -100,16 +67,6 @@ We'll go over a couple of the most foundational tests you can run on your projec
 
 1. **Unit Testing** - tests a single function
 1. **Route Testing** - tests what is served by a single route
-
-<!-- v -->
-
-## What is 'test coverage'?
-
-Writing these tests will help us achieve comprehensive **test coverage**. If a feature has an automated test associated with it, it is considered "covered". 
-
-![flowchart of Spaceman project](assets/spaceman_flowchart.png)
-
-A project with **100% test coverage** has all its features covered by tests.
 
 <!-- > -->
 
@@ -132,25 +89,18 @@ Python has a built in unit test library called [unittest](https://docs.python.or
 Here's an example of a unit test that checks the output of a `greet_by_name` function. Check out the comments for details. Let's call this file `test_greeting.py`:
 
 ```python
-# test_greeting.py
-# Import in the Python unittest library
 import unittest
 
-# Declare our function
 def greet_by_name(name):
-  greeting = "Hello, " + name + "!"
-  return greeting
+    """Greet user by name."""
+    greeting = "Hello, " + name + "!"
+    return greeting
 
-# Q: What's the class keyword mean here? 
-# A: You'll find out in the CS OOP classes coming soon!
-# For now, know that your tests must look like this.
-class GreetByNameTests(unittest.TestCase):
-    # For each test in the class, make a method where self is the parameter
-    def test_default_greeting(self):
-        # the actual test
+class StringFunctionTests(unittest.TestCase):
+    def test_greeting(self):
+        """Test the greeting function."""
         self.assertEqual(greet_by_name('Dani'), 'Hello, Dani!')
 
-# run the tests
 if __name__ == '__main__':
     unittest.main()
 ```
@@ -170,7 +120,7 @@ An **Assertion** is a true/false statement that defines a test. In the above exa
 If you were to run this function, you'd see the following output:
 
 ```bash
-➜  ~ python3 test_greeting.py
+➜  ~ python3 string_tests.py
 .
 ----------------------------------------------------------------------
 Ran 1 test in 0.000s
@@ -224,19 +174,9 @@ FAILED (failures=1)
 
 <!-- v -->
 
-## Activity: You Try!
+## Activity: Write some Tests
 
-Remember the first draft of your `get_compliments()` function from the Compliments app?
-
-```python
-compliments = ['coolio', 'smashing', 'neato', 'fantabulous']
-
-def get_compliment():
-    compliment = compliments[0]
-    return f'Hello there, user! You are so {compliment}!'
-```
-
-Write a test file called `test_compliment.py` and test it out! See if you can break the test.
+Clone the repository [here](https://github.com/Make-School-Labs/Flask-Testing-Starter) and write tests for the other functions.
 
 <!-- > -->
 
@@ -251,72 +191,49 @@ Write a test file called `test_compliment.py` and test it out! See if you can br
 
 ## What is Route Testing?
 
-**Routes Testing** is in a bit of a Goldilocks position where it is broad and tests a lot of behavior, but they are not too brittle such that they will break when we change something minor like the styling.
-
-<!-- v -->
-
-## What does "Brittle" mean?
-
-How easily a test breaks. A test that is too brittle tests "too much", and if it is not brittle enough it tests "too little". e.g. `assert(a == a)` is not brittle enough.
+**Route Tests** test a single route. They are typically more broad than unit tests, but will not break when we change something minor like the styling.
 
 <!-- v -->
 
 ## Route Testing Example
 
-Back to testing routes, here's an example of testing a route, adapted from [Damyanon](https://damyanon.net/post/flask-series-testing/):
+Here's an example of testing a route:
 
 ```python
-# First we need to import our app.
-# This test file should be in the same folder as your app.py file
 from app import app
 import unittest 
 
 class AppTests(unittest.TestCase): 
     
-    # This runs implicitly before any tests are run
-    # We use this to set up our app before we test on it
     def setUp(self):
-        # creates a test client
         self.app = app.test_client()
-        # propagate the exceptions to the test client
         self.app.testing = True 
 
-    def test_home_status_code(self):
-        # sends HTTP GET request to the application
-        # on the specified path
-        result = self.app.get('/') 
-
-        # assert the status code of the response
-        self.assertEqual(result.status_code, 200) 
+    def test_homepage(self):
+        """Verify that homepage renders correctly."""
+        result = self.app.get('/')
+        self.assertEqual(result.status_code, 200)
+        self.assertIn('Hello world', str(result.data))
 ```
 
 <!-- v -->
 
-## Activity: Test GIF Search!
+## Activity: Test Fortune Teller
 
-Work with your partner and write some route tests for your GIF Search project! 
-
-**Stretch Challenge:** Write some unit tests for GIF Search as well
+Write at least four route tests for your Fortune Teller project (one for each possible fortune).
 
 <!-- > -->
 
-## ConcepTest
+## Vibe Check
 
-Which form of testing is the most efficient? (i.e. is the least brittle while providing the most test coverage)
-
-<ol type="A">
-  <li>Unit Tests</li>
-  <li>Routes Tests</li>
-</ol>
+Go to [https://make.sc/bew1.1-vibe-check](https://make.sc/bew1.1-vibe-check) and fill out the form.
 
 <!-- > -->
 
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
-Continue working on GIF Search with your partner! **Remember to log your pair programming session in the tracker!**
-
-**Stretch Challenge:** Aim for full test coverage of your GIF Search project!
+Homework 3 (Weather App) is due tonight at midnight.
 
 <!-- > -->
 

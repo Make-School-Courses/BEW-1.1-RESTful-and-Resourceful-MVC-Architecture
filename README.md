@@ -35,7 +35,7 @@ This course covers the three major patterns or architectures that make the web w
 |  4    | Thu, Oct 31 | [Flask Templating](Lessons/04-Flask-Templating/README.md) + Documentation | |
 |  5    | Tue, Nov 5  | [APIs](Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) | |
 |  6    | Thu, Nov 7  | APIs Lab Day | [Quiz 1](Assignments/Quiz-Study-Guide#quiz-1) |
-|  7    | Tue, Nov 12 | Testing | |
+|  7    | Tue, Nov 12 | [Testing](Lessons/06-Testing-RESTful-Routes/README.md) | |
 |  8    | Thu, Nov 14 | More Testing | |
 |  9    | Tue, Nov 19 | Document-Based Databases | |
 |  10   | Thu, Nov 21 | ERDs, Resource Associations, and MongoDB | [Quiz 2](Assignments/Quiz-Study-Guide#quiz-2) |
