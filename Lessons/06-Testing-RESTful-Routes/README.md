@@ -113,6 +113,8 @@ What does `assertEqual` mean? This is an example of an assertion!
 
 An **Assertion** is a true/false statement that defines a test. In the above example, we're testing to make sure the `greet_by_name('Dani')` function returns `Hello, Dani!` as an answer.
 
+Read more about assertions [here](https://docs.python.org/3/library/unittest.html#unittest.TestCase).
+
 <!-- v -->
 
 ## Run the Test
@@ -234,8 +236,6 @@ Go to [https://make.sc/bew1.1-vibe-check](https://make.sc/bew1.1-vibe-check) and
 ## Homework
 
 Homework 3 (Weather App) is due on Thursday,  at midnight.
-
-If 
 
 <!-- > -->
 
