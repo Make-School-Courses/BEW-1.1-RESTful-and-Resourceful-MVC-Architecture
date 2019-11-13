@@ -86,7 +86,7 @@ There will be a total of 3 quizzes given throughout the term, each covering roug
 
 Quiz grades will be handed back using [Gradescope](https://www.gradescope.com/). Students may view their grade and prior work in preparation for the next quiz or retake. It is prohibited to share the quiz content with any other student in the course, and doing so will result in disciplinary action.
 
-Any student scoring <70% on a quiz **must** retake it in order to pass the course. Quiz retakes will be offered at specified times following the quiz (dates/times TBD), or by appointment. 
+Any student scoring <70% on a quiz **must** retake it in order to demonstrate mastery of the concepts. Quiz retakes will be offered at specified times following the quiz (dates/times TBD), or by appointment. 
 
 ## Evaluation
 
@@ -98,7 +98,7 @@ To pass this course, students must meet the following requirements:
 - Complete **all** required coding projects (this includes all commit requirements and homework related to each project):
     - Contractor Project ([Rubric](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit?usp=sharing))
 - Submit all code and writing with rubric scores by the due dates listed above
-- Pass all weekly quizzes (there will be a total of 3 quizzes, passing score is >70%)
+- Score an **average** of 70% on all quizzes offered
     - Quiz retakes are required for scores lower than 70%; retake score overrides previous score
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
