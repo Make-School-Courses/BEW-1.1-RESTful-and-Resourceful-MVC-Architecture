@@ -2,7 +2,7 @@
 # More Testing & Mocks
 
 ### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/07-More-Testing/README)
-### [Starter Code](https://github.com/Make-School-Labs/Flask-Testing-Starter)
+### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/07-More-Testing/demo)
 
 <!-- > -->
 
@@ -92,7 +92,7 @@ def test_foo(self, expensive_api_call):
 
     # Call the function being tested
     result = foo.function_we_are_testing('Togepi')
-    
+
     # ... verify that result is what we expect
 ```
 
