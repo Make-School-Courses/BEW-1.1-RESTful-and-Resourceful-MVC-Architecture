@@ -36,7 +36,7 @@ This course covers the three major patterns or architectures that make the web w
 |  5    | Tue, Nov 5  | [APIs](Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md) | |
 |  6    | Thu, Nov 7  | APIs Lab Day | [Quiz 1](Assignments/Quiz-Study-Guide#quiz-1) |
 |  7    | Tue, Nov 12 | [Testing](Lessons/06-Testing-RESTful-Routes/README.md) | |
-|  8    | Thu, Nov 14 | More Testing | |
+|  8    | Thu, Nov 14 | [More Testing](Lessons/07-More-Testing/README.md) | |
 |  9    | Tue, Nov 19 | Document-Based Databases | |
 |  10   | Thu, Nov 21 | ERDs, Resource Associations, and MongoDB | [Quiz 2](Assignments/Quiz-Study-Guide#quiz-2) |
 |  11   | Tue, Nov 26 | Project Planning and User-Centered Development | |

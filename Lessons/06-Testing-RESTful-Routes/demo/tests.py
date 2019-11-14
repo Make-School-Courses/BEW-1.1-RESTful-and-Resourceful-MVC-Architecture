@@ -13,15 +13,16 @@ class AppTests(unittest.TestCase):
 
     def test_fortune_results_default_response(self):
         result = self.app.get('/fortune_results')
-        self.assertIn('Nothing of note', str(result.data))
+        self.assertIn('Nothing of note', result.get_data(as_text=True))
 
     def test_fortune_results_unicorn(self):
         result = self.app.get('/fortune_results?animal=unicorn')
-        self.assertIn('magical day', str(result.data))
+        self.assertIn('magical day', result.get_data(as_text=True))
 
     def test_fortune_results_cat(self):
         result = self.app.get('/fortune_results?animal=cat')
-        self.assertIn('will be paw-some', str(result.data))
+        print(result)
+        self.assertIn('will be paw-some', result.get_data(as_text=True))
 
 # run the tests
 if __name__ == '__main__':

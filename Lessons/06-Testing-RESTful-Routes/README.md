@@ -215,7 +215,24 @@ class AppTests(unittest.TestCase):
         """Verify that homepage renders correctly."""
         result = self.app.get('/')
         self.assertEqual(result.status_code, 200)
-        self.assertIn('Hello world', str(result.data))
+        page_content = result.get_data(as_text=True)
+        self.assertIn('Hello world', page_content)
+```
+
+<!-- v -->
+
+## What if I want to test with specific form input?
+
+We can *simulate* a user entering "Cat" into the "Favorite animal?" input box by changing the query string.
+
+```py
+def test_fortune_cat(self):
+    """Verify that homepage renders correctly."""
+    result = self.app.get('/fortune_results?animal=cat')
+    self.assertEqual(result.status_code, 200)
+
+    page_content = result.get_data(as_text=True)
+    self.assertIn('Your day will be paw-some', page_content)
 ```
 
 <!-- v -->
@@ -235,7 +252,7 @@ Go to [https://make.sc/bew1.1-vibe-check](https://make.sc/bew1.1-vibe-check) and
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
-Homework 3 (Weather App) is due on Thursday,  at midnight.
+Homework 3 (Weather App) is due on Thursday, at midnight.
 
 <!-- > -->
 

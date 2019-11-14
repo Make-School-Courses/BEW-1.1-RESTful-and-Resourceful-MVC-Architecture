@@ -6,6 +6,7 @@
   - [Flask Templating](Lessons/04-Flask-Templating/README.md)
   - [URLs, HTTP, REST, and Reading Errors](Lessons/05-URLs-HTTP-REST-and-Reading-Errors/README.md)
   - [Testing RESTful Routes](Lessons/06-Testing-RESTful-Routes/README.md)
+  - [More Testing](Lessons/07-More-Testing/README.md)
   - [Document-Based Databases](Lessons/08-Document-Based-Databases/README.md)
   - [ERDs, Resource Associations, and MongoDB](Lessons/09-ERDs-Resource-Associations-and-MongoDB/README.md)
   - [Project Planning and User-Centered Development](Lessons/10-Project-Planning-and-User-Centered-Development/README.md)
