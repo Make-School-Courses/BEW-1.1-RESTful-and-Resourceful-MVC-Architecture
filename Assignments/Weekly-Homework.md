@@ -119,6 +119,8 @@ If you are writing a new app (rather than building off of the Fortune Teller app
 Create another route for the `/weather_results` URL. Use `request.args` to get the value entered by the user:
 
 ```py
+from flask import request
+
 @app.route('/weather_results')
 def weather_results_page():
     users_city = request.args.get('city')
@@ -128,6 +130,8 @@ def weather_results_page():
 Next, import the `requests` library and use `requests.get` to make an API call to the URL you used in Part 1. Store the response in a variable called `response`. This should look something like:
 
 ```py
+import requests
+
 @app.route('/weather_results')
 def weather_results_page():
     # ... get user's city
