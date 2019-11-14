@@ -8,9 +8,19 @@
 
 ## Agenda
 
+1. Learning Objectives
+1. Intro to Mocks
+1. Activity: Read and Answer Questions
+1. How to Use Mocks
+1. Testing our Weather App
+
 <!-- > -->
 
 ## Learning Objectives
+
+1. Describe why mocks are useful and improve our tests.
+1. Use the unittest.mock library to mock out an API call.
+1. Set an expected return value for a mock object and verify that the mocked method was called.
 
 <!-- > -->
 
