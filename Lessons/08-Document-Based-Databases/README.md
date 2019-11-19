@@ -6,11 +6,17 @@
 
 <!-- > -->
 
+## Warm-Up
+
+1. In what situations would we want to use mocks to test our code?
+1. If I am testing a call to an API, which *function* should I mock?
+
+<!-- > -->
 
 ## Learning Outcomes
 
-1. Identify the pros and cons of a NoSQL or Document-based database
-1. Get comfortable with Mongo queries.
+1. Use MongoDB Compass Connect to create and view items in a database
+1. Get comfortable with Mongo queries
 1. Understand how to connect and use MongoDB in a Python web app
 
 <!-- > -->
@@ -25,14 +31,6 @@ Document-Based Databases:
 
 - Store data in **documents** similar to JSON
 - Also called **NoSql** or **non-relational** because they don't use the more traditional, **relational** methods of storage
-
-We'll go over the specifics of these **collections** in a bit.
-
-
-<!-- v -->
-
-
-![relational-vs-document](assets/relational-vs-document.jpg)
 
 
 <!-- v -->
@@ -63,9 +61,7 @@ We'll go over the specifics of these **collections** in a bit.
 
 MongoDB gives each document a unique identification number with the key `_id`. 
 
-It's sort of like dropping clothes off at the dry-cleaners.
-
-![Dry Cleaners](assets/drycleaners.jpeg)
+It's sort of like dropping clothes off at the dry-cleaners: you are given a ticket with a **unique identification number** so that you can find your item again.
 
 <!-- v -->
 
@@ -74,35 +70,63 @@ It's sort of like dropping clothes off at the dry-cleaners.
 So, if we saved a new project like this to a MongoDB database:
 
 ```py
-# PYTHON DICTIONARY OBJECT
+# Python Dictionary Object
 { "title": "A New Project" }
 ```
 
 Then it will save something like this:
 
-```js
-// MongoDB OBJECT
+```py
+# MongoDB Object
 {
-  _id: "507f1f77bcf86cd799439011",
-  title: "A New Project"
+  "_id": ObjectId("507f1f77bcf86cd799439011"),
+  "title": "A New Project"
 }
 ```
 
 <!-- v -->
 
-## Pros
+## What is an ObjectId?
 
-1. Writes fast
-2. More flexible and easy to start
-3. "Schemaless" - can save anything you want regardless of datatype or schema
+An ObjectId is neither a string nor a number. It is a special class that we can import from `bson.objectid`.
+
+**BSON** stands for "**bytes JSON**" and is how our MongoDB data is typically stored.
+
+```py
+>>> from bson.objectid import ObjectId
+
+>>> my_id = ObjectId(b'foo-bar-quux')
+ObjectId('666f6f2d6261722d71757578')
+>>> str(my_id)
+'666f6f2d6261722d71757578'
+```
+
+<!-- > -->
+
+# MongoDB Compass
 
 <!-- v -->
 
-## Cons
+## What is MongoDB Compass?
 
-1. Slow to traverse (search)
-1. Slow to read from
-1. "Schemaless" - can become unstructured
+It is a desktop tool that allows us to easily **create, read, update, and delete** (CRUD) database objects in MongoDB. It will save you a lot of time when writing your Flask applications!
+
+You can download it [here](https://www.mongodb.com/download-center/compass?jmp=docs).
+
+<!-- v -->
+
+## Demo
+
+![Compass](assets/mongodb_compass.png)
+
+<!-- v -->
+
+## Activity: Create a Database
+
+1. Download MongoDB Compass.
+1. Create a database called `test_db` with a collection `songs`.
+1. Enter data for your top 5 favorite songs, including the title, album, and artist.
+1. Practice Creating, Updating, and Deleting objects.
 
 <!-- > -->
 
@@ -111,198 +135,162 @@ Then it will save something like this:
 
 <!-- > -->
 
-# MongoDB Shell
+# PyMongo
 
 <!-- v -->
 
-## MongoDB Queries
+## About PyMongo
 
-[Mongo Shell Quick Reference](https://docs.mongodb.com/manual/reference/mongo-shell/)
+[PyMongo](https://api.MongoDB.com/python/current/) is a Python library to do CRUD operations on our database from a Python app.
 
-MongoDB Shell is useful for:
-- Quickly getting info from your database
-- Addressing/debugging errors
-- Inserting dummy data for testing your apps
-
-<!-- v -->
-
-## Getting Started
-
-Install MongoDB:
+We can install it with:
 
 ```bash
-$ brew tap mongodb/brew
-$ brew install mongodb-community@4.2
-$ sudo mkdir -p /data/db
-$ sudo chown -R $USER /data/db
-```
-
-In a separate terminal, run:
-
-```bash
-$ mongod
-```
-
-Start the command-line interface:
-
-```bash
-$ mongo
+$ pip3 install pymongo
 ```
 
 <!-- v -->
 
-## Create a Database
+## A First Program
 
-Switch to a database:
-
-```bash
-> use test
-switched to db test
-```
-
-<!-- v -->
-
-
-## Create
-
-To create a new document in the collection `songs`:
-
-```bash
-> db.songs.insertOne({artist: "Journey", title: "Don't Stop Believin'"})
-```
-
-Try adding a few more on your own!
-
-<!-- v -->
-
-## Read
-
-To view all documents in the collection `songs`:
-
-```bash
-> db.songs.find()
-...
-```
-
-Or to view documents that satisfy a certain query, pass in some JSON:
-
-```bash
-> db.songs.find({artist: "Toto"})
-{ "_id" : ObjectId("5d89999fb1db7e732ac60d78"), "artist" : "Toto", 
-"song_name" : "Africa" }
-```
-
-<!-- v -->
-
-## Update
-
-We can update a single document:
-
-```bash
-> db.songs.updateOne({_id: ObjectId("5d89999fb1db7e732ac60d78")}, 
-{$set: {song_name: "Rosanna"}})
-```
-
-Or update many at once:
-
-```bash
-> db.songs.updateMany({artist: "Toto"}, { $set: {rating: 5} })
-```
-
-<!-- v -->
-
-## Delete
-
-To delete a document:
-
-```bash
-> db.songs.deleteOne({song_title: "Rosanna"})
-```
-
-<!-- v -->
-
-
-## Activity [10 mins]
-
-Use the Mongo documentation and write the following queries in plain English. Find a partner and compare your answers.
+We can access data from our database as follows:
 
 ```py
-db.People.find().sort({ age: 1 }).limit(100)
+# Import pymongo and initialize client
+from pymongo import MongoClient
+client = MongoClient()
 
-db.Events.findOne({ name: "Burning Man" })
+# Access our database and collection
+db = client['test_db']
+collection = db['songs']
 
-db.Cars.findById(request.args.carId)
-
-db.Apps.findOne({ quality: "Great" }) # obviously won't return Snapchat or Lyft
-db.Users.find({ age: {$gt: 18, $lt: 65 }})
-
-db.Users.find({likes: {$in: ['chatting', 'candle making']}})
+# Find a song
+my_song = songs.find_one({'title': 'Hot N Cold'})
+print(my_song)
 ```
+
+<!-- v -->
+
+## Activity: Run our First Program [5 mins]
+
+1. Create a new Python file called `songs.py`
+1. Copy the starter code from the previous slide into the file
+1. Run the code!
 
 <!-- > -->
 
-# Flask-PyMongo
+# Collection Operations
 
 <!-- v -->
 
-## About Flask-PyMongo
+## Operations Overview
 
-[PyMongo](https://api.MongoDB.com/python/current/) is the lower level toolset (released by python) that you'll use to query the database for the stuff you want.  You can import this from Flask PyMongo.
+Each **CRUD operation** has at least one corresponding function in PyMongo. You can read a complete list of available operations [here](https://api.mongodb.com/python/current/api/pymongo/collection.html).
 
-[Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) is a useful wrapper around PyMongo (and for your convenience comes packaged with PyMongo) that adds helper functions specifically for Flask.
-
-<!-- v -->
-
-![Flask-Mongo-Diagram](assets/Flask-Mongo-Diagram.jpeg)
-
-<!-- v -->
-
-## Using Flask-PyMongo
-
-Let's install PyMongo:
-
-```bash
-pip3 install Flask-PyMongo
-```
+| CRUD Operation | PyMongo Operation |
+| -------------- | ----------------- |
+| Create         | `collection.insert_one()` |
+| Read           | `collection.find_one()` |
+| Update         | `collection.update_one()` |
+| Delete         | `collection.delete_one()` |
 
 <!-- v -->
 
-## Writing a Route
+## Read Operations
 
-Here is an example route to **read** all users:
+We can read all songs, returned as a *list-like* object:
 
 ```py
-from bson.json_util import dumps
+all_songs = songs_collection.find({'artist': 'Rihanna'})
 
-@app.route("/users", methods=["GET"])
-def get_all_users():
-  users_list = db.users.find({}) # empty query returns all
+# We can loop over this just like a list
+for song in all_songs:
+    print(song)
+```
 
-  # returning the user list in JSON form
-  return dumps(users_list)
+Or query for only one song:
+
+```py
+song = songs_collection.find_one({'title': 'Umbrella'})
+print(song)
 ```
 
 <!-- v -->
 
-## Activity
+## Create Operations
 
-Copy the [demo code](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/08-Document-Based-Databases/demo) and:
+Create a JSON object containing the data, then call `insert_one`.
 
-1. Test it out and see if you understand how it works
-1. Add 2 new routes to **delete** a user:
-  1. `delete_user_form` to display a form to enter a username
-  1. `delete_user` to accept a POST request from the form and delete the user with specified username
-1. Try the same for **update**!
+```py
+new_song = {
+    'name': 'Hot N Cold',
+    'artist': 'Katy Perry',
+    'rating': 5
+}
+
+result = songs_collection.insert_one(new_song)
+```
+
+<!-- v -->
+
+## Update Operations
+
+Here, we must pass in a JSON object with the field `$set`.
+
+```py
+query = {'title': 'Hot N Cold'}
+new_values = {
+    '$set': {
+        'rating': 4
+    }
+}
+result = songs_collection.update_one(query, new_values)
+```
+
+<!-- v -->
+
+## Delete Operations
+
+```py
+query = {'title': 'Friday'}
+result = songs_collection.delete_one(query)
+```
+
+<!-- v -->
+
+## Activity: PyMongo Operations [15 mins]
+
+In your `songs.py` program, complete the following:
+
+1. Create another song and put it into the database
+1. Print a list of all songs
+1. Find a song with a particular title, and print it
+1. Update a song with a new artist or rating
+1. Delete a song
 
 <!-- > -->
 
-## Announcements
+## Vibe Check
 
-- Playlister tutorial due Tues, Oct. 1 (in 1 week)
-- Contractor project due Thurs, Oct. 10 (in 2.5 weeks) - take a look at the [Project Spec](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit) before our next class
+Go to https://make.sc/bew1.1-vibe-check and fill out the form.
+
+<!-- v -->
+
+## 🎉 Shout-Outs 🎊
+
+Have any shout-outs? Show appreciation for your peers!
+
+<!-- > -->
+
+<!-- .slide: data-background="#0D4062" -->
+## Homework
+
+- Start on the [Playlister tutorial](https://make.sc/playlister) - due Tuesday, Nov. 26
+- Quiz on Thursday covering APIs, JSON, & Testing
 
 <!-- > -->
 
 ## Resources
 
-- [Flask-PyMongo Tutorial](https://medium.com/@riken.mehta/full-stack-tutorial-flask-react-docker-ee316a46e876)
+- [Tools for working with MongoDB ObjectIds](https://api.mongodb.com/python/current/api/bson/objectid.html)
+- [Introduction to MongoDB and Python](https://realpython.com/introduction-to-mongodb-and-python/)

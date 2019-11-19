@@ -29,7 +29,17 @@ Quizzes will be given according to the [class calendar](#/README).
 
 ### APIs
 
+- Given a JSON object, be able to access nested fields and modify fields
+- Use `requests.get()` to make an API call to an endpoint
+- Use query parameters to send specific data in an API call
+- Describe the standard endpoints for a REST API (GET, POST, PUT/PATCH, DELETE)
+
 ### Testing
+
+- Identify and explain 3 reasons why testing is useful
+- Write a test function using `assertEqual` and `assertIn`
+- Identify and explain 2 scenarios in which we would want to use a mock object in a test
+- Use `mock.patch` to set the return value of a function (such as an API call)
 
 ## Quiz 3
 
