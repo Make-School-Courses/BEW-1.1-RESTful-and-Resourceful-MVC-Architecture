@@ -1,7 +1,7 @@
 <!-- .slide: data-background="./../Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # Document-Based Databases
 
-### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/08-Document-Based-Databases.html ':ignore')
+### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/08-Document-Based-Databases/README ':ignore')
 ### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/08-Document-Based-Databases/demo)
 
 <!-- > -->
