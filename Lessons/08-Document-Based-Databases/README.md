@@ -294,3 +294,4 @@ Have any shout-outs? Show appreciation for your peers!
 
 - [Tools for working with MongoDB ObjectIds](https://api.mongodb.com/python/current/api/bson/objectid.html)
 - [Introduction to MongoDB and Python](https://realpython.com/introduction-to-mongodb-and-python/)
+- [PyMongo Tutorial](https://api.mongodb.com/python/current/tutorial.html)
