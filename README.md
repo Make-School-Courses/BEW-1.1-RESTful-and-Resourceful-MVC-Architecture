@@ -37,7 +37,7 @@ This course covers the three major patterns or architectures that make the web w
 |  6    | Thu, Nov 7  | APIs Lab Day | [Quiz 1](Assignments/Quiz-Study-Guide#quiz-1) |
 |  7    | Tue, Nov 12 | [Testing](Lessons/06-Testing-RESTful-Routes/README.md) | |
 |  8    | Thu, Nov 14 | [More Testing](Lessons/07-More-Testing/README.md) | |
-|  9    | Tue, Nov 19 | [Document-Based Databases](Lessons/08-Document-Based-Databases.md) | |
+|  9    | Tue, Nov 19 | [Document-Based Databases](Lessons/08-Document-Based-Databases/README.md) | |
 |  10   | Thu, Nov 21 | ERDs, Resource Associations, and MongoDB | [Quiz 2](Assignments/Quiz-Study-Guide#quiz-2) |
 |  11   | Tue, Nov 26 | Project Planning and User-Centered Development | |
 |  -    | Thu, Nov 28 | **NO CLASS** - Thanksgiving | |
@@ -55,11 +55,12 @@ All due dates are at 11:59 PM, PST on the date specified.
 | [Homework 1](Assignments/Weekly-Homework.md?id=homework-1) | Tue, Oct 22   | Mon, Oct 28 | [Submit Homework] |
 | [Homework 2](Assignments/Weekly-Homework.md?id=homework-2) | Tue, Oct 29   | Mon, Nov 4  | [Submit Homework] |
 | [Homework 3](Assignments/Weekly-Homework.md?id=homework-3) | Thu, Nov 5    | Thu, Nov 14 | [Submit Homework] |
-| Playlister Tutorial | Thu, Nov 14   | Tue, Nov 26 | [Submit Playlister] |
-| Contractor Project | Tue, Nov 26 | Mon, Dec 9 | [Submit Contractor Project] |
-| Contractor Project Final Resubmission | -  | Thu, Dec 12 | [Submit Contractor Project] |
+| Playlister Tutorial | Tue, Nov 19   | Tue, Nov 26 | [Submit Playlister] |
+| Contractor Project MVP | Tue, Nov 26 | Mon, Dec 9 | [Submit Contractor Project] |
+| Contractor Project Final Submission | -  | Thu, Dec 12 | [Submit Contractor Project] |
 
 [Submit Homework]: https://docs.google.com/spreadsheets/d/14AkHKwhmKjT352FSm-ord8-IDInLp7dFfCCfYbLI4Pw/edit#gid=0
+[Submit Playlister]: https://docs.google.com/spreadsheets/d/14AkHKwhmKjT352FSm-ord8-IDInLp7dFfCCfYbLI4Pw/edit#gid=0
 
 
 ## Class Assignments
