@@ -38,13 +38,13 @@ This course covers the three major patterns or architectures that make the web w
 |  7    | Tue, Nov 12 | [Testing](Lessons/06-Testing-RESTful-Routes/README.md) | |
 |  8    | Thu, Nov 14 | [More Testing](Lessons/07-More-Testing/README.md) | |
 |  9    | Tue, Nov 19 | [Document-Based Databases](Lessons/08-Document-Based-Databases/README.md) | |
-|  10   | Thu, Nov 21 | ERDs, Resource Associations, and MongoDB | [Quiz 2](Assignments/Quiz-Study-Guide#quiz-2) |
-|  11   | Tue, Nov 26 | Project Planning and User-Centered Development | |
+|  10   | Thu, Nov 21 | [Review Day](git@github.com:Make-School-Labs/mongo-testing-starter.git) | [Quiz 2](Assignments/Quiz-Study-Guide#quiz-2) |
+|  11   | Tue, Nov 26 | ERDs, Resource Associations, and MongoDB | |
 |  -    | Thu, Nov 28 | **NO CLASS** - Thanksgiving | |
-|  12   | Tue, Dec 3  | RESTful APIs and Deployment Environments | |
-|  13   | Thu, Dec 5  | Lab Day | [Quiz 3](Assignments/Quiz-Study-Guide#quiz-3) |
-|  14   | Tue, Dec 10 | Final Contractor Project Presentations | |
-|  15   | Thu, Dec 12 | Bonus Topic | |
+|  12   | Tue, Dec 3  | Project Planning and User-Centered Development | |
+|  13   | Thu, Dec 5  | RESTful APIs and Deployment Environments | [Quiz 3](Assignments/Quiz-Study-Guide#quiz-3) |
+|  14   | Tue, Dec 10 | Lab Day | |
+|  15   | Thu, Dec 12 | Final Contractor Project Presentations | |
 
 ## Assignment Schedule
 
