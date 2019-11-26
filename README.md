@@ -55,9 +55,13 @@ All due dates are at 11:59 PM, PST on the date specified.
 | [Homework 1](Assignments/Weekly-Homework.md?id=homework-1) | Tue, Oct 22   | Mon, Oct 28 | [Submit Homework] |
 | [Homework 2](Assignments/Weekly-Homework.md?id=homework-2) | Tue, Oct 29   | Mon, Nov 4  | [Submit Homework] |
 | [Homework 3](Assignments/Weekly-Homework.md?id=homework-3) | Thu, Nov 5    | Thu, Nov 14 | [Submit Homework] |
-| Playlister Tutorial | Tue, Nov 19   | Tue, Nov 26 | [Submit Playlister] |
-| Contractor Project MVP | Tue, Nov 26 | Mon, Dec 9 | [Submit Contractor Project] |
-| Contractor Project Final Submission | -  | Thu, Dec 12 | [Submit Contractor Project] |
+| [Playlister Tutorial] | Tue, Nov 19   | Tue, Nov 26 | [Submit Playlister] |
+| [Contractor Project MVP] | Tue, Nov 26 | Mon, Dec 9 | [Submit Contractor Project] |
+| [Contractor Project Final Submission] | -  | Thu, Dec 12 | [Submit Contractor Project] |
+
+[Playlister Tutorial]: https://make.sc/playlister
+[Contractor Project MVP]: https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit#heading=h.sqlq00fgoz06
+[Contractor Project Final Submission]: https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit#heading=h.sqlq00fgoz06
 
 [Submit Homework]: https://docs.google.com/spreadsheets/d/14AkHKwhmKjT352FSm-ord8-IDInLp7dFfCCfYbLI4Pw/edit#gid=0
 [Submit Playlister]: https://docs.google.com/spreadsheets/d/14AkHKwhmKjT352FSm-ord8-IDInLp7dFfCCfYbLI4Pw/edit#gid=0
