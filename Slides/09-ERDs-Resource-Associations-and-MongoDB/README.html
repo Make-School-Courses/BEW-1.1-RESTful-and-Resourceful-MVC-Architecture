@@ -20,7 +20,7 @@
       <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: data-background="./../Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 # ERDs, Resource Associations, & MongoDB
 
-### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/09-ERDs-Resource-Associations-and-MongoDB.html ':ignore')
+### [Slides](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/09-ERDs-Resource-Associations-and-MongoDB/README ':ignore')
 ### [Demo](https://github.com/Make-School-Courses/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/tree/master/Lessons/09-ERDs-Resource-Associations-and-MongoDB/demo)
 </script></section><section  data-markdown><script type="text/template">
 ## Objectives
@@ -84,9 +84,13 @@ Connect resources in boxes with arrows depending on their relationship:
 1. Many-to-Many: `<=>`
 1. One-to-Many: `-->`
 </script></section><section data-markdown><script type="text/template">
-![Blog erd](assets/blog-erd.jpeg)
+## A Blog ERD
+
+![Blog erd](assets/blog-erd.png)
 </script></section><section data-markdown><script type="text/template">
-![School erd](assets/school-erd.jpeg)
+## A School ERD
+
+![School erd](assets/school-erd.png)
 </script></section><section data-markdown><script type="text/template">
 ## Activity - Drawing ERDs [15 min]
 
@@ -119,14 +123,16 @@ In this case, each **document** (e.g. user or post) contains a reference to the 
 ```py
 # User has many posts
 {
-  "name": "Jamar Brown",
-  "posts": ["a41492308329r900sdf", "9309safd0as0f9f098af"]
+  "_id": ObjectId("dsf675as6f6a4s6f")
+  "name": "Ada Lovelace",
+  "posts": [ObjectId("a41492308329r900sdf"), ObjectId("9309safd0as0f9f098af")]
 }
 
 # Post belongs to user (as author)
 {
+  "_id": ObjectId("a41492308329r900sdf")
   "title": "Understanding Model View Controller",
-  "author": "asf675as6f6a4s6f"
+  "author": ObjectId("dsf675as6f6a4s6f")
 }
 ```
 </script></section><section data-markdown><script type="text/template">
@@ -172,9 +178,10 @@ db.Posts.insert_one(embedded_post)
 
 Choose one of your resource diagrams and decide whether to model the associations as a **Reference to Document**, **Value Association**, or **Embedded Document**. What are the pros and cons of each?
 </script></section></section><section  data-markdown><script type="text/template">
-## Announcements
+<!-- .slide: data-background="#0D4062" -->
+## Homework
 
-- Playlister tutorial due on Tuesday, Oct 1 - Let Meredith know of any errors
+- Playlister tutorial due on Monday, Dec 1
 
 - [Contractor Project](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit) due on Thursday, Oct 10
 </script></section><section  data-markdown><script type="text/template">
