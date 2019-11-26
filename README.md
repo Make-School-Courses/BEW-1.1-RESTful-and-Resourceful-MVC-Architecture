@@ -39,7 +39,7 @@ This course covers the three major patterns or architectures that make the web w
 |  8    | Thu, Nov 14 | [More Testing](Lessons/07-More-Testing/README.md) | |
 |  9    | Tue, Nov 19 | [Document-Based Databases](Lessons/08-Document-Based-Databases/README.md) | |
 |  10   | Thu, Nov 21 | [Review Day](https://github.com/Make-School-Labs/mongo-testing-starter) | [Quiz 2](Assignments/Quiz-Study-Guide#quiz-2) |
-|  11   | Tue, Nov 26 | ERDs, Resource Associations, and MongoDB | |
+|  11   | Tue, Nov 26 | [ERDs, Resource Associations, and MongoDB](Lessons/09-ERDs-Resource-Associations-and-MongoDB/README.md) | |
 |  -    | Thu, Nov 28 | **NO CLASS** - Thanksgiving | |
 |  12   | Tue, Dec 3  | Project Planning and User-Centered Development | |
 |  13   | Thu, Dec 5  | RESTful APIs and Deployment Environments | [Quiz 3](Assignments/Quiz-Study-Guide#quiz-3) |
