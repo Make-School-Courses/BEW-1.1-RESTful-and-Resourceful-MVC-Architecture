@@ -195,14 +195,16 @@ db.Posts.insert_one(embedded_post)
 
 Choose one of your resource diagrams and decide whether to model the associations as a **Reference to Document**, **Value Association**, or **Embedded Document**. What are the pros and cons of each?
 
+If you finish early, work on your Playlister tutorial!
+
 <!-- > -->
 
 <!-- .slide: data-background="#0D4062" -->
 ## Homework
 
-- Playlister tutorial due on Monday, Dec 1
+- Playlister tutorial due on Monday, Dec 9
 
-- [Contractor Project](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit) due on Thursday, Oct 10
+- [Contractor Project](https://docs.google.com/document/d/1C8eOyLBeGMKJ2y50QwLU5tWjNb2JVcpAE4khUBIfm0U/edit) due on Thursday, Dec 12
 
 <!-- > -->
 
