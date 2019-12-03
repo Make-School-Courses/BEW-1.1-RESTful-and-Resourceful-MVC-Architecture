@@ -98,8 +98,11 @@ To secure such data, developers use **environment variables**,stored locally and
 
 Why is it important to hide your API key?
 
-1. asdf
+1. More secure
 <!-- .element: class="fragment" -->
+1. Industry-standard practice
+<!-- .element: class="fragment" -->
+
 
 <!-- v -->
 
