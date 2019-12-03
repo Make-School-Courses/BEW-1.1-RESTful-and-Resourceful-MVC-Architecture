@@ -41,8 +41,8 @@ This course covers the three major patterns or architectures that make the web w
 |  10   | Thu, Nov 21 | [Review Day](https://github.com/Make-School-Labs/mongo-testing-starter) | [Quiz 2](Assignments/Quiz-Study-Guide#quiz-2) |
 |  11   | Tue, Nov 26 | [ERDs, Resource Associations, and MongoDB](Lessons/09-ERDs-Resource-Associations-and-MongoDB/README.md) | |
 |  -    | Thu, Nov 28 | **NO CLASS** - Thanksgiving | |
-|  12   | Tue, Dec 3  | Project Planning and User-Centered Development | |
-|  13   | Thu, Dec 5  | RESTful APIs and Deployment Environments | [Quiz 3](Assignments/Quiz-Study-Guide#quiz-3) |
+|  12   | Tue, Dec 3  | [RESTful APIs and Deployment Environments](Lessons/11-Deployment-Environments/README.md) | |
+|  13   | Thu, Dec 5  | Lab Day | [Quiz 3](Assignments/Quiz-Study-Guide#quiz-3) |
 |  14   | Tue, Dec 10 | Lab Day | |
 |  15   | Thu, Dec 12 | Final Contractor Project Presentations | |
 
