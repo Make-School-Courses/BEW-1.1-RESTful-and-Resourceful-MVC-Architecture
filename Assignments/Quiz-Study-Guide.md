@@ -45,4 +45,11 @@ Quizzes will be given according to the [class calendar](#/README).
 
 ### Databases
 
+- Define "Database" and "Collection", and describe use cases for each
+- Use the `find` & `find_one` methods to access data in a Collection
+- Use the `insert_one` method to put data in a Collection
+- Use the `update_one` and `delete_one` methods to update/delete data from a Collection
+
 ### Resource Associations
+
+- Draw an Entity Relationship Diagram (ERD) for a project with multiple resources using One-to-One, One-to-Many, or Many-to-Many relationships

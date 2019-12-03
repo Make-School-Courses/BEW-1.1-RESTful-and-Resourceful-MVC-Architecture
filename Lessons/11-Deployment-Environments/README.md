@@ -1,31 +1,25 @@
-<p align="center"><img style="box-shadow: none; border: none; background: none;" src="./assets/heroku.svg" height="200"></p>
-<!-- .slide: class="header" -->
+<!-- .slide: data-background="./../Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 
 # Deployment Environments: Ship Early, Ship Often
 
-➡️ [**Slides**](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/11-Deployment-Environments.html ':ignore')
+➡️ [**Slides**](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/Slides/11-Deployment-Environments/README ':ignore')
 
 <!-- > -->
 
 ### Agenda
 
-1. [[**20m**] Quiz](#20m-quiz)
-2. [[**5m**] Objectives](#5m-objectives)
-3. [[**10m**] Overview: Environments](#10m-overview-environments)
-4. [[**15m**] Activity: Hiding Secrets](#15m-activity-hiding-secrets)
-5. [[**10m**] BREAK](#10m-break)
-6. [[**25m**] Activity: Deployment Definitions](#25m-activity-deployment-definitions)
-7. [[**15m**] Activity: Playlistr Reflection](#15m-activity-playlistr-reflection)
-8. [[**20m**] Wrap Up: Define a Deployment Plan](#20m-wrap-up-define-a-deployment-plan)
-9. [Resources & Credits](#resources--credits)
+1. [[**5m**] Objectives](#5m-objectives)
+1. [[**10m**] Overview: Environments](#10m-overview-environments)
+1. [[**15m**] Activity: Hiding Secrets](#15m-activity-hiding-secrets)
+1. [[**10m**] BREAK](#10m-break)
+1. [[**25m**] Activity: Deployment Definitions](#25m-activity-deployment-definitions)
+1. [[**15m**] Activity: Playlister Reflection](#15m-activity-playlister-reflection)
+1. [[**20m**] Wrap Up: Define a Deployment Plan](#20m-wrap-up-define-a-deployment-plan)
+1. [Resources & Credits](#resources--credits)
 
 <!-- > -->
 
-## [**20m**] Quiz
-
-<!-- > -->
-
-## [**5m**] Objectives
+## Objectives
 
 **By the end of this class, you'll be able to...**
 
@@ -36,21 +30,11 @@
 
 <!-- > -->
 
-<!-- .slide: data-background="#11A31B" -->
-
-### Food for Thought
-
-> "**_Software and cathedrals are much the same &mdash; <br> first we build them, then we pray._**"
-
-<strong>Sam Redwine</strong>, 4th International Software Process Workshop (1988)
-
-<!-- > -->
-
-## [**10m**] Overview: Environments
+# Overview: Environments
 
 <!-- v -->
 
-### 1️⃣ Development
+## 1️⃣ Development
 
 - On your computer, otherwise known as _**"locally"**_.
 - Where **ALL** code updates occur.
@@ -61,7 +45,7 @@
 
 <!-- v -->
 
-### 2️⃣ Test / Staging
+## 2️⃣ Test / Staging
 
 - All of the **code now lives on a server**.
 - As similar to production as possible.
@@ -69,7 +53,7 @@
 
 <!-- v -->
 
-### 3️⃣ Production
+## 3️⃣ Production
 
 - **Highest priority** environment.
 - Where we "**go live**", "**launch**", or "**ship**" our website.
@@ -78,7 +62,7 @@
 
 <!-- v -->
 
-### Minor Differences Allowed
+## Minor Differences Allowed
 
 Environments *can* vary, but *should* be as **similar as possible**.
 
@@ -90,9 +74,7 @@ Environments *can* vary, but *should* be as **similar as possible**.
 
 <!-- v -->
 
-### Public Service Announcement
-
-<p align="center"><img style="box-shadow: none; border: none; background: none;" src="./assets/worksonmymachine.jpg" height="300"></p>
+## Public Service Announcement
 
 When an **unhandled exception** occurs in your application, **your website will go offline**. This is known as **downtime**.
 
@@ -100,7 +82,7 @@ Even **minor differences** can cause these kinds of  **unanticipated failures in
 
 <!-- v -->
 
-### Environment Variables
+## Environment Variables
 
 Sometimes you can't save everything into your code files because that would be insecure. For example, if you use a third party service like Amazon Web Services (AWS), then there will be sensitive keys that if you expose to the world on a public Github repo, hackers will steal them and use your codes to rack up hundreds of dollars in fees.
 
@@ -108,13 +90,20 @@ To secure such data, developers use **environment variables**,stored locally and
 
 <!-- > -->
 
-## [**15m**] Activity: Hiding Secrets
-
-### Protect Your Tenor API Key
+# Activity: Hiding Secrets
 
 <!-- v -->
 
-### Step One
+## Protect Your OpenWeather API Key
+
+Why is it important to hide your API key?
+
+1. asdf
+<!-- .element: class="fragment" -->
+
+<!-- v -->
+
+## Install Dotenv
 
 Add the `python-dotenv` package to your Gif Search project:
 
@@ -124,13 +113,13 @@ $ pip3 install python-dotenv
 
 <!-- v -->
 
-### Step Two
+## Add your API Key
 
 Add a `.env` file with the following **key-value pair**:
 
- ```bash
- TENOR_API_KEY=yourapikeyvalue
- ```
+```bash
+TENOR_API_KEY=yourapikeyvalue
+```
 
 - Keys and their values are separated by `=`
 - No spaces in the key
@@ -139,7 +128,7 @@ Add a `.env` file with the following **key-value pair**:
 <!-- v -->
 
 
-### Step Three
+## Load Dotenv
 
 Add the following code **at the very top** of your `app.py` file:
 
@@ -154,7 +143,7 @@ This code **imports** the `python-dotenv` library and **loads all the settings**
 
 <!-- v -->
 
-### Step Four
+## Access our Key
 
 Grab any setting you defined in the `.env` file via `os.getenv()`:
 
@@ -169,13 +158,14 @@ Grab any setting you defined in the `.env` file via `os.getenv()`:
 
 <!-- v -->
 
-### Step Five
+## Ignore Dotenv
 
 Add `.env` to the bottom of your `.gitignore` file.
 
 <!-- > -->
 
-## [**10m**] BREAK
+<!-- .slide: data-background="#087CB8" -->
+## BREAK [10m]
 
 <!-- > -->
 
@@ -187,22 +177,26 @@ It combines web hosting functionality with a rich marketplace of plugins to exte
 
 <!-- v -->
 
-## [**25m**] Activity: Deployment Definitions
+## Activity: Deployment Definitions [25m] 
 
 
 <div class="compact">
 
 Using the [Glossary of Heroku Terminology](https://devcenter.heroku.com/articles/glossary-of-heroku-terminology), use your own words to define the following terms:
 
+<table><tr><td>
 
 1. App
 2. Add-On
 3. Config Var
 4. Dyno
+
+</td><td valign="top">
+
 5. Process Type
 6. Procfile
 7. Release
-
+</td></tr></table>
 
 Discuss, then spend about 15 minutes writing **one** short sentence for each term.
 
@@ -210,13 +204,9 @@ Discuss, then spend about 15 minutes writing **one** short sentence for each ter
 
 <!-- v -->
 
-### [**10m**] Review Definitions
+## [**15m**] Activity: Playlister Reflection
 
-<!-- v -->
-
-## [**15m**] Activity: Playlistr Reflection
-
-**Write down any issues you had while deploying Playlistr.**
+**Write down any issues you had while deploying Playlister.**
 
 * What broke?
 * What didn't make sense?
