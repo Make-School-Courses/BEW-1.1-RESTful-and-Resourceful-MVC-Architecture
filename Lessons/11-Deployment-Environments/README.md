@@ -231,13 +231,14 @@ After a few minutes, we'll talk about the challenges you encountered!
 
 <!-- > -->
 
+<!-- .slide: data-background="#0D4062" -->
 ## Announcements
 
 Contractor Project MVP due on Monday, Dec. 9
 
 Quiz 3 on Thursday, Dec. 5 - [Study Guide](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/#/Assignments/Quiz-Study-Guide?id=quiz-3) now available
 
-There will be a Quiz Make-up/Retake session on Friday, Dec. 5 at 12:30PM - Or schedule with me individually.
+There will be a Quiz Make-up/Retake session on Friday, Dec. 6 at 12:30PM - Or schedule with me individually.
 
 <!-- v -->
 
