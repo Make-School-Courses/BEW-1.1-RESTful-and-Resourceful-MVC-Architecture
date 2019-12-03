@@ -172,7 +172,11 @@ Add `.env` to the bottom of your `.gitignore` file.
 
 <!-- > -->
 
-# Hello to Heroku
+# Heroku
+
+<!-- v -->
+
+## What is Heroku?
 
 Heroku is a turn-key server solution that serves as the **staging** and **production servers** for many, including Make School!
 
