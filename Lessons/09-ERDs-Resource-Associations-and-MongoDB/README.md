@@ -77,9 +77,9 @@ Before you code a project, it's a good idea to spend some time thinking about th
 
 Connect resources in boxes with arrows depending on their relationship:
 
-1. Many-to-One: `=>`
+1. One-to-Many: `=>`
 1. Many-to-Many: `<=>`
-1. One-to-Many: `-->`
+1. One-to-One: `-->`
 
 <!-- v -->
 
