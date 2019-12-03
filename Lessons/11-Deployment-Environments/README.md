@@ -136,10 +136,10 @@ TENOR_API_KEY=yourapikeyvalue
 Add the following code **at the very top** of your `app.py` file:
 
  ```py
- import os
+import os
 
- from dotenv import load_dotenv
- load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
  ```
 
 This code **imports** the `python-dotenv` library and **loads all the settings** in your `.env` file!
@@ -151,12 +151,12 @@ This code **imports** the `python-dotenv` library and **loads all the settings**
 Grab any setting you defined in the `.env` file via `os.getenv()`:
 
 ```py
-  import os
+import os
 
-  from dotenv import load_dotenv
-  load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
-  TENOR_API_KEY = os.getenv("TENOR_API_KEY")
+TENOR_API_KEY = os.getenv("TENOR_API_KEY")
 ```
 
 <!-- v -->
@@ -223,11 +223,28 @@ After a few minutes, we'll talk about the challenges you encountered!
 
 <!-- > -->
 
-## [**20m**] Wrap Up: Define a Deployment Plan
+## Define a Deployment Plan [15m]
 
 1. Consider the features you'll be developing for your contractor project.
 2. Write down three opportunities to push to staging during your development cycle.
 3. Review these potential deployments with someone you haven't worked with yet!
+
+<!-- > -->
+
+## Announcements
+
+Contractor Project MVP due on Monday, Dec. 9
+
+Quiz 3 on Thursday, Dec. 5 - [Study Guide](https://make-school-courses.github.io/BEW-1.1-RESTful-and-Resourceful-MVC-Architecture/#/Assignments/Quiz-Study-Guide?id=quiz-3) now available
+
+There will be a Quiz Make-up/Retake session on Friday, Dec. 5 at 12:30PM - Or schedule with me individually.
+
+<!-- v -->
+
+## Vibe Check
+
+Go to https://make.sc/bew1.1-vibe-check and fill out the form.
+
 
 <!-- > -->
 
