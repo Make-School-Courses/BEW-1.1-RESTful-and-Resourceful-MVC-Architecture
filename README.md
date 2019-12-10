@@ -65,6 +65,7 @@ All due dates are at 11:59 PM, PST on the date specified.
 
 [Submit Homework]: https://docs.google.com/spreadsheets/d/14AkHKwhmKjT352FSm-ord8-IDInLp7dFfCCfYbLI4Pw/edit#gid=0
 [Submit Playlister]: https://docs.google.com/spreadsheets/d/14AkHKwhmKjT352FSm-ord8-IDInLp7dFfCCfYbLI4Pw/edit#gid=0
+[Submit Contractor Project]: https://forms.gle/VxzzYMhmqCqd8oWNA
 
 
 ## Class Assignments
